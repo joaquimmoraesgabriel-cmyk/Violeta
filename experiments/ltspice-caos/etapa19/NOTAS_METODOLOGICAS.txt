@@ -1,0 +1,165 @@
+ETAPA 19 — NOTAS METODOLÓGICAS DO CHAOSLAB
+Data da revisão: 12/10/2026. Documento escrito durante o lote registrado.
+
+Este documento descreve o alcance do experimento e as regras de interpretação.
+Não antecipa resultados dos casos ainda em execução. O plano registrado contém
+41 casos e 71.156 janelas planejadas; o relatório final deve confirmar os casos
+efetivamente concluídos, a integridade dos arquivos e o hash do núcleo.
+
+1. O QUE O PASSO FIXO PERMITE CONCLUIR
+
+O MLC original é uma equação diferencial contínua, e não um mapa discreto
+independente. O ChaosLab constrói uma aproximação dessa equação por RK4 para
+X/Y, com controles amostrados e atualizações RC exatas sob retenção de ordem
+zero. A composição completa não tem automaticamente quarta ordem global.
+
+O observador não participa da escolha do passo. Assim, quando não altera o
+controle, mudar seu cálculo ou a frequência de atualização visual deve manter
+a trajetória computacional idêntica. A identidade bit a bit é uma propriedade
+verificável desta implementação, configuração e plataforma. Ela não demonstra
+que a trajetória já converge para a solução contínua ou que todos os efeitos
+de um observador físico foram eliminados.
+
+O passo é h constante e o tempo é n*h. RC, atrasos fracionários interpolados,
+retenção dos comandos e as cascatas explícitas introduzem aproximações que
+precisam de refino. A latência de confirmação possui quantização e atrasos de
+amostragem adicionais. O valor analítico de 60,1986 us da V2 considera somente
+uma razão contínua, timer inicialmente zero e carga de 50 us até 0,7; ele não
+inclui filtros, memória nem a seleção posterior da reserva.
+
+2. DEZ MIL JANELAS E O QUE CONSTITUI UMA AMOSTRA
+
+Cada ensemble de 10.000 janelas é formado por 500 trajetórias com 20 blocos
+consecutivos de 50 ms. Os estados são preservados entre os blocos de cada
+trajetória. Isso soma 500 segundos de tempo agregado, mas não representa uma
+trajetória contínua de 500 segundos, nem 10.000 passos de integração.
+
+As primeiras condições iniciais são X=-0,37 e X=+0,37, com Y=-0,2. As demais
+usam X pseudoaleatório uniforme no mesmo intervalo. Todas compartilham a
+sequência de entradas e as fases determinísticas das perturbações. Portanto,
+a variação observada descreve principalmente a sensibilidade às condições
+iniciais neste estímulo. As janelas de uma trajetória são correlacionadas.
+
+Intervalos de incerteza devem agrupar por trajetória; tratar 10.000 janelas
+como ensaios independentes produziria uma confiança excessiva. Mesmo uma
+detecção em todas as 500 trajetórias cobre apenas a falha, estímulo, amplitude,
+duração e população inicial testados, não uma confiabilidade física universal.
+
+3. COMPARAÇÕES PAREADAS E REFINAMENTO
+
+Comparar os mesmos identificadores de trajetória/janela e informar tanto
+janelas recuperadas quanto novas falhas. Uma diferença líquida pequena pode
+ocultar muitas trocas. Antes de atribuir efeitos à falha temporária, conferir
+identidade das janelas e estados anteriores à injeção.
+
+O refino registrado usa h=5, 2,5 e 1,25 us, duas condições iniciais, sequência
+legada e L2 saudável. Ele não qualifica automaticamente a ordem de desempenho
+dos ensembles de 500 trajetórias sob falha em 5 us, nem os cantos, políticas
+e transientes que não receberam os três passos. Uma classificação estável em
+alguns casos e uma nota isolada maior não encerram a convergência.
+
+Em um sistema caótico, a divergência ponto a ponto em um horizonte longo pode
+ocorrer mesmo com integradores consistentes. Avaliar também horizontes curtos,
+margens lógicas, estatísticas agregadas e estabilidade sob refino. A lógica
+usa o sinal de X durante toda a janela 30–49 ms, com extremos nos pontos da
+malha e interpolação das bordas. Cruzamentos entre pontos continuam possíveis.
+
+Não há controle comum saudável com sequência legada e h=2,5 us nesta matriz.
+Os cantos do coordenador comum podem ser descritos diretamente quanto a
+alarmes e lógica, mas o ensemble comum de h=5 us e outra sequência não fornece
+um controle pareado para atribuir uma diferença exclusivamente à tolerância.
+
+4. FISCAL, DETECÇÃO E RECUPERAÇÃO
+
+O fiscal efetivo aplica min(|pedido|,cota) antes do filtro simétrico de 4 us.
+O mesmo pedido medido local é usado nos dois lados. As verificações de faixa,
+soma, heartbeat e idade continuam avaliando as mensagens cruas. Uma cota
+alterada que ainda satisfaz integralmente o pedido pode deixar de alarmar
+por coerência; esse é o comportamento proposto, e não necessariamente uma
+falha de detecção. O limiar continua sendo 6,5 uA e a confirmação continua V2.
+
+O campo legado harm_start_us registra a primeira divergência absoluta entre
+concessões ou uma mensagem inválida. Ele não prova dano lógico nem perda de
+corrente útil. No texto e nos gráficos, chamá-lo de início da divergência
+operacional, ou explicar expressamente essa definição.
+
+alarm_time_us indica o disparo do timer. fallback_time_us indica a primeira
+seleção efetiva da reserva. A causa que atualiza o timer é amostrada no início
+do passo: um disparo carimbado exatamente na injeção, mas originado no intervalo
+anterior, não conta como detecção. Primeiro alarme após a retirada da falha
+é informado separadamente e não deve ser chamado automaticamente de falso.
+
+A reserva common muda para proporcional instantâneo; matched usa a política
+e o caminho de referência independente, inclusive os atrasos e tolerâncias
+configurados. A comparação matched registrada cobre apenas bias. Ela não
+aprova outras falhas nem demonstra independência de sensores ou alimentação.
+
+Uma detecção correta não garante recuperação da porta lógica. Quando o
+estado já saiu da região desejada, trocar a distribuição de corrente pode
+recuperar algumas janelas e piorar outras. Relatar detecção e lógica como
+desfechos separados.
+
+5. ABLAÇÕES E INTERPRETAÇÃO CAUSAL
+
+Nominal é o MLC sem perturbações nem correção. Unlimited cancela algebricamente
+as perturbações em cada subpasso do RK4 e usa o mesmo lado direito nominal.
+A igualdade desses dois casos verifica a álgebra e a implementação; sozinha
+não prova que uma malha realizável obteria cancelamento perfeito.
+
+Os perfis ideal, sensors, coordinator e actuator acrescentam blocos de forma
+cumulativa. O perfil de sensores acrescenta atraso, RC e erros fixos; o de
+coordenação acrescenta transporte/filtro; o de atuação acrescenta RC de
+comando, lag e projeção de orçamento. São conjuntos de mudanças. Diferenças
+entre eles não isolam exclusivamente atraso de chips ou uma única causa.
+
+O experimento pode localizar dificuldades no modelo ideal, na capacidade,
+na política ou nas dinâmicas acrescentadas. Não decide sozinho entre
+"culpa da equação" e "culpa do hardware". Essa conclusão requer controles
+mais específicos e, depois, correspondência validada com modelos físicos.
+
+6. COMPARABILIDADE COM A ETAPA 18
+
+Preservados: equações MLC, sinais dos pedidos, soma assinada de A/B/C antes
+da alocação, orçamento compartilhado, arbitragem de E, protocolo legado
+quando selecionado, fases e parâmetros de referência relevantes.
+
+O ChaosLab não reproduz UniversalOpAmp2, sondas de 0 V, shunts, limitador
+analógico nem o detector anterior de falhas nos comandos do topo. O atuador
+é um substituto matemático com projeção algébrica a 90 uA. Respeitar esse
+teto por construção não resolve o excesso físico nem a divergência de
+medição encontrados no LTspice. Também não constitui validação de PCB,
+parasitismos, aquecimento, ruído de trilhas ou consumo total da placa.
+
+As nove réplicas E sem falha e com desvios simétricos são reduzidas à sua
+mediana exata. A ferramenta não executa uma validação física de 45 sensores,
+nem uma campanha de falhas dos nove sensores de E.
+
+Os percentuais lógicos têm populações e denominadores diferentes. Não
+converter uma contagem de 10.000 janelas diretamente em equivalente de
+198/272 ou 56/68. Comparações quantitativas com LTspice exigem configuração,
+protocolo, condições iniciais e grandezas compatíveis, além de considerar
+as diferenças de modelo e integrador.
+
+RMS da Etapa 18: primeiro calculado por trajetória e depois agregado pela
+média dos RMS. RMS no summary do ChaosLab: raiz da energia média agrupada.
+Essas operações não são idênticas. O campo per_trajectory permite calcular
+uma média de RMS separada quando necessário; identificar a operação usada.
+Ambos os novos resíduos e a variação total de g descartam os primeiros 30 ms.
+A variação de g é uma medida dinâmica do modelo, não estresse térmico real.
+
+7. LIMITES AINDA FORA DO LOTE
+
+Os ensaios duram 0,85 ou 1 segundo por trajetória. Não qualificam relógios
+com deriva em funcionamento contínuo mais longo, ressincronização, retorno
+seguro após reparo, gerações misturadas de cotas, falhas de causa comum ou
+topologias completas de chips. Uma memória retida até o fim não demonstra
+um protocolo de reset e religamento.
+
+A escolha posterior de um candidato deve considerar recuperações/regressões,
+alarmes, latência e resíduos conjuntamente. Validar essa escolha em novos
+estímulos e sementes, com refino apropriado, evita confundir seleção do melhor
+caso desta matriz com generalização demonstrada.
+
+Fontes locais: chaoslab/core.py; chaoslab/stage19.py; plano_registrado.json;
+etapa18/MLC_cotas_v2.inc; etapa18/ETAPA18_RESULTADOS.txt;
+etapa16/analisar_etapa16.py e etapa18/gerar_relatorio.py.

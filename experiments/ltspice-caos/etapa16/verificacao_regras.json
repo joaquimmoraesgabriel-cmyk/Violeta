@@ -1,0 +1,18 @@
+{
+  "vetores_mediana": 10000,
+  "binarios_exaustivos": 512,
+  "alocacoes_por_modo": 100000,
+  "modos": 2,
+  "aprovado_v2": true,
+  "diagnostico_referencias_v1": [
+    {
+      "modo": 1,
+      "pico_soma_referencias_uA": 90.00000000000001
+    },
+    {
+      "modo": 2,
+      "pico_soma_referencias_uA": 109.99642082912385
+    }
+  ],
+  "alcance": "Regras algebricas; nao valida dinamica, hardware ou convergencia numerica."
+}

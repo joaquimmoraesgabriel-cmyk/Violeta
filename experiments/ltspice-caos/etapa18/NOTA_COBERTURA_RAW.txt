@@ -1,0 +1,23 @@
+Auditoria de cobertura temporal do RAW
+
+O primeiro lote completo (C_atraso_on) terminou normalmente: quatro
+steps, 34 medidas minimo/maximo por step e pico_orcamento completos,
+sem aviso de convergencia. No segundo step, a ultima amostra foi
+0.849998927408814 s: 1.072591186 us antes de tstop=0.85 s, menor
+que o passo maximo configurado de 1.25 us. Os outros tres terminaram
+com amostra exatamente em 0.85 s.
+
+O leitor anterior rejeitava qualquer lacuna >0.85 us, independentemente
+do passo pedido. Essa regra de leitura nao correspondia ao passo deste
+ensaio. Acrescentado limite opcional explicito, por step: ultima amostra
+deve estar a no maximo um passo configurado de tstop (+1 ps de arredondamento).
+O analisador exige tambem log/medidas completos e quantidade correta
+de steps. Lacunas maiores continuam rejeitadas. O limite antigo permanece
+como padrao para chamadores que nao informam o passo.
+
+Nao houve alteracao de circuito, criterio de corrente, criterio logico,
+limiar de alarme ou preenchimento/interpolacao do trecho ausente. Os picos
+e integrais usam as amostras existentes, e o ultimo tempo/lacuna sao
+registrados por trajetoria. A ultima janela logica termina em 0.849 s,
+mais de 998 us antes dessa ultima amostra. Todos os extremos das janelas
+serao conferidos tanto no .meas quanto no RAW.

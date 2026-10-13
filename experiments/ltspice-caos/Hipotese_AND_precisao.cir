@@ -1,0 +1,43 @@
+* TESTE EXPLORATORIO: AND por leitura temporal de Chua.
+* PROTOTIPO FRAGIL: falhou com erro da replica e refinamento numerico.
+* Caso: 7 variacoes de R x controle desligado/ligado x 4 entradas.
+* Pilar mede uma replica resistiva; nao recebe a resposta logica.
+.param caso=0 erro_sensor=0
+.param desvio=(floor(caso/8)-3)*0.005
+.param controle=floor(mod(caso,8)/4) combinacao=mod(caso,4)
+.param A=floor(combinacao/2) B=mod(combinacao,2)
+.param Rnom=1770 Ga=-0.75757m Gb=-0.40909m E=1
+.param limiar=0.6419474952615
+R1 v1 v2 {Rnom*(1+desvio)}
+C1 v1 0 10n IC=0.1
+C2 v2 0 100n IC=0
+L1 v2 vl 18m IC=0
+Rcoil vl 0 12.5
+Bchua v1 0 I={Gb*V(v1)+(Ga-Gb)/2*(abs(V(v1)+E)-abs(V(v1)-E))}
+* Duas entradas independentes, 10 uA cada, de 10 a 11 ms.
+BentradaA 0 v1 I={if(time>=10m,if(time<11m,A*10u,0),0)}
+BentradaB 0 v1 I={if(time>=10m,if(time<11m,B*10u,0),0)}
+* Ponte de medicao: replica acompanha somente o desvio de R1.
+Vprobe topo 0 1
+Rreplica topo sensor {Rnom*(1+desvio)*(1+erro_sensor)}
+Rpadrao sensor 0 {Rnom}
+* R estimado = Rnom*(1/V(sensor)-1).
+* A fonte acrescenta ou retira condutancia entre v1 e v2.
+Bcorrecao v1 v2 I={controle*(1/Rnom-1/(Rnom*(1/V(sensor)-1)))*(V(v1)-V(v2))}
+* Marcadores e leitura. A saida usa somente v2 e o limiar fixo.
+BmarcaA entrada_a 0 V={A}
+BmarcaB entrada_b 0 V={B}
+Bsaida saida 0 V={if(V(v2)<limiar,1,0)}
+.step param caso 24 27 1
+.step param refinamento list 1 2 4 8 16
+.tran 0 11.1m 0 {0.1u/refinamento} uic
+.options plotwinsize=0
+.save V(v1) V(v2) V(saida) V(sensor) V(entrada_a) V(entrada_b) I(Bcorrecao)
+.meas tran tensao FIND V(v2) AT=11m
+.meas tran resultado PARAM if(tensao<limiar,1,0)
+* A*B somente avalia o resultado, nunca controla o circuito.
+.meas tran esperado PARAM A*B
+.meas tran erro PARAM abs(resultado-esperado)
+.meas tran margem PARAM if(A*B,limiar-tensao,tensao-limiar)
+.end
+

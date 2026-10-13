@@ -1,0 +1,34 @@
+{
+  "margem_limite": 9e-05,
+  "gbw_limit": 100000000.0,
+  "tau_cmd": 2e-06,
+  "pico_verificado_uA": 96.79945651441813,
+  "ensaios": [
+    {
+      "arquivo": "BANCADA_filtrado",
+      "caso": 0,
+      "margem_limite": 9e-05,
+      "gbw_limit": 100000000.0,
+      "tau_cmd": 2e-06,
+      "pico_correntes_uA": 96.79945651441813,
+      "tempo_pico_us": 70.24249893497552,
+      "pico_monitor_uA": 96.7994565144,
+      "patamar_uA": 90.4515643562,
+      "fora_tolerancia": 0,
+      "tempo_acima_teto_us": 0.0
+    },
+    {
+      "arquivo": "BANCADA_filtrado_ref",
+      "caso": 0,
+      "margem_limite": 9e-05,
+      "gbw_limit": 100000000.0,
+      "tau_cmd": 2e-06,
+      "pico_correntes_uA": 96.79941285867244,
+      "tempo_pico_us": 70.2436935395156,
+      "pico_monitor_uA": 96.79941285870001,
+      "patamar_uA": 90.45156444050001,
+      "fora_tolerancia": 0,
+      "tempo_acima_teto_us": 0.0
+    }
+  ]
+}

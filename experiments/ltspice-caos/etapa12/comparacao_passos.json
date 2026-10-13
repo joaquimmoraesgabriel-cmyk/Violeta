@@ -1,0 +1,1244 @@
+[
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "-0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.0853594839573"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.162299886346"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "-0.37",
+    "janela": 6,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.215198948979"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0259482376277"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "-0.37",
+    "janela": 7,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.264077931643"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.294537484646"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "-0.37",
+    "janela": 8,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.29932975769"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0204548612237"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "-0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.38529884815"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.212139591575"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "-0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.23407459259"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.3100001812"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.0853725001216"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.162299871445"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "0.37",
+    "janela": 6,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.215261116624"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.025948876515"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.3253480196"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.263689815998"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.213494002819"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.287032276392"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 0,
+    "x_inicial": "0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.236025646329"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0748352110386"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 7,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.320845901966"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0165110696107"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.255042821169"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0926831662655"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.298596799374"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0281179361045"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 12,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0431922711432"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.332206308842"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 13,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0726325884461"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.297861218452"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 14,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0665101855993"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.258933037519"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.222114667296"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0181298162788"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 13,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.177295789123"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0347391292453"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 14,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.229883596301"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0680881291628"
+      }
+    ]
+  },
+  {
+    "perfil": 1,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 15,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.061361245811"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.249895691872"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.290070325136"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.0496730655432"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.105299048126"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.280216991901"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 12,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0399341545999"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.276511907578"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 13,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.118921540678"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.169196531177"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "-0.37",
+    "janela": 14,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.33155024052"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.248156115413"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 8,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.252502799034"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.28649175167"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.264303416014"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.141576245427"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.40670573711"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.233564823866"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.144126579165"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.266965061426"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 1,
+    "x_inicial": "0.37",
+    "janela": 12,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.287170708179"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.41395294666"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0213219132274"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.0831669867039"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 6,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.273314774036"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0524735562503"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 8,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.227040067315"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.115167401731"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.213785752654"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.187110707164"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 12,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.34798872471"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.20411786437"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 13,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.147197246552"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.31782126427"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 14,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.30927562714"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.222477629781"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "-0.37",
+    "janela": 15,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.0916933789849"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.316017389297"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0213611442596"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.0831669867039"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "0.37",
+    "janela": 6,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.0728186741471"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0524735897779"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.199289530516"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.187687471509"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "0.37",
+    "janela": 13,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.223752573133"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.113945990801"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 2,
+    "x_inicial": "0.37",
+    "janela": 14,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.11771582067"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.29684770107"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 2,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.210819616914"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0427716039121"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.268202722073"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.36752772331"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 7,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.244622439146"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.36800765991"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 8,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.29105973244"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.226513013244"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.213072746992"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0121696647257"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.236291497946"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.242393225431"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "-0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.0150125706568"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.175621345639"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 2,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.210346788168"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0431296005845"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 7,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.30978929996"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.0887950733304"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.184099197388"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.213812083006"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.37585866451"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.0919023156165"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 12,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.171140834689"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.126277878881"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 14,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.35262107849"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.179749786854"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 3,
+    "x_inicial": "0.37",
+    "janela": 15,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.33912360668"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.0363495238125"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "-0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.0853594839573"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.162299886346"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "-0.37",
+    "janela": 6,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.215198948979"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0259482376277"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "-0.37",
+    "janela": 7,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.264077931643"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.294537484646"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "-0.37",
+    "janela": 8,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.29932975769"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0204548612237"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "-0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.38529884815"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.212139591575"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "-0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.23407459259"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-1.3100001812"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "0.37",
+    "janela": 4,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.0853725001216"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.162299871445"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "0.37",
+    "janela": 6,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.215261116624"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.025948876515"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "0.37",
+    "janela": 9,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-1.3253480196"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.263689815998"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "0.37",
+    "janela": 10,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "0",
+        "margem": "-0.213494002819"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "1",
+        "margem": "0.287032276392"
+      }
+    ]
+  },
+  {
+    "perfil": 3,
+    "politica": 4,
+    "x_inicial": "0.37",
+    "janela": 11,
+    "classificacoes": [
+      {
+        "passo": "2.5e-06",
+        "acerto": "1",
+        "margem": "0.236025646329"
+      },
+      {
+        "passo": "1.25e-06",
+        "acerto": "0",
+        "margem": "-0.0748352110386"
+      }
+    ]
+  }
+]

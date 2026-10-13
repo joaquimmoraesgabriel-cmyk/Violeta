@@ -1,0 +1,851 @@
+{
+  "schema": "chaoslab-stage19-v1",
+  "core_version": "19.1-fixed-rk4-zoh",
+  "core_source_sha256": "aacd24fd53246cc1f3f0f258b2c469137064a774c69511b573f24f0ae73d097e",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "total_cases": 41,
+  "planned_windows": 71156,
+  "stage18_sources": {
+    "MLC_cotas_v2.inc": "e890e7bc20320e5f1a2a1492751f95a4b747b741907db9044451e035a74542b8",
+    "resumo.json": "369c06524359a55690b89aad8b3d42acb8051a860326925c202eee48f4e535e6",
+    "trajetorias.json": "95277b9ca7b5914553b2a7ffe039e8294dadcbf1394d64c168a915ca6a19ce10",
+    "verificacao_entrega.json": "a3ce99c50a843a7bfa608e105d60ec032d16d0931747bee9ec3e301ecfdd079b"
+  },
+  "hypotheses": [
+    "Useful grants reduce alarms caused solely by unused capacity redistribution.",
+    "Raw protocol guards retain invalid-message detection.",
+    "Detection need not improve logical recovery; report recovered AND regressed windows.",
+    "Passive observers must leave the same fixed-grid plant trajectory bitwise unchanged.",
+    "Coarse ensemble rates are exploratory until refinement is stable."
+  ],
+  "limitations": [
+    "Each 10000-window ensemble is 500 independent initializations x20 consecutive windows, not a500s single path.",
+    "All paths share forcing phases and input order; uncertainty estimates describe initial-condition sensitivity only.",
+    "Fixed-grid extrema can miss between-grid crossings. RK4 plant plus ZOH splitting is not globally fourth order.",
+    "No physical op-amp/PCB model, nor Stage18 top-command fault detector, is implemented here."
+  ],
+  "cases": [
+    {
+      "name": "ensemble_healthy_off",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ensemble_healthy_quota",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ensemble_healthy_effective",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ensemble_bias_off",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ensemble_bias_quota",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ensemble_bias_effective",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ensemble_healthy_common",
+      "group": "ensemble_10000",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 500,
+        "windows": 20,
+        "seed": 19019,
+        "policy": "common",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "balanced",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "refine_quota_5",
+      "group": "refinement",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "refine_quota_2.5",
+      "group": "refinement",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "refine_quota_1.25",
+      "group": "refinement",
+      "config": {
+        "dt_us": 1.25,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "refine_effective_5",
+      "group": "refinement",
+      "config": {
+        "dt_us": 5.0,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "refine_effective_2.5",
+      "group": "refinement",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "refine_effective_1.25",
+      "group": "refinement",
+      "config": {
+        "dt_us": 1.25,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ablation_nominal",
+      "group": "ablation",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "nominal",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ablation_unlimited",
+      "group": "ablation",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "unlimited",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ablation_ideal",
+      "group": "ablation",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "ideal",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ablation_sensors",
+      "group": "ablation",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "sensors",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ablation_coordinator",
+      "group": "ablation",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "coordinator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "ablation_actuator",
+      "group": "ablation",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "off",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_bias_quota",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_bias_effective",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_replay_quota",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "replay",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_replay_effective",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "replay",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_stale_quota",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "stale",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_stale_effective",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "stale",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_dropout_quota",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "dropout",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_dropout_effective",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "dropout",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_double_quota",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "double",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_double_effective",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "double",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_starve_quota",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "starve",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "fault_starve_effective",
+      "group": "fault_matrix",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "starve",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_common_plus_quota",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "common",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "plus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_common_plus_effective",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "common",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "plus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_common_minus_quota",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "common",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "minus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_common_minus_effective",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "common",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "minus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_l2_plus_quota",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "plus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_l2_plus_effective",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "plus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_l2_minus_quota",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "minus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "corner_l2_minus_effective",
+      "group": "corners",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "common",
+        "fault": "healthy",
+        "profile": "actuator",
+        "corner": "minus",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "matched_bias_quota",
+      "group": "fallback",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "quota",
+        "fallback": true,
+        "fallback_policy": "matched",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    },
+    {
+      "name": "matched_bias_effective",
+      "group": "fallback",
+      "config": {
+        "dt_us": 2.5,
+        "trajectories": 2,
+        "windows": 17,
+        "seed": 19019,
+        "policy": "l2",
+        "detector": "effective",
+        "fallback": true,
+        "fallback_policy": "matched",
+        "fault": "bias",
+        "profile": "actuator",
+        "corner": "nominal",
+        "trace_points": 1200,
+        "sequence": "legacy",
+        "monitor_every": 2000
+      }
+    }
+  ]
+}

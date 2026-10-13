@@ -1,0 +1,28 @@
+[
+  {
+    "caso": 0,
+    "perfil": 2,
+    "nome_perfil": "D_isolado_forte",
+    "topologia": 0,
+    "amp_a": 0,
+    "amp_b": 0,
+    "amp_c": 0,
+    "amp_d": 0.01,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 1,
+    "perfil": 2,
+    "nome_perfil": "D_isolado_forte",
+    "topologia": 8,
+    "amp_a": 0,
+    "amp_b": 0,
+    "amp_c": 0,
+    "amp_d": 0.01,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  }
+]

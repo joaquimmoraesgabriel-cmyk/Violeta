@@ -1,0 +1,350 @@
+{
+  "decks_concluidos": 43,
+  "decks_pendentes": 0,
+  "resultados": [
+    {
+      "perfil": "saudaveis",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "tres_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "rodizio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "sorteio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "sorteio",
+      "seed": 73,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "sorteio",
+      "seed": 211,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.721
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "tres_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "rodizio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "sorteio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "sorteio",
+      "seed": 73,
+      "passo_us": 5,
+      "acertos": "33/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "sorteio",
+      "seed": 211,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "uma_falha",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.721
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "tres_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "32/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "rodizio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "27/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "sorteio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "sorteio",
+      "seed": 73,
+      "passo_us": 5,
+      "acertos": "26/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "sorteio",
+      "seed": 211,
+      "passo_us": 5,
+      "acertos": "28/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.731
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "tres_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "rodizio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "sorteio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "sorteio",
+      "seed": 73,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "sorteio",
+      "seed": 211,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "24/34",
+      "media_ligados": 3.721
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "tres_fixos",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "rodizio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "sorteio",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "sorteio",
+      "seed": 73,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "sorteio",
+      "seed": 211,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 3.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 5,
+      "acertos": "34/34",
+      "media_ligados": 7.15
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "saudaveis",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "34/34",
+      "media_ligados": 3.721
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "quatro_falhas",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "34/34",
+      "media_ligados": 3.731
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "24/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "erro_comum",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "24/34",
+      "media_ligados": 3.721
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "nove_fixos",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "34/34",
+      "media_ligados": 9.0
+    },
+    {
+      "perfil": "ruido_alto",
+      "politica": "adaptativo",
+      "seed": 19,
+      "passo_us": 2.5,
+      "acertos": "34/34",
+      "media_ligados": 7.15
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+Validação inicial do ChaosLab concluída antes do lote científico da Etapa 19.
+Este registro também inclui as verificações posteriores da infraestrutura.
+
+Ambiente: Python 3.12 / NumPy 2.5.4.
+Última execução antes do lote: 19 testes automatizados passaram em 6,67 s.
+Após a correção da gravação atômica: 21 testes pytest passaram em 8,96 s.
+
+Cobertura: g(x), sinais e arbitragem de E sob orçamento de 90 µA em 20.000
+demandas aleatórias, concessão efetiva, RC e tempo analítico do V2, atraso
+fracionário, cancelamento algébrico das perturbações, refino RK4 em horizonte
+suave curto, invariância bit a bit do estado sob fiscais passivos e diferentes
+cadências de monitoramento, preservação das trajetórias ao ampliar o ensemble,
+janelas completas e cancelamento, validação de parâmetros e armazenamento
+compacto, cotas de armazenamento e recusa de NaN.
+
+O self-test-full do analisador passou com dados sintéticos. Essa verificação
+testa o analisador; os dados sintéticos não são resultados científicos da
+Etapa 19 e não substituem a análise dos ensaios reais.
+
+AppTest com Streamlit 1.65 passou: renderização das quatro abas, worker real
+com duas trajetórias e uma janela cada, progresso, conclusão e três gráficos.
+A gravação foi simulada nesse teste para não misturar dados de teste com pesquisa.
+
+Inspeção visual adicional em Edge headless confirmou os controles, gráficos
+do lote ao vivo e página Armazenamento. O servidor fica restrito a 127.0.0.1:8501.
+
+Revisão independente do código comparou equações e sensores com a Etapa 18.
+Achados corrigidos antes do lote: atribuição de alarme na fronteira da falha;
+TV(g) após 30 ms; lock de armazenamento entre processos; separação dos alarmes
+de cotas e de topo na referência visual da Etapa 18.
+
+Esses testes verificam implementação e invariantes selecionados; não aprovam
+o circuito físico nem encerram a convergência das trajetórias caóticas longas.
+
+VERIFICAÇÃO APÓS O LOTE COMPLETO
+
+archive_stage19 conferiu os 41 ensaios e 71.156 classificações de janelas,
+configurações e hashes, preservando 8.155.019 bytes de resultados comprimidos.
+O analisador auditou esses dados e gerou relatório, tabelas e figuras PNG/SVG.
+A figura científica foi inspecionada visualmente.
+
+AppTest repetido com o relatório final disponível: quatro abas, métricas,
+downloads, nomes dos ensaios e referência da Etapa 18 passaram. Um worker real
+adicional calculou duas janelas em memória e exibiu os gráficos; sua gravação
+foi simulada, sem acrescentar ensaios ao lote científico.
+Edge headless também renderizou o relatório final e a página de armazenamento.

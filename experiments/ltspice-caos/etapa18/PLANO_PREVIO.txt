@@ -1,0 +1,44 @@
+ETAPA 18 — Plano antes das execuções
+
+Objetivo: fechar o ponto cego de cotas válidas mas incoerentes/atrasadas,
+sem pressupor melhora lógica, e medir a influência de latência na regra L2.
+Referência: etapa 17, coordenador comum A/B/C/D, E local até 5 µA dentro
+dos 90 µA. Não integrar dois coordenadores concedendo a mesma capacidade.
+
+48 trajetórias completas de 0,85 s, duas condições iniciais. Piloto 28:
+comum saudável ligado/desligado; viés extremo ligado/desligado; atraso
+500 µs ligado; L2 com transporte/filtro 5/10 µs e 1/2 µs. Passos máximos
+1,25 e 0,625 µs. Expansão 20: heartbeat perdido, concessão dupla, replay
+com carimbo recente, dois cantos de tolerância/relógio/ruído, viés 12 µA,
+falha simultânea de cota e comando, terceiro passo 0,3125 µs comum/L2.
+SMOKE de 1 ms somente inicialização; não conta como trajetória validada.
+
+Monitor: cálculo funcional independente a partir das demandas medidas;
+referência com atraso nominal +2 µs e RC +5%; observação e referência
+bufferizadas com RC 4 µs. Offset 0,5 µA, ruído senoidal 0,5 µA por canal.
+Limiar L1 6,5 µA; confirmação RC 20 µs/descarga 40 µs, trip 0,7.
+Idade válida -30 a 80 µs; relógio local com erro e deriva parametrizados.
+Inibição inicial de 2 ms. Memória mantém reserva até o fim do ensaio.
+Reserva: proporcional comum calculada localmente, E dentro dos 90 µA.
+Guarda antiga de heartbeat/faixa/soma continua durante a confirmação.
+
+Falhas 1/3/4/6: 343,35–403,35 ms. Falhas 2/5 permanentes desde t=0:
+2 atrasa cota e carimbo 500 µs; 5 atrasa só a cota. 6 desloca até 12 µA
+de D para Y mantendo soma. Controle não conhece código/instante da falha.
+Os cantos saudáveis usam ruído 1 µA, RC ±20%, atraso de referência ±5 µs,
+erro de relógio ±10 µs e deriva ±25 ppm. São testes delimitados, não Monte Carlo.
+
+Critérios preservados: AND estrita nos 17 intervalos 30–49 ms de cada
+bloco 50 ms. Corrente: soma dos módulos nos três atuadores, três leituras
+independentes, teto legado 100,005 µA; registrar também excesso sobre
+90 µA. Comandos e cotas aceitas <=90 µA (+0,00002 µA tolerância RAW float32).
+Registrar alarmes indevidos, detecção/latência, reserva retida, interação
+com detector do topo, recuperação/regressão por janela, residual físico
+Y/D, RMS/variação de g(x), concordância entre passos. Falhas devem permanecer
+visíveis nos resultados. Não usar acerto lógico como sinal de controle.
+
+Limites: metadados e comparadores comportamentais, relógio modelado,
+requisições/sensores compartilhados, reserva instantânea comportamental;
+atuadores genéricos com shunts/RC/limitação física parcial. Não corresponde
+a chips escolhidos, consumo total, 45 sensores físicos, PCB, térmica ou EMC.
+Reutilizar referências anteriores com proveniência; preservar todos os RAWs.

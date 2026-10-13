@@ -1,0 +1,61 @@
+* COORD_perfil3
+.include MLC_coordenadores.inc
+Va entrada_a 0 PWL(0.000000 0 0.050000 0 0.050001 0 0.100000 0 0.100001 0 0.150000 0 0.150001 0 0.200000 0 0.200001 1 0.250000 1 0.250001 0 0.300000 0 0.300001 1 0.350000 1 0.350001 0 0.400000 0 0.400001 0 0.450000 0 0.450001 1 0.500000 1 0.500001 0 0.550000 0 0.550001 1 0.600000 1 0.600001 1 0.650000 1 0.650001 1 0.700000 1 0.700001 1 0.750000 1 0.750001 1 0.800000 1 0.800001 0 0.850000 0)
+Vb entrada_b 0 PWL(0.000000 0 0.050000 0 0.050001 0 0.100000 0 0.100001 1 0.150000 1 0.150001 0 0.200000 0 0.200001 0 0.250000 0 0.250001 0 0.300000 0 0.300001 1 0.350000 1 0.350001 1 0.400000 1 0.400001 1 0.450000 1 0.450001 0 0.500000 0 0.500001 1 0.550000 1 0.550001 1 0.600000 1 0.600001 0 0.650000 0 0.650001 0 0.700000 0 0.700001 1 0.750000 1 0.750001 1 0.800000 1 0.800001 0 0.850000 0)
+.param caso=0
+.param perfil=table(caso,0,3,1,3,2,3,3,3,4,3,5,3,6,3,7,3,8,3,9,3,10,3,11,3,12,3,13,3,14,3,15,3,16,3,17,3,18,3,19,3)
+.param topologia=table(caso,0,15,1,15,2,15,3,15,4,15,5,15,6,15,7,15,8,15,9,15,10,15,11,15,12,15,13,15,14,15,15,15,16,15,17,15,18,15,19,15)
+.param politica_coord=table(caso,0,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4)
+.param falha_coord=table(caso,0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0)
+.param amp_a=table(caso,0,0.006,1,0.006,2,0.006,3,0.006,4,0.006,5,0.006,6,0.006,7,0.006,8,0.006,9,0.006,10,0.006,11,0.006,12,0.006,13,0.006,14,0.006,15,0.006,16,0.006,17,0.006,18,0.006,19,0.006)
+.param amp_b=table(caso,0,0.009,1,0.009,2,0.009,3,0.009,4,0.009,5,0.009,6,0.009,7,0.009,8,0.009,9,0.009,10,0.009,11,0.009,12,0.009,13,0.009,14,0.009,15,0.009,16,0.009,17,0.009,18,0.009,19,0.009)
+.param amp_c=table(caso,0,0.007,1,0.007,2,0.007,3,0.007,4,0.007,5,0.007,6,0.007,7,0.007,8,0.007,9,0.007,10,0.007,11,0.007,12,0.007,13,0.007,14,0.007,15,0.007,16,0.007,17,0.007,18,0.007,19,0.007)
+.param amp_d=table(caso,0,0.008,1,0.008,2,0.008,3,0.008,4,0.008,5,0.008,6,0.008,7,0.008,8,0.008,9,0.008,10,0.008,11,0.008,12,0.008,13,0.008,14,0.008,15,0.008,16,0.008,17,0.008,18,0.008,19,0.008)
+.param x_inicial=table(caso,0,-0.37,1,0.37,2,-0.37,3,0.37,4,-0.37,5,0.37,6,-0.37,7,0.37,8,-0.37,9,0.37,10,-0.37,11,0.37,12,-0.37,13,0.37,14,-0.37,15,0.37,16,-0.37,17,0.37,18,-0.37,19,0.37)
+.param y_inicial=table(caso,0,-0.2,1,-0.2,2,-0.2,3,-0.2,4,-0.2,5,-0.2,6,-0.2,7,-0.2,8,-0.2,9,-0.2,10,-0.2,11,-0.2,12,-0.2,13,-0.2,14,-0.2,15,-0.2,16,-0.2,17,-0.2,18,-0.2,19,-0.2)
+.param passo=table(caso,0,2.5e-06,1,2.5e-06,2,1.25e-06,3,1.25e-06,4,2.5e-06,5,2.5e-06,6,1.25e-06,7,1.25e-06,8,2.5e-06,9,2.5e-06,10,1.25e-06,11,1.25e-06,12,2.5e-06,13,2.5e-06,14,1.25e-06,15,1.25e-06,16,2.5e-06,17,2.5e-06,18,1.25e-06,19,1.25e-06)
+.step param caso 0 19 1
+.save V(x) V(saida) V(orcamento)
+.save V(sem_protecao) V(guard_ativo) V(reserva_ativa) V(sobra) V(falta)
+.tran 0 0.85 0 {passo} uic
+.meas tran minimo_00 MIN V(x) FROM 0.030000 TO 0.049000
+.meas tran maximo_00 MAX V(x) FROM 0.030000 TO 0.049000
+.meas tran minimo_01 MIN V(x) FROM 0.080000 TO 0.099000
+.meas tran maximo_01 MAX V(x) FROM 0.080000 TO 0.099000
+.meas tran minimo_02 MIN V(x) FROM 0.130000 TO 0.149000
+.meas tran maximo_02 MAX V(x) FROM 0.130000 TO 0.149000
+.meas tran minimo_03 MIN V(x) FROM 0.180000 TO 0.199000
+.meas tran maximo_03 MAX V(x) FROM 0.180000 TO 0.199000
+.meas tran minimo_04 MIN V(x) FROM 0.230000 TO 0.249000
+.meas tran maximo_04 MAX V(x) FROM 0.230000 TO 0.249000
+.meas tran minimo_05 MIN V(x) FROM 0.280000 TO 0.299000
+.meas tran maximo_05 MAX V(x) FROM 0.280000 TO 0.299000
+.meas tran minimo_06 MIN V(x) FROM 0.330000 TO 0.349000
+.meas tran maximo_06 MAX V(x) FROM 0.330000 TO 0.349000
+.meas tran minimo_07 MIN V(x) FROM 0.380000 TO 0.399000
+.meas tran maximo_07 MAX V(x) FROM 0.380000 TO 0.399000
+.meas tran minimo_08 MIN V(x) FROM 0.430000 TO 0.449000
+.meas tran maximo_08 MAX V(x) FROM 0.430000 TO 0.449000
+.meas tran minimo_09 MIN V(x) FROM 0.480000 TO 0.499000
+.meas tran maximo_09 MAX V(x) FROM 0.480000 TO 0.499000
+.meas tran minimo_10 MIN V(x) FROM 0.530000 TO 0.549000
+.meas tran maximo_10 MAX V(x) FROM 0.530000 TO 0.549000
+.meas tran minimo_11 MIN V(x) FROM 0.580000 TO 0.599000
+.meas tran maximo_11 MAX V(x) FROM 0.580000 TO 0.599000
+.meas tran minimo_12 MIN V(x) FROM 0.630000 TO 0.649000
+.meas tran maximo_12 MAX V(x) FROM 0.630000 TO 0.649000
+.meas tran minimo_13 MIN V(x) FROM 0.680000 TO 0.699000
+.meas tran maximo_13 MAX V(x) FROM 0.680000 TO 0.699000
+.meas tran minimo_14 MIN V(x) FROM 0.730000 TO 0.749000
+.meas tran maximo_14 MAX V(x) FROM 0.730000 TO 0.749000
+.meas tran minimo_15 MIN V(x) FROM 0.780000 TO 0.799000
+.meas tran maximo_15 MAX V(x) FROM 0.780000 TO 0.799000
+.meas tran minimo_16 MIN V(x) FROM 0.830000 TO 0.849000
+.meas tran maximo_16 MAX V(x) FROM 0.830000 TO 0.849000
+.meas tran pico_orcamento MAX V(orcamento) FROM 0 TO 0.85
+.meas tran pico_sem_protecao MAX V(sem_protecao) FROM 0 TO 0.85
+.meas tran uso_protecao AVG V(guard_ativo) FROM 0 TO 0.85
+.meas tran uso_reserva AVG V(reserva_ativa) FROM 0 TO 0.85
+.meas tran sobra MAX V(sobra) FROM 0.03 TO 0.85
+.meas tran falta MAX V(falta) FROM 0.03 TO 0.85
+.end

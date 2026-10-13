@@ -1,0 +1,35 @@
+* Bancada bidirecional; degraus e carga oscilante.
+.include atuadores_etapa14.inc
+.param caso=0
+.param margem_limite=90u gbw_limit=100Meg tau_cmd=2u
+.param erro_shunt=table(caso,0,-0.01,1,-0.01,2,-0.01,3,-0.01,4,0.01,5,0.01,6,0.01,7,0.01)
+.param vos_teste=table(caso,0,-0.0001,1,-0.0001,2,0.0001,3,0.0001,4,-0.0001,5,-0.0001,6,0.0001,7,0.0001)
+.param gbw_teste=table(caso,0,1000000.0,1,2000000.0,2,1000000.0,3,2000000.0,4,1000000.0,5,2000000.0,6,1000000.0,7,2000000.0)
+.step param caso 0 7 1
+Vp vp 0 5
+Vm vm 0 -5
+VloadY y 0 SINE(0 1.4 1000)
+VloadX x 0 SINE(0 1.2 730)
+VpedidoY pedido_y 0 PWL(0 0 20u 0 20.1u 40u 70u 40u 70.1u 250u 130u 250u 130.1u -250u 190u -250u 190.1u 0 230u 0 230.1u 80u 290u 80u 290.1u -80u 350u -80u 350.1u 0)
+VpedidoX pedido_x 0 PWL(0 0 20u 0 20.1u 40u 70u 40u 70.1u 250u 130u 250u 130.1u 250u 190u 250u 190.1u 0 230u 0 230.1u 10u 290u 10u 290.1u -10u 350u -10u 350.1u 0)
+BnormY norm_y 0 V={10000*V(pedido_y)}
+BnormX norm_x 0 V={10000*V(pedido_x)}
+RcmdY norm_y filtro_y 1000
+CcmdY filtro_y 0 {tau_cmd/1000} IC=0
+RcmdX norm_x filtro_x 1000
+CcmdX filtro_x 0 {tau_cmd/1000} IC=0
+BcmdY cmd_y 0 V={V(filtro_y)/10000*V(ganho)}
+BcmdX cmd_x 0 V={V(filtro_x)/10000*V(ganho)}
+XY cmd_y y vp vm med_y habilitado ATUADOR erro_r={erro_shunt} voff={vos_teste} gbw={gbw_teste}
+XX cmd_x x vp vm med_x habilitado ATUADOR erro_r={erro_shunt} voff={vos_teste} gbw={gbw_teste}
+Rstart vp partida 100k
+Cstart partida 0 100p IC=0
+Bready habilitado 0 V={if(V(partida)>3,if(V(vp)>4,1,0),0)}
+XL med_y med_x vp vm ganho LIMITADOR
+Btotal total 0 V={abs(V(med_y))+abs(V(med_x))}
+.save V(habilitado) V(total) V(ganho) V(med_y) V(med_x) I(VloadY) I(VloadX)
+.tran 0 400u 0 5n uic
+.meas tran pico MAX V(total) FROM 0 TO 400u
+.meas tran patamar AVG V(total) FROM 95u TO 125u
+.options plotwinsize=0 reltol=1e-6 vntol=1e-9 abstol=1e-12 threads=1 method=gear
+.end

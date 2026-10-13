@@ -1,0 +1,62 @@
+[
+  {
+    "caso": 0,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 1,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 2,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 3,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 4,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 5,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 2.5e-06
+  }
+]

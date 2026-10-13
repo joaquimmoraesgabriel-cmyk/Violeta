@@ -1,0 +1,50 @@
+[
+  {
+    "caso": 0,
+    "margem_limite": 9e-05,
+    "gbw_limit": 100000000.0,
+    "tau_cmd": 2e-06
+  },
+  {
+    "caso": 1,
+    "margem_limite": 9e-05,
+    "gbw_limit": 100000000.0,
+    "tau_cmd": 1e-05
+  },
+  {
+    "caso": 2,
+    "margem_limite": 9e-05,
+    "gbw_limit": 200000000.0,
+    "tau_cmd": 2e-06
+  },
+  {
+    "caso": 3,
+    "margem_limite": 9e-05,
+    "gbw_limit": 200000000.0,
+    "tau_cmd": 1e-05
+  },
+  {
+    "caso": 4,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 100000000.0,
+    "tau_cmd": 2e-06
+  },
+  {
+    "caso": 5,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 100000000.0,
+    "tau_cmd": 1e-05
+  },
+  {
+    "caso": 6,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 200000000.0,
+    "tau_cmd": 2e-06
+  },
+  {
+    "caso": 7,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 200000000.0,
+    "tau_cmd": 1e-05
+  }
+]

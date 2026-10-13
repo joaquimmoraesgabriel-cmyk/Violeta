@@ -1,0 +1,15 @@
+{
+  "perfil": "ruido_alto",
+  "politica": "sorteio",
+  "semente": 73,
+  "dt_us": 100.0,
+  "despertar_us": 200.0,
+  "periodo_us": 5000.0,
+  "media_ligados": 3.0,
+  "max_ligados": 3,
+  "media_validos": 2.9168333137277966,
+  "tempo_sem_leitura_valida_ms": 9.1,
+  "trocas_individuais": 707,
+  "fracao_alarme_sem_falha": 0.4150099988236678,
+  "deteccoes": []
+}

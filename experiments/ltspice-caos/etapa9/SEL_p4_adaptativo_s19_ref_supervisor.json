@@ -1,0 +1,15 @@
+{
+  "perfil": "ruido_alto",
+  "politica": "adaptativo",
+  "semente": 19,
+  "dt_us": 100.0,
+  "despertar_us": 200.0,
+  "periodo_us": 5000.0,
+  "media_ligados": 7.150099988236678,
+  "max_ligados": 9,
+  "media_validos": 6.7181508057875545,
+  "tempo_sem_leitura_valida_ms": 0.2,
+  "trocas_individuais": 3669,
+  "fracao_alarme_sem_falha": 0.697682625573462,
+  "deteccoes": []
+}

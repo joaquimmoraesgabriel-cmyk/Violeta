@@ -1,0 +1,34 @@
+* Bancada bidirecional; degraus e carga oscilante.
+.include atuadores_antiwindup.inc
+.param caso=0
+.param margem_limite=table(caso,0,9e-05,1,9e-05,2,9e-05,3,9e-05,4,9.5e-05,5,9.5e-05,6,9.5e-05,7,9.5e-05)
+.param gbw_limit=table(caso,0,100000000.0,1,100000000.0,2,200000000.0,3,200000000.0,4,100000000.0,5,100000000.0,6,200000000.0,7,200000000.0)
+.param tau_cmd=table(caso,0,2e-06,1,1e-05,2,2e-06,3,1e-05,4,2e-06,5,1e-05,6,2e-06,7,1e-05)
+.step param caso 0 7 1
+Vp vp 0 5
+Vm vm 0 -5
+VloadY y 0 SINE(0 1.4 1000)
+VloadX x 0 SINE(0 1.2 730)
+VpedidoY pedido_y 0 PWL(0 0 20u 0 20.1u 40u 70u 40u 70.1u 250u 130u 250u 130.1u -250u 190u -250u 190.1u 0 230u 0 230.1u 80u 290u 80u 290.1u -80u 350u -80u 350.1u 0)
+VpedidoX pedido_x 0 PWL(0 0 20u 0 20.1u 40u 70u 40u 70.1u 250u 130u 250u 130.1u 250u 190u 250u 190.1u 0 230u 0 230.1u 10u 290u 10u 290.1u -10u 350u -10u 350.1u 0)
+BnormY norm_y 0 V={10000*V(pedido_y)}
+BnormX norm_x 0 V={10000*V(pedido_x)}
+RcmdY norm_y filtro_y 1000
+CcmdY filtro_y 0 {tau_cmd/1000} IC=0
+RcmdX norm_x filtro_x 1000
+CcmdX filtro_x 0 {tau_cmd/1000} IC=0
+BcmdY cmd_y 0 V={V(filtro_y)/10000*V(ganho)}
+BcmdX cmd_x 0 V={V(filtro_x)/10000*V(ganho)}
+XY cmd_y y vp vm med_y habilitado ATUADOR
+XX cmd_x x vp vm med_x habilitado ATUADOR
+Rstart vp partida 100k
+Cstart partida 0 100p IC=0
+Bready habilitado 0 V={if(V(partida)>3,if(V(vp)>4,1,0),0)}
+XL med_y med_x vp vm ganho LIMITADOR
+Btotal total 0 V={abs(V(med_y))+abs(V(med_x))}
+.save V(habilitado) V(total) V(ganho) V(med_y) V(med_x) I(VloadY) I(VloadX)
+.tran 0 400u 0 100n uic
+.meas tran pico MAX V(total) FROM 0 TO 400u
+.meas tran patamar AVG V(total) FROM 95u TO 125u
+.options plotwinsize=0 reltol=1e-6 vntol=1e-9 abstol=1e-12 threads=1
+.end

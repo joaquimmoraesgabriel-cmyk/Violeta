@@ -1,0 +1,32 @@
+[
+  {
+    "realizacao": "Circuito n\u00e3o ideal, 90 \u00b5A",
+    "corretas_125": 26,
+    "corretas_0625": 21,
+    "corretas_ambos": 16,
+    "divergencias": 15,
+    "pico_tensoes_uA": 90.01576900482178,
+    "alarmes_indevidos": 3,
+    "falhas_corrente": 0
+  },
+  {
+    "realizacao": "Atuador ideal com RC, 90 \u00b5A",
+    "corretas_125": 25,
+    "corretas_0625": 25,
+    "corretas_ambos": 20,
+    "divergencias": 10,
+    "pico_tensoes_uA": 90.00015258789064,
+    "alarmes_indevidos": 2,
+    "falhas_corrente": 0
+  },
+  {
+    "realizacao": "Atuador ideal com RC, 100 \u00b5A",
+    "corretas_125": 28,
+    "corretas_0625": 28,
+    "corretas_ambos": 23,
+    "divergencias": 10,
+    "pico_tensoes_uA": 100.00020265579224,
+    "alarmes_indevidos": 3,
+    "falhas_corrente": 0
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "aprovado": true,
+  "amostras": 10000,
+  "concessoes_por_malha": 1001,
+  "escopo": "Projecao instantanea ANTES do filtro e da prioridade E; nao e otimizacao da resposta logica."
+}

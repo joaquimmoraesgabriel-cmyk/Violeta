@@ -1,0 +1,50 @@
+[
+  {
+    "caso": 0,
+    "erro_shunt": -0.01,
+    "vos_teste": -0.0001,
+    "gbw_teste": 1000000.0
+  },
+  {
+    "caso": 1,
+    "erro_shunt": -0.01,
+    "vos_teste": -0.0001,
+    "gbw_teste": 2000000.0
+  },
+  {
+    "caso": 2,
+    "erro_shunt": -0.01,
+    "vos_teste": 0.0001,
+    "gbw_teste": 1000000.0
+  },
+  {
+    "caso": 3,
+    "erro_shunt": -0.01,
+    "vos_teste": 0.0001,
+    "gbw_teste": 2000000.0
+  },
+  {
+    "caso": 4,
+    "erro_shunt": 0.01,
+    "vos_teste": -0.0001,
+    "gbw_teste": 1000000.0
+  },
+  {
+    "caso": 5,
+    "erro_shunt": 0.01,
+    "vos_teste": -0.0001,
+    "gbw_teste": 2000000.0
+  },
+  {
+    "caso": 6,
+    "erro_shunt": 0.01,
+    "vos_teste": 0.0001,
+    "gbw_teste": 1000000.0
+  },
+  {
+    "caso": 7,
+    "erro_shunt": 0.01,
+    "vos_teste": 0.0001,
+    "gbw_teste": 2000000.0
+  }
+]

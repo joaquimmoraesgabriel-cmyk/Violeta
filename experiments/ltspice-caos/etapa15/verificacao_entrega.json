@@ -1,0 +1,14 @@
+{
+  "trajetorias": 104,
+  "janelas": 1768,
+  "csvs_consistentes": true,
+  "originais_preservados": true,
+  "alteracao_restrita_ao_isolamento": true,
+  "regressao_corrente_tensoes_ok": true,
+  "regressao_corrente_resistores_ok": true,
+  "regressao_corrente_sondas_ok": true,
+  "regressao_sem_alarmes_indevidos": true,
+  "reserva_em_todas_falhas": true,
+  "sem_reserva_em_saudaveis": true,
+  "falhas_logicas_restantes": 89
+}

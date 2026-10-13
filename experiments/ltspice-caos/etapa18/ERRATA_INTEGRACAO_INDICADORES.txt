@@ -1,0 +1,27 @@
+Correcao metodologica descoberta durante a Etapa18
+
+No helper compartilhado analisar_etapa16.py, a media temporal usava
+np.trapezoid diretamente sobre indicadores booleanos. No NumPy desta
+instalacao, True + True permanece booleano True; um sinal constante
+verdadeiro nos tempos [0,0.5,1] integrava 0.5 em vez de 1.
+
+Corrigido o helper para converter a entrada a float antes da integracao.
+Aplicada a mesma correcao ao novo analisador de cotas antes de sua
+auditoria completa. Nenhum circuito ou RAW anterior foi alterado.
+
+Afeta fracoes temporais anteriores de |x|>1, atividade de E, atividade
+do limitador e demanda real acima do limiar. A reanalise desses quatro
+campos FOI CONCLUIDA: 162 trajetorias unicas em 47 RAWs, atualizando
+184 registros das Etapas16/17 (22 referencias aparecem nas duas).
+Nao se multiplicaram valores por dois: as bordas foram reintegradas.
+Os JSONs de trajetorias/resumos e a tabela impressa da Etapa16 foram
+corrigidos. Backups preservados em backup_fracoes_anteriores; evidencia
+em correcao_fracoes_anteriores.json. O cache antigo sera regenerado
+na proxima analise, porque o hash do helper mudou.
+
+Nao afeta contagens de janelas, alarmes por any(), picos de corrente,
+RMS de residuos, RMS de g(x) ou variacao total de g(x). A decisao da
+Etapa17 (198/199/174 janelas) e os picos continuam calculados pelo
+mesmo metodo. Na referencia saudavel, a demanda >91 uA ocupa agora
+62.1519% do tempo (antes 31.12% na tabela). O relatorio Etapa18 usa
+somente fracoes calculadas com a conversao correta.

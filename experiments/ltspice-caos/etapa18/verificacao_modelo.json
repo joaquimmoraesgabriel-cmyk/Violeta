@@ -1,0 +1,12 @@
+{
+  "casos_alocacao": 600000,
+  "trajetorias_planejadas": 64,
+  "sem_acesso_do_monitor_a_falha": true,
+  "sha256_modelo": "8b06ac4b3fcaec09f8d1113b51e7021145b6b434317d487bb04610aafd5e9767",
+  "sha256_v2": "e890e7bc20320e5f1a2a1492751f95a4b747b741907db9044451e035a74542b8",
+  "intervalo_idade_cantos_us": [
+    -11.25,
+    51.25
+  ],
+  "nota": "Verificacao algebrica e estrutural; nao prova realizacao em hardware."
+}

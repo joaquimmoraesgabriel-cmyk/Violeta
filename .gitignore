@@ -1,0 +1,65 @@
+# Credenciais e arquivos privados
+.env
+.env.*
+!.env.example
+!.env.*.example
+/secrets/
+/private/
+*.key
+*.pem
+*.p12
+*.pfx
+keypair*.json
+*-keypair.json
+seed*.txt
+mnemonic*.txt
+
+# Dados operacionais e recuperação
+/data/
+/runtime/
+/backups/
+/exports/
+/logs/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.vault
+*.log
+!experiments/ltspice-caos/**/*.log
+*.dump
+
+# Dependências, builds e relatórios
+node_modules/
+.pnpm-store/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Arquivos do sistema/editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# ChaosLab: ambientes, transientes e formas de onda regeneráveis
+.venv/
+.runtime/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.raw
+!*.log.raw
+chaoslab/results/
+*.tmp
+*.lock
+experiments/ltspice-caos/etapa19/progress_cases/
+experiments/ltspice-caos/etapa19/progresso.json
+# Acervo local de projetos antigos, separado da publicação desta pesquisa
+experiments/ltspice-caos/manutencao_armazenamento/pesquisas_anteriores_fontes.zip

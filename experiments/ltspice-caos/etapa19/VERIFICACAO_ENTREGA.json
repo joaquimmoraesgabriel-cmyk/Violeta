@@ -1,0 +1,300 @@
+{
+  "cases": 41,
+  "windows": 71156,
+  "portable_bytes": 8155019,
+  "core_sha256": "aacd24fd53246cc1f3f0f258b2c469137064a774c69511b573f24f0ae73d097e",
+  "healthy_observer_state_bitwise_equal": true,
+  "nominal_unlimited_state_bitwise_equal": true,
+  "classifications_recomputed": true,
+  "all_registered_cases_complete": true,
+  "note": "Checks verify serialized consistency and algebraic bounds, not physical hardware or between-grid extrema.",
+  "checks": [
+    {
+      "name": "ablation_actuator",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ablation_coordinator",
+      "windows": 34,
+      "correct_recomputed": 21,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ablation_ideal",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ablation_nominal",
+      "windows": 34,
+      "correct_recomputed": 34,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ablation_sensors",
+      "windows": 34,
+      "correct_recomputed": 26,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ablation_unlimited",
+      "windows": 34,
+      "correct_recomputed": 34,
+      "budget_applies": false,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_common_minus_effective",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_common_minus_quota",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_common_plus_effective",
+      "windows": 34,
+      "correct_recomputed": 22,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_common_plus_quota",
+      "windows": 34,
+      "correct_recomputed": 23,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_l2_minus_effective",
+      "windows": 34,
+      "correct_recomputed": 27,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_l2_minus_quota",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_l2_plus_effective",
+      "windows": 34,
+      "correct_recomputed": 22,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "corner_l2_plus_quota",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_bias_effective",
+      "windows": 10000,
+      "correct_recomputed": 7287,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_bias_off",
+      "windows": 10000,
+      "correct_recomputed": 7101,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_bias_quota",
+      "windows": 10000,
+      "correct_recomputed": 7218,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_healthy_common",
+      "windows": 10000,
+      "correct_recomputed": 6951,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_healthy_effective",
+      "windows": 10000,
+      "correct_recomputed": 7151,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_healthy_off",
+      "windows": 10000,
+      "correct_recomputed": 7151,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "ensemble_healthy_quota",
+      "windows": 10000,
+      "correct_recomputed": 7151,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_bias_effective",
+      "windows": 34,
+      "correct_recomputed": 26,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_bias_quota",
+      "windows": 34,
+      "correct_recomputed": 26,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_double_effective",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_double_quota",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_dropout_effective",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_dropout_quota",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_replay_effective",
+      "windows": 34,
+      "correct_recomputed": 22,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_replay_quota",
+      "windows": 34,
+      "correct_recomputed": 22,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_stale_effective",
+      "windows": 34,
+      "correct_recomputed": 22,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_stale_quota",
+      "windows": 34,
+      "correct_recomputed": 22,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_starve_effective",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "fault_starve_quota",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "matched_bias_effective",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "matched_bias_quota",
+      "windows": 34,
+      "correct_recomputed": 25,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "refine_effective_1.25",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "refine_effective_2.5",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "refine_effective_5",
+      "windows": 34,
+      "correct_recomputed": 23,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "refine_quota_1.25",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "refine_quota_2.5",
+      "windows": 34,
+      "correct_recomputed": 24,
+      "budget_applies": true,
+      "budget_ok": true
+    },
+    {
+      "name": "refine_quota_5",
+      "windows": 34,
+      "correct_recomputed": 23,
+      "budget_applies": true,
+      "budget_ok": true
+    }
+  ]
+}

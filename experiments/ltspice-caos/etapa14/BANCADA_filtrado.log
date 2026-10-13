@@ -1,0 +1,58 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\BANCADA_filtrado.cir
+Start Time: Mon Oct 12 14:10:00 2026
+Options:plotwinsize=0 reltol=1e-6 vntol=1e-9 abstol=1e-12 threads=1
+
+.step caso=0
+solver = Normal
+Maximum thread count: 1
+tnom = 27
+temp = 27
+method = trap
+reltol = 1e-06
+volttol = 1e-09
+Per .tran options, skipping operating point for transient analysis.
+
+.step caso=1
+
+.step caso=2
+
+.step caso=3
+
+.step caso=4
+
+.step caso=5
+
+.step caso=6
+
+.step caso=7
+Total elapsed time: 1.744 seconds.
+Total iterations: 12944
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\BANCADA_filtrado.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\atuadores_antiwindup.inc
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\UniversalOpAmp2.lib
+
+
+Measurement: pico
+  step	MAX(V(total))	FROM	TO
+     1	9.67994565144e-05	0	0.0004
+     2	9.16906574275e-05	0	0.0004
+     3	9.45566498558e-05	0	0.0004
+     4	9.11550087039e-05	0	0.0004
+     5	0.000101868543425	0	0.0004
+     6	9.66272928054e-05	0	0.0004
+     7	9.96742091957e-05	0	0.0004
+     8	9.61193945841e-05	0	0.0004
+
+Measurement: patamar
+  step	AVG(V(total))	FROM	TO
+     1	9.04515643562e-05	9.5e-05	0.000125
+     2	9.04587984565e-05	9.5e-05	0.000125
+     3	9.04513825071e-05	9.5e-05	0.000125
+     4	9.04487810345e-05	9.5e-05	0.000125
+     5	9.54224361967e-05	9.5e-05	0.000125
+     6	9.54292796041e-05	9.5e-05	0.000125
+     7	9.5422275327e-05	9.5e-05	0.000125
+     8	9.54198792719e-05	9.5e-05	0.000125

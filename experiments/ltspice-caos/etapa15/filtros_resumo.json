@@ -1,0 +1,212 @@
+[
+  {
+    "arquivo": "BUF_p1_f0",
+    "referencia": "EXP_p1_f0_d1",
+    "antes": {
+      "corretas": 68,
+      "janelas": 68,
+      "corretas_ambos": 34,
+      "divergencias": 0,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00611305236816,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 34,
+        "6.25e-07": 34
+      }
+    },
+    "depois": {
+      "corretas": 68,
+      "janelas": 68,
+      "corretas_ambos": 34,
+      "divergencias": 0,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00784158706666,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 34,
+        "6.25e-07": 34
+      }
+    }
+  },
+  {
+    "arquivo": "BUF_p1_f4",
+    "referencia": "EXP_p1_f4_d1",
+    "antes": {
+      "corretas": 68,
+      "janelas": 68,
+      "corretas_ambos": 34,
+      "divergencias": 0,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00611305236816,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 34,
+        "6.25e-07": 34
+      }
+    },
+    "depois": {
+      "corretas": 68,
+      "janelas": 68,
+      "corretas_ambos": 34,
+      "divergencias": 0,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00670909881593,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 34,
+        "6.25e-07": 34
+      }
+    }
+  },
+  {
+    "arquivo": "BUF_p3_f0",
+    "referencia": "EXP_p3_f0_d1",
+    "antes": {
+      "corretas": 47,
+      "janelas": 68,
+      "corretas_ambos": 16,
+      "divergencias": 15,
+      "alarmes_indevidos": 3,
+      "pico_tensoes_uA": 90.01576900482178,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 26,
+        "6.25e-07": 21
+      }
+    },
+    "depois": {
+      "corretas": 51,
+      "janelas": 68,
+      "corretas_ambos": 20,
+      "divergencias": 11,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.01713991165161,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 28,
+        "6.25e-07": 23
+      }
+    }
+  },
+  {
+    "arquivo": "BUF_p3_f4",
+    "referencia": "EXP_p3_f4_d1",
+    "antes": {
+      "corretas": 50,
+      "janelas": 68,
+      "corretas_ambos": 19,
+      "divergencias": 12,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.01576900482178,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 25,
+        "6.25e-07": 25
+      }
+    },
+    "depois": {
+      "corretas": 49,
+      "janelas": 68,
+      "corretas_ambos": 20,
+      "divergencias": 9,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.01713991165161,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 28,
+        "6.25e-07": 21
+      }
+    }
+  },
+  {
+    "arquivo": "BUF_p3_f2",
+    "referencia": "EXP_p3_f2_d1",
+    "antes": {
+      "corretas": 44,
+      "janelas": 68,
+      "corretas_ambos": 17,
+      "divergencias": 10,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00968933105469,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 24,
+        "6.25e-07": 20
+      }
+    },
+    "depois": {
+      "corretas": 49,
+      "janelas": 68,
+      "corretas_ambos": 19,
+      "divergencias": 11,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.01028537750243,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 24,
+        "6.25e-07": 25
+      }
+    }
+  },
+  {
+    "arquivo": "BUF_p3_f3",
+    "referencia": "EXP_p3_f3_d1",
+    "antes": {
+      "corretas": 52,
+      "janelas": 68,
+      "corretas_ambos": 20,
+      "divergencias": 12,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.01576900482178,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 27,
+        "6.25e-07": 25
+      }
+    },
+    "depois": {
+      "corretas": 49,
+      "janelas": 68,
+      "corretas_ambos": 19,
+      "divergencias": 11,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.01713991165161,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 27,
+        "6.25e-07": 22
+      }
+    }
+  },
+  {
+    "arquivo": "BUF_ideal90",
+    "referencia": "ABL_ideal_90",
+    "antes": {
+      "corretas": 50,
+      "janelas": 68,
+      "corretas_ambos": 20,
+      "divergencias": 10,
+      "alarmes_indevidos": 2,
+      "pico_tensoes_uA": 90.00015258789064,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 25,
+        "6.25e-07": 25
+      }
+    },
+    "depois": {
+      "corretas": 53,
+      "janelas": 68,
+      "corretas_ambos": 21,
+      "divergencias": 11,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00015258789064,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 29,
+        "6.25e-07": 24
+      }
+    }
+  }
+]

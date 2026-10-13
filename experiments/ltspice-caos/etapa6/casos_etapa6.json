@@ -1,0 +1,386 @@
+[
+  {
+    "caso": 0,
+    "perfil": 0,
+    "topologia": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 1,
+    "perfil": 0,
+    "topologia": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 2,
+    "perfil": 0,
+    "topologia": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 3,
+    "perfil": 0,
+    "topologia": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 4,
+    "perfil": 0,
+    "topologia": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 5,
+    "perfil": 0,
+    "topologia": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 6,
+    "perfil": 0,
+    "topologia": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 7,
+    "perfil": 0,
+    "topologia": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 8,
+    "perfil": 0,
+    "topologia": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 9,
+    "perfil": 0,
+    "topologia": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 10,
+    "perfil": 0,
+    "topologia": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 11,
+    "perfil": 0,
+    "topologia": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 12,
+    "perfil": 0,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 13,
+    "perfil": 0,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 14,
+    "perfil": 0,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 15,
+    "perfil": 0,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 16,
+    "perfil": 1,
+    "topologia": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 17,
+    "perfil": 1,
+    "topologia": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 18,
+    "perfil": 1,
+    "topologia": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 19,
+    "perfil": 1,
+    "topologia": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 20,
+    "perfil": 1,
+    "topologia": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 21,
+    "perfil": 1,
+    "topologia": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 22,
+    "perfil": 1,
+    "topologia": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 23,
+    "perfil": 1,
+    "topologia": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 24,
+    "perfil": 1,
+    "topologia": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 25,
+    "perfil": 1,
+    "topologia": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 26,
+    "perfil": 1,
+    "topologia": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 27,
+    "perfil": 1,
+    "topologia": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 28,
+    "perfil": 1,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 29,
+    "perfil": 1,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 30,
+    "perfil": 1,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 31,
+    "perfil": 1,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 32,
+    "perfil": 2,
+    "topologia": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 33,
+    "perfil": 2,
+    "topologia": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 34,
+    "perfil": 2,
+    "topologia": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 35,
+    "perfil": 2,
+    "topologia": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 36,
+    "perfil": 2,
+    "topologia": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 37,
+    "perfil": 2,
+    "topologia": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 38,
+    "perfil": 2,
+    "topologia": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 39,
+    "perfil": 2,
+    "topologia": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 40,
+    "perfil": 2,
+    "topologia": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 41,
+    "perfil": 2,
+    "topologia": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 42,
+    "perfil": 2,
+    "topologia": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 43,
+    "perfil": 2,
+    "topologia": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 44,
+    "perfil": 2,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 45,
+    "perfil": 2,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 5
+  },
+  {
+    "caso": 46,
+    "perfil": 2,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  },
+  {
+    "caso": 47,
+    "perfil": 2,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo_tempo_us": 2.5
+  }
+]

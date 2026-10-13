@@ -1,0 +1,98 @@
+[
+  {
+    "nome": "SEL_p0_nove_fixos_s19_ref",
+    "perfil": "saudaveis",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p0_nove_fixos_s19"
+  },
+  {
+    "nome": "SEL_p0_adaptativo_s19_ref",
+    "perfil": "saudaveis",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p0_adaptativo_s19"
+  },
+  {
+    "nome": "SEL_p2_nove_fixos_s19_ref",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p2_nove_fixos_s19"
+  },
+  {
+    "nome": "SEL_p2_adaptativo_s19_ref",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p2_adaptativo_s19"
+  },
+  {
+    "nome": "SEL_p3_nove_fixos_s19_ref",
+    "perfil": "erro_comum",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p3_nove_fixos_s19"
+  },
+  {
+    "nome": "SEL_p3_adaptativo_s19_ref",
+    "perfil": "erro_comum",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p3_adaptativo_s19"
+  },
+  {
+    "nome": "SEL_p4_nove_fixos_s19_ref",
+    "perfil": "ruido_alto",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p4_nove_fixos_s19"
+  },
+  {
+    "nome": "SEL_p4_adaptativo_s19_ref",
+    "perfil": "ruido_alto",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p4_adaptativo_s19"
+  }
+]

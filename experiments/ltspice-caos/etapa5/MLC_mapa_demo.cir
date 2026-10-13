@@ -1,0 +1,118 @@
+* Demonstracao: 500 Hz, cinco atrasos e pilar desligado.
+.include MLC_mapa.inc
+Va entrada_a 0 PWL(0.000000 0 0.050000 0 0.050001 0 0.100000 0 0.100001 0 0.150000 0 0.150001 0 0.200000 0 0.200001 1 0.250000 1 0.250001 0 0.300000 0 0.300001 1 0.350000 1 0.350001 0 0.400000 0 0.400001 0 0.450000 0 0.450001 1 0.500000 1 0.500001 0 0.550000 0 0.550001 1 0.600000 1 0.600001 1 0.650000 1 0.650001 1 0.700000 1 0.700001 1 0.750000 1 0.750001 1 0.800000 1 0.800001 0 0.850000 0)
+Vb entrada_b 0 PWL(0.000000 0 0.050000 0 0.050001 0 0.100000 0 0.100001 1 0.150000 1 0.150001 0 0.200000 0 0.200001 0 0.250000 0 0.250001 0 0.300000 0 0.300001 1 0.350000 1 0.350001 1 0.400000 1 0.400001 1 0.450000 1 0.450001 0 0.500000 0 0.500001 1 0.550000 1 0.550001 1 0.600000 1 0.600001 0 0.650000 0 0.650001 0 0.700000 0 0.700001 1 0.750000 1 0.750001 1 0.800000 1 0.800001 0 0.850000 0)
+.param caso=25 configuracao=mod(floor(caso/4),6)
+.param frequencia=table(floor(caso/24),0,100,1,500,2,1000)
+.param latencia=table(configuracao,0,50u,1,100u,2,200u,3,350u,4,500u,5,50u)
+.param modo=if(configuracao>4.5,0,2) perfil=2
+.param tau=100u limite_corrente=20u erro_sensor=0.0002 y_inicial=-0.2
+.param x_inicial=if(mod(caso,2),0.37,-0.37) passo=if(mod(floor(caso/2),2),2.5u,5u)
+.step param caso list 25 29 33 37 41 45
+.save V(x) V(saida) V(saturacao) V(tracking) I(Bcorrecao)
+.save V(y) V(entrada_a) V(entrada_b) V(perturbacao) V(ajuste)
+.tran 0 0.85 0 {passo} uic
+.meas tran minimo_00 MIN V(x) FROM 0.030000 TO 0.049000
+.meas tran maximo_00 MAX V(x) FROM 0.030000 TO 0.049000
+.meas tran media_00 AVG V(x) FROM 0.030000 TO 0.049000
+.meas tran positivo_00 AVG V(saida) FROM 0.030000 TO 0.049000
+.meas tran saturado_00 AVG V(saturacao) FROM 0.030000 TO 0.049000
+.meas tran tracking_00 RMS V(tracking) FROM 0.030000 TO 0.049000
+.meas tran minimo_01 MIN V(x) FROM 0.080000 TO 0.099000
+.meas tran maximo_01 MAX V(x) FROM 0.080000 TO 0.099000
+.meas tran media_01 AVG V(x) FROM 0.080000 TO 0.099000
+.meas tran positivo_01 AVG V(saida) FROM 0.080000 TO 0.099000
+.meas tran saturado_01 AVG V(saturacao) FROM 0.080000 TO 0.099000
+.meas tran tracking_01 RMS V(tracking) FROM 0.080000 TO 0.099000
+.meas tran minimo_02 MIN V(x) FROM 0.130000 TO 0.149000
+.meas tran maximo_02 MAX V(x) FROM 0.130000 TO 0.149000
+.meas tran media_02 AVG V(x) FROM 0.130000 TO 0.149000
+.meas tran positivo_02 AVG V(saida) FROM 0.130000 TO 0.149000
+.meas tran saturado_02 AVG V(saturacao) FROM 0.130000 TO 0.149000
+.meas tran tracking_02 RMS V(tracking) FROM 0.130000 TO 0.149000
+.meas tran minimo_03 MIN V(x) FROM 0.180000 TO 0.199000
+.meas tran maximo_03 MAX V(x) FROM 0.180000 TO 0.199000
+.meas tran media_03 AVG V(x) FROM 0.180000 TO 0.199000
+.meas tran positivo_03 AVG V(saida) FROM 0.180000 TO 0.199000
+.meas tran saturado_03 AVG V(saturacao) FROM 0.180000 TO 0.199000
+.meas tran tracking_03 RMS V(tracking) FROM 0.180000 TO 0.199000
+.meas tran minimo_04 MIN V(x) FROM 0.230000 TO 0.249000
+.meas tran maximo_04 MAX V(x) FROM 0.230000 TO 0.249000
+.meas tran media_04 AVG V(x) FROM 0.230000 TO 0.249000
+.meas tran positivo_04 AVG V(saida) FROM 0.230000 TO 0.249000
+.meas tran saturado_04 AVG V(saturacao) FROM 0.230000 TO 0.249000
+.meas tran tracking_04 RMS V(tracking) FROM 0.230000 TO 0.249000
+.meas tran minimo_05 MIN V(x) FROM 0.280000 TO 0.299000
+.meas tran maximo_05 MAX V(x) FROM 0.280000 TO 0.299000
+.meas tran media_05 AVG V(x) FROM 0.280000 TO 0.299000
+.meas tran positivo_05 AVG V(saida) FROM 0.280000 TO 0.299000
+.meas tran saturado_05 AVG V(saturacao) FROM 0.280000 TO 0.299000
+.meas tran tracking_05 RMS V(tracking) FROM 0.280000 TO 0.299000
+.meas tran minimo_06 MIN V(x) FROM 0.330000 TO 0.349000
+.meas tran maximo_06 MAX V(x) FROM 0.330000 TO 0.349000
+.meas tran media_06 AVG V(x) FROM 0.330000 TO 0.349000
+.meas tran positivo_06 AVG V(saida) FROM 0.330000 TO 0.349000
+.meas tran saturado_06 AVG V(saturacao) FROM 0.330000 TO 0.349000
+.meas tran tracking_06 RMS V(tracking) FROM 0.330000 TO 0.349000
+.meas tran minimo_07 MIN V(x) FROM 0.380000 TO 0.399000
+.meas tran maximo_07 MAX V(x) FROM 0.380000 TO 0.399000
+.meas tran media_07 AVG V(x) FROM 0.380000 TO 0.399000
+.meas tran positivo_07 AVG V(saida) FROM 0.380000 TO 0.399000
+.meas tran saturado_07 AVG V(saturacao) FROM 0.380000 TO 0.399000
+.meas tran tracking_07 RMS V(tracking) FROM 0.380000 TO 0.399000
+.meas tran minimo_08 MIN V(x) FROM 0.430000 TO 0.449000
+.meas tran maximo_08 MAX V(x) FROM 0.430000 TO 0.449000
+.meas tran media_08 AVG V(x) FROM 0.430000 TO 0.449000
+.meas tran positivo_08 AVG V(saida) FROM 0.430000 TO 0.449000
+.meas tran saturado_08 AVG V(saturacao) FROM 0.430000 TO 0.449000
+.meas tran tracking_08 RMS V(tracking) FROM 0.430000 TO 0.449000
+.meas tran minimo_09 MIN V(x) FROM 0.480000 TO 0.499000
+.meas tran maximo_09 MAX V(x) FROM 0.480000 TO 0.499000
+.meas tran media_09 AVG V(x) FROM 0.480000 TO 0.499000
+.meas tran positivo_09 AVG V(saida) FROM 0.480000 TO 0.499000
+.meas tran saturado_09 AVG V(saturacao) FROM 0.480000 TO 0.499000
+.meas tran tracking_09 RMS V(tracking) FROM 0.480000 TO 0.499000
+.meas tran minimo_10 MIN V(x) FROM 0.530000 TO 0.549000
+.meas tran maximo_10 MAX V(x) FROM 0.530000 TO 0.549000
+.meas tran media_10 AVG V(x) FROM 0.530000 TO 0.549000
+.meas tran positivo_10 AVG V(saida) FROM 0.530000 TO 0.549000
+.meas tran saturado_10 AVG V(saturacao) FROM 0.530000 TO 0.549000
+.meas tran tracking_10 RMS V(tracking) FROM 0.530000 TO 0.549000
+.meas tran minimo_11 MIN V(x) FROM 0.580000 TO 0.599000
+.meas tran maximo_11 MAX V(x) FROM 0.580000 TO 0.599000
+.meas tran media_11 AVG V(x) FROM 0.580000 TO 0.599000
+.meas tran positivo_11 AVG V(saida) FROM 0.580000 TO 0.599000
+.meas tran saturado_11 AVG V(saturacao) FROM 0.580000 TO 0.599000
+.meas tran tracking_11 RMS V(tracking) FROM 0.580000 TO 0.599000
+.meas tran minimo_12 MIN V(x) FROM 0.630000 TO 0.649000
+.meas tran maximo_12 MAX V(x) FROM 0.630000 TO 0.649000
+.meas tran media_12 AVG V(x) FROM 0.630000 TO 0.649000
+.meas tran positivo_12 AVG V(saida) FROM 0.630000 TO 0.649000
+.meas tran saturado_12 AVG V(saturacao) FROM 0.630000 TO 0.649000
+.meas tran tracking_12 RMS V(tracking) FROM 0.630000 TO 0.649000
+.meas tran minimo_13 MIN V(x) FROM 0.680000 TO 0.699000
+.meas tran maximo_13 MAX V(x) FROM 0.680000 TO 0.699000
+.meas tran media_13 AVG V(x) FROM 0.680000 TO 0.699000
+.meas tran positivo_13 AVG V(saida) FROM 0.680000 TO 0.699000
+.meas tran saturado_13 AVG V(saturacao) FROM 0.680000 TO 0.699000
+.meas tran tracking_13 RMS V(tracking) FROM 0.680000 TO 0.699000
+.meas tran minimo_14 MIN V(x) FROM 0.730000 TO 0.749000
+.meas tran maximo_14 MAX V(x) FROM 0.730000 TO 0.749000
+.meas tran media_14 AVG V(x) FROM 0.730000 TO 0.749000
+.meas tran positivo_14 AVG V(saida) FROM 0.730000 TO 0.749000
+.meas tran saturado_14 AVG V(saturacao) FROM 0.730000 TO 0.749000
+.meas tran tracking_14 RMS V(tracking) FROM 0.730000 TO 0.749000
+.meas tran minimo_15 MIN V(x) FROM 0.780000 TO 0.799000
+.meas tran maximo_15 MAX V(x) FROM 0.780000 TO 0.799000
+.meas tran media_15 AVG V(x) FROM 0.780000 TO 0.799000
+.meas tran positivo_15 AVG V(saida) FROM 0.780000 TO 0.799000
+.meas tran saturado_15 AVG V(saturacao) FROM 0.780000 TO 0.799000
+.meas tran tracking_15 RMS V(tracking) FROM 0.780000 TO 0.799000
+.meas tran minimo_16 MIN V(x) FROM 0.830000 TO 0.849000
+.meas tran maximo_16 MAX V(x) FROM 0.830000 TO 0.849000
+.meas tran media_16 AVG V(x) FROM 0.830000 TO 0.849000
+.meas tran positivo_16 AVG V(saida) FROM 0.830000 TO 0.849000
+.meas tran saturado_16 AVG V(saturacao) FROM 0.830000 TO 0.849000
+.meas tran tracking_16 RMS V(tracking) FROM 0.830000 TO 0.849000
+.meas tran pico_corrente MAX abs(I(Bcorrecao)) FROM 0 TO 0.85
+.end

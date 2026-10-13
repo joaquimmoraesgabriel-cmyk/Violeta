@@ -1,0 +1,127 @@
+CHAOSLAB — GUIA DE USO E CONTRATO CIENTÍFICO
+
+ABRIR
+Neste computador, o ambiente Python já está instalado.
+Na pasta Violeta, dê dois cliques em Abrir-ChaosLab.cmd. O navegador abrirá
+quando o servidor estiver pronto. Também é possível executar
+Iniciar-ChaosLab.ps1 no PowerShell e abrir o endereço abaixo.
+Endereço local: http://127.0.0.1:8501
+O servidor escuta somente neste computador. Fechar a aba não apaga resultados.
+Se iniciar o servidor manualmente, mantenha a janela do terminal aberta.
+Para encerrar um servidor iniciado no terminal, use Ctrl+C nesse terminal.
+Para consultar os ensaios, abra Resultados e clique em Atualizar execuções salvas.
+
+INSTALAÇÃO REPRODUZÍVEL (Python 3.12)
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install --no-cache-dir -r chaoslab\requirements-lock.txt
+.venv\Scripts\python.exe -m streamlit run chaoslab/app.py
+O arquivo requirements.txt fixa dependências principais; requirements-lock.txt
+registra todas as versões instaladas nesta entrega. Não é necessário LTspice
+para executar o ChaosLab. O LTspice continua necessário para a validação elétrica.
+
+USO
+O painel oferece ensaio exploratório, ensemble de 10.000 janelas, sequência legada
+da Etapa 18 e configuração personalizada. Cada bloco dura 50 ms; a classificação
+usa o sinal de X durante 30–49 ms. A entrada AND 11 exige mínimo > 0; as demais
+entradas exigem máximo < 0.
+O estado NÃO reinicia entre janelas. Os gráficos são amostrados; os acumuladores
+de mínimos/máximos e corrente usam todos os passos executados.
+
+500 trajetórias × 20 janelas = 10.000 janelas e 500 s agregados. Esse conjunto
+difere de uma única história contínua de 500 s. A inicialização varia X: os dois
+primeiros valores são −0,37 e +0,37; os demais são sorteados uniformemente no
+mesmo intervalo, com semente definida. Y permanece inicialmente em −0,2.
+Entradas e fases de perturbação são compartilhadas. Não interpretar as
+10.000 janelas como amostras independentes.
+Semente e parâmetros ficam no resultado; o núcleo não usa o relógio de parede.
+O benchmark inicial de 500 trajetórias × 1 janela, com h = 5 µs, levou 10,9 s.
+10.000 janelas levam minutos, variando com o passo e a concorrência.
+Uma trajetória única de 500 s custa muito mais.
+
+CAMADAS
+nominal: MLC sem perturbações nem correção.
+unlimited: cancelamento analítico ideal das perturbações em cada subestágio RK4;
+           controle de referência deliberadamente sem teto de corrente.
+ideal: perturbações, medição exata, atuação imediata e orçamento de 90 µA.
+sensors: acrescenta erro da medição, atraso de 50 µs e RC de 100 µs.
+coordinator: acrescenta transmissão/filtro; L2 = 5/10 µs, comum = 20/50 µs.
+actuator: acrescenta comando com RC de 2 µs e constante de tempo 1/(2π · 2 MHz),
+          como substituto matemático.
+O último perfil NÃO é o UniversalOpAmp2. Não inclui startup elétrico, saturação
+de chips, slew, shunts, térmica, parasitas, consumo da placa ou detector do topo.
+As falhas daqui atuam nas mensagens de cotas; não em comandos físicos do topo.
+
+EQUAÇÕES
+escala = 100 µs, Cx = Cy = 1 µF, g(x) = −0,55x − 0,235(|x+1| − |x−1|).
+dx/dt = [y − (1+pD)g(x)]/escala + (iD+iE)/Cx
+dy/dt = [−1,015(1+pA)y − x − 0,005 + pB + 0,005(2a−1+2b−1)
+         + (0,11+pC)sin(0,74t/escala)]/escala + iY/Cy
+A/B/C geram um único pedido assinado para Y antes de calcular módulos.
+O Pilar E conserva uma reserva local de até 5 µA dentro dos mesmos 90 µA;
+essa reserva é debitada de Y. Sem falha nos nove sensores simétricos de E,
+sua mediana coincide com a estimativa de D.
+Isso não equivale a validar 45 sensores físicos ou redundância de causa comum.
+
+INTEGRAÇÃO
+RK4 avança somente X/Y, com correntes mantidas por um passo. Controladores são
+amostrados e RCs avançam pela solução exata sob fonte constante (ZOH). O conjunto
+tem erro de separação entre blocos e NÃO é globalmente de quarta ordem.
+t = n*h; callbacks, cadência da interface e observadores não escolhem h.
+Atrasos fracionários usam interpolação linear de um histórico circular, com
+pré-história constante inicial. Entradas preservam uma rampa de 1 µs; passos maiores
+podem resolvê-la mal. Atrasos de amostragem das cascatas também exigem refino.
+Extremos são dos nós fixos e interpolação nas bordas; cruzamentos entre nós
+podem escapar. Convergência requer h, h/2 e h/4, horizontes curtos e estatísticas.
+Divergência caótica longa não prova sozinha erro, nem permite dispensar refino.
+
+FISCAL V2 E CONCESSÃO EFETIVA
+Comparação antiga: discrepância L1 entre cotas observadas e de referência,
+ambas filtradas.
+Nova: Gobs = min(|pedido_local|, clip(cota_msg+offset+ruído, 0, 90 µA));
+      Gref = min(|pedido_local|, clip(cota_ref, 0, 90 µA)).
+O min vem ANTES dos dois RCs de 4 µs. Limiar L1 = 6,5 µA. Heartbeat/faixa/soma/idade
+permanecem verificados nas mensagens cruas; clipping não valida mensagem ruim.
+Fiscal off desativa confirmação e comutação por memória; a guarda básica que
+substitui mensagens inválidas de heartbeat/faixa/soma por 45/45 µA continua ativa.
+Timer V2: carga de 50 µs, descarga de 20 µs, trip em 0,7, inibição inicial de
+2 ms e memória com RC de 1 µs, retida.
+Tempo de trip e de entrada da reserva são registrados separadamente.
+A referência recalcula política a partir de pedidos medidos, nunca recebe
+código de falha, perturbação verdadeira ou resposta AND do testbench.
+Reserva common usa proporcional imediato; matched usa política/filtro da
+referência independente (incluindo suas tolerâncias). Não há política de retorno
+automático ao supervisor. Relógios dos cantos derivam sem ressincronização;
+trajetórias longas podem alarmar por idade mesmo sem falha de comunicação.
+
+VALIDAÇÃO E REPRODUÇÃO
+.venv\Scripts\python.exe -m pytest chaoslab/tests -q --basetemp=.runtime/pytest
+.venv\Scripts\python.exe -m chaoslab.cli --config caminho.json --name ensaio
+.venv\Scripts\python.exe -m chaoslab.stage19 --prepare
+.venv\Scripts\python.exe -m chaoslab.stage19 --workers 3
+.venv\Scripts\python.exe -m chaoslab.archive_stage19
+.venv\Scripts\python.exe -m chaoslab.analyze
+O protocolo da Etapa 19 tem 41 casos e 71.156 janelas: sete ensembles de 10.000
+e 34 casos legados de 34 janelas. Os casos comparados reutilizam entradas,
+estados e semente.
+O runner retoma casos concluídos somente com a mesma assinatura e mesmo código.
+progresso.json e registros por caso permitem acompanhamento sem alterar o cálculo.
+
+ARMAZENAMENTO
+Resultados são arquivos JSON comprimidos com gzip, acompanhados de um índice
+pequeno, em chaoslab/results. Máximo de 32 MB por execução, 512 MB no conjunto
+e reserva de 10 GB livres. A gravação é atômica e usa lock entre processos;
+dados de entrada e pesquisas anteriores não são apagados automaticamente.
+Memória estimada de cada execução limitada a 512 MiB; o núcleo guarda acumuladores,
+históricos curtos e amostras. O limite é uma estimativa conservadora, não limite
+imposto pelo sistema operacional. O runner usa até 3 processos.
+O diretório results é ignorado pelo Git. Evidências compactas publicadas da Etapa 19
+ficam em etapa19/runs e resultados_portateis.json, com hashes do JSON e do gzip.
+O comando archive_stage19 publica apenas lotes completos, confere classificações
+pelos extremos e inclui comprovação de invariantes em VERIFICACAO_ENTREGA.json.
+RAWs antigos concluídos foram removidos após retenção autorizada; ver
+experiments/ltspice-caos/manutencao_armazenamento/NOTA_RETENCAO.txt.
+
+DOCUMENTAÇÃO DAS BIBLIOTECAS
+https://docs.streamlit.io/develop/concepts/architecture/fragments
+https://docs.streamlit.io/develop/api-reference/app-testing/st.testing.v1.apptest
+https://numpy.org/doc/stable/

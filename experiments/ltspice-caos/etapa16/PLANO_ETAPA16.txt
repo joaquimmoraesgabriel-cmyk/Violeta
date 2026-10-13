@@ -1,0 +1,49 @@
+Etapa 16 — Pilar E e separação entre capacidade, medição e alocação
+
+Hipótese: uma reserva autônoma E, dedicada a D, pode reduzir a falta de correção
+da deriva de g(x). Melhorar esse erro não implica melhorar a porta AND, pois
+Y também usa o mesmo orçamento. O total operacional permanece 90 µA, o teto
+de aceitação numérica 100,005 µA. Somar módulos de Y, D e E separadamente.
+
+Versão inicial E fixo: 70 µA compartilhados por Y/D e 20 µA reservados a E.
+Versão alternativa E livre: D mantém sua cota proporcional original de 90 µA;
+E recebe até 20 µA do restante, e Y recebe a diferença. Quando D não satura,
+o orçamento volta integralmente aos canais principais. A prioridade está na
+alocação local/proteção, não depende do comando falho do topo. E só pode
+corrigir a falta de D, no mesmo sentido, com zona morta de 1 µA. E não recebe
+código ou horário de falha, tabela lógica, nem sinais de A/B/C. Não é uma
+fonte adicional de corrente gratuita ou de energia independente.
+
+Controle D prioridade: duas saídas físicas e mesma alocação do E livre;
+somar o pedido E ao D antes do comando do topo. Assim separamos os efeitos
+de priorizar D e de ter uma terceira atuação autônoma. O detector antigo
+permanece ativo, com RCs de referência isolados e mesmos limiares.
+
+Nove leituras contínuas de E são explicitamente representadas por fontes
+comportamentais e uma mediana exata. São réplicas favoráveis do parâmetro D,
+com erro comum preservado. Não representam nove chips independentes.
+A/B/C/D mantêm suas réplicas únicas: 45 é a proposta de arquitetura (5 x 9),
+não a contagem de sensores independentes validada neste lote. O seletor
+adaptativo de B da etapa 9 não é transplantado sem validação.
+
+Piloto: E fixo, E livre, controle de prioridade, sem offsets, sensores 10x
+mais rápidos, rápidos sem offsets; cada um em 1,25/0,625 µs e x inicial
++/-0,37, com topo saudável. Referência histórica corrigida: 51/68 saudável,
+198/272 nas quatro condições de topo. Reanalisar RAWs originais para as
+mesmas métricas; não alterar resultados antigos.
+
+Expansão: candidato E e controle sob silêncio, atraso e inversão; comparar
+quatro condições (272 janelas por arquitetura). Se o piloto indicar perda,
+preservar e analisar em vez de ocultar. Testar erros de E, perturbação menor
+e um terceiro passo nos casos críticos antes de selecionar o próximo foco.
+
+Métricas: janelas com sinal correto durante toda leitura; margens; mudanças
+de classificação entre passos e acertos comuns; detecção/alarme indevido;
+corrente por tensão nos shunts, correntes dos resistores e sondas; RMS/pico
+do resíduo de compensação D+E em relação à deriva real; RMS/pico de g(x),
+variação total de g(x) por segundo, ocupação |x|>1; erro residual Y; uso E.
+Integrar no tempo (não média de amostras) em 30–850 ms para métricas globais.
+g(x) é uma função matemática: estas métricas não equivalem a estresse térmico.
+
+Não ajustar limiares para obter aprovação. Estes casos são pesquisa finita,
+não prova universal ou convergência ponto a ponto do sistema caótico.

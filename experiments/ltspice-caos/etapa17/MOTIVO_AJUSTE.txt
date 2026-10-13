@@ -1,0 +1,20 @@
+Registrado apos piloto, antes de executar o ajuste L2.
+Comum: 49/68, residual Y 44.660 uA, D 18.992.
+Grupos com emprestimo: 46/68, residual Y 48.962 uA, D 16.616.
+Grupos fixos: 38/68. Referencia: 51/68, Y 40.748, D 21.225.
+
+Hipotese: compartilhar a falta em termos absolutos dos pedidos pode aliviar Y
+sem definir uma prioridade fixa nem usar a resposta AND como entrada.
+Para pedidos positivos y,d com y+d>90, a projecao que minimiza
+(y-aY)^2+(d-aD)^2 sob aY+aD<=90 e aY,aD>=0 e:
+aY=clip((90+y-d)/2,0,90), aD=90-aY. Abaixo do teto, atende os dois.
+Esta propriedade vale para pedidos instantaneos estimados ANTES da reserva E.
+O filtro, erros de sensor e a prioridade E de ate 5 uA impedem afirmar que
+o resultado final minimiza o erro verdadeiro ou maximiza as janelas logicas.
+
+Dois controles: mesmo transporte 20 us/RC 50 us; e limite ideal com cota
+instantanea (comparavel ao piloto E5 da etapa16, ainda com atuadores fisicos).
+Nao sao chips prontos. Ambos mantem E ate 5 uA dentro dos 90 uA.
+Somente saudavel, dois passos e duas condicoes iniciais: 8 trajetorias.
+Nao expandir a conclusao para tolerancia a falhas ou convergencia em tres passos.
+Preservar modelo original em execucao; usar MLC_coordenador_E_l2.inc separado.

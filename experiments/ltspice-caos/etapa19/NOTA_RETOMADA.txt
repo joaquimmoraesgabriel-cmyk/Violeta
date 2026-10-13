@@ -1,0 +1,22 @@
+RECUPERAÇÃO OPERACIONAL DO LOTE — 12/10/2026
+
+Um trabalhador foi interrompido por PermissionError/WinError5 ao substituir
+seu arquivo de progresso enquanto o coordenador o lia no Windows. A exceção
+ficou aguardando o encerramento do ProcessPoolExecutor, e o painel parou de
+atualizar embora outros trabalhadores continuassem concluindo ensaios.
+
+Confirmado pelo traceback do processo; a mensagem original foi preservada em
+falha_lote.json, no caso ablation_ideal.
+A equação e o integrador não foram modificados. O hash do core registrado
+permanece o mesmo. Arquivos de resultados concluídos foram preservados.
+
+Correção: publicação atômica com repetição breve quando leitores Windows
+bloqueiam a troca; falha de telemetria não aborta o cálculo; falhas de execução
+são registradas individualmente sem ocultar progresso das demais. Na retomada,
+o runner reconhece assinaturas concluídas e limpa apenas instantâneos parciais
+de progresso dos casos que precisa repetir. Três trabalhadores identificados
+do lote foram encerrados para permitir a retomada; outros programas preservados.
+
+Teste de regressão simula leitor mantendo o arquivo ocupado nas duas primeiras
+tentativas e verifica publicação íntegra na terceira, sem truncar o anterior.
+Só a entrega completa auditada será usada no relatório científico.

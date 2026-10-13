@@ -1,0 +1,42 @@
+{
+  "casos": [
+    {
+      "modo": 0,
+      "cota_obsoleta": false,
+      "amostras": 100000,
+      "pico_uA": 90.00000000000001
+    },
+    {
+      "modo": 0,
+      "cota_obsoleta": true,
+      "amostras": 100000,
+      "pico_uA": 90.0
+    },
+    {
+      "modo": 1,
+      "cota_obsoleta": false,
+      "amostras": 100000,
+      "pico_uA": 90.0
+    },
+    {
+      "modo": 1,
+      "cota_obsoleta": true,
+      "amostras": 100000,
+      "pico_uA": 90.0
+    },
+    {
+      "modo": 2,
+      "cota_obsoleta": false,
+      "amostras": 100000,
+      "pico_uA": 90.0
+    },
+    {
+      "modo": 2,
+      "cota_obsoleta": true,
+      "amostras": 100000,
+      "pico_uA": 90.00000000000001
+    }
+  ],
+  "sha256_modelo": "ea142ea04ce44c47867d13123c41f0c677869217800d2778cbbf172ea51d46a0",
+  "aprovado": true
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "caso": 0,
+    "perfil_c": 1,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 1.25e-06
+  },
+  {
+    "caso": 1,
+    "perfil_c": 1,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 1.25e-06
+  },
+  {
+    "caso": 2,
+    "perfil_c": 1,
+    "topologia": 7,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 1.25e-06
+  },
+  {
+    "caso": 3,
+    "perfil_c": 1,
+    "topologia": 7,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 1.25e-06
+  },
+  {
+    "caso": 4,
+    "perfil_c": 1,
+    "topologia": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 6.25e-07
+  },
+  {
+    "caso": 5,
+    "perfil_c": 1,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 6.25e-07
+  },
+  {
+    "caso": 6,
+    "perfil_c": 1,
+    "topologia": 7,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 6.25e-07
+  },
+  {
+    "caso": 7,
+    "perfil_c": 1,
+    "topologia": 7,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 6.25e-07
+  }
+]

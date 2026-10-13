@@ -1,0 +1,42 @@
+RETENCAO DOS RESULTADOS LTSPICE
+
+A limpeza autorizada de 12/10/2026, 22:35 no horario de Sao Paulo,
+esta documentada em NOTA_RETENCAO.txt e limpeza_executada.json.
+
+Arquivos preservados:
+- manifesto_retencao.json: RAWs removidos, excecoes retidas, fontes/logs e hashes.
+- indice_extratos.json: 64 extratos da Etapa 18 e seus hashes/dimensoes.
+- extratos_etapa18/*.npz: series reduzidas e trechos nativos de eventos/picos.
+- pesquisas_anteriores_fontes.zip: copia reversivel das fontes/textos antigos.
+
+Ler um extrato em Python:
+
+    import json
+    import numpy as np
+    with np.load(caminho_npz, allow_pickle=False) as data:
+        canais = list(data['channels'])
+        tempo = data['time']
+        x = data['values'][:, canais.index('v(x)')]
+        parametros = json.loads(str(data['metadata']))['parameters']
+        tempo_eventos = data['native_time']
+        x_eventos = data['native_values'][:, canais.index('v(x)')]
+
+time/values sao pontos originais selecionados, ate 6000 por trajetoria.
+native_time/native_values preservam as amostras dos intervalos de eventos.
+original_indices/native_indices identificam as posicoes no RAW original.
+O metadata descreve intervalos, caso, parametros e origem. Nao usar pickle.
+
+Os trechos nativos podem ter lacunas entre intervalos: nao ligar as lacunas
+como se fossem uma curva continua. A serie reduzida tambem pode omitir
+extremos. As classificacoes oficiais permanecem em janelas.csv e as metricas
+em trajetorias.json/resumo.json; nao as recalcular a partir dos extratos.
+
+Os antigos analisadores/verificadores que exigem RAW integral precisarao de
+nova simulacao. Nao executar --partial sobre os resultados finais apenas
+porque os RAWs foram removidos: isso produziria uma analise vazia/incompleta.
+O laboratorio novo deve consumir os resultados finais existentes e os extratos.
+
+limpar_pesquisa.py e o registro executavel desta limpeza especifica, nao um
+servico periodico de exclusao. --execute recusa repetir uma limpeza concluida.
+auditar_armazenamento.py faz inventario sem excluir arquivos; conserva o
+inventario inicial e grava inventario_atual.json em novas consultas.

@@ -1,0 +1,48 @@
+ETAPA 17 — plano registrado antes dos resultados
+
+Hipotese: um coordenador de recursos associado a E pode redistribuir 90 uA entre
+A/B/C (atuador Y) e D/E (estado X), sem duplicar o comando do topo.
+Localizacao em E e conceitual: mudar somente o nome/local nao melhora um circuito.
+
+Comparar mesma planta, sensores, perturbações, duas condicoes iniciais, passos
+1.25 e 0.625 us e 17 janelas por trajetoria. Todos os resultados logicos serao
+medidos por min/max de X na janela inteira, sem selecionar so trechos favoraveis.
+
+Piloto: comum proporcional, grupos fixos 45/45, grupos com emprestimo da cota
+nao solicitada, e este ultimo com corrente de E desabilitada. Emprestimo alvo:
+qY=45+max(0,45-|pedidoD|)-max(0,45-|pedidoY|), limitado a [0,90] uA.
+qD=90-qY. Se ambos exigem mais de 45 uA, ambos conservam 45 antes da reserva E.
+Comum: qY=90*|Y|/(|Y|+|D|), qD complementar. Grupos fixos: 45/45.
+Transporte de 20 us e filtro de 50 us aplicados a fracao de Y; D recebe complemento.
+Esta concessao atomica e idealizada: futura realizacao precisa protocolo contra
+mensagens de geracoes diferentes. Nao se somam dois emprestimos independentes.
+
+E tem teto exploratorio de 5 uA (resultado inicial da etapa 16); somente entra
+quando D excede sua cota e concorda no sinal. Sua corrente e debitada de Y se
+necessario; isso mantem a prioridade limitada a D da etapa 16, explicitamente.
+Os 5 uA estao DENTRO dos 90 uA. E continua calculando sua reserva local.
+Coordenador de cotas e bloco funcional adicional, nao validacao de chip fisico.
+
+Grupos ABC / D+E seguem os dois estados/atuadores efetivos. AB / CD da etapa 12
+separaria a soma assinada de A/B/C e introduziria outro efeito; nao se extrapolara
+o resultado daqui para AB / CD nem para qualquer agrupamento arbitrario.
+
+Expansao predefinida: comum e emprestimo sob queda silenciosa do topo, inversao
+e atraso; falhas individuais dos grupos; falhas do novo supervisor (heartbeat,
+duplo gasto, cota valida enviesada e/ou atraso). Detector do topo usa referencia
+DEPOIS da alocacao aceita. Ele nao pode provar que uma alocacao valida e adequada.
+Validador de cotas observa heartbeat/faixa/soma; fallback 45/45 sem memoria.
+Terceiro passo 0.3125 us para comum e emprestimo saudaveis.
+
+Controles preservados: etapa15 BUF_p3_f* e etapa16 E_cota5_f0, sem recalcular ou
+sobrescrever seus modelos. Atualizacao de lei versus efeito de latencia serao
+declarados. Nao se dara credito ao novo coordenador por efeitos de so renomear.
+
+Criterios: janelas corretas, acertos em ambos os passos, discordancias, residual
+RMS de compensacao em Y e D+E, variacao total de g(x), corrente por tres leituras,
+falsos alarmes, resposta a falhas e cotas concedidas. Corte numerico de seguranca
+herdado: soma ABS das correntes <=100.005 uA; nominal de operacao 90 uA.
+O consumo da alimentacao dos coordenadores nao faz parte desse orcamento de atuacao.
+
+Escopo: nove sensores E explicitos; A-D ainda replicas individuais favoraveis.
+Nao constitui validacao dos 45 sensores, de PCB, de chips, EMC ou termica.

@@ -1,0 +1,14 @@
+* Verificacao inicial das quatro combinacoes e dois sinais de bias.
+.include MLC_base.inc
+.param desvio=0 x_inicial=0 y_inicial=0 passo=5u
+.param caso=0 A=floor(caso/2) B=mod(caso,2)
+Va entrada_a 0 {A}
+Vb entrada_b 0 {B}
+.step param caso 0 3 1
+.step param bias list -0.002 0.002
+.tran 0 50m 0 {passo} uic
+.meas tran media AVG V(x) FROM 30m TO 50m
+.meas tran minimo MIN V(x) FROM 30m TO 50m
+.meas tran maximo MAX V(x) FROM 30m TO 50m
+.meas tran positivo AVG V(saida) FROM 30m TO 50m
+.end

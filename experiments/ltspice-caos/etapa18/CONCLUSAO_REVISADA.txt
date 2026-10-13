@@ -1,0 +1,75 @@
+CONCLUSAO REVISADA
+
+Manter um coordenador comum como referencia de arquitetura, com E como
+reserva local e fiscal dentro do mesmo orcamento. O lote nao justifica
+substitui-lo por dois coordenadores de grupos, nem declara o circuito
+pronto. L2 com confirmacao V2 continua candidato de pesquisa.
+
+O fiscal detectou 24/24 trajetorias com falha de cotas e comutacao
+habilitada, sem contar memorias armadas antes da injecao. Isso inclui
+heartbeat perdido, concessao dupla, cota extrema 0/90, desvio de ate
+12 uA, atraso com carimbo antigo e cota antiga com carimbo recente.
+Nas duas falhas simultaneas, os detectores de comando e de cota
+atuaram; o detector de comando nao teve alarme indevido neste lote.
+Esses resultados sao deteccao no modelo, nao tolerancia fisica de chips.
+
+O limite mais importante encontrado foi a tolerancia do fiscal V1.
+No comum nominal houve 0/4 alarmes indevidos; nos dois cantos combinando
+RC, atraso, ruido e relogio houve 4/4 trajetorias saudaveis com alarme.
+As idades permaneceram validas: a discrepancia de valores provocou a
+comutacao, entre 2.238 e 2.332 ms. Nao e uma configuracao qualificada
+para hardware. Nos quatro instantes de primeiro disparo, as cotas ainda
+cobriam ambos os pedidos. Isso reforca a hipotese de fiscalizar a
+concessao efetiva, sem provar que essa alternativa eliminaria o problema.
+Os cantos nao sao uma distribuicao estatistica.
+
+No L2 5/10 us, a V1 disparou em 4/4 trajetorias saudaveis. A revisao
+V2, que altera somente a carga/descarga da confirmacao de 20/40 para
+50/20 us, teve 0/4 alarmes saudaveis. Detectou tambem 2/2 casos de
+cota antiga com carimbo recente e 2/2 de cota extrema. O viés extremo
+foi detectado em 60.38 us; o replay em 2.0602 ms desde a partida,
+incluindo a inibicao de 2 ms. A V2 ainda precisa dos cantos de
+tolerancia, terceiro passo e demais falhas antes de ser escolhida.
+
+Detectar e recuperar a logica sao problemas diferentes. Com cota
+extrema no comum, habilitar a reserva mudou 47/68 para 43/68 acertos:
+oito janelas recuperadas e doze novas falhas. No L2 5/10 saudavel,
+comutacao desabilitada deu 55/68, V1 deu 43/68 e V2 deu 56/68.
+Entre o controle desabilitado e V2 ocorreram onze recuperacoes e dez
+regressoes. Sem disparo, ambos usam a mesma politica efetiva; alterar
+o observador pode mudar os passos adaptativos. A diferenca de uma
+janela nao prova melhora fisica causada pela V2.
+
+Reduzir atraso/filtro de L2 de 20/50 para 5/10 us, com comutacao
+desabilitada, mudou 51/68 para 55/68: dez recuperacoes e seis regressoes.
+O residual RMS de Y caiu de 39.824 para 37.646 uA; D ficou em
+23.806/23.748 uA. Frente ao comum nominal, L2 V2 reduziu o residual
+de Y (44.544 -> 37.914 uA), mas aumentou o de D+E (19.061 ->
+23.832 uA). A variacao total de g(x) permaneceu proxima: 1000.49/s
+no comum e 1001.42/s em L2 V2. Nao ha reducao uniforme demonstrada
+do esforco dinamico; essas medidas nao equivalem a estresse termico.
+
+A convergencia numerica permanece aberta. O comum acertou 25, 23 e
+28 de 34 janelas com passos 1.25, 0.625 e 0.3125 us; as duas
+comparacoes sucessivas tiveram oito e onze discordancias. O L2 V1
+com reserva deu 23, 20 e 25, com cinco e treze discordancias. Os
+alarmes indevidos de L2 V1 persistiram no terceiro passo. L2 V2
+acertou 30/34 e 26/34 nos dois passos, com oito discordancias.
+
+As 64 trajetorias passaram no teto legado de 100.005 uA pelas tres
+leituras. Os picos foram 90.022504 uA por tensao/shunt, 90.022613 uA
+pelas correntes dos resistores e 90.804677 uA pelas sondas 0 V.
+O maior pico da sonda coincide com um passo de 6.38e-16 s e shunts
+quase constantes, sugerindo dificuldade numerica ainda nao isolada.
+Nenhuma amostra foi removida. Nao foi demonstrado teto fisico estrito
+de 90 uA. O comando de E respeitou 5 uA, mas seu pico fisico chegou
+a 5.353212 uA. Esses limites sao de atuacao, nao consumo total da placa.
+
+Prioridade do proximo lote: comparar concessao efetiva min(|pedido|,
+cota), para nao reagir apenas a capacidade ociosa; confrontar essa
+revisao e a V2 nos cantos de tolerancia e sob falhas; testar uma
+reserva local com politica/filtro proximos aos nominais. Manter idade,
+heartbeat e guarda global em paralelo. Isolar tambem a divergencia
+das sondas e repetir o refinamento antes de prometer limites fisicos.
+Sincronismo por mais de 0.85 s e retorno seguro apos reparo seguem
+pendentes. Nenhum desses ensaios futuros foi contabilizado aqui.

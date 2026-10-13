@@ -1,0 +1,310 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa17\G_sem_atuacao_E.cir
+Start Time: Mon Oct 12 17:24:24 2026
+Options:plotwinsize=0 reltol=1e-6 vntol=1e-11 abstol=1e-12 threads=1
+
+.step caso=0
+solver = Normal
+Maximum thread count: 1
+tnom = 27
+temp = 27
+method = trap
+reltol = 1e-06
+volttol = 1e-11
+Per .tran options, skipping operating point for transient analysis.
+
+.step caso=1
+
+.step caso=2
+
+.step caso=3
+Total elapsed time: 552.459 seconds.
+Total iterations: 6312865
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa17\G_sem_atuacao_E.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa17\MLC_coordenador_E.inc
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa17\atuadores_etapa14.inc
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa17\UniversalOpAmp2.lib
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa17\limitador_tres.inc
+
+
+Measurement: minimo_00
+  step	MIN(V(x))	FROM	TO
+     1	-1.37612915039	0.03	0.049
+     2	-1.376126647	0.03	0.049
+     3	-1.37613236904	0.03	0.049
+     4	-1.37612760067	0.03	0.049
+
+Measurement: maximo_00
+  step	MAX(V(x))	FROM	TO
+     1	-0.468850135803	0.03	0.049
+     2	-0.468728601933	0.03	0.049
+     3	-0.468821436167	0.03	0.049
+     4	-0.468697160482	0.03	0.049
+
+Measurement: minimo_01
+  step	MIN(V(x))	FROM	TO
+     1	-1.36675298214	0.08	0.099
+     2	-1.36676299572	0.08	0.099
+     3	-1.36675524712	0.08	0.099
+     4	-1.36675190926	0.08	0.099
+
+Measurement: maximo_01
+  step	MAX(V(x))	FROM	TO
+     1	-0.525162279606	0.08	0.099
+     2	-0.525162756443	0.08	0.099
+     3	-0.525152862072	0.08	0.099
+     4	-0.525150179863	0.08	0.099
+
+Measurement: minimo_02
+  step	MIN(V(x))	FROM	TO
+     1	-1.37732553482	0.13	0.149
+     2	-1.39757347107	0.13	0.149
+     3	-1.39610242844	0.13	0.149
+     4	-1.42339265347	0.13	0.149
+
+Measurement: maximo_02
+  step	MAX(V(x))	FROM	TO
+     1	1.31084561348	0.13	0.149
+     2	0.0366071201861	0.13	0.149
+     3	-0.186535492539	0.13	0.149
+     4	-0.267124384642	0.13	0.149
+
+Measurement: minimo_03
+  step	MIN(V(x))	FROM	TO
+     1	-1.38456213474	0.18	0.199
+     2	-1.37344515324	0.18	0.199
+     3	-1.37344658375	0.18	0.199
+     4	-1.37344551086	0.18	0.199
+
+Measurement: maximo_03
+  step	MAX(V(x))	FROM	TO
+     1	-0.526914834976	0.18	0.199
+     2	-0.540041089058	0.18	0.199
+     3	-0.540010452271	0.18	0.199
+     4	-0.540017902851	0.18	0.199
+
+Measurement: minimo_04
+  step	MIN(V(x))	FROM	TO
+     1	-1.43239331245	0.23	0.249
+     2	-1.38693296909	0.23	0.249
+     3	-1.39065980911	0.23	0.249
+     4	-1.40715944767	0.23	0.249
+
+Measurement: maximo_04
+  step	MAX(V(x))	FROM	TO
+     1	0.263946592808	0.23	0.249
+     2	-0.236633300781	0.23	0.249
+     3	1.32905447483	0.23	0.249
+     4	1.29370653629	0.23	0.249
+
+Measurement: minimo_05
+  step	MIN(V(x))	FROM	TO
+     1	-1.3642179966	0.28	0.299
+     2	-1.36424648762	0.28	0.299
+     3	-1.36425209045	0.28	0.299
+     4	-1.36422014236	0.28	0.299
+
+Measurement: maximo_05
+  step	MAX(V(x))	FROM	TO
+     1	-0.530193448067	0.28	0.299
+     2	-0.530436038971	0.28	0.299
+     3	-0.53045129776	0.28	0.299
+     4	-0.530185222626	0.28	0.299
+
+Measurement: minimo_06
+  step	MIN(V(x))	FROM	TO
+     1	0.117441952229	0.33	0.349
+     2	0.267102509737	0.33	0.349
+     3	-0.198284372687	0.33	0.349
+     4	-0.0548229031265	0.33	0.349
+
+Measurement: maximo_06
+  step	MAX(V(x))	FROM	TO
+     1	1.40245616436	0.33	0.349
+     2	1.33612656593	0.33	0.349
+     3	1.41444444656	0.33	0.349
+     4	1.40262186527	0.33	0.349
+
+Measurement: minimo_07
+  step	MIN(V(x))	FROM	TO
+     1	-1.43118679523	0.38	0.399
+     2	-1.38397860527	0.38	0.399
+     3	-1.39892828465	0.38	0.399
+     4	-1.44962763786	0.38	0.399
+
+Measurement: maximo_07
+  step	MAX(V(x))	FROM	TO
+     1	1.34477841854	0.38	0.399
+     2	-0.214908719063	0.38	0.399
+     3	0.0859991237521	0.38	0.399
+     4	-0.0118460673839	0.38	0.399
+
+Measurement: minimo_08
+  step	MIN(V(x))	FROM	TO
+     1	-1.38199472427	0.43	0.449
+     2	-1.40387248993	0.43	0.449
+     3	-1.40748858452	0.43	0.449
+     4	-1.36306715012	0.43	0.449
+
+Measurement: maximo_08
+  step	MAX(V(x))	FROM	TO
+     1	-0.275715589523	0.43	0.449
+     2	-0.0366021320224	0.43	0.449
+     3	-0.199402838945	0.43	0.449
+     4	-0.232566252351	0.43	0.449
+
+Measurement: minimo_09
+  step	MIN(V(x))	FROM	TO
+     1	-1.36524140835	0.48	0.499
+     2	-1.41652834415	0.48	0.499
+     3	-1.42489612103	0.48	0.499
+     4	-1.41063380241	0.48	0.499
+
+Measurement: maximo_09
+  step	MAX(V(x))	FROM	TO
+     1	0.206184133887	0.48	0.499
+     2	-0.0298633091152	0.48	0.499
+     3	-0.188412934542	0.48	0.499
+     4	1.37027299404	0.48	0.499
+
+Measurement: minimo_10
+  step	MIN(V(x))	FROM	TO
+     1	-1.44578182697	0.53	0.549
+     2	-1.38855564594	0.53	0.549
+     3	-1.40214860439	0.53	0.549
+     4	-1.37852096558	0.53	0.549
+
+Measurement: maximo_10
+  step	MAX(V(x))	FROM	TO
+     1	0.0886365904759	0.53	0.549
+     2	-0.229598358274	0.53	0.549
+     3	-0.169311732054	0.53	0.549
+     4	-0.280887663364	0.53	0.549
+
+Measurement: minimo_11
+  step	MIN(V(x))	FROM	TO
+     1	0.211155653	0.58	0.599
+     2	0.21277654171	0.58	0.599
+     3	-0.120667010546	0.58	0.599
+     4	-1.29623639584	0.58	0.599
+
+Measurement: maximo_11
+  step	MAX(V(x))	FROM	TO
+     1	1.39731478691	0.58	0.599
+     2	1.39803290367	0.58	0.599
+     3	1.38341331482	0.58	0.599
+     4	1.43289422989	0.58	0.599
+
+Measurement: minimo_12
+  step	MIN(V(x))	FROM	TO
+     1	-1.4411867857	0.63	0.649
+     2	-1.42275035381	0.63	0.649
+     3	-1.43367040157	0.63	0.649
+     4	-1.44924294949	0.63	0.649
+
+Measurement: maximo_12
+  step	MAX(V(x))	FROM	TO
+     1	0.0266858190298	0.63	0.649
+     2	-0.283483594656	0.63	0.649
+     3	0.0433953218162	0.63	0.649
+     4	-0.00267778150737	0.63	0.649
+
+Measurement: minimo_13
+  step	MIN(V(x))	FROM	TO
+     1	-1.42527222633	0.68	0.699
+     2	-1.4100060463	0.68	0.699
+     3	-1.42021155357	0.68	0.699
+     4	-1.4179302454	0.68	0.699
+
+Measurement: maximo_13
+  step	MAX(V(x))	FROM	TO
+     1	1.29969000816	0.68	0.699
+     2	-0.255456537008	0.68	0.699
+     3	1.33413338661	0.68	0.699
+     4	-0.226705819368	0.68	0.699
+
+Measurement: minimo_14
+  step	MIN(V(x))	FROM	TO
+     1	-0.00794450566173	0.73	0.749
+     2	0.229667052627	0.73	0.749
+     3	0.204369336367	0.73	0.749
+     4	-0.0686083137989	0.73	0.749
+
+Measurement: maximo_14
+  step	MAX(V(x))	FROM	TO
+     1	1.39818179607	0.73	0.749
+     2	1.39464116096	0.73	0.749
+     3	1.35655760765	0.73	0.749
+     4	1.42811882496	0.73	0.749
+
+Measurement: minimo_15
+  step	MIN(V(x))	FROM	TO
+     1	0.193940669298	0.78	0.799
+     2	-0.0159481987357	0.78	0.799
+     3	0.156978443265	0.78	0.799
+     4	0.139805704355	0.78	0.799
+
+Measurement: maximo_15
+  step	MAX(V(x))	FROM	TO
+     1	1.34254431725	0.78	0.799
+     2	1.40308880806	0.78	0.799
+     3	1.35708513171	0.78	0.799
+     4	1.3420176506	0.78	0.799
+
+Measurement: minimo_16
+  step	MIN(V(x))	FROM	TO
+     1	-1.3786803484	0.83	0.849
+     2	-1.37868022919	0.83	0.849
+     3	-1.37868475914	0.83	0.849
+     4	-1.37868452072	0.83	0.849
+
+Measurement: maximo_16
+  step	MAX(V(x))	FROM	TO
+     1	-0.482362598181	0.83	0.849
+     2	-0.482362538576	0.83	0.849
+     3	-0.48234847188	0.83	0.849
+     4	-0.482348531485	0.83	0.849
+
+Measurement: pico_orcamento
+  step	MAX(V(orcamento))	FROM	TO
+     1	9.00147351786e-05	0	0.85
+     2	9.00136947166e-05	0	0.85
+     3	9.00141094462e-05	0	0.85
+     4	9.00170343812e-05	0	0.85
+
+Measurement: pico_sem_protecao
+  step	MAX(V(sem_protecao))	FROM	TO
+     1	9.00000013644e-05	0	0.85
+     2	9.00000013644e-05	0	0.85
+     3	9.00000013644e-05	0	0.85
+     4	9.00000013644e-05	0	0.85
+
+Measurement: uso_protecao
+  step	AVG(V(guard_ativo))	FROM	TO
+     1	0	0	0.85
+     2	0	0	0.85
+     3	0	0	0.85
+     4	0	0	0.85
+
+Measurement: uso_reserva
+  step	AVG(V(reserva_ativa))	FROM	TO
+     1	0	0	0.85
+     2	0	0	0.85
+     3	0	0	0.85
+     4	0	0	0.85
+
+Measurement: sobra
+  step	MAX(V(sobra))	FROM	TO
+     1	4.06435246987e-05	0.03	0.85
+     2	4.16782204411e-05	0.03	0.85
+     3	4.08455634897e-05	0.03	0.85
+     4	4.07388251915e-05	0.03	0.85
+
+Measurement: falta
+  step	MAX(V(falta))	FROM	TO
+     1	0.000236953099375	0.03	0.85
+     2	0.000236951891566	0.03	0.85
+     3	0.000236952851992	0.03	0.85
+     4	0.000236952182604	0.03	0.85

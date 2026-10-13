@@ -1,0 +1,32 @@
+[
+  {
+    "caso": 0,
+    "margem_limite": 9e-05,
+    "gbw_limit": 20000000.0
+  },
+  {
+    "caso": 1,
+    "margem_limite": 9e-05,
+    "gbw_limit": 100000000.0
+  },
+  {
+    "caso": 2,
+    "margem_limite": 9e-05,
+    "gbw_limit": 200000000.0
+  },
+  {
+    "caso": 3,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 20000000.0
+  },
+  {
+    "caso": 4,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 100000000.0
+  },
+  {
+    "caso": 5,
+    "margem_limite": 9.5e-05,
+    "gbw_limit": 200000000.0
+  }
+]

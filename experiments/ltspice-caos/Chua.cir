@@ -1,0 +1,14 @@
+* Chua: modelo ideal do elemento nao linear (sem amplificadores reais)
+* Abra este arquivo no LTspice e escolha Simulate > Run.
+.param Rch=1770
+.param Ga=-0.75757m Gb=-0.40909m E=1
+R1 v1 v2 {Rch}
+C1 v1 0 10n IC=0.100001
+C2 v2 0 100n IC=0
+L1 v2 vl 18m IC=0
+Rcoil vl 0 12.5
+Bchua v1 0 I={Gb*V(v1)+(Ga-Gb)/2*(abs(V(v1)+E)-abs(V(v1)-E))}
+.tran 0 50m 5m 0.5u uic
+.options plotwinsize=0
+.save V(v1) V(v2) I(L1)
+.end

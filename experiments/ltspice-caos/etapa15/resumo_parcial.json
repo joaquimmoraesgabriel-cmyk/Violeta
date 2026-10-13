@@ -1,0 +1,230 @@
+[
+  {
+    "perfil": 0,
+    "falha": 0,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00831842422485,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": null,
+    "latencia_max_us": null,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 0,
+    "falha": 4,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00831842422485,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 14.35361842444527,
+    "latencia_max_us": 14.442726920693705,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 1,
+    "falha": 0,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00611305236816,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": null,
+    "latencia_max_us": null,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 1,
+    "falha": 2,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00742435455322,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 2090.903795835715,
+    "latencia_max_us": 2092.175960158741,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 1,
+    "falha": 3,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00611305236816,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 13.864910932914754,
+    "latencia_max_us": 13.913254480135695,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 1,
+    "falha": 4,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00611305236816,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 13.864911313554718,
+    "latencia_max_us": 13.913254214015236,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 2,
+    "falha": 0,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.00831842422485,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": null,
+    "latencia_max_us": null,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 2,
+    "falha": 4,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 68,
+    "janelas": 68,
+    "corretas_ambos_passos": 34,
+    "divergencias_passos": 0,
+    "inteiras": 4,
+    "pico_tensoes_uA": 90.01165628433228,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 14.016953474027538,
+    "latencia_max_us": 14.165005196464797,
+    "acertos_por_passo": {
+      "6.25e-07": 34,
+      "1.25e-06": 34
+    }
+  },
+  {
+    "perfil": 3,
+    "falha": 0,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 47,
+    "janelas": 68,
+    "corretas_ambos_passos": 16,
+    "divergencias_passos": 15,
+    "inteiras": 0,
+    "pico_tensoes_uA": 90.01576900482178,
+    "alarmes_indevidos": 3,
+    "latencia_min_us": null,
+    "latencia_max_us": null,
+    "acertos_por_passo": {
+      "6.25e-07": 21,
+      "1.25e-06": 26
+    }
+  },
+  {
+    "perfil": 3,
+    "falha": 2,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 44,
+    "janelas": 68,
+    "corretas_ambos_passos": 17,
+    "divergencias_passos": 10,
+    "inteiras": 0,
+    "pico_tensoes_uA": 90.00968933105469,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 2012.0374221300272,
+    "latencia_max_us": 2012.0378250685576,
+    "acertos_por_passo": {
+      "6.25e-07": 20,
+      "1.25e-06": 24
+    }
+  },
+  {
+    "perfil": 3,
+    "falha": 3,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 52,
+    "janelas": 68,
+    "corretas_ambos_passos": 20,
+    "divergencias_passos": 12,
+    "inteiras": 0,
+    "pico_tensoes_uA": 90.01576900482178,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 13.999081569515681,
+    "latencia_max_us": 13.999681297505173,
+    "acertos_por_passo": {
+      "6.25e-07": 25,
+      "1.25e-06": 27
+    }
+  },
+  {
+    "perfil": 3,
+    "falha": 4,
+    "detector": 1,
+    "trajetorias": 4,
+    "corretas": 50,
+    "janelas": 68,
+    "corretas_ambos_passos": 19,
+    "divergencias_passos": 12,
+    "inteiras": 0,
+    "pico_tensoes_uA": 90.01576900482178,
+    "alarmes_indevidos": 0,
+    "latencia_min_us": 13.99908199906097,
+    "latencia_max_us": 13.999681157617072,
+    "acertos_por_passo": {
+      "6.25e-07": 25,
+      "1.25e-06": 25
+    }
+  }
+]

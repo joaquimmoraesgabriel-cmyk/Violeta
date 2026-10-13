@@ -1,0 +1,51 @@
+Etapa 18 — reproducao e preservacao da evidencia
+
+Os arquivos .cir, .inc, .lib e os JSON de parametros descrevem o modelo
+executado. Os quatro manifestos lotes_*.json somam 21 decks e 64
+trajetorias completas de 0.85 s. SMOKE.cir, quando presente, e apenas
+um ensaio curto de inicializacao e nao participa das notas.
+
+Para nova simulacao, use uma copia dos arquivos de entrada em outra
+pasta irma de etapa18, dentro de experiments/ltspice-caos. Preserve
+etapa12/leitura_independente.py e etapa16/analisar_etapa16.py: os
+analisadores usam esses dois modulos compartilhados. Nao copie os RAWs,
+logs, resultados JSON/CSV nem cache_analise para a nova pasta. Os
+arquivos JSON de parametros com o mesmo nome dos decks e os quatro
+manifestos precisam ser copiados. A biblioteca UniversalOpAmp2.lib
+tambem deve acompanhar a copia.
+
+O runner executar.ps1 executa o manifesto indicado por -Manifest;
+nao executa os quatro manifestos automaticamente. -Slots 1 faz toda
+a lista em sequencia. Numa nova pasta de reproducao, execute:
+
+  .\executar.ps1 -Slots 1 -Manifest lotes_piloto.json
+  .\executar.ps1 -Slots 1 -Manifest lotes_expansao.json
+  .\executar.ps1 -Slots 1 -Manifest lotes_controles_l2.json
+  .\executar.ps1 -Slots 1 -Manifest lotes_confirmacao_v2.json
+
+O caminho de LTspice no runner corresponde a instalacao usada neste
+computador. Foi usado LTspice 26.1.1. As netlists fixam os parametros
+e opcoes numericas relevantes. O runner grava resultados com os mesmos
+nomes dos decks; portanto nao o use para repetir ensaios por cima desta
+pasta de evidencia. gerenciar_lotes.ps1 e o escalonador da execucao
+original parcialmente iniciada, nao um runner geral de reproducao.
+
+Depois dos 21 decks terminarem, com Python que tenha NumPy:
+
+  python verificar_modelo.py
+  python analisar_etapa18.py
+  python verificar_entrega.py
+  python gerar_relatorio.py
+  python gerar_figura.py
+
+As figuras exigem tambem reportlab e pypdfium2. Os executaveis Python
+podem ser especificados pelo caminho completo. verificar_modelo.py
+registra hashes e testa propriedades estruturais; verificar_entrega.py
+confere os 1088 intervalos no RAW, os criterios fisicos e a procedencia.
+Um resultado logico diferente ou um alarme indevido permanece um achado
+funcional: a conclusao textual nao deve ser reutilizada sem revisao.
+
+CONCLUSAO_REVISADA.txt pertence aos resultados desta execucao. Numa
+reproducao, revise a nova evidencia antes de escrever essa conclusao.
+consolidar_pesquisa.py altera os diarios e nao deve ser executado como
+parte de uma simples reproducao. As fontes nao modelam uma PCB real.

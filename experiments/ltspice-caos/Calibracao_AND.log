@@ -1,0 +1,52 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\Calibracao_AND.cir
+Start Time: Sun Oct 11 19:33:04 2026
+Options:plotwinsize=0
+
+.step soma=0
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+
+.step soma=1
+
+.step soma=2
+Total elapsed time: 2.070 seconds.
+Total iterations: 260168
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\Calibracao_AND.cir
+
+
+Measurement: y110
+  step	V(v2)	at
+     1	0.666818696977	0.011
+     2	0.65199966371	0.011
+     3	0.631895326813	0.011
+
+Measurement: y112
+  step	V(v2)	at
+     1	-0.453896977292	0.0112
+     2	-0.416461078247	0.0112
+     3	-0.39683965733	0.0112
+
+Measurement: y115
+  step	V(v2)	at
+     1	-0.143194431261	0.0115
+     2	-0.206674649913	0.0115
+     3	-0.209494949594	0.0115
+
+Measurement: y120
+  step	V(v2)	at
+     1	0.117162060572	0.012
+     2	0.224622157771	0.012
+     3	0.227205976371	0.012
+
+Measurement: y125
+  step	V(v2)	at
+     1	-0.140638881665	0.0125
+     2	-0.311513432886	0.0125
+     3	-0.313222697102	0.0125

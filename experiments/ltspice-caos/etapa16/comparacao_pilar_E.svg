@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="960" height="700" preserveAspectRatio="xMinYMin meet" viewBox="0 0 960 700" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="960" height="700"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-700)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="960" height="700" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="35" y="665" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,13%,21%); stroke:none;" transform="translate(0,1330) scale(1,-1)">Etapa 16 | Pilar E sob o mesmo orçamento de corrente</text>
+			<text x="35" y="640" style="font-family: Times-Roman; font-size: 11px;fill: rgb(32%,37%,45%); stroke:none;" transform="translate(0,1280) scale(1,-1)">Alta demanda • quatro condições do topo • 1,25 e 0,625 µs • dois estados iniciais</text>
+			<text x="35" y="595" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,13%,21%); stroke:none;" transform="translate(0,1190) scale(1,-1)">Janelas corretas (de 272)</text>
+			<g transform="">
+				<g transform="">
+					<rect x="110.5" y="385.0" width="41.666666666666686" height="138.3088235294117" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="227.16666666666669" y="385.0" width="41.666666666666686" height="128.52941176470586" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="343.83333333333337" y="385.0" width="41.666666666666686" height="132.0220588235294" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 73,385 L 423,385 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 73,385 L 73,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 189.666667,385 L 189.666667,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 306.333333,385 L 306.333333,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 423,385 L 423,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,131.333333,380)">
+							<text x="-24.175" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Referência</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,248,380)">
+							<text x="-21.12" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">E (20 µA)</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,364.666667,380)">
+							<text x="-27.785000000000004" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Prioridade D</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 73,385 L 73,575 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 73,385 L 68,385 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,432.5 L 68,432.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,480 L 68,480 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,527.5 L 68,527.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,575 L 68,575 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,68,385)">
+							<text x="-4.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,432.5)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">68</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,480)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">136</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,527.5)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">204</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,575)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">272</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<text x="500" y="595" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,13%,21%); stroke:none;" transform="translate(0,1190) scale(1,-1)">Resíduo da compensação (µA RMS)</text>
+			<g transform="">
+				<g transform="">
+					<rect x="563.609756097561" y="385.0" width="28.45528455284557" height="67.09609304584751" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="680.2764227642276" y="385.0" width="28.45528455284557" height="42.324922186669426" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="796.9430894308944" y="385.0" width="28.45528455284557" height="42.153188676297304" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="600.6016260162602" y="385.0" width="28.45528455284557" height="128.9380870214186" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(73%,47%,16%); fill-rule: evenodd;"/>
+					<rect x="717.2682926829268" y="385.0" width="28.45528455284557" height="157.00038478844226" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(73%,47%,16%); fill-rule: evenodd;"/>
+					<rect x="833.9349593495936" y="385.0" width="28.45528455284557" height="156.26433163992897" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(73%,47%,16%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 538,385 L 888,385 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 538,385 L 538,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 654.666667,385 L 654.666667,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 771.333333,385 L 771.333333,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 888,385 L 888,380 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,596.333333,380)">
+							<text x="-24.175" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Referência</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,713,380)">
+							<text x="-21.12" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">E (20 µA)</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,829.666667,380)">
+							<text x="-27.785000000000004" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Prioridade D</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 538,385 L 538,575 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 538,385 L 533,385 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,432.5 L 533,432.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,480 L 533,480 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,527.5 L 533,527.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,575 L 533,575 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,533,385)">
+							<text x="-4.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,432.5)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">15</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,480)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">30</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,527.5)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">45</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,575)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">60</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<text x="542" y="348" style="font-family: Times-Roman; font-size: 10px;fill: rgb(32%,37%,45%); stroke:none;" transform="translate(0,696) scale(1,-1)">Azul: D + E    |    Ocre: canal A–B–C</text>
+			<text x="35" y="315" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,13%,21%); stroke:none;" transform="translate(0,630) scale(1,-1)">Variação de g(x) (V/s do modelo)</text>
+			<g transform="">
+				<g transform="">
+					<rect x="110.5" y="105.0" width="41.666666666666686" height="158.54531694932302" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="227.16666666666669" y="105.0" width="41.666666666666686" height="158.824015775122" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="343.83333333333337" y="105.0" width="41.666666666666686" height="158.86645797277635" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 73,105 L 423,105 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 73,105 L 73,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 189.666667,105 L 189.666667,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 306.333333,105 L 306.333333,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 423,105 L 423,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,131.333333,100)">
+							<text x="-24.175" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Referência</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,248,100)">
+							<text x="-21.12" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">E (20 µA)</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,364.666667,100)">
+							<text x="-27.785000000000004" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Prioridade D</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 73,105 L 73,295 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 73,105 L 68,105 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,152.5 L 68,152.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,200 L 68,200 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,247.5 L 68,247.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 73,295 L 68,295 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,68,105)">
+							<text x="-4.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,152.5)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">300</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,200)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">600</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,247.5)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">900</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,68,295)">
+							<text x="-18.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">1200</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<text x="500" y="315" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,13%,21%); stroke:none;" transform="translate(0,630) scale(1,-1)">Janelas corretas nos dois passos (de 136)</text>
+			<g transform="">
+				<g transform="">
+					<rect x="575.5" y="105.0" width="41.66666666666663" height="108.97058823529412" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="692.1666666666666" y="105.0" width="41.66666666666663" height="100.58823529411762" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<rect x="808.8333333333334" y="105.0" width="41.66666666666663" height="99.19117647058823" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,35%,58%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 538,105 L 888,105 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 538,105 L 538,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 654.666667,105 L 654.666667,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 771.333333,105 L 771.333333,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 888,105 L 888,100 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,596.333333,100)">
+							<text x="-24.175" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Referência</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,713,100)">
+							<text x="-21.12" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">E (20 µA)</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,829.666667,100)">
+							<text x="-27.785000000000004" y="-10.0" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-20) scale(1,-1)">Prioridade D</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 538,105 L 538,295 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 538,105 L 533,105 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,152.5 L 533,152.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,200 L 533,200 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,247.5 L 533,247.5 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 538,295 L 533,295 Z" style="stroke: rgb(63%,68%,74%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,533,105)">
+							<text x="-4.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,152.5)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">34</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,200)">
+							<text x="-9.0" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">68</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,247.5)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">102</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,533,295)">
+							<text x="-13.5" y="-3.6000000000000005" style="font-family: Times-Roman; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">136</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<text x="35" y="42" style="font-family: Times-Roman; font-size: 11px;fill: rgb(32%,37%,45%); stroke:none;" transform="translate(0,84) scale(1,-1)">Capacidade operacional: 90 µA. Os módulos das três correntes são somados no candidato E.</text>
+			<text x="35" y="23" style="font-family: Times-Roman; font-size: 10px;fill: rgb(32%,37%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">g(x) é uma grandeza do modelo; o gráfico não representa estresse térmico. Valores exatos e limites no relatório.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,387 @@
+[
+  {
+    "arquivo": "Hipotese_AND_precisao.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 100.0,
+    "controle": 0,
+    "casos": 4,
+    "acertos": 4,
+    "menor_margem_V": 0.0100519300299,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.666818637372,
+        "resultado": 0.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.631895147999,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_AND_precisao.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 50.0,
+    "controle": 0,
+    "casos": 4,
+    "acertos": 0,
+    "menor_margem_V": -0.553606610245,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.088340885017,
+        "resultado": 1.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.342563697407,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.342563697407,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.742808307289,
+        "resultado": 0.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_AND_precisao.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 25.0,
+    "controle": 0,
+    "casos": 4,
+    "acertos": 1,
+    "menor_margem_V": -0.208218798708,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.440351423937,
+        "resultado": 1.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.433728696554,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.433728696554,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.427105980452,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_AND_precisao.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 12.5,
+    "controle": 0,
+    "casos": 4,
+    "acertos": 1,
+    "menor_margem_V": -0.180863633344,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.467707302126,
+        "resultado": 1.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.461083861917,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.461083861917,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.454460412448,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_AND_precisao.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 6.25,
+    "controle": 0,
+    "casos": 4,
+    "acertos": 1,
+    "menor_margem_V": -0.178480117257,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.470091179255,
+        "resultado": 1.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.463467378004,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.463467378004,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.456843567492,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_pilar_AND.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 100.0,
+    "controle": 0,
+    "casos": 28,
+    "acertos": 10,
+    "menor_margem_V": -1.02525855157,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.666818637372,
+        "resultado": 0.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.631895147999,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_pilar_AND.log",
+    "erro_sensor_percentual": 0,
+    "passo_maximo_ns": 100.0,
+    "controle": 1,
+    "casos": 28,
+    "acertos": 28,
+    "menor_margem_V": 0.0100518704253,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.666818637372,
+        "resultado": 0.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.631895147999,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_pilar_AND_sensor.log",
+    "erro_sensor_percentual": -0.02,
+    "passo_maximo_ns": 100.0,
+    "controle": 0,
+    "casos": 28,
+    "acertos": 10,
+    "menor_margem_V": -1.02525855157,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.666818637372,
+        "resultado": 0.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.631895147999,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_pilar_AND_sensor.log",
+    "erro_sensor_percentual": -0.02,
+    "passo_maximo_ns": 100.0,
+    "controle": 1,
+    "casos": 28,
+    "acertos": 7,
+    "menor_margem_V": -1.11208426497,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": -0.16175973752,
+        "resultado": 1.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": -0.302926724886,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": -0.302926724886,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": -0.336410610621,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_pilar_AND_sensor.log",
+    "erro_sensor_percentual": 0.02,
+    "passo_maximo_ns": 100.0,
+    "controle": 0,
+    "casos": 28,
+    "acertos": 10,
+    "menor_margem_V": -1.02525855157,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.666818637372,
+        "resultado": 0.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": 0.651999425291,
+        "resultado": 0.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.631895147999,
+        "resultado": 1.0
+      }
+    ]
+  },
+  {
+    "arquivo": "Hipotese_pilar_AND_sensor.log",
+    "erro_sensor_percentual": 0.02,
+    "passo_maximo_ns": 100.0,
+    "controle": 1,
+    "casos": 28,
+    "acertos": 7,
+    "menor_margem_V": -1.08379493075,
+    "nominal": [
+      {
+        "A": 0,
+        "B": 0,
+        "tensao": 0.0194454176925,
+        "resultado": 1.0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "tensao": -0.301354683837,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "tensao": -0.301354683837,
+        "resultado": 1.0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "tensao": 0.179155586637,
+        "resultado": 1.0
+      }
+    ]
+  }
+]

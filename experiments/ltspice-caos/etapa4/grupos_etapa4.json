@@ -1,0 +1,50 @@
+[
+  {
+    "grupo": 0,
+    "latencia": 4.9999999999999996e-05,
+    "tau": 9.999999999999999e-05,
+    "limite_corrente": 9.999999999999999e-05
+  },
+  {
+    "grupo": 1,
+    "latencia": 0.0005,
+    "tau": 9.999999999999999e-05,
+    "limite_corrente": 9.999999999999999e-05
+  },
+  {
+    "grupo": 2,
+    "latencia": 4.9999999999999996e-05,
+    "tau": 0.001,
+    "limite_corrente": 9.999999999999999e-05
+  },
+  {
+    "grupo": 3,
+    "latencia": 0.0005,
+    "tau": 0.001,
+    "limite_corrente": 9.999999999999999e-05
+  },
+  {
+    "grupo": 4,
+    "latencia": 4.9999999999999996e-05,
+    "tau": 9.999999999999999e-05,
+    "limite_corrente": 1.9999999999999998e-05
+  },
+  {
+    "grupo": 5,
+    "latencia": 0.0005,
+    "tau": 9.999999999999999e-05,
+    "limite_corrente": 1.9999999999999998e-05
+  },
+  {
+    "grupo": 6,
+    "latencia": 4.9999999999999996e-05,
+    "tau": 0.001,
+    "limite_corrente": 1.9999999999999998e-05
+  },
+  {
+    "grupo": 7,
+    "latencia": 0.0005,
+    "tau": 0.001,
+    "limite_corrente": 1.9999999999999998e-05
+  }
+]

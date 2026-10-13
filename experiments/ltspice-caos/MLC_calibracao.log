@@ -1,0 +1,80 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\MLC_calibracao.cir
+Start Time: Sun Oct 11 19:45:02 2026
+Options:plotwinsize=0 reltol=1e-5 vntol=1e-7 abstol=1e-10
+
+.step caso=0 bias=-0.002
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+abstol = 1e-10
+reltol = 1e-05
+volttol = 1e-07
+Per .tran options, skipping operating point for transient analysis.
+
+.step caso=1 bias=-0.002
+
+.step caso=2 bias=-0.002
+
+.step caso=3 bias=-0.002
+
+.step caso=0 bias=0.002
+
+.step caso=1 bias=0.002
+
+.step caso=2 bias=0.002
+
+.step caso=3 bias=0.002
+Total elapsed time: 0.920 seconds.
+Total iterations: 30107
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\MLC_calibracao.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\MLC_base.inc
+
+
+Measurement: media
+  step	AVG(V(x))	FROM	TO
+     1	-0.867485683426	0.03	0.05
+     2	-0.854817390778	0.03	0.05
+     3	-0.854817390778	0.03	0.05
+     4	0.86086112504	0.03	0.05
+     5	-0.854568082282	0.03	0.05
+     6	0.860899311078	0.03	0.05
+     7	0.860899311078	0.03	0.05
+     8	0.861240052419	0.03	0.05
+
+Measurement: minimo
+  step	MIN(V(x))	FROM	TO
+     1	-1.40578496456	0.03	0.05
+     2	-1.38084661961	0.03	0.05
+     3	-1.38084661961	0.03	0.05
+     4	0.256940096617	0.03	0.05
+     5	-1.380843997	0.03	0.05
+     6	0.256940752268	0.03	0.05
+     7	0.256940752268	0.03	0.05
+     8	0.297009289265	0.03	0.05
+
+Measurement: maximo
+  step	MAX(V(x))	FROM	TO
+     1	-0.295149058104	0.03	0.05
+     2	-0.262337297201	0.03	0.05
+     3	-0.262337297201	0.03	0.05
+     4	1.38212704659	0.03	0.05
+     5	-0.262339353561	0.03	0.05
+     6	1.38212704659	0.03	0.05
+     7	1.38212704659	0.03	0.05
+     8	1.40476608276	0.03	0.05
+
+Measurement: positivo
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.03	0.05
+     2	0	0.03	0.05
+     3	0	0.03	0.05
+     4	1	0.03	0.05
+     5	0	0.03	0.05
+     6	1	0.03	0.05
+     7	1	0.03	0.05
+     8	1	0.03	0.05

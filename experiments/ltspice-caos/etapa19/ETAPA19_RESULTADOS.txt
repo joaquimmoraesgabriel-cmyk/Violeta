@@ -1,0 +1,264 @@
+ETAPA 19 — CHAOSLAB: CONCESSAO EFETIVA, COTAS E PASSOS FIXOS
+
+Concluido: 41 ensaios e 71,156 janelas auditadas (separador de milhar: virgula).
+Cada conjunto grande tem 500 trajetorias x 20 janelas consecutivas = 10.000 janelas por execucao.
+Sao 7 execucoes pareadas desse conjunto: 70000 observacoes; os outros 34 ensaios somam 1156 janelas.
+As condicoes iniciais e entradas sao repetidas entre tratamentos. O total nao representa testes independentes por janela, nem uma unica trajetoria de 500 segundos.
+
+CONCLUSOES DETERMINADAS PELOS DADOS
+
+Sem falha injetada: fiscal de cotas 7151/10000; concessao efetiva 7151/10000.
+A troca recuperou 0 janelas e introduziu 0 novas falhas; saldo +0 (+0.000 pontos percentuais).
+IC95 descritivo do saldo, bootstrap por trajetoria: [+0.000, +0.000] pontos percentuais.
+Alarmes indevidos: cotas 0/500; efetiva 0/500.
+Residuos RMS agrupados: Y 38.448679 -> 38.448679 uA; D 23.858862 -> 23.858862 uA. TV(g)/s 1001.691293 -> 1001.691293, excluindo os primeiros 30 ms.
+Os tratamentos coincidiram na classificacao de todas as janelas deste conjunto; nenhum efeito logico foi observado nessa comparacao.
+Entrada 11: 1796 -> 1796 de 2500; recuperadas 0, novas falhas 0.
+
+Com vies de +12 uA em favor de Y: fiscal de cotas 7218/10000; concessao efetiva 7287/10000.
+A troca recuperou 528 janelas e introduziu 459 novas falhas; saldo +69 (+0.690 pontos percentuais).
+IC95 descritivo do saldo, bootstrap por trajetoria: [+0.080, +1.300] pontos percentuais.
+Alarmes indevidos: cotas 0/500; efetiva 0/500.
+Residuos RMS agrupados: Y 41.782987 -> 41.794551 uA; D 20.498396 -> 20.506646 uA. TV(g)/s 1002.714899 -> 1002.509152, excluindo os primeiros 30 ms.
+O saldo agregado nao elimina as regressoes individuais; nao ha dominancia janela a janela.
+Entrada 11: 1588 -> 1628 de 2500; recuperadas 181, novas falhas 141.
+
+Cantos de tolerancia, cotas: 8/8 trajetorias saudaveis com alarme indevido.
+O fiscal de cotas ainda nao esta qualificado para essas tolerancias.
+Cantos de tolerancia, concessao efetiva: 6/8 trajetorias saudaveis com alarme indevido.
+O fiscal de concessao efetiva ainda nao esta qualificado para essas tolerancias.
+
+Refinamento, cotas: [23, 24, 24] acertos de 34 nos passos [5.0, 2.5, 1.25] us. Entre as duas malhas mais finas, 16/34 classificacoes mudaram (8 recuperadas e 8 novas falhas).
+Refinamento, concessao efetiva: [23, 24, 24] acertos de 34 nos passos [5.0, 2.5, 1.25] us. Entre as duas malhas mais finas, 16/34 classificacoes mudaram (8 recuperadas e 8 novas falhas).
+A convergencia numerica global permanece nao estabelecida. Os conjuntos de 10.000 janelas usam 5 us e sao exploratorios.
+Passos fixos impedem que observadores passivos escolham o passo do integrador; continuam existindo erros de discretizacao, amostragem e separacao dos blocos.
+O laboratorio nao demonstra que uma falha de recuperacao seja exclusivamente da equacao ou exclusivamente de atraso fisico.
+
+Controle de observacao saudavel (off/cotas/efetiva): reserva nunca selecionada=True; estados finais identicos=True; tabelas completas de janelas identicas=True.
+A verificacao salva cobre estados finais e janelas. A desconexao de observadores passivos do passo numerico decorre tambem da arquitetura e dos testes do motor; ativar a reserva e uma mudanca real de controle.
+
+Corrente: maior atuacao matematica nos 40 ensaios com teto = 90.000000000 uA.
+Casos que falharam na verificacao do teto algebrico: nenhum.
+O ensaio unlimited e excluido desse criterio: sua finalidade e retirar deliberadamente a restricao de corrente.
+Nenhum desses resultados prova um teto fisico de 90 uA, funcionamento de chips reais ou validade de uma PCB.
+
+PROTOCOLO ESTATISTICO
+
+Bootstrap pareado: 5000 replicas, seed 19300; reamostragem de 500 trajetorias inteiras com reposicao.
+As 20 janelas de cada trajetoria ficam juntas. A mesma reamostragem e aplicada aos dois tratamentos.
+Intervalos percentis de 2,5% e 97,5%; descrevem sensibilidade as condicoes iniciais deste conjunto, condicionado as mesmas fases e ordem de entradas.
+As duas primeiras condicoes iniciais sao prescritas (-0,37 e +0,37); as demais usam a semente registrada. Nao interpretar o intervalo como confiabilidade de hardware.
+
+COMPARACOES PAREADAS DOS CONJUNTOS DE 10.000
+
+healthy_off_to_quota: ensemble_healthy_off -> ensemble_healthy_quota
+  acertos 7151 -> 7151/10000; recuperadas=0; regressoes=0; saldo=+0; discordancias=0; IC95 saldo=[+0.000,+0.000] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1292/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 10: 1563 -> 1563/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 11: 1796 -> 1796/2500; recuperadas=0, regressoes=0, saldo=+0.
+healthy_off_to_effective: ensemble_healthy_off -> ensemble_healthy_effective
+  acertos 7151 -> 7151/10000; recuperadas=0; regressoes=0; saldo=+0; discordancias=0; IC95 saldo=[+0.000,+0.000] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1292/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 10: 1563 -> 1563/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 11: 1796 -> 1796/2500; recuperadas=0, regressoes=0, saldo=+0.
+healthy_quota_to_effective: ensemble_healthy_quota -> ensemble_healthy_effective
+  acertos 7151 -> 7151/10000; recuperadas=0; regressoes=0; saldo=+0; discordancias=0; IC95 saldo=[+0.000,+0.000] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1292/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 10: 1563 -> 1563/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 11: 1796 -> 1796/2500; recuperadas=0, regressoes=0, saldo=+0.
+bias_off_to_quota: ensemble_bias_off -> ensemble_bias_quota
+  acertos 7101 -> 7218/10000; recuperadas=1266; regressoes=1149; saldo=+117; discordancias=2415; IC95 saldo=[+0.340,+1.990] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1301 -> 1598/2500; recuperadas=599, regressoes=302, saldo=+297.
+  entrada 10: 1481 -> 1532/2500; recuperadas=457, regressoes=406, saldo=+51.
+  entrada 11: 1819 -> 1588/2500; recuperadas=210, regressoes=441, saldo=-231.
+bias_off_to_effective: ensemble_bias_off -> ensemble_bias_effective
+  acertos 7101 -> 7287/10000; recuperadas=1317; regressoes=1131; saldo=+186; discordancias=2448; IC95 saldo=[+1.030,+2.700] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1301 -> 1610/2500; recuperadas=600, regressoes=291, saldo=+309.
+  entrada 10: 1481 -> 1549/2500; recuperadas=487, regressoes=419, saldo=+68.
+  entrada 11: 1819 -> 1628/2500; recuperadas=230, regressoes=421, saldo=-191.
+bias_quota_to_effective: ensemble_bias_quota -> ensemble_bias_effective
+  acertos 7218 -> 7287/10000; recuperadas=528; regressoes=459; saldo=+69; discordancias=987; IC95 saldo=[+0.080,+1.300] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1598 -> 1610/2500; recuperadas=134, regressoes=122, saldo=+12.
+  entrada 10: 1532 -> 1549/2500; recuperadas=213, regressoes=196, saldo=+17.
+  entrada 11: 1588 -> 1628/2500; recuperadas=181, regressoes=141, saldo=+40.
+healthy_l2_to_common: ensemble_healthy_off -> ensemble_healthy_common
+  acertos 7151 -> 6951/10000; recuperadas=1592; regressoes=1792; saldo=-200; discordancias=3384; IC95 saldo=[-3.000,-0.990] pp.
+  L2 usa atraso/filtro de 5/10 us; comum usa 20/50 us. Este par compara politica e dinamica juntas, como configuracoes completas; nao isola o efeito da regra de alocacao.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1514/2500; recuperadas=740, regressoes=518, saldo=+222.
+  entrada 10: 1563 -> 1505/2500; recuperadas=510, regressoes=568, saldo=-58.
+  entrada 11: 1796 -> 1432/2500; recuperadas=342, regressoes=706, saldo=-364.
+fault_impact_off: ensemble_healthy_off -> ensemble_bias_off
+  acertos 7151 -> 7101/10000; recuperadas=906; regressoes=956; saldo=-50; discordancias=1862; IC95 saldo=[-1.300,+0.280] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1301/2500; recuperadas=213, regressoes=204, saldo=+9.
+  entrada 10: 1563 -> 1481/2500; recuperadas=412, regressoes=494, saldo=-82.
+  entrada 11: 1796 -> 1819/2500; recuperadas=281, regressoes=258, saldo=+23.
+  Controle de prefixo: 3000 janelas completas anteriores a injecao, com tabelas identicas=True.
+fault_impact_quota: ensemble_healthy_quota -> ensemble_bias_quota
+  acertos 7151 -> 7218/10000; recuperadas=1241; regressoes=1174; saldo=+67; discordancias=2415; IC95 saldo=[-0.180,+1.540] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1598/2500; recuperadas=594, regressoes=288, saldo=+306.
+  entrada 10: 1563 -> 1532/2500; recuperadas=405, regressoes=436, saldo=-31.
+  entrada 11: 1796 -> 1588/2500; recuperadas=242, regressoes=450, saldo=-208.
+  Controle de prefixo: 3000 janelas completas anteriores a injecao, com tabelas identicas=True.
+fault_impact_effective: ensemble_healthy_effective -> ensemble_bias_effective
+  acertos 7151 -> 7287/10000; recuperadas=1263; regressoes=1127; saldo=+136; discordancias=2390; IC95 saldo=[+0.520,+2.200] pp.
+  entrada 00: 2500 -> 2500/2500; recuperadas=0, regressoes=0, saldo=+0.
+  entrada 01: 1292 -> 1610/2500; recuperadas=611, regressoes=293, saldo=+318.
+  entrada 10: 1563 -> 1549/2500; recuperadas=406, regressoes=420, saldo=-14.
+  entrada 11: 1796 -> 1628/2500; recuperadas=246, regressoes=414, saldo=-168.
+  Controle de prefixo: 3000 janelas completas anteriores a injecao, com tabelas identicas=True.
+
+REFINAMENTO DA MALHA LEGADA (2 TRAJETORIAS x 17 JANELAS)
+
+quota: passos [5.0, 2.5, 1.25] us; acertos [23, 24, 24] de 34 em cada passo; alarmes indevidos [0, 0, 0].
+  Acertos nas tres malhas=14; falhas nas tres=2; classificacoes que mudaram=18.
+  refine_quota_5 -> refine_quota_2.5: acertos comuns=20; discordancias=7; recuperadas=4; novas falhas=3.
+  refine_quota_2.5 -> refine_quota_1.25: acertos comuns=16; discordancias=16; recuperadas=8; novas falhas=8.
+  Residuo Y RMS (uA)=[38.55177297947264, 37.983919597304585, 37.90534156400186]; D=[23.789900651985675, 23.829167606084013, 23.68203711730523]; TV(g)/s=[1002.3686277085706, 1002.2045526294528, 1002.3817494541818].
+effective: passos [5.0, 2.5, 1.25] us; acertos [23, 24, 24] de 34 em cada passo; alarmes indevidos [0, 0, 0].
+  Acertos nas tres malhas=14; falhas nas tres=2; classificacoes que mudaram=18.
+  refine_effective_5 -> refine_effective_2.5: acertos comuns=20; discordancias=7; recuperadas=4; novas falhas=3.
+  refine_effective_2.5 -> refine_effective_1.25: acertos comuns=16; discordancias=16; recuperadas=8; novas falhas=8.
+  Residuo Y RMS (uA)=[38.55177297947264, 37.983919597304585, 37.90534156400186]; D=[23.789900651985675, 23.829167606084013, 23.68203711730523]; TV(g)/s=[1002.3686277085706, 1002.2045526294528, 1002.3817494541818].
+
+MATRIZ DE FALHAS (DETECCAO SEPARADA DE RECUPERACAO LOGICA)
+
+fault_bias_effective: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=26/34.
+  Latencia desde inicio nominal da falha: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2}; momentos: {'during_fault': 2}.
+  Cotas -> efetiva nesta falha: recuperadas=0; novas falhas=0; saldo=+0.
+fault_bias_quota: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=26/34.
+  Latencia desde inicio nominal da falha: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2}; momentos: {'during_fault': 2}.
+fault_double_effective: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=24/34.
+  Latencia desde inicio nominal da falha: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'heartbeat_range_sum': 2}; momentos: {'during_fault': 2}.
+  Cotas -> efetiva nesta falha: recuperadas=0; novas falhas=0; saldo=+0.
+fault_double_quota: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=24/34.
+  Latencia desde inicio nominal da falha: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'heartbeat_range_sum': 2, 'coherence': 2}; momentos: {'during_fault': 2}.
+fault_dropout_effective: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=24/34.
+  Latencia desde inicio nominal da falha: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'heartbeat_range_sum': 2, 'coherence': 2}; momentos: {'during_fault': 2}.
+  Cotas -> efetiva nesta falha: recuperadas=0; novas falhas=0; saldo=+0.
+fault_dropout_quota: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=24/34.
+  Latencia desde inicio nominal da falha: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=62.500, Q1=62.500, mediana=62.500, Q3=62.500, max=62.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'heartbeat_range_sum': 2, 'coherence': 2}; momentos: {'during_fault': 2}.
+fault_replay_effective: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=22/34.
+  Latencia desde inicio nominal da falha: n=2; min=2065.000, Q1=2065.000, mediana=2065.000, Q3=2065.000, max=2065.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=1992.500, Q1=1992.500, mediana=1992.500, Q3=1992.500, max=1992.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2}; momentos: {'during_fault': 2}.
+  Cotas -> efetiva nesta falha: recuperadas=0; novas falhas=0; saldo=+0.
+fault_replay_quota: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=22/34.
+  Latencia desde inicio nominal da falha: n=2; min=2065.000, Q1=2065.000, mediana=2065.000, Q3=2065.000, max=2065.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=1992.500, Q1=1992.500, mediana=1992.500, Q3=1992.500, max=1992.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2}; momentos: {'during_fault': 2}.
+fault_stale_effective: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=22/34.
+  Latencia desde inicio nominal da falha: n=2; min=2065.000, Q1=2065.000, mediana=2065.000, Q3=2065.000, max=2065.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=1992.500, Q1=1992.500, mediana=1992.500, Q3=1992.500, max=1992.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2, 'age': 2}; momentos: {'during_fault': 2}.
+  Cotas -> efetiva nesta falha: recuperadas=0; novas falhas=0; saldo=+0.
+fault_stale_quota: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=22/34.
+  Latencia desde inicio nominal da falha: n=2; min=2065.000, Q1=2065.000, mediana=2065.000, Q3=2065.000, max=2065.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=1992.500, Q1=1992.500, mediana=1992.500, Q3=1992.500, max=1992.500 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2, 'age': 2}; momentos: {'during_fault': 2}.
+fault_starve_effective: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=25/34.
+  Latencia desde inicio nominal da falha: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2}; momentos: {'during_fault': 2}.
+  Cotas -> efetiva nesta falha: recuperadas=0; novas falhas=0; saldo=+0.
+fault_starve_quota: detectadas=2/2; falsos previos=0; motivos anteriores carimbados na fronteira=0; falsos/saudaveis=0; alarmes tardios=0; acertos=25/34.
+  Latencia desde inicio nominal da falha: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us.
+  Latencia desde primeira divergencia de concessao/mensagem invalida: n=2; min=65.000, Q1=65.000, mediana=65.000, Q3=65.000, max=65.000 us; marcador observado em 2 trajetorias; alarme anterior ao marcador em 0.
+  Intervalo entre trip do fiscal e primeira selecao da reserva: n=2; min=2.500, Q1=2.500, mediana=2.500, Q3=2.500, max=2.500 us.
+  Causas registradas: {'coherence': 2}; momentos: {'during_fault': 2}.
+O nome bruto harm_start e herdado do motor: registra divergencia absoluta de concessao util OU mensagem basica invalida. Uma concessao maior pode beneficiar um canal; esse marcador nao prova dano nem deficit.
+
+CANTOS DE TOLERANCIA
+
+corner_common_minus_effective: alarmes indevidos=0/2; acertos=25/34; causas={}.
+corner_common_minus_quota: alarmes indevidos=2/2; acertos=24/34; causas={'coherence': 2}.
+corner_common_plus_effective: alarmes indevidos=2/2; acertos=22/34; causas={'coherence': 2}.
+corner_common_plus_quota: alarmes indevidos=2/2; acertos=23/34; causas={'coherence': 2}.
+corner_l2_minus_effective: alarmes indevidos=2/2; acertos=27/34; causas={'coherence': 2}.
+corner_l2_minus_quota: alarmes indevidos=2/2; acertos=25/34; causas={'coherence': 2}.
+corner_l2_plus_effective: alarmes indevidos=2/2; acertos=22/34; causas={'coherence': 2}.
+corner_l2_plus_quota: alarmes indevidos=2/2; acertos=25/34; causas={'coherence': 2}.
+  corner_common_plus_quota_to_effective: recuperadas=2; regressoes=3; saldo=-1.
+  corner_common_minus_quota_to_effective: recuperadas=5; regressoes=4; saldo=+1.
+  corner_l2_plus_quota_to_effective: recuperadas=3; regressoes=6; saldo=-3.
+  corner_l2_minus_quota_to_effective: recuperadas=5; regressoes=3; saldo=+2.
+Os cantos sao ensaios deterministas combinados, nao uma distribuicao de fabricacao.
+
+ABLACOES MATEMATICAS
+
+ablation_actuator: acertos=24/34; pico=90.000000 uA; residuo Y=37.983920 uA, D=23.829168 uA; TV(g)/s=1002.204553.
+ablation_coordinator: acertos=21/34; pico=90.000000 uA; residuo Y=37.927955 uA, D=23.946265 uA; TV(g)/s=1002.990902.
+ablation_ideal: acertos=25/34; pico=90.000000 uA; residuo Y=33.829221 uA, D=22.082566 uA; TV(g)/s=1004.743129.
+ablation_nominal: acertos=34/34; pico=0.000000 uA; residuo Y=0.000000 uA, D=0.000000 uA; TV(g)/s=996.589531.
+ablation_sensors: acertos=26/34; pico=90.000000 uA; residuo Y=37.568830 uA, D=23.775684 uA; TV(g)/s=1002.737657.
+ablation_unlimited: acertos=34/34; pico=322.603301 uA; residuo Y=0.000000 uA, D=0.000000 uA; TV(g)/s=996.589531.
+  ablation_nominal_to_unlimited: recuperadas=0; regressoes=0; saldo=+0.
+  ablation_nominal_to_ideal: recuperadas=0; regressoes=9; saldo=-9.
+  ablation_ideal_to_sensors: recuperadas=5; regressoes=4; saldo=+1.
+  ablation_sensors_to_coordinator: recuperadas=2; regressoes=7; saldo=-5.
+  ablation_coordinator_to_actuator: recuperadas=5; regressoes=2; saldo=+3.
+Nominal e cancelamento ilimitado: estados finais identicos=True; tabelas de janelas identicas=True.
+A identidade testa a referencia algebrica. A ausencia de teto nao constitui uma implementacao utilizavel com 90 uA.
+Unlimited cancela as perturbacoes em cada subpasso RK4; ideal calcula a corrente limitada no inicio do passo e a mantem. A diferenca mistura teto/politica com a forma temporal de aplicar a corrente, portanto nao isola o orcamento sozinho.
+O controle coordinator/off -> actuator/off a 2,5 us isola a adicao do substituto matematico de atuador nesta matriz, sem provar comportamento de hardware real.
+Incremento do atuador matematico: 21 -> 24/34; recuperadas=5; regressoes=2; saldo=+3.
+
+TRANSICAO PARA RESERVA COM POLITICA CORRESPONDENTE
+
+quota, fallback comum -> matched: acertos=26 -> 25/34; recuperadas=5; regressoes=6; saldo=-1.
+effective, fallback comum -> matched: acertos=26 -> 25/34; recuperadas=5; regressoes=6; saldo=-1.
+
+LIMITES E PROVENIENCIA
+
+Each 10000-window ensemble is 500 independent initializations x20 consecutive windows, not a500s single path.
+All paths share forcing phases and input order; uncertainty estimates describe initial-condition sensitivity only.
+Fixed-grid extrema can miss between-grid crossings. RK4 plant plus ZOH splitting is not globally fourth order.
+No physical op-amp/PCB model, nor Stage18 top-command fault detector, is implemented here.
+Window extrema are sampled at fixed-grid nodes with linear interpolation only at interval boundaries; between-node sign crossings may be missed.
+RK4 advances the plant while sampled controls and RC blocks use explicit ZOH splitting; the complete method is not globally fourth order.
+The 10,000-window cohorts use the coarse 5-us step; their counts are exploratory until smaller-step ensemble checks support stability.
+The healthy L2/common comparison changes both allocation policy and its derived coordinator delay/filter: L2 uses 5/10 us, common uses 20/50 us. It compares complete configurations, not the isolated allocation rule.
+Unlimited cancels perturbations analytically at every RK4 substage; ideal applies a finite-budget current sampled at the start of the step and held. Their difference mixes capacity/policy with current-update timing and does not isolate the budget alone.
+The coordinator/off to actuator/off ablation identifies the incremental effect of this mathematical actuator surrogate, not actual hardware latency.
+Detector differences may change fallback timing and the chaotic trajectory. Logical recovery requires paired recovered AND regressed windows, not detection counts alone.
+The legacy harm_start field marks first absolute useful-grant divergence OR an invalid basic message, not necessarily a deficit: a positive grant change may be beneficial. Negative latency_from_harm means alarm before that marker.
+ChaosLab summary residual RMS pools squared residuals across trajectories. Stage 18 reports the arithmetic mean of per-trajectory RMS. Both aggregates are supplied in resumo.csv and must not be equated.
+Direct count comparisons with the old 198/272 matrix are invalid because the cohorts and numerical models differ.
+
+Core: 19.1-fixed-rk4-zoh; SHA256=aacd24fd53246cc1f3f0f258b2c469137064a774c69511b573f24f0ae73d097e
+Plano SHA256=2fea6e26cf48f18c2f5a9736b87eed9cb6c03814de27160a3231fc9b1110b374
+Analisador SHA256=2f9afd4ff006e33502211b4b6b75d4f7c1f9be74df49a7416055d1a3117dbbfb
+Todos os hashes de arquivos/JSONs, configuracoes e auditorias estao em analise.json. Resumos tabulares em resumo.csv; janelas com identificacao do caso em janelas.csv.
+Consulte tambem NOTAS_METODOLOGICAS.txt. O RMS agregado do ChaosLab e a raiz da energia media entre trajetorias; a Etapa18 usa media dos RMS individuais. resumo.csv inclui ambos, separados.
+Nenhum RAW LTspice removido foi necessario para esta analise; a Etapa18 permanece como referencia de outro modelo e outra malha.

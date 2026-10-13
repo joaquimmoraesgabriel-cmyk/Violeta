@@ -1,0 +1,98 @@
+ETAPA 17 — COORDENADOR ASSOCIADO A E, ORCAMENTO DE 90 uA
+
+Execucao: 64 trajetorias completas novas; 22 trajetorias anteriores reanalisadas. 1462 janelas no conjunto documentado. Ensaio de inicializacao SMOKE (2 casos de 1 ms) separado, sem nota logica.
+Todos os resultados abaixo sao de LTspice 26.1.1 e dos arquivos locais preservados.
+
+Resultado principal: comum associado a E 199/272, referencia anterior 198/272 e grupos com emprestimo 174/272. O saldo de apenas uma janela no comum nao estabelece ganho robusto: houve 39 recuperacoes e 38 novas falhas. O terceiro passo manteve a sensibilidade logica. A variacao total de g(x) ficou praticamente igual no comum.
+Decisao: manter a coordenacao comum como base e estudar E como reserva/supervisao com validacao independente das cotas. Queda de heartbeat e gasto duplicado foram detectados; cotas enviesadas e atrasadas passaram sem alarme. A regra L2 instantanea chegou a 53/68 no piloto saudavel, mas caiu a 49/68 com o filtro e ainda exige ampliacao dos testes.
+
+1. PERGUNTA E IMPLEMENTACAO
+
+Um coordenador de recursos associado a E distribui cotas; os coordenadores locais calculam/aplicam as correcoes. Ele recebe o pedido assinado combinado de A/B/C e o pedido de D. E usa suas nove replicas para sua reserva local.
+Comum proporcional: qY=90*|Y|/(|Y|+|D|), qD=90-qY. Dois grupos fixos: 45/45. Dois grupos com emprestimo: qY=45+max(0,45-|D|)-max(0,45-|Y|), qD=90-qY, em uA. Quando ambos excedem 45, mantem-se 45/45 antes da reserva E.
+Na comparacao principal e no piloto de grupos, usa-se transporte de 20 us e filtro RC de 50 us na fracao de Y; D recebe o complemento. O teto exploratorio de E e 5 uA, dentro dos 90. E entra se D excede a cota e concorda no sinal; o arbitro final debita E de Y quando necessario. Isso preserva uma prioridade limitada a D e pode prejudicar A/B/C.
+Portanto, 45/45 descreve as cotas iniciais Y/D: com E fornecendo 5 uA, a divisao efetiva pode chegar a 40 uA em ABC e 50 uA em D+E. Essa mesma regra vale durante o fallback do supervisor.
+O grupo fisico e ABC / D+E, porque A/B/C atuam no mesmo estado Y e podem cancelar pedidos assinados. Nao foi testado AB / CD neste lote. A mudanca de agrupamento impede atribuir esses resultados a todos os desenhos de dois grupos.
+A comparacao implementa politicas e interfaces funcionais, sem modelar dois processadores independentes. Na matriz principal, a falha comum do topo afeta os comandos Y e D nos dois desenhos; os testes adicionais anulam o comando de apenas um grupo por vez, mantendo o calculo local de reserva. Nao se extrai probabilidade de falha de hardware deste lote deterministico.
+Apenas mudar o nome/local do coordenador nao produz ganho. O novo comum tambem introduz atraso/filtro; o controle E_cota5_f0 da etapa16 identifica a condicao anterior sem essa camada.
+
+2. COMPARACAO PRINCIPAL — ALTA DEMANDA, QUATRO CONDICOES DO TOPO
+
+Cada linha: 16 trajetorias x 17 janelas = 272. Saudavel, queda silenciosa, atraso permanente de 500 us e inversao. Duas condicoes iniciais e dois passos maximos (1.25/0.625 us).
+Arquitetura | Total /272 | saudavel /68 | queda /68 | atraso /68 | inversao /68 | comuns /136 | discordantes /136
+Referencia anterior (dois atuadores) | 198 | 51 | 49 | 49 | 49 | 78 | 42
+Comum + supervisor associado a E | 199 | 49 | 49 | 50 | 51 | 80 | 39
+Dois grupos + supervisor associado a E | 174 | 46 | 42 | 42 | 44 | 70 | 34
+
+Compensacao: media dos RMS de cada trajetoria; menor residual e melhor, mas nao garante a logica.
+Arquitetura | residual D+E uA | residual Y uA | RMS g(x) | variacao total g(x)/s
+Referencia anterior (dois atuadores) | 21.1882 | 40.7173 | 0.917707 | 1001.339
+Comum + supervisor associado a E | 19.0560 | 44.6152 | 0.916005 | 1001.321
+Dois grupos + supervisor associado a E | 16.6058 | 48.8214 | 0.912693 | 1003.939
+Comum + supervisor associado a E: recuperou 39 janelas da referencia e introduziu 38 novas falhas nas mesmas condicoes.
+Dois grupos + supervisor associado a E: recuperou 28 janelas da referencia e introduziu 52 novas falhas nas mesmas condicoes.
+
+3. CONTROLES SAUDAVEIS E NUMERICO
+
+Caso | corretas /68 | comuns /34 | discordantes /34 | residual D+E uA | residual Y uA
+BUF_p3_f0 | 51 | 20 | 11 | 21.225 | 40.748
+E_cota5_f0 | 49 | 21 | 7 | 18.699 | 43.061
+C_comum_f0 | 49 | 19 | 11 | 18.992 | 44.660
+G_fixo_f0 | 38 | 14 | 10 | 18.357 | 52.661
+G_emprestimo_f0 | 46 | 19 | 8 | 16.616 | 48.962
+G_sem_atuacao_E | 47 | 17 | 13 | 19.042 | 46.976
+L2_filtrado | 49 | 20 | 9 | 23.689 | 40.018
+L2_instantaneo | 53 | 20 | 13 | 23.681 | 37.424
+
+G_sem_atuacao_E usa cap_e=0 (comando de E nulo), mantendo o terceiro atuador e os sensores no modelo. Essa ablacao nao equivale a remover fisicamente o ramo E.
+Ajuste exploratorio apos o piloto: regra L2, registrada em MOTIVO_AJUSTE.txt antes da execucao. Sob escassez, qY=clip((90+|Y|-|D|)/2,0,90), qD=90-qY. Esta projecao minimiza o erro quadratico dos pedidos estimados antes do filtro e da reserva E. E ainda pode retirar ate 5 uA de Y depois disso; portanto, a concessao final nao e declarada otima para a planta verdadeira. O modo filtrado mantem 20/50 us; o instantaneo ignora esse transporte/filtro e e um limite ideal. Os atuadores continuam com seus modelos anteriores. A projecao foi conferida em 10000 pares contra uma malha independente de 1001 concessoes. Esses oito ensaios sao somente saudaveis, sem terceiro passo ou matriz completa de falhas: nao se comparam seus totais de 68 com o total principal de 272.
+
+Terceiro passo: cada contagem tem denominador 34; nao e um lote de 272.
+Referencia anterior (dois atuadores): passos [1.25, 0.625, 0.3125] us; corretas [28, 23, 25]; comuns nos tres 17/34; discordancias entre vizinhos [11, 8].
+Comum + supervisor associado a E: passos [1.25, 0.625, 0.3125] us; corretas [24, 25, 26]; comuns nos tres 16/34; discordancias entre vizinhos [11, 11].
+Dois grupos + supervisor associado a E: passos [1.25, 0.625, 0.3125] us; corretas [24, 22, 21]; comuns nos tres 16/34; discordancias entre vizinhos [8, 9].
+Diferencas entre trajetorias caoticas nao sao prova isolada de erro do solver. Entretanto, janelas que mudam de classificacao com o passo nao sustentam validacao logica independente da discretizacao.
+
+4. FALHAS DO SUPERVISOR E DOS GRUPOS
+
+Ensaios exploratorios de duas condicoes iniciais no passo 0.625 us, 34 janelas por caso. Queda/duplo gasto/cota enviesada: 343.35 a 403.35 ms. Atraso extra de cotas: 500 us desde o inicio. O validador consulta somente heartbeat, faixa e soma das mensagens. Cotas invalidas retornam a 45/45 sem memoria. O validador e combinacional ideal: a latencia observada proxima do instante da injecao nao e especificacao de comparador real. Queda e inversao do topo usam detector por discrepancia com memoria, preservado da etapa15.
+Controle saudavel de grupos no mesmo passo 0.625 us: 22/34.
+Caso | corretas /34 | recuperadas / novas falhas versus controle | validador acionou (trajetorias) | pico pedido de cotas uA | pico concessao final uA | alarmes do detector de atuacao
+G_super_queda | 24 | 3 / 1 | 2/2 | 90.00000 | 90.00000 | 0/2
+G_super_duplo | 23 | 5 / 4 | 2/2 | 180.00000 | 90.00000 | 0/2
+G_super_enviesado | 19 | 3 / 6 | 0/2 | 90.00000 | 90.00000 | 0/2
+G_super_atraso | 19 | 3 / 6 | 0/2 | 90.00000 | 90.00000 | 0/2
+G_grupo_ABC_queda | 21 | 2 / 3 | 0/2 | 90.00000 | 90.00000 | 2/2
+G_grupo_D_queda | 21 | 3 / 4 | 0/2 | 90.00000 | 90.00000 | 2/2
+O teste enviesado envia 0 uA para Y e 90 uA para D mantendo heartbeat. Essa mensagem e contabilmente valida. O detector de atuacao compara com a referencia ja alocada; portanto, nao e um verificador independente da qualidade da cota. Melhor nota casual sob uma falha nao demonstra tolerancia nem justifica essa politica.
+Associar o supervisor a E tambem cria uma dependencia comum aos grupos. O ensaio de queda do supervisor nao desliga fisicamente E, sua alimentacao e seus sensores. Nao representa falha completa do pilar.
+
+5. CORRENTES, DETECCAO E EVIDENCIA
+
+Novas trajetorias: 64. Falhas de corrente por shunt/resistor/sonda: 0/0/0. Picos respectivos: 90.021849 / 90.021858 / 90.021858 uA.
+Pico de soma dos comandos concedidos: 90.000005 uA. Pico de comando E: 5.000000 uA.
+A soma dos comandos e reconstruida de campos float32 do RAW; o desvio de aproximadamente 0.000005 uA no valor armazenado e compativel com essa resolucao. As regras algebricas limitam a concessao a 90 uA. O pico fisico informado acima e uma medida distinta e fica ligeiramente acima do nominal.
+Alarmes de atuacao antes de falhas do topo ou sem falha de atuacao: 0. Validador de cotas antes da janela de falha: 0.
+O limite operacional e 90 uA; o criterio numerico herdado e <=100.005 uA para soma dos MODULOS das correntes reais. Picos ligeiramente maiores que 90 devem ser informados, mesmo quando aprovados no criterio de seguranca. Nao se confunde corrente liquida em X com soma das correntes D e E.
+Maior divergencia pontual shunt-resistor: 0.000349 uA; shunt-sonda zero volt: 3.031667 uA. A etapa16 identificou discrepancias pontuais de sonda em passos extremamente curtos. Os residuais sao calculados por tensao no shunt / 1 kohm; os outros metodos sao auditorias independentes de pico.
+O analisador exige fim de cada trajetoria em 0.85 s, todas as medidas de janela e valores finitos, e rejeita avisos de tolerancia relaxada, matriz singular ou passo pequeno demais. O verificador estatico ensaiou 600000 alocacoes adversas e conferiu limites e ausencia de acesso do controlador aos codigos de falha ou resposta AND esperada.
+
+6. LIMITES PARA A FUTURA PLACA
+
+Ainda ha operadores ideais (abs/min/max/divisao/mediana), cotas complementares atomicas, fontes ideais e amplificadores genericos. O supervisor esta associado a E apenas na arquitetura funcional. Nao ha chip, trilha, consumo quiescente, aquecimento ou EMC validados.
+Os 90 uA sao de atuacao, nao do consumo total da placa. Implementacao futura deve verificar mensagens de geracoes diferentes, cotas expiradas, prioridade local, shunts/offsets/compliance, alimentacao e falhas comuns. Nove sensores E sao explicitos; A-D ainda sao replicas individuais favoraveis. Os 45 subpilares continuam uma proposta, nao uma validacao completa.
+A variacao total de g(x) e um indicador dinamico do modelo; nao mede dissipacao, temperatura ou vida util de componentes.
+
+7. REPRODUCAO
+
+preparar_etapa17.py -> preparar_expansao.py -> preparar_ajuste.py -> verificar_regras.py -> verificar_ajuste.py. Executar cada lotes_*.json com executar.ps1 (-Slot/-Slots para filas). Depois analisar_etapa17.py, gerar_relatorio.py e verificar_entrega.py. A execucao do LTspice precisou sair do isolamento; o ensaio curto SMOKE confirmou a inicializacao. Os primeiros processos isolados foram interrompidos sem gerar resultados do lote.
+Artefatos: MLC_coordenador_E.inc, netlists .cir, parametros .json, logs .log, ondas .raw, trajetorias.json, janelas.csv, resumo.json, comparacoes.json, verificacao_regras.json, verificacao_entrega.json. Fontes herdadas: etapa16/MLC_pilar_E_v2.inc, etapa15/BUF_p3_f*.raw e etapa16/E_cota5_f0.raw/R_base.raw.
+
+8. DECISAO DE PESQUISA
+
+Manter a coordenacao comum como base de comparacao para A/B/C/D. Os grupos ABC / D+E testados nao justificam substituir essa base. A referencia anterior permanece preservada; o supervisor associado a E e uma variante de pesquisa, com requisitos novos de validacao das cotas.
+A ideia de E e util para estudar reserva local e fiscalizacao de recursos. Deve existir uma unica autoridade sobre cada concessao de corrente; acrescentar um supervisor que tambem altere comandos sem essa regra cria disputa e dependencias. Neste modelo as referencias do detector foram tomadas depois da cota aceita, evitando que a reducao autorizada de corrente seja tratada como falha do topo. Isso tambem explica a cegueira a uma cota errada, mas formalmente valida.
+Prioridade seguinte: verificar idade e coerencia das cotas com referencia independente, definir fallback local e modelar tempos/offsets reais do validador. A regra L2 merece uma varredura de latencia e novos cenarios; seu ganho no limite instantaneo nao autoriza substituir a referencia nem declarar convergencia.
+Conclusao limitada a este lote deterministico: nao escolhe chip, nao prova superioridade universal de uma hierarquia e nao encerra a validacao logica ou fisica do sistema.
+
+CORRECAO METODOLOGICA DA ETAPA18: fracoes temporais recalculadas dos RAWs com indicadores convertidos a float. Janelas, RMS, picos e parametros preservados. Evidencia em ../etapa18/correcao_fracoes_anteriores.json.

@@ -1,0 +1,302 @@
+[
+  {
+    "caso": 0,
+    "perfil": 1,
+    "politica": 1,
+    "atraso_coord": 0,
+    "orcamento_max": 5e-05,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 1,
+    "perfil": 1,
+    "politica": 1,
+    "atraso_coord": 0,
+    "orcamento_max": 5e-05,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 2,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 5e-05,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 3,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 5e-05,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 4,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 5e-05,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 5,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 5e-05,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 6,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0005,
+    "orcamento_max": 5e-05,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 7,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0005,
+    "orcamento_max": 5e-05,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 8,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 5e-05,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 9,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 5e-05,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 10,
+    "perfil": 1,
+    "politica": 1,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 11,
+    "perfil": 1,
+    "politica": 1,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 12,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 13,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 14,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 15,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 16,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0005,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 17,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0005,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 18,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 0.0001,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 19,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 0.0001,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 20,
+    "perfil": 1,
+    "politica": 1,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0002,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 21,
+    "perfil": 1,
+    "politica": 1,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0002,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 22,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0002,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 23,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0,
+    "orcamento_max": 0.0002,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 24,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 0.0002,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 25,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0001,
+    "orcamento_max": 0.0002,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 26,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0005,
+    "orcamento_max": 0.0002,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 27,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.0005,
+    "orcamento_max": 0.0002,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 28,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 0.0002,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 29,
+    "perfil": 1,
+    "politica": 2,
+    "atraso_coord": 0.001,
+    "orcamento_max": 0.0002,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  }
+]

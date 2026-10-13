@@ -1,0 +1,32 @@
+[
+  {
+    "arquivo": "BUF_ideal90",
+    "referencia": "ABL_ideal_90",
+    "antes": {
+      "corretas": 50,
+      "janelas": 68,
+      "corretas_ambos": 20,
+      "divergencias": 10,
+      "alarmes_indevidos": 2,
+      "pico_tensoes_uA": 90.00015258789064,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 25,
+        "6.25e-07": 25
+      }
+    },
+    "depois": {
+      "corretas": 53,
+      "janelas": 68,
+      "corretas_ambos": 21,
+      "divergencias": 11,
+      "alarmes_indevidos": 0,
+      "pico_tensoes_uA": 90.00015258789064,
+      "falhas_corrente": 0,
+      "por_passo": {
+        "1.25e-06": 29,
+        "6.25e-07": 24
+      }
+    }
+  }
+]

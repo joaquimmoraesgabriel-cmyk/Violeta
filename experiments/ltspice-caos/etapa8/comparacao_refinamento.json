@@ -1,0 +1,42 @@
+[
+  {
+    "arquivo": "MLC_limites_refinamento",
+    "atraso_coord": "0.001",
+    "x_inicial": "-0.37",
+    "janela": "11",
+    "acerto_5us": "1",
+    "acerto_2_5us": "0"
+  },
+  {
+    "arquivo": "MLC_limites_refinamento",
+    "atraso_coord": "0.001",
+    "x_inicial": "0.37",
+    "janela": "2",
+    "acerto_5us": "0",
+    "acerto_2_5us": "1"
+  },
+  {
+    "arquivo": "MLC_limites_refinamento",
+    "atraso_coord": "0.001",
+    "x_inicial": "0.37",
+    "janela": "4",
+    "acerto_5us": "0",
+    "acerto_2_5us": "1"
+  },
+  {
+    "arquivo": "MLC_limites_refinamento",
+    "atraso_coord": "0.001",
+    "x_inicial": "0.37",
+    "janela": "11",
+    "acerto_5us": "1",
+    "acerto_2_5us": "0"
+  },
+  {
+    "arquivo": "MLC_limites_refinamento",
+    "atraso_coord": "0.001",
+    "x_inicial": "0.37",
+    "janela": "14",
+    "acerto_5us": "1",
+    "acerto_2_5us": "0"
+  }
+]

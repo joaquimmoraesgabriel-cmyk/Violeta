@@ -1,0 +1,50 @@
+[
+  {
+    "perfil": 1,
+    "falha": 4,
+    "sem_reserva": 31,
+    "com_reserva": 34,
+    "recuperadas": 3,
+    "pioraram": 0
+  },
+  {
+    "perfil": 1,
+    "falha": 2,
+    "sem_reserva": 29,
+    "com_reserva": 34,
+    "recuperadas": 5,
+    "pioraram": 0
+  },
+  {
+    "perfil": 1,
+    "falha": 3,
+    "sem_reserva": 31,
+    "com_reserva": 34,
+    "recuperadas": 3,
+    "pioraram": 0
+  },
+  {
+    "perfil": 3,
+    "falha": 4,
+    "sem_reserva": 22,
+    "com_reserva": 25,
+    "recuperadas": 9,
+    "pioraram": 6
+  },
+  {
+    "perfil": 3,
+    "falha": 2,
+    "sem_reserva": 16,
+    "com_reserva": 24,
+    "recuperadas": 10,
+    "pioraram": 2
+  },
+  {
+    "perfil": 3,
+    "falha": 3,
+    "sem_reserva": 21,
+    "com_reserva": 27,
+    "recuperadas": 7,
+    "pioraram": 1
+  }
+]

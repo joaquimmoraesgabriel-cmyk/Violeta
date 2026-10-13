@@ -1,0 +1,41 @@
+{
+  "provisorio": true,
+  "sem_conferencia_log": true,
+  "arquivos_solicitados": [
+    "L2_5_10_v2"
+  ],
+  "trajetorias": [
+    {
+      "arquivo": "L2_5_10_v2",
+      "caso": 0,
+      "corretas": 15,
+      "falso": false,
+      "primeiro_trip_ms": null,
+      "pico_uA": 90.0225043296814
+    },
+    {
+      "arquivo": "L2_5_10_v2",
+      "caso": 1,
+      "corretas": 15,
+      "falso": false,
+      "primeiro_trip_ms": null,
+      "pico_uA": 90.01383185386659
+    },
+    {
+      "arquivo": "L2_5_10_v2",
+      "caso": 2,
+      "corretas": 12,
+      "falso": false,
+      "primeiro_trip_ms": null,
+      "pico_uA": 90.02065658569335
+    },
+    {
+      "arquivo": "L2_5_10_v2",
+      "caso": 3,
+      "corretas": 14,
+      "falso": false,
+      "primeiro_trip_ms": null,
+      "pico_uA": 90.012788772583
+    }
+  ]
+}

@@ -1,0 +1,3449 @@
+{
+  "trajetorias_unicas": 162,
+  "registros_atualizados": 184,
+  "arquivos_raw": 47,
+  "campos": [
+    "fracao_fora_quebras",
+    "fracao_e",
+    "fracao_limitador",
+    "fracao_demanda_real_acima_90"
+  ],
+  "tabela_corrigida": [
+    {
+      "arquivo": "BUF_p3_f0",
+      "demanda_acima_91_percentual": 62.15192447232838
+    },
+    {
+      "arquivo": "E_v2_f0",
+      "demanda_acima_91_percentual": 61.67374386447386
+    },
+    {
+      "arquivo": "S_rapido",
+      "demanda_acima_91_percentual": 62.151004119284025
+    },
+    {
+      "arquivo": "C_demanda75",
+      "demanda_acima_91_percentual": 41.27613299198146
+    },
+    {
+      "arquivo": "C_demanda50",
+      "demanda_acima_91_percentual": 12.189009229808043
+    }
+  ],
+  "alteracoes": [
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22356115270522192,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08235177830450302,
+        "fracao_demanda_real_acima_90": 0.3122833506478127
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4461337462099424,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16368438905289165,
+        "fracao_demanda_real_acima_90": 0.6234310802233496
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22191289757850138,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08179787069120315,
+        "fracao_demanda_real_acima_90": 0.3105088999760139
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4428430561241123,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16258964518074107,
+        "fracao_demanda_real_acima_90": 0.6198569551767484
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22269434424807047,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07962760080063205,
+        "fracao_demanda_real_acima_90": 0.31197346860514885
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44488321065344744,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15873293024500362,
+        "fracao_demanda_real_acima_90": 0.6233472751366881
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22366619227973744,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08116639652076943,
+        "fracao_demanda_real_acima_90": 0.3100184448036116
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4468191819347708,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16179813650735914,
+        "fracao_demanda_real_acima_90": 0.6194416683563491
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22566511121998217,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08086784220744697,
+        "fracao_demanda_real_acima_90": 0.3128773035682658
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4503605410235151,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16071756312170157,
+        "fracao_demanda_real_acima_90": 0.6246196279544345
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21742581345296746,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07893487216787529,
+        "fracao_demanda_real_acima_90": 0.3092615962682119
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43389995214620114,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15690119681534304,
+        "fracao_demanda_real_acima_90": 0.6173774516550474
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22223082554306003,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07892349445424089,
+        "fracao_demanda_real_acima_90": 0.3091119988883927
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44396108738483897,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15731128687743914,
+        "fracao_demanda_real_acima_90": 0.6176223173407952
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2240025554800365,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08019487467057987,
+        "fracao_demanda_real_acima_90": 0.3100414975855314
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44749440602961765,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1598618525265345,
+        "fracao_demanda_real_acima_90": 0.6194822695179937
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2204641243289116,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08034150573142188,
+        "fracao_demanda_real_acima_90": 0.3088934450437176
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4399906336892695,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15971554037605457,
+        "fracao_demanda_real_acima_90": 0.6166395961129207
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22303122405992074,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08014979482846792,
+        "fracao_demanda_real_acima_90": 0.3092540616104911
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4451006031615563,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15930236222131453,
+        "fracao_demanda_real_acima_90": 0.6173671891383788
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2213161879201236,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07957299221149756,
+        "fracao_demanda_real_acima_90": 0.3097063313426987
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4421286060409617,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15862697220884212,
+        "fracao_demanda_real_acima_90": 0.6188201637505581
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22349743591305343,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.0807488566643811,
+        "fracao_demanda_real_acima_90": 0.3099900636160193
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4464780168582121,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16096657806379983,
+        "fracao_demanda_real_acima_90": 0.6193856646417917
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22496853288467666,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08047340161732346,
+        "fracao_demanda_real_acima_90": 0.310962762578566
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4489619533163064,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15996142726135987,
+        "fracao_demanda_real_acima_90": 0.6207777186621017
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21913330071746878,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08014523204062786,
+        "fracao_demanda_real_acima_90": 0.3086332034152439
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43731662742347804,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15930805698022804,
+        "fracao_demanda_real_acima_90": 0.6161153162920117
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22196624084452654,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07982582823844588,
+        "fracao_demanda_real_acima_90": 0.3105953023048552
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44342889787445156,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15912188065924787,
+        "fracao_demanda_real_acima_90": 0.6205916243784745
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22443265503795634,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08071287542677398,
+        "fracao_demanda_real_acima_90": 0.31129820352161364
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44835186856776754,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16088299052912,
+        "fracao_demanda_real_acima_90": 0.6220033959673947
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2254652076115987,
+        "fracao_e": 0.27940683686410867,
+        "fracao_limitador": 0.11840899055241784,
+        "fracao_demanda_real_acima_90": 0.3125873393407665
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4500072448199507,
+        "fracao_e": 0.5579864874002317,
+        "fracao_limitador": 0.2356510973511113,
+        "fracao_demanda_real_acima_90": 0.6241378060305259
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21988321857004245,
+        "fracao_e": 0.2764768302134756,
+        "fracao_limitador": 0.11740466472355991,
+        "fracao_demanda_real_acima_90": 0.310379656952904
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4388640011860702,
+        "fracao_e": 0.5521167881072636,
+        "fracao_limitador": 0.2336590794203172,
+        "fracao_demanda_real_acima_90": 0.619701544606523
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22588569942962838,
+        "fracao_e": 0.28008313353489644,
+        "fracao_limitador": 0.11859393923125915,
+        "fracao_demanda_real_acima_90": 0.31194369945939826
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4512792127989259,
+        "fracao_e": 0.5596580283966334,
+        "fracao_limitador": 0.23652321529531978,
+        "fracao_demanda_real_acima_90": 0.6233303279737107
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2219292040178447,
+        "fracao_e": 0.27494702373756374,
+        "fracao_limitador": 0.11643537889386782,
+        "fracao_demanda_real_acima_90": 0.30689264795677906
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44336499468519525,
+        "fracao_e": 0.5494023807012993,
+        "fracao_limitador": 0.23223097656368122,
+        "fracao_demanda_real_acima_90": 0.6132407610716497
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22083468294454325,
+        "fracao_e": 0.2790592071808445,
+        "fracao_limitador": 0.11753382000142518,
+        "fracao_demanda_real_acima_90": 0.31038754334039226
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4408467057044778,
+        "fracao_e": 0.5572869112337493,
+        "fracao_limitador": 0.23391928052820918,
+        "fracao_demanda_real_acima_90": 0.6197359379503379
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22231327890267483,
+        "fracao_e": 0.2771005748775311,
+        "fracao_limitador": 0.11511025817822183,
+        "fracao_demanda_real_acima_90": 0.3094970623581114
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4438112679105508,
+        "fracao_e": 0.5533565902283302,
+        "fracao_limitador": 0.22910002589205017,
+        "fracao_demanda_real_acima_90": 0.6179432374337138
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21954029834944327,
+        "fracao_e": 0.2769605098103578,
+        "fracao_limitador": 0.11625574338030409,
+        "fracao_demanda_real_acima_90": 0.3090441234667138
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43859021344196353,
+        "fracao_e": 0.5534296820133983,
+        "fracao_limitador": 0.2318650340457562,
+        "fracao_demanda_real_acima_90": 0.6175261470632504
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2196793942955656,
+        "fracao_e": 0.27311848763587393,
+        "fracao_limitador": 0.1150672126294645,
+        "fracao_demanda_real_acima_90": 0.30615231561854966
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4388865078635193,
+        "fracao_e": 0.545745661517457,
+        "fracao_limitador": 0.2294984415952672,
+        "fracao_demanda_real_acima_90": 0.6117444321316527
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22159099957114886,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08025257173548961,
+        "fracao_demanda_real_acima_90": 0.31068770070493107
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44229275770490545,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15955165580155292,
+        "fracao_demanda_real_acima_90": 0.6202716794039921
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2175463637033105,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08224667853151736,
+        "fracao_demanda_real_acima_90": 0.3088835314902171
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4342048568176084,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1635472267093641,
+        "fracao_demanda_real_acima_90": 0.6166686071389105
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22229903038534307,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08355241823224754,
+        "fracao_demanda_real_acima_90": 0.31353239932889526
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44407253531278745,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16656611721295306,
+        "fracao_demanda_real_acima_90": 0.6264882987696655
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22075764461984274,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07937577253178928,
+        "fracao_demanda_real_acima_90": 0.3077820892235394
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44103677188883966,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1582493209604883,
+        "fracao_demanda_real_acima_90": 0.6149910865572721
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f4",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2205621715171382,
+        "fracao_e": 0.2766465688069851,
+        "fracao_limitador": 0.1158406382216363,
+        "fracao_demanda_real_acima_90": 0.3105381687068857
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4403116285372118,
+        "fracao_e": 0.552448970233434,
+        "fracao_limitador": 0.23053396859680808,
+        "fracao_demanda_real_acima_90": 0.6200336367455543
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f4",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22557569819519843,
+        "fracao_e": 0.2790081785365609,
+        "fracao_limitador": 0.11749038202220158,
+        "fracao_demanda_real_acima_90": 0.3107723869447957
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.450313117421764,
+        "fracao_e": 0.5571693558365431,
+        "fracao_limitador": 0.2338481895069421,
+        "fracao_demanda_real_acima_90": 0.6205184202933097
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f4",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22015898966763833,
+        "fracao_e": 0.27332550889704593,
+        "fracao_limitador": 0.1170608314218263,
+        "fracao_demanda_real_acima_90": 0.30673693331430896
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4398403577129793,
+        "fracao_e": 0.5461639604275954,
+        "fracao_limitador": 0.2334735812732125,
+        "fracao_demanda_real_acima_90": 0.6129169566592084
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f4",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2170464624016437,
+        "fracao_e": 0.2763966405073026,
+        "fracao_limitador": 0.11568189379251191,
+        "fracao_demanda_real_acima_90": 0.3076489699222512
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4336153834881729,
+        "fracao_e": 0.5522941331740787,
+        "fracao_limitador": 0.23072120860775874,
+        "fracao_demanda_real_acima_90": 0.6147425593965006
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f4",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21965267443044498,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.0783712390868978,
+        "fracao_demanda_real_acima_90": 0.30811427290937815
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4384312175484719,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1558166506304301,
+        "fracao_demanda_real_acima_90": 0.6151537120657773
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f4",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22194510459811523,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07959961087334222,
+        "fracao_demanda_real_acima_90": 0.3080317885281812
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44301853008817643,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15825889410355548,
+        "fracao_demanda_real_acima_90": 0.6149742430199298
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f4",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2178777920292517,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08007902731604867,
+        "fracao_demanda_real_acima_90": 0.3085312730227271
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43524620948398124,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1596329892357451,
+        "fracao_demanda_real_acima_90": 0.6164822502172735
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f4",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21969275828539972,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07879994809320827,
+        "fracao_demanda_real_acima_90": 0.3097865937954749
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4388925525226157,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15707512368327603,
+        "fracao_demanda_real_acima_90": 0.6189974096498704
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22491421758338045,
+        "fracao_e": 0.27932755716183133,
+        "fracao_limitador": 0.1173961021947891,
+        "fracao_demanda_real_acima_90": 0.3095871642595611
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44899314278439373,
+        "fracao_e": 0.5578123965665784,
+        "fracao_limitador": 0.23365931783346416,
+        "fracao_demanda_real_acima_90": 0.6181245318435207
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2215548632503972,
+        "fracao_e": 0.2766579578625072,
+        "fracao_limitador": 0.1171539789666808,
+        "fracao_demanda_real_acima_90": 0.3095192363331059
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4422840863142942,
+        "fracao_e": 0.5524636093520001,
+        "fracao_limitador": 0.2331558732233886,
+        "fracao_demanda_real_acima_90": 0.617971701569226
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f2",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22024314342575732,
+        "fracao_e": 0.27613477604194214,
+        "fracao_limitador": 0.11714643817357638,
+        "fracao_demanda_real_acima_90": 0.3075371315504132
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4399972994696468,
+        "fracao_e": 0.5517659937251865,
+        "fracao_limitador": 0.23364204069361919,
+        "fracao_demanda_real_acima_90": 0.6145118332463738
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f2",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22090046642428082,
+        "fracao_e": 0.2721595431028322,
+        "fracao_limitador": 0.11566430694387073,
+        "fracao_demanda_real_acima_90": 0.30636917701898436
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44132044492445893,
+        "fracao_e": 0.5438271790814294,
+        "fracao_limitador": 0.23068786588934487,
+        "fracao_demanda_real_acima_90": 0.6121872063798163
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21876261553530857,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08151303779352669,
+        "fracao_demanda_real_acima_90": 0.3076320072890233
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4366315002246281,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16209886438155502,
+        "fracao_demanda_real_acima_90": 0.614161597121616
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2233354820099085,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08004347912523066,
+        "fracao_demanda_real_acima_90": 0.3133241476400953
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44577704915255606,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15912578998214583,
+        "fracao_demanda_real_acima_90": 0.6255638035601723
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f2",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22117977473318412,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.077753050418874,
+        "fracao_demanda_real_acima_90": 0.3094277905543904
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4418740214838458,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1549973213907736,
+        "fracao_demanda_real_acima_90": 0.618267641601584
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f2",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21498314531558274,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07679643694683985,
+        "fracao_demanda_real_acima_90": 0.3046214314359088
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.429471952305807,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15309180438677866,
+        "fracao_demanda_real_acima_90": 0.608666598366577
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f3",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22074871314347297,
+        "fracao_e": 0.2795389115694942,
+        "fracao_limitador": 0.1175072967143319,
+        "fracao_demanda_real_acima_90": 0.3122231949851599
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44066967559781883,
+        "fracao_e": 0.5582416604557088,
+        "fracao_limitador": 0.23385155805929758,
+        "fracao_demanda_real_acima_90": 0.6233831529664063
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f3",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2191633441662886,
+        "fracao_e": 0.274770806506168,
+        "fracao_limitador": 0.11597299820224027,
+        "fracao_demanda_real_acima_90": 0.30809932983208266
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4375025617077613,
+        "fracao_e": 0.5486975452651154,
+        "fracao_limitador": 0.2308014409064005,
+        "fracao_demanda_real_acima_90": 0.6151634420685191
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f3",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22383735672650726,
+        "fracao_e": 0.27719009193714944,
+        "fracao_limitador": 0.11724512767087365,
+        "fracao_demanda_real_acima_90": 0.30896938938136653
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44718648831489705,
+        "fracao_e": 0.5538731705051193,
+        "fracao_limitador": 0.23383885333136453,
+        "fracao_demanda_real_acima_90": 0.6173742984439994
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_v2_f3",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22342182869380017,
+        "fracao_e": 0.2779171722176299,
+        "fracao_limitador": 0.117377689224546,
+        "fracao_demanda_real_acima_90": 0.31003708894552856
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44636236840583254,
+        "fracao_e": 0.555323188475019,
+        "fracao_limitador": 0.2341045408747891,
+        "fracao_demanda_real_acima_90": 0.6195167716243803
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f3",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22025725964410733,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08093441663567096,
+        "fracao_demanda_real_acima_90": 0.30992192801077956
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43962384645734953,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16092720985723155,
+        "fracao_demanda_real_acima_90": 0.6187521838813266
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f3",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22519982343813455,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08275940377606854,
+        "fracao_demanda_real_acima_90": 0.3138950614866283
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4494949080547419,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1645397991045253,
+        "fracao_demanda_real_acima_90": 0.6266943050923148
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f3",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2209073037577179,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08085127300502151,
+        "fracao_demanda_real_acima_90": 0.3111314572112682
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44131241996458087,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16118719655725822,
+        "fracao_demanda_real_acima_90": 0.6216873721805627
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_v2_f3",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22161538663525587,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08248171923707694,
+        "fracao_demanda_real_acima_90": 0.31295223431935415
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.442720915008106,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16443898053565195,
+        "fracao_demanda_real_acima_90": 0.6253252386170991
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda50",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22235626692026267,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.017079640799612213,
+        "fracao_demanda_real_acima_90": 0.06254674868893458
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4437413202763016,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.033870170119078294,
+        "fracao_demanda_real_acima_90": 0.12461674794112025
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda50",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2244693449134738,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.017663751186381665,
+        "fracao_demanda_real_acima_90": 0.06328046079524902
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44795567901421823,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.03503210799770653,
+        "fracao_demanda_real_acima_90": 0.12608400984623566
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda50",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2231036101536535,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.01575848614421419,
+        "fracao_demanda_real_acima_90": 0.05863902657818184
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4456851156865466,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.03136697133542632,
+        "fracao_demanda_real_acima_90": 0.11703690247978882
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda50",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22265854954398015,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.016348734238395883,
+        "fracao_demanda_real_acima_90": 0.06002819239598138
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4447937112488762,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.03253775340314954,
+        "fracao_demanda_real_acima_90": 0.11982270892517706
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda75",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22654937722638901,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.05531158276693502,
+        "fracao_demanda_real_acima_90": 0.20776946402168972
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4521004721271146,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10988845787424667,
+        "fracao_demanda_real_acima_90": 0.4145183436771752
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda75",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2264425545134125,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.054736070859662256,
+        "fracao_demanda_real_acima_90": 0.20811832805490907
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.45190894100318135,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10872103860109403,
+        "fracao_demanda_real_acima_90": 0.41522804764373134
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda75",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22669931811284275,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.05322240325554606,
+        "fracao_demanda_real_acima_90": 0.20612741792551975
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4528855675716439,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10605336558569747,
+        "fracao_demanda_real_acima_90": 0.4117371435219846
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "C_demanda75",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2228618126869692,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.05297577711329509,
+        "fracao_demanda_real_acima_90": 0.20504546694720602
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44521443593567966,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10555460333206884,
+        "fracao_demanda_real_acima_90": 0.4095617848363674
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_demanda75",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22605972449973633,
+        "fracao_e": 0.1750724296777298,
+        "fracao_limitador": 0.08272748279316804,
+        "fracao_demanda_real_acima_90": 0.20856401486891518
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.45127195650138513,
+        "fracao_e": 0.3493516691661795,
+        "fracao_limitador": 0.1645132169854065,
+        "fracao_demanda_real_acima_90": 0.41617244809059
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_demanda75",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2254611045119014,
+        "fracao_e": 0.17431995429330305,
+        "fracao_limitador": 0.08101494701767172,
+        "fracao_demanda_real_acima_90": 0.20687720254912267
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.45009785228961874,
+        "fracao_e": 0.34786205248188734,
+        "fracao_limitador": 0.16109400450579853,
+        "fracao_demanda_real_acima_90": 0.41279109351206467
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_demanda75",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22567284339853064,
+        "fracao_e": 0.1735640684194884,
+        "fracao_limitador": 0.08161352365966641,
+        "fracao_demanda_real_acima_90": 0.20666590909844046
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4508526550225812,
+        "fracao_e": 0.3466839113772274,
+        "fracao_limitador": 0.16270121866641096,
+        "fracao_demanda_real_acima_90": 0.4128312951871248
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_demanda75",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22704798637150178,
+        "fracao_e": 0.17509217566694915,
+        "fracao_limitador": 0.08236727475735169,
+        "fracao_demanda_real_acima_90": 0.20731717483490372
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.45359429655615296,
+        "fracao_e": 0.34974806693783494,
+        "fracao_limitador": 0.16419950983828013,
+        "fracao_demanda_real_acima_90": 0.4141264480889209
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_fixo_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2191514154711446,
+        "fracao_e": 0.3457391677246453,
+        "fracao_limitador": 0.06695272421148865,
+        "fracao_demanda_real_acima_90": 0.31064595632202746
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4374506151006622,
+        "fracao_e": 0.6906878178846488,
+        "fracao_limitador": 0.13322031402729628,
+        "fracao_demanda_real_acima_90": 0.6202012906539031
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_fixo_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22285338713844827,
+        "fracao_e": 0.3460175126780311,
+        "fracao_limitador": 0.06796749661399182,
+        "fracao_demanda_real_acima_90": 0.31059160103341044
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4448478767069364,
+        "fracao_e": 0.6912396835591965,
+        "fracao_limitador": 0.13524151536387613,
+        "fracao_demanda_real_acima_90": 0.620106096879536
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_fixo_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21992950179741153,
+        "fracao_e": 0.3440116270346971,
+        "fracao_limitador": 0.06733002932500128,
+        "fracao_demanda_real_acima_90": 0.3096981052470637
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4393731197304538,
+        "fracao_e": 0.6875568796071333,
+        "fracao_limitador": 0.13428621819070813,
+        "fracao_demanda_real_acima_90": 0.6188224697350807
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_fixo_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21718309254914905,
+        "fracao_e": 0.3436379689269741,
+        "fracao_limitador": 0.06875346082193089,
+        "fracao_demanda_real_acima_90": 0.3076479879482167
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43387752718326067,
+        "fracao_e": 0.6868081838126898,
+        "fracao_limitador": 0.13712867979878823,
+        "fracao_demanda_real_acima_90": 0.6147252739399107
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_livre_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22397403733091123,
+        "fracao_e": 0.2777874284985923,
+        "fracao_limitador": 0.11852921818923988,
+        "fracao_demanda_real_acima_90": 0.312478651677686
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44712891611755007,
+        "fracao_e": 0.5547276373697295,
+        "fracao_limitador": 0.23589510601125602,
+        "fracao_demanda_real_acima_90": 0.6238983560990322
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_livre_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2228326598053336,
+        "fracao_e": 0.27838520149401264,
+        "fracao_limitador": 0.11755681542235324,
+        "fracao_demanda_real_acima_90": 0.3102903800278112
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4448438973992329,
+        "fracao_e": 0.5559349931654675,
+        "fracao_limitador": 0.23396878901533394,
+        "fracao_demanda_real_acima_90": 0.6195406482864143
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_livre_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2194017639999571,
+        "fracao_e": 0.2757762230872968,
+        "fracao_limitador": 0.11656640129431031,
+        "fracao_demanda_real_acima_90": 0.3075357104236966
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4383333129375516,
+        "fracao_e": 0.5510569492278242,
+        "fracao_limitador": 0.23248205640287442,
+        "fracao_demanda_real_acima_90": 0.6145072209454105
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_livre_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22279124033474945,
+        "fracao_e": 0.2758490161963749,
+        "fracao_limitador": 0.11609992778121993,
+        "fracao_demanda_real_acima_90": 0.30954035241039257
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44511324602866514,
+        "fracao_e": 0.5512136202138402,
+        "fracao_limitador": 0.231542658278864,
+        "fracao_demanda_real_acima_90": 0.618527232150895
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_prioridade_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2237574234639775,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.0799777604667594,
+        "fracao_demanda_real_acima_90": 0.3116548737127262
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44662374375737274,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15900264494323518,
+        "fracao_demanda_real_acima_90": 0.6222075991224969
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_prioridade_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2218136090131991,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08209744110129266,
+        "fracao_demanda_real_acima_90": 0.31081094239977625
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4427243790378939,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1632449687031196,
+        "fracao_demanda_real_acima_90": 0.6205368410785709
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_prioridade_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21705379674501052,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08248357016010337,
+        "fracao_demanda_real_acima_90": 0.3089463264328987
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43361083841724307,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16443786760145293,
+        "fracao_demanda_real_acima_90": 0.6173044470433909
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "D_prioridade_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22286597447132153,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08121865159997725,
+        "fracao_demanda_real_acima_90": 0.30980621855337176
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4452358319971756,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1619131347098058,
+        "fracao_demanda_real_acima_90": 0.6190284741368924
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_sem_offset",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22508877834504626,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08174711383781755,
+        "fracao_demanda_real_acima_90": 0.31326528763962785
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44919474548791355,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16250278243059182,
+        "fracao_demanda_real_acima_90": 0.6253763772576357
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_sem_offset",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2216316470619086,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.080823890144593,
+        "fracao_demanda_real_acima_90": 0.30935915622023236
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.442279676038475,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16066473805389503,
+        "fracao_demanda_real_acima_90": 0.617578741766019
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_sem_offset",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2218335228829309,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07986619603778233,
+        "fracao_demanda_real_acima_90": 0.31074523619241373
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4431707969342136,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1592036046740262,
+        "fracao_demanda_real_acima_90": 0.6208882292115931
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_sem_offset",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2235937300209685,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07977504737839985,
+        "fracao_demanda_real_acima_90": 0.3111427583302121
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4466732385407375,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15902639749268188,
+        "fracao_demanda_real_acima_90": 0.621690440560662
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22247455793787307,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08394956676495037,
+        "fracao_demanda_real_acima_90": 0.3109662992499397
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4439767103870025,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16687081035319598,
+        "fracao_demanda_real_acima_90": 0.6208824255536622
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2216164058092455,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08433190908611375,
+        "fracao_demanda_real_acima_90": 0.3126113099508504
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44223937948504705,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16764003192626623,
+        "fracao_demanda_real_acima_90": 0.6241594356346697
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22323976197433867,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08335863885334878,
+        "fracao_demanda_real_acima_90": 0.3123673853278395
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4459547235146596,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.166169410906013,
+        "fracao_demanda_real_acima_90": 0.6241489191998367
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21898080536309159,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08118350960653323,
+        "fracao_demanda_real_acima_90": 0.3087182552934909
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4374566190481165,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1618252070273071,
+        "fracao_demanda_real_acima_90": 0.6168493843831925
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido_sem_offset",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21937746565847344,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07926095431776482,
+        "fracao_demanda_real_acima_90": 0.308031061379047
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43780663016420834,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15752197472308088,
+        "fracao_demanda_real_acima_90": 0.6150172587856956
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido_sem_offset",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22275422968397188,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08208869485108762,
+        "fracao_demanda_real_acima_90": 0.3113787810673514
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44453222375274004,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.163149233569348,
+        "fracao_demanda_real_acima_90": 0.621696134079825
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido_sem_offset",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22545160147176738,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08117992748135607,
+        "fracao_demanda_real_acima_90": 0.3099694434255733
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4503948085376006,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16181267621850237,
+        "fracao_demanda_real_acima_90": 0.6193603048463808
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "S_rapido_sem_offset",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22592413135676317,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08482725861358047,
+        "fracao_demanda_real_acima_90": 0.3138090913210016
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.45132389618982727,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16909012140144677,
+        "fracao_demanda_real_acima_90": 0.6270361142029166
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "R_base",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22296611371773253,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07831718939451829,
+        "fracao_demanda_real_acima_90": 0.3095199195792787
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44567738925354655,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15636158531288255,
+        "fracao_demanda_real_acima_90": 0.6187355627701544
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "R_base",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22299335882475443,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08114435786052511,
+        "fracao_demanda_real_acima_90": 0.30843765007734364
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4457250278324913,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16202229495448503,
+        "fracao_demanda_real_acima_90": 0.616577611460431
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "R_E_v2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2182115985925889,
+        "fracao_e": 0.2742841384282506,
+        "fracao_limitador": 0.11706737726663255,
+        "fracao_demanda_real_acima_90": 0.30593492503150455
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4361721454971033,
+        "fracao_e": 0.5482888221471525,
+        "fracao_limitador": 0.23379454803464728,
+        "fracao_demanda_real_acima_90": 0.6115844345004158
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "R_E_v2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22093981914926802,
+        "fracao_e": 0.2763381892951547,
+        "fracao_limitador": 0.11556735257487516,
+        "fracao_demanda_real_acima_90": 0.30800223443078695
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4416283708055579,
+        "fracao_e": 0.5523993441915588,
+        "fracao_limitador": 0.23079626968967695,
+        "fracao_demanda_real_acima_90": 0.6157201522450001
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "R_rapido",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22307632510107858,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.0798391582652606,
+        "fracao_demanda_real_acima_90": 0.30896178614936026
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4459024964066704,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15940819704243767,
+        "fracao_demanda_real_acima_90": 0.6176235977005055
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "R_rapido",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22095836042797887,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.0838029804002469,
+        "fracao_demanda_real_acima_90": 0.3110553708187839
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4416520184895171,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16732204258237673,
+        "fracao_demanda_real_acima_90": 0.6218115149314755
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_quatro_falhas",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22668731534705203,
+        "fracao_e": 0.28065168707776883,
+        "fracao_limitador": 0.11631195139558839,
+        "fracao_demanda_real_acima_90": 0.3126289630183543
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.45288577239268446,
+        "fracao_e": 0.5608117914859457,
+        "fracao_limitador": 0.231976090017675,
+        "fracao_demanda_real_acima_90": 0.6247008071721764
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_quatro_falhas",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22320887201583856,
+        "fracao_e": 0.2773189754940069,
+        "fracao_limitador": 0.11766018947634553,
+        "fracao_demanda_real_acima_90": 0.3102304598174367
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44593916218490126,
+        "fracao_e": 0.5541286928127639,
+        "fracao_limitador": 0.23466559505960274,
+        "fracao_demanda_real_acima_90": 0.6198967707805249
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_erro_comum",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2156410743682573,
+        "fracao_e": 0.20429083850744892,
+        "fracao_limitador": 0.1274025138603774,
+        "fracao_demanda_real_acima_90": 0.31017212885789114
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43079840782570106,
+        "fracao_e": 0.4083761495978496,
+        "fracao_limitador": 0.2540993598348098,
+        "fracao_demanda_real_acima_90": 0.6197820422768375
+      }
+    },
+    {
+      "arquivo": "etapa16/trajetorias.json",
+      "ensaio": "E_erro_comum",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2213386521467617,
+        "fracao_e": 0.20713361893984794,
+        "fracao_limitador": 0.1275101325921157,
+        "fracao_demanda_real_acima_90": 0.3104590206286996
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4421903485116283,
+        "fracao_e": 0.41406080893773967,
+        "fracao_limitador": 0.2543282982982079,
+        "fracao_demanda_real_acima_90": 0.6203703884823966
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22356115270522192,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08235177830450302,
+        "fracao_demanda_real_acima_90": 0.3122833506478127
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4461337462099424,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16368438905289165,
+        "fracao_demanda_real_acima_90": 0.6234310802233496
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22191289757850138,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08179787069120315,
+        "fracao_demanda_real_acima_90": 0.3105088999760139
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4428430561241123,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16258964518074107,
+        "fracao_demanda_real_acima_90": 0.6198569551767484
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22269434424807047,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07962760080063205,
+        "fracao_demanda_real_acima_90": 0.31197346860514885
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44488321065344744,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15873293024500362,
+        "fracao_demanda_real_acima_90": 0.6233472751366881
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22366619227973744,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08116639652076943,
+        "fracao_demanda_real_acima_90": 0.3100184448036116
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4468191819347708,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16179813650735914,
+        "fracao_demanda_real_acima_90": 0.6194416683563491
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22566511121998217,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08086784220744697,
+        "fracao_demanda_real_acima_90": 0.3128773035682658
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4503605410235151,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16071756312170157,
+        "fracao_demanda_real_acima_90": 0.6246196279544345
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21742581345296746,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07893487216787529,
+        "fracao_demanda_real_acima_90": 0.3092615962682119
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43389995214620114,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15690119681534304,
+        "fracao_demanda_real_acima_90": 0.6173774516550474
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22223082554306003,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07892349445424089,
+        "fracao_demanda_real_acima_90": 0.3091119988883927
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44396108738483897,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15731128687743914,
+        "fracao_demanda_real_acima_90": 0.6176223173407952
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f4",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2240025554800365,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08019487467057987,
+        "fracao_demanda_real_acima_90": 0.3100414975855314
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44749440602961765,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1598618525265345,
+        "fracao_demanda_real_acima_90": 0.6194822695179937
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2204641243289116,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08034150573142188,
+        "fracao_demanda_real_acima_90": 0.3088934450437176
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4399906336892695,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15971554037605457,
+        "fracao_demanda_real_acima_90": 0.6166395961129207
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22303122405992074,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08014979482846792,
+        "fracao_demanda_real_acima_90": 0.3092540616104911
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4451006031615563,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15930236222131453,
+        "fracao_demanda_real_acima_90": 0.6173671891383788
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2213161879201236,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07957299221149756,
+        "fracao_demanda_real_acima_90": 0.3097063313426987
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4421286060409617,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15862697220884212,
+        "fracao_demanda_real_acima_90": 0.6188201637505581
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f2",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22349743591305343,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.0807488566643811,
+        "fracao_demanda_real_acima_90": 0.3099900636160193
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4464780168582121,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16096657806379983,
+        "fracao_demanda_real_acima_90": 0.6193856646417917
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22496853288467666,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08047340161732346,
+        "fracao_demanda_real_acima_90": 0.310962762578566
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4489619533163064,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15996142726135987,
+        "fracao_demanda_real_acima_90": 0.6207777186621017
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21913330071746878,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08014523204062786,
+        "fracao_demanda_real_acima_90": 0.3086332034152439
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43731662742347804,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15930805698022804,
+        "fracao_demanda_real_acima_90": 0.6161153162920117
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22196624084452654,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07982582823844588,
+        "fracao_demanda_real_acima_90": 0.3105953023048552
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44342889787445156,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15912188065924787,
+        "fracao_demanda_real_acima_90": 0.6205916243784745
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "BUF_p3_f3",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22443265503795634,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08071287542677398,
+        "fracao_demanda_real_acima_90": 0.31129820352161364
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44835186856776754,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16088299052912,
+        "fracao_demanda_real_acima_90": 0.6220033959673947
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2254652076115987,
+        "fracao_e": 0.27940683686410867,
+        "fracao_limitador": 0.11840899055241784,
+        "fracao_demanda_real_acima_90": 0.3125873393407665
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4500072448199507,
+        "fracao_e": 0.5579864874002317,
+        "fracao_limitador": 0.2356510973511113,
+        "fracao_demanda_real_acima_90": 0.6241378060305259
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21988321857004245,
+        "fracao_e": 0.2764768302134756,
+        "fracao_limitador": 0.11740466472355991,
+        "fracao_demanda_real_acima_90": 0.310379656952904
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4388640011860702,
+        "fracao_e": 0.5521167881072636,
+        "fracao_limitador": 0.2336590794203172,
+        "fracao_demanda_real_acima_90": 0.619701544606523
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22588569942962838,
+        "fracao_e": 0.28008313353489644,
+        "fracao_limitador": 0.11859393923125915,
+        "fracao_demanda_real_acima_90": 0.31194369945939826
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4512792127989259,
+        "fracao_e": 0.5596580283966334,
+        "fracao_limitador": 0.23652321529531978,
+        "fracao_demanda_real_acima_90": 0.6233303279737107
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "E_cota5_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2219292040178447,
+        "fracao_e": 0.27494702373756374,
+        "fracao_limitador": 0.11643537889386782,
+        "fracao_demanda_real_acima_90": 0.30689264795677906
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44336499468519525,
+        "fracao_e": 0.5494023807012993,
+        "fracao_limitador": 0.23223097656368122,
+        "fracao_demanda_real_acima_90": 0.6132407610716497
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "R_base",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22296611371773253,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.07831718939451829,
+        "fracao_demanda_real_acima_90": 0.3095199195792787
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44567738925354655,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.15636158531288255,
+        "fracao_demanda_real_acima_90": 0.6187355627701544
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "R_base",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22299335882475443,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.08114435786052511,
+        "fracao_demanda_real_acima_90": 0.30843765007734364
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4457250278324913,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.16202229495448503,
+        "fracao_demanda_real_acima_90": 0.616577611460431
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_filtrado",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22258780816146692,
+        "fracao_e": 0.2971998065395921,
+        "fracao_limitador": 0.10367853012668256,
+        "fracao_demanda_real_acima_90": 0.3123568015850768
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44435131294804586,
+        "fracao_e": 0.5935848644820645,
+        "fracao_limitador": 0.20639073586051243,
+        "fracao_demanda_real_acima_90": 0.6236943379506348
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_filtrado",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21774670198016857,
+        "fracao_e": 0.29495612099791785,
+        "fracao_limitador": 0.1009840828727207,
+        "fracao_demanda_real_acima_90": 0.3088746158519239
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4346771305544574,
+        "fracao_e": 0.5891063980851479,
+        "fracao_limitador": 0.20102959796758732,
+        "fracao_demanda_real_acima_90": 0.6167154975218009
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_filtrado",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2237762695249992,
+        "fracao_e": 0.29604842681451826,
+        "fracao_limitador": 0.10356288988104631,
+        "fracao_demanda_real_acima_90": 0.30991367205908976
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4470708680546594,
+        "fracao_e": 0.5915746314909875,
+        "fracao_limitador": 0.20653703159385745,
+        "fracao_demanda_real_acima_90": 0.6192642168583584
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_filtrado",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22060680966675622,
+        "fracao_e": 0.29649790928392805,
+        "fracao_limitador": 0.10108212642999612,
+        "fracao_demanda_real_acima_90": 0.30960188165445646
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44075306669244957,
+        "fracao_e": 0.592451481673066,
+        "fracao_limitador": 0.20159922497117624,
+        "fracao_demanda_real_acima_90": 0.6186368651626287
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_instantaneo",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22132389448333561,
+        "fracao_e": 0.29136444142162315,
+        "fracao_limitador": 0.12376963225572318,
+        "fracao_demanda_real_acima_90": 0.3110639483175944
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44186848511655247,
+        "fracao_e": 0.5819032111558101,
+        "fracao_limitador": 0.24656847207903035,
+        "fracao_demanda_real_acima_90": 0.6211419733611896
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_instantaneo",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22348533813367122,
+        "fracao_e": 0.2942519553309231,
+        "fracao_limitador": 0.1238826042087161,
+        "fracao_demanda_real_acima_90": 0.31236346556916184
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.446174279780866,
+        "fracao_e": 0.5876567608950902,
+        "fracao_limitador": 0.24677913240547533,
+        "fracao_demanda_real_acima_90": 0.6237021838530962
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_instantaneo",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.220639131582669,
+        "fracao_e": 0.2927186065422089,
+        "fracao_limitador": 0.12139668797451549,
+        "fracao_demanda_real_acima_90": 0.3099804150861958
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44081278705398413,
+        "fracao_e": 0.5848862128489279,
+        "fracao_limitador": 0.24220108092608453,
+        "fracao_demanda_real_acima_90": 0.6193997528599832
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "L2_instantaneo",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22264021949881033,
+        "fracao_e": 0.29306463836011504,
+        "fracao_limitador": 0.12413974834403194,
+        "fracao_demanda_real_acima_90": 0.3117392286435485
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44481055720694224,
+        "fracao_e": 0.5855870167803778,
+        "fracao_limitador": 0.24768883771396247,
+        "fracao_demanda_real_acima_90": 0.622947849823377
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_queda",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21867621457168557,
+        "fracao_e": 0.24305988877200563,
+        "fracao_limitador": 0.08274669847087668,
+        "fracao_demanda_real_acima_90": 0.31022034918434815
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43687651273469763,
+        "fracao_e": 0.4855991888725621,
+        "fracao_limitador": 0.16498929843600893,
+        "fracao_demanda_real_acima_90": 0.6198713384460187
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_queda",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22226391819556415,
+        "fracao_e": 0.2402945500360081,
+        "fracao_limitador": 0.08568363032896993,
+        "fracao_demanda_real_acima_90": 0.3083998975185095
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4440449437474651,
+        "fracao_e": 0.48006229433140873,
+        "fracao_limitador": 0.17085880157002573,
+        "fracao_demanda_real_acima_90": 0.616230035187741
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_duplo",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21904314760895283,
+        "fracao_e": 0.2382142141371894,
+        "fracao_limitador": 0.08199075026536566,
+        "fracao_demanda_real_acima_90": 0.3075654534057183
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43760590498443397,
+        "fracao_e": 0.47591800252411165,
+        "fracao_limitador": 0.16346944075980085,
+        "fracao_demanda_real_acima_90": 0.6145583729109498
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_duplo",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22325327577099743,
+        "fracao_e": 0.23986374449760295,
+        "fracao_limitador": 0.08343152740553,
+        "fracao_demanda_real_acima_90": 0.30954374443222105
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44602759784188645,
+        "fracao_e": 0.47919494497294324,
+        "fracao_limitador": 0.16635452971674317,
+        "fracao_demanda_real_acima_90": 0.6185128107876602
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_enviesado",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21719068667854577,
+        "fracao_e": 0.22454139817467783,
+        "fracao_limitador": 0.07914133846810141,
+        "fracao_demanda_real_acima_90": 0.30778711931719405
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43391754104622055,
+        "fracao_e": 0.4485808726234577,
+        "fracao_limitador": 0.15779984236831934,
+        "fracao_demanda_real_acima_90": 0.6150011794489467
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_enviesado",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22268583295374855,
+        "fracao_e": 0.22637920922966928,
+        "fracao_limitador": 0.07988414341224659,
+        "fracao_demanda_real_acima_90": 0.311188525569387
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4448888215508807,
+        "fracao_e": 0.4522593512103947,
+        "fracao_limitador": 0.1592712241395957,
+        "fracao_demanda_real_acima_90": 0.6217887675821854
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_atraso",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22200965327203664,
+        "fracao_e": 0.25076353972980053,
+        "fracao_limitador": 0.058983543862062816,
+        "fracao_demanda_real_acima_90": 0.31042477080800074
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44353231595778764,
+        "fracao_e": 0.5011760356861448,
+        "fracao_limitador": 0.1175668341837368,
+        "fracao_demanda_real_acima_90": 0.6202657755704991
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_super_atraso",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22189173893704117,
+        "fracao_e": 0.2528057270457331,
+        "fracao_limitador": 0.0594719975057509,
+        "fracao_demanda_real_acima_90": 0.30983002426832346
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4432922691080514,
+        "fracao_e": 0.5052470113854002,
+        "fracao_limitador": 0.11853468826089955,
+        "fracao_demanda_real_acima_90": 0.6190784973025696
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_grupo_ABC_queda",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22076348600063436,
+        "fracao_e": 0.2414011189870317,
+        "fracao_limitador": 0.08504701288939406,
+        "fracao_demanda_real_acima_90": 0.30934362275948407
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4410623696829307,
+        "fracao_e": 0.4822616829455207,
+        "fracao_limitador": 0.16958008732261723,
+        "fracao_demanda_real_acima_90": 0.6181132265921953
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_grupo_ABC_queda",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22314872603096603,
+        "fracao_e": 0.2394431745297649,
+        "fracao_limitador": 0.08555808385780811,
+        "fracao_demanda_real_acima_90": 0.308263927357922
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4458137985605149,
+        "fracao_e": 0.47832902142173,
+        "fracao_limitador": 0.17059697975795943,
+        "fracao_demanda_real_acima_90": 0.615953048581128
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_grupo_D_queda",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2177654510943468,
+        "fracao_e": 0.24118773647613057,
+        "fracao_limitador": 0.0842549133905977,
+        "fracao_demanda_real_acima_90": 0.3092852596518154
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4350677909692111,
+        "fracao_e": 0.48182709739377333,
+        "fracao_limitador": 0.1679939728668655,
+        "fracao_demanda_real_acima_90": 0.617994226388595
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_grupo_D_queda",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22315159455630568,
+        "fracao_e": 0.24134816301268752,
+        "fracao_limitador": 0.08508748709188832,
+        "fracao_demanda_real_acima_90": 0.3071876767832113
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.445831073279608,
+        "fracao_e": 0.48214712179090047,
+        "fracao_limitador": 0.16965178143851115,
+        "fracao_demanda_real_acima_90": 0.6138076667739369
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21827988533451975,
+        "fracao_e": 0.2762547195763002,
+        "fracao_limitador": 0.09690469703232069,
+        "fracao_demanda_real_acima_90": 0.3064323263483472
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43568393305775843,
+        "fracao_e": 0.551640149505875,
+        "fracao_limitador": 0.19279689102797187,
+        "fracao_demanda_real_acima_90": 0.6117968402080391
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21979837352829368,
+        "fracao_e": 0.28014421409182905,
+        "fracao_limitador": 0.09885346080876999,
+        "fracao_demanda_real_acima_90": 0.3106384156858816
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43871265314709873,
+        "fracao_e": 0.5594250834307846,
+        "fracao_limitador": 0.1966875023856818,
+        "fracao_demanda_real_acima_90": 0.6202220486446021
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2236979571883548,
+        "fracao_e": 0.28066832775000145,
+        "fracao_limitador": 0.09780184354853616,
+        "fracao_demanda_real_acima_90": 0.30893500657993733
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44691270688756746,
+        "fracao_e": 0.5608157767599986,
+        "fracao_limitador": 0.19501998138542698,
+        "fracao_demanda_real_acima_90": 0.6172990447734212
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22450505319729766,
+        "fracao_e": 0.2820279459865202,
+        "fracao_limitador": 0.09892095359875065,
+        "fracao_demanda_real_acima_90": 0.3116595429527432
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44853017901617026,
+        "fracao_e": 0.5635386289239397,
+        "fracao_limitador": 0.1972525103770646,
+        "fracao_demanda_real_acima_90": 0.6227444584375244
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_fixo_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22101363164993634,
+        "fracao_e": 0.2249749026676619,
+        "fracao_limitador": 0.062233559770619104,
+        "fracao_demanda_real_acima_90": 0.3105673715209638
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4410965042511864,
+        "fracao_e": 0.44940677593030004,
+        "fracao_limitador": 0.1237849107348284,
+        "fracao_demanda_real_acima_90": 0.620016301919282
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_fixo_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21390787231870878,
+        "fracao_e": 0.2142405801573513,
+        "fracao_limitador": 0.05640491584041645,
+        "fracao_demanda_real_acima_90": 0.3039299977797462
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4269420357623716,
+        "fracao_e": 0.42795449836375943,
+        "fracao_limitador": 0.11216279711061368,
+        "fracao_demanda_real_acima_90": 0.6067524877414121
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_fixo_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21463303604600575,
+        "fracao_e": 0.22015439255929187,
+        "fracao_limitador": 0.05753877712045513,
+        "fracao_demanda_real_acima_90": 0.3061768206076652
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.42879569327734407,
+        "fracao_e": 0.4399991856500806,
+        "fracao_limitador": 0.1146926196344858,
+        "fracao_demanda_real_acima_90": 0.6117765582293222
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_fixo_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21914834518760565,
+        "fracao_e": 0.21975668221059685,
+        "fracao_limitador": 0.060226756134104546,
+        "fracao_demanda_real_acima_90": 0.3096842991758545
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4377998978739911,
+        "fracao_e": 0.4392058252374442,
+        "fracao_limitador": 0.12005489030333225,
+        "fracao_demanda_real_acima_90": 0.6187810422942456
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f0",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22356486302888542,
+        "fracao_e": 0.24350737809366654,
+        "fracao_limitador": 0.08712365017641209,
+        "fracao_demanda_real_acima_90": 0.31090491852374624
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.446248143134707,
+        "fracao_e": 0.4861157542218402,
+        "fracao_limitador": 0.173326977178913,
+        "fracao_demanda_real_acima_90": 0.6207524237006194
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f0",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22233862605844815,
+        "fracao_e": 0.2415483504244187,
+        "fracao_limitador": 0.08689347039185985,
+        "fracao_demanda_real_acima_90": 0.3090559518512785
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4438052840588991,
+        "fracao_e": 0.48221362678032637,
+        "fracao_limitador": 0.17289066361902708,
+        "fracao_demanda_real_acima_90": 0.6170430104137768
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f0",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2189911642970859,
+        "fracao_e": 0.23852029711934836,
+        "fracao_limitador": 0.08248213388521572,
+        "fracao_demanda_real_acima_90": 0.3072551079784286
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4375101138436388,
+        "fracao_e": 0.4764978069072638,
+        "fracao_limitador": 0.1644602060575002,
+        "fracao_demanda_real_acima_90": 0.6139389843887009
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f0",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21998550207909315,
+        "fracao_e": 0.24034724921571995,
+        "fracao_limitador": 0.0840971663317466,
+        "fracao_demanda_real_acima_90": 0.3052911588504697
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4394953756720352,
+        "fracao_e": 0.48016988765707336,
+        "fracao_limitador": 0.16768638372709826,
+        "fracao_demanda_real_acima_90": 0.6100186388986245
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_sem_atuacao_E",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22088173026338503,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.1068678464745727,
+        "fracao_demanda_real_acima_90": 0.31104022842217827
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44077606228289207,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.21263425990740756,
+        "fracao_demanda_real_acima_90": 0.6209672329048681
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_sem_atuacao_E",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2203521058932781,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10537356669238965,
+        "fracao_demanda_real_acima_90": 0.30998357590953823
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43974266102660503,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.20961919147684566,
+        "fracao_demanda_real_acima_90": 0.6188759772927789
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_sem_atuacao_E",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22120741553678672,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10319555908581794,
+        "fracao_demanda_real_acima_90": 0.3098567959465185
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44191373043107823,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.20577921450591993,
+        "fracao_demanda_real_acima_90": 0.6191304271595668
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_sem_atuacao_E",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22240461699323788,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.10633806080315443,
+        "fracao_demanda_real_acima_90": 0.30944487749350086
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.44430327700183736,
+        "fracao_e": 0.0,
+        "fracao_limitador": 0.21204826230051185,
+        "fracao_demanda_real_acima_90": 0.6183030274294724
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "R_C_comum",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22439071980572803,
+        "fracao_e": 0.2811661293112248,
+        "fracao_limitador": 0.09932951764707607,
+        "fracao_demanda_real_acima_90": 0.3114237025539589
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4485325149630355,
+        "fracao_e": 0.5620517184581377,
+        "fracao_limitador": 0.1983465405858027,
+        "fracao_demanda_real_acima_90": 0.6225552993803333
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "R_C_comum",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21716351533033468,
+        "fracao_e": 0.27623174675857204,
+        "fracao_limitador": 0.09613274731955364,
+        "fracao_demanda_real_acima_90": 0.30909358893416994
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.434079867212602,
+        "fracao_e": 0.5521807767593595,
+        "fracao_limitador": 0.1919589049974726,
+        "fracao_demanda_real_acima_90": 0.6178892166279347
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "R_G_emprestimo",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2211131424843351,
+        "fracao_e": 0.24568084490573544,
+        "fracao_limitador": 0.08677869419880872,
+        "fracao_demanda_real_acima_90": 0.31074866365272125
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4419775328692879,
+        "fracao_e": 0.4910661597220004,
+        "fracao_limitador": 0.17328098803591002,
+        "fracao_demanda_real_acima_90": 0.6212077464081746
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "R_G_emprestimo",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21577171357261815,
+        "fracao_e": 0.2397085151753932,
+        "fracao_limitador": 0.0845376767275666,
+        "fracao_demanda_real_acima_90": 0.3074809224319616
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4312992489914933,
+        "fracao_e": 0.4791258282877878,
+        "fracao_limitador": 0.16880260020568805,
+        "fracao_demanda_real_acima_90": 0.6146708363881889
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f4",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.22016585168294023,
+        "fracao_e": 0.2774883820115683,
+        "fracao_limitador": 0.09858783434543154,
+        "fracao_demanda_real_acima_90": 0.30898632078673316
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4394543618611034,
+        "fracao_e": 0.5541116495401294,
+        "fracao_limitador": 0.19614968966557103,
+        "fracao_demanda_real_acima_90": 0.6168944911371895
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f4",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.2215716170346917,
+        "fracao_e": 0.2793465305243465,
+        "fracao_limitador": 0.09842877586542317,
+        "fracao_demanda_real_acima_90": 0.3092580468067327
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4422480935783063,
+        "fracao_e": 0.5578137659269258,
+        "fracao_limitador": 0.19583489218756137,
+        "fracao_demanda_real_acima_90": 0.6174665007458235
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f4",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21815924234134215,
+        "fracao_e": 0.27894392596467815,
+        "fracao_limitador": 0.0979834242508939,
+        "fracao_demanda_real_acima_90": 0.3087455487065228
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43584435309404485,
+        "fracao_e": 0.5573721280331382,
+        "fracao_limitador": 0.1953809596481974,
+        "fracao_demanda_real_acima_90": 0.6169212894184649
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f4",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.2223002296225727,
+        "fracao_e": 0.27910716953569886,
+        "fracao_limitador": 0.09729476907453219,
+        "fracao_demanda_real_acima_90": 0.3098713239600417
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4441216918529396,
+        "fracao_e": 0.5576966035349105,
+        "fracao_limitador": 0.19400498356536275,
+        "fracao_demanda_real_acima_90": 0.6191673245685101
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f4",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21889138162666444,
+        "fracao_e": 0.23948806658538072,
+        "fracao_limitador": 0.08642465373901881,
+        "fracao_demanda_real_acima_90": 0.3072891059398219
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43695463101753435,
+        "fracao_e": 0.47806012628186545,
+        "fracao_limitador": 0.17193507821612708,
+        "fracao_demanda_real_acima_90": 0.6135169514317016
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f4",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21481939695313462,
+        "fracao_e": 0.23908292034299755,
+        "fracao_limitador": 0.08480193532672635,
+        "fracao_demanda_real_acima_90": 0.30732639521820404
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4287959546055606,
+        "fracao_e": 0.47727798052611803,
+        "fracao_limitador": 0.16870101425262846,
+        "fracao_demanda_real_acima_90": 0.613605564038032
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f4",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21703206793351248,
+        "fracao_e": 0.23768843585926908,
+        "fracao_limitador": 0.08437681987043885,
+        "fracao_demanda_real_acima_90": 0.30905182811209525
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43358717587634155,
+        "fracao_e": 0.4748310461234398,
+        "fracao_limitador": 0.1682413802313091,
+        "fracao_demanda_real_acima_90": 0.6175257097769857
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f4",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22228786344316423,
+        "fracao_e": 0.24396143414193894,
+        "fracao_limitador": 0.08720845472206194,
+        "fracao_demanda_real_acima_90": 0.30999996584040745
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4440874305350575,
+        "fracao_e": 0.48737775379475984,
+        "fracao_limitador": 0.1738954081095615,
+        "fracao_demanda_real_acima_90": 0.6194243328374638
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2206077244972786,
+        "fracao_e": 0.2833936285541904,
+        "fracao_limitador": 0.0987446819187386,
+        "fracao_demanda_real_acima_90": 0.3113804384164764
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4403276332106954,
+        "fracao_e": 0.5659153876962324,
+        "fracao_limitador": 0.1964629605458646,
+        "fracao_demanda_real_acima_90": 0.6216922571743395
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22183426859858588,
+        "fracao_e": 0.282078144312111,
+        "fracao_limitador": 0.10101727293896547,
+        "fracao_demanda_real_acima_90": 0.31147583784795846
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4427630793392591,
+        "fracao_e": 0.5632968047867188,
+        "fracao_limitador": 0.20100887398187467,
+        "fracao_demanda_real_acima_90": 0.6218921367400043
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f2",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.22107510925292925,
+        "fracao_e": 0.2786147784015028,
+        "fracao_limitador": 0.09837786709541028,
+        "fracao_demanda_real_acima_90": 0.31046096767264414
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4416807644482906,
+        "fracao_e": 0.5567065267521836,
+        "fracao_limitador": 0.19617063772585008,
+        "fracao_demanda_real_acima_90": 0.6203457824148753
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f2",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22061422412946427,
+        "fracao_e": 0.2769668903149096,
+        "fracao_limitador": 0.09919927308599404,
+        "fracao_demanda_real_acima_90": 0.3081865775625452
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4407530213310213,
+        "fracao_e": 0.5534053721299832,
+        "fracao_limitador": 0.1978140844747115,
+        "fracao_demanda_real_acima_90": 0.6157870959738295
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f2",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.21922761566658405,
+        "fracao_e": 0.2407471540568248,
+        "fracao_limitador": 0.08547067404651847,
+        "fracao_demanda_real_acima_90": 0.3112186284505948
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.437600200506065,
+        "fracao_e": 0.480596162108482,
+        "fracao_limitador": 0.17004246965328024,
+        "fracao_demanda_real_acima_90": 0.6213682557823629
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f2",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.22179222865067913,
+        "fracao_e": 0.24545295653300245,
+        "fracao_limitador": 0.08848997639503105,
+        "fracao_demanda_real_acima_90": 0.31173664543517177
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4426920737434734,
+        "fracao_e": 0.4900029132200263,
+        "fracao_limitador": 0.1760508431529116,
+        "fracao_demanda_real_acima_90": 0.6224009866867386
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f2",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21735363082990752,
+        "fracao_e": 0.23671288192473874,
+        "fracao_limitador": 0.08357436742528314,
+        "fracao_demanda_real_acima_90": 0.30673814494930846
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43424568763415594,
+        "fracao_e": 0.4728943852392008,
+        "fracao_limitador": 0.16663676181516604,
+        "fracao_demanda_real_acima_90": 0.6129035986174918
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f2",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21566160534548856,
+        "fracao_e": 0.2371997288304832,
+        "fracao_limitador": 0.0827951953726873,
+        "fracao_demanda_real_acima_90": 0.30810312479323526
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43084161234270724,
+        "fracao_e": 0.47385667026230766,
+        "fracao_limitador": 0.16508561710749714,
+        "fracao_demanda_real_acima_90": 0.6156244436272393
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f3",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.224145537261994,
+        "fracao_e": 0.28182088967178714,
+        "fracao_limitador": 0.09973877066534768,
+        "fracao_demanda_real_acima_90": 0.3117674497309263
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4473822553175949,
+        "fracao_e": 0.5627834443407435,
+        "fracao_limitador": 0.19845351383778267,
+        "fracao_demanda_real_acima_90": 0.6224559302780966
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f3",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21823988388115886,
+        "fracao_e": 0.2792380376906524,
+        "fracao_limitador": 0.09863687878203686,
+        "fracao_demanda_real_acima_90": 0.3093249482064572
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43559972786291296,
+        "fracao_e": 0.5575965507851705,
+        "fracao_limitador": 0.19623307759883005,
+        "fracao_demanda_real_acima_90": 0.6175698679537079
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f3",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.21891695434458203,
+        "fracao_e": 0.27879906208840366,
+        "fracao_limitador": 0.09571285557640385,
+        "fracao_demanda_real_acima_90": 0.3086211699921473
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43736846241288696,
+        "fracao_e": 0.5570832095126415,
+        "fracao_limitador": 0.19084618317066132,
+        "fracao_demanda_real_acima_90": 0.6166674711605161
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "C_comum_f3",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.22242874950571537,
+        "fracao_e": 0.2835719887175818,
+        "fracao_limitador": 0.09972998454642244,
+        "fracao_demanda_real_acima_90": 0.3134434295865676
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4443752396767103,
+        "fracao_e": 0.5666267246475731,
+        "fracao_limitador": 0.19886732473843372,
+        "fracao_demanda_real_acima_90": 0.6263178347050421
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f3",
+      "caso": 0,
+      "antes": {
+        "fracao_fora_quebras": 0.2219915621200117,
+        "fracao_e": 0.24261113345817287,
+        "fracao_limitador": 0.08602150572781984,
+        "fracao_demanda_real_acima_90": 0.3108027402737233
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4431125477893924,
+        "fracao_e": 0.4843359044785785,
+        "fracao_limitador": 0.17114011179087454,
+        "fracao_demanda_real_acima_90": 0.6205458651552549
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f3",
+      "caso": 1,
+      "antes": {
+        "fracao_fora_quebras": 0.21736038255475992,
+        "fracao_e": 0.2408398188109477,
+        "fracao_limitador": 0.08482852663765823,
+        "fracao_demanda_real_acima_90": 0.3069955836855017
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4338672063278299,
+        "fracao_e": 0.4807903731116594,
+        "fracao_limitador": 0.1687516385517857,
+        "fracao_demanda_real_acima_90": 0.6129352846100765
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f3",
+      "caso": 2,
+      "antes": {
+        "fracao_fora_quebras": 0.2209776992595823,
+        "fracao_e": 0.2395054894719017,
+        "fracao_limitador": 0.0831745715637246,
+        "fracao_demanda_real_acima_90": 0.3093910076660118
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.4414834362009245,
+        "fracao_e": 0.4784636582448542,
+        "fracao_limitador": 0.1658300046252999,
+        "fracao_demanda_real_acima_90": 0.6182127632579639
+      }
+    },
+    {
+      "arquivo": "etapa17/trajetorias.json",
+      "ensaio": "G_emprestimo_f3",
+      "caso": 3,
+      "antes": {
+        "fracao_fora_quebras": 0.21906811008447563,
+        "fracao_e": 0.24285766133606343,
+        "fracao_limitador": 0.08425181019451171,
+        "fracao_demanda_real_acima_90": 0.3076564512262461
+      },
+      "depois": {
+        "fracao_fora_quebras": 0.43766952376016904,
+        "fracao_e": 0.4851812795262646,
+        "fracao_limitador": 0.1679918641981171,
+        "fracao_demanda_real_acima_90": 0.6147447279546295
+      }
+    }
+  ],
+  "fontes": [
+    {
+      "origem": "etapa15",
+      "arquivo": "BUF_p3_f0",
+      "raw_bytes": 551197624,
+      "raw_mtime_ns": 1791829863575231800
+    },
+    {
+      "origem": "etapa15",
+      "arquivo": "BUF_p3_f2",
+      "raw_bytes": 552018928,
+      "raw_mtime_ns": 1791829839321147300
+    },
+    {
+      "origem": "etapa15",
+      "arquivo": "BUF_p3_f3",
+      "raw_bytes": 551425324,
+      "raw_mtime_ns": 1791829875848007700
+    },
+    {
+      "origem": "etapa15",
+      "arquivo": "BUF_p3_f4",
+      "raw_bytes": 551689324,
+      "raw_mtime_ns": 1791829865954183800
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "C_demanda50",
+      "raw_bytes": 622001244,
+      "raw_mtime_ns": 1791834561961194900
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "C_demanda75",
+      "raw_bytes": 617858872,
+      "raw_mtime_ns": 1791834268048696100
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "D_prioridade_f0",
+      "raw_bytes": 723305642,
+      "raw_mtime_ns": 1791832601335262000
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "D_v2_f0",
+      "raw_bytes": 723532594,
+      "raw_mtime_ns": 1791834261992329400
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "D_v2_f2",
+      "raw_bytes": 724485322,
+      "raw_mtime_ns": 1791833331088645300
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "D_v2_f3",
+      "raw_bytes": 723747130,
+      "raw_mtime_ns": 1791834805459705900
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "D_v2_f4",
+      "raw_bytes": 724334458,
+      "raw_mtime_ns": 1791833690161624700
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_cota5_f0",
+      "raw_bytes": 934711176,
+      "raw_mtime_ns": 1791834599573539200
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_demanda75",
+      "raw_bytes": 893610506,
+      "raw_mtime_ns": 1791834676303375000
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_erro_comum",
+      "raw_bytes": 601189708,
+      "raw_mtime_ns": 1791834653907605100
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_fixo_f0",
+      "raw_bytes": 913162054,
+      "raw_mtime_ns": 1791832762957168200
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_livre_f0",
+      "raw_bytes": 932824200,
+      "raw_mtime_ns": 1791832780277535700
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_quatro_falhas",
+      "raw_bytes": 588204178,
+      "raw_mtime_ns": 1791834646970388700
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_v2_f0",
+      "raw_bytes": 931412802,
+      "raw_mtime_ns": 1791834417635245000
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_v2_f2",
+      "raw_bytes": 934293378,
+      "raw_mtime_ns": 1791833921182753300
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_v2_f3",
+      "raw_bytes": 934553346,
+      "raw_mtime_ns": 1791835113174929000
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "E_v2_f4",
+      "raw_bytes": 932219586,
+      "raw_mtime_ns": 1791834294760657800
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "R_E_v2",
+      "raw_bytes": 1089897664,
+      "raw_mtime_ns": 1791834218147228200
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "R_base",
+      "raw_bytes": 805553646,
+      "raw_mtime_ns": 1791833172291688600
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "R_rapido",
+      "raw_bytes": 805602342,
+      "raw_mtime_ns": 1791834185303477100
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "S_rapido",
+      "raw_bytes": 617726406,
+      "raw_mtime_ns": 1791831908968976300
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "S_rapido_sem_offset",
+      "raw_bytes": 618080148,
+      "raw_mtime_ns": 1791831909288249400
+    },
+    {
+      "origem": "etapa16",
+      "arquivo": "S_sem_offset",
+      "raw_bytes": 617774514,
+      "raw_mtime_ns": 1791831908531032500
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "C_comum_f0",
+      "raw_bytes": 1132093858,
+      "raw_mtime_ns": 1791837323773758100
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "C_comum_f2",
+      "raw_bytes": 1134515938,
+      "raw_mtime_ns": 1791838074345458300
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "C_comum_f3",
+      "raw_bytes": 1132602866,
+      "raw_mtime_ns": 1791838663943986500
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "C_comum_f4",
+      "raw_bytes": 1133446650,
+      "raw_mtime_ns": 1791837349320740500
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_emprestimo_f0",
+      "raw_bytes": 1138215188,
+      "raw_mtime_ns": 1791837313982257300
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_emprestimo_f2",
+      "raw_bytes": 1140449116,
+      "raw_mtime_ns": 1791838079528050200
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_emprestimo_f3",
+      "raw_bytes": 1138671300,
+      "raw_mtime_ns": 1791838664241393600
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_emprestimo_f4",
+      "raw_bytes": 1140630772,
+      "raw_mtime_ns": 1791837364530583400
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_fixo_f0",
+      "raw_bytes": 1053675768,
+      "raw_mtime_ns": 1791837166390851400
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_grupo_ABC_queda",
+      "raw_bytes": 711234272,
+      "raw_mtime_ns": 1791838612330838600
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_grupo_D_queda",
+      "raw_bytes": 711244244,
+      "raw_mtime_ns": 1791838565751254900
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_sem_atuacao_E",
+      "raw_bytes": 985472884,
+      "raw_mtime_ns": 1791837217337663100
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_super_atraso",
+      "raw_bytes": 693752138,
+      "raw_mtime_ns": 1791838199028331200
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_super_duplo",
+      "raw_bytes": 707821776,
+      "raw_mtime_ns": 1791837782253095800
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_super_enviesado",
+      "raw_bytes": 710306040,
+      "raw_mtime_ns": 1791838255928717500
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "G_super_queda",
+      "raw_bytes": 707548016,
+      "raw_mtime_ns": 1791837779043953200
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "L2_filtrado",
+      "raw_bytes": 1211671484,
+      "raw_mtime_ns": 1791838366167124200
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "L2_instantaneo",
+      "raw_bytes": 1309580130,
+      "raw_mtime_ns": 1791838374797679600
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "R_C_comum",
+      "raw_bytes": 1313498136,
+      "raw_mtime_ns": 1791838024638727900
+    },
+    {
+      "origem": "etapa17",
+      "arquivo": "R_G_emprestimo",
+      "raw_bytes": 1315857586,
+      "raw_mtime_ns": 1791838062309748700
+    }
+  ],
+  "script_sha256": "969ccfcfc9846dc12da6fff23721a081b1b09768cab2de484f36b5617c2a8d96",
+  "nota": "Backups anteriores preservados. Caches antigos invalidos pelo hash do helper; proxima analise os regenera."
+}

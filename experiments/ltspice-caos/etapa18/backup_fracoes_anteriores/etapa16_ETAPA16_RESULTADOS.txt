@@ -1,0 +1,158 @@
+ETAPA 16 — PILAR E, MEDIÇÃO E CAPACIDADE
+Relatório de pesquisa no LTspice. Correntes em µA; passos máximos em µs.
+
+82 trajetórias novas (1394 janelas), mais 16 trajetórias históricas reanalisadas (272 janelas).
+Uma trajetória dura 850 ms. A sequência, as duas condições iniciais e a regra de leitura foram mantidas.
+Cada janela exige o sinal correto de x durante todo o intervalo de leitura, não apenas na média.
+
+DECISÃO DE PESQUISA
+E revisado reduziu o resíduo RMS de D em 36.9%, mas elevou o resíduo de A–B–C em 21.8%.
+A lógica ficou em 184/272 contra 198/272. A variação total de g(x) mudou +0.176% na média.
+O benefício local em D não basta para aprovar a arquitetura na demanda original. A revisão da cota e o ajuste para 5 µA foram testados, preservando os resultados anteriores.
+Manter E como candidato de reserva especializada, sem adicioná-lo à arquitetura principal nesta etapa. Priorizar a repartição x/y e a margem lógica dentro da capacidade disponível, usando novos casos e refinamento numérico para validar qualquer mudança.
+Os ensaios com menor perturbação ajudam a delimitar a faixa de funcionamento; não substituem o requisito de suportar a alta demanda original. A mediana ajuda contra erros individuais, mas não elimina o erro comum.
+
+1. COMPARAÇÃO PRINCIPAL: ALTA DEMANDA, QUATRO CONDIÇÕES DO TOPO
+Arquitetura               | Acertos | Comuns nos 2 passos | Divergências /136 | Resíduo D RMS | Resíduo Y RMS | g RMS (V) | Variação g (V/s) | Falsos
+--------------------------+---------+---------------------+-------------------+---------------+---------------+-----------+------------------+-------
+Referência etapa 15       | 198/272 | 78/136              | 42                | 21.188        | 40.717        | 0.9177    | 1001.34          | 0     
+Pilar E revisado          | 184/272 | 72/136              | 40                | 13.366        | 49.579        | 0.9163    | 1003.10          | 0     
+Prioridade D, 2 atuadores | 189/272 | 71/136              | 47                | 13.312        | 49.347        | 0.9151    | 1003.37          | 0     
+
+Condição                    | Referência /68 | E revisado /68 | Prioridade D /68
+----------------------------+----------------+----------------+-----------------
+Saudável                    | 51             | 47             | 44              
+Silêncio com heartbeat      | 49             | 44             | 52              
+Atraso permanente de 500 µs | 49             | 48             | 47              
+Inversão                    | 49             | 45             | 46              
+
+A referência de 198/272 veio dos RAWs corrigidos da etapa 15; não foi substituída por uma repetição favorável.
+O total de 272 inclui quatro condições x dois passos x dois estados iniciais x 17 janelas.
+Acertos comuns contam apenas pares que acertam nos dois passos. Divergências contam mudança de classificação.
+Pequenas diferenças de contagem entre arquiteturas equivalentes em atuação não demonstram superioridade universal em um sistema sensível ao passo.
+Contra a mesma janela da referência | Recuperadas | Novas falhas
+------------------------------------+-------------+-------------
+Pilar E revisado                    | 32          | 46          
+Prioridade D, 2 atuadores           | 41          | 50          
+
+
+2. COMO E FOI REPRESENTADO
+E é um terceiro atuador sobre x, dedicado a corrigir a falta de D. Recebe a estimativa local e a cota de D; seu comando não passa pelo topo.
+Só atua quando |pedido D| supera |cota D| em mais de 1 µA, no mesmo sentido. Não recebe a verdade lógica nem o código ou horário da falha.
+Saturação aqui significa falta de cota para atender o pedido de D; não é um detector físico de saída encostada no rail ou de falha interna do amplificador.
+E fixo reserva 20 µA e deixa 70 µA para Y/D. E revisado conserva a cota proporcional de D, usa até 20 µA do espaço restante e retira essa parcela de Y.
+Se D não precisa de E, o orçamento fica disponível aos canais principais. A versão revisada também limita E por 90 µA menos a cota já comprometida com D.
+O controle de prioridade soma o mesmo pedido ao atuador D, mantendo dois atuadores; o pedido adicional segue o caminho de comando e failover já existente em D. E usa seu ramal local dedicado, inclusive antes da entrada do failover. Assim comparamos alocação e autonomia.
+A contagem de corrente inclui |IY|+|ID|+|IE|; E não recebe corrente adicional gratuita. Não estamos medindo consumo da alimentação ou energia armazenada.
+A conexão exclusiva a D vale para o pedido de correção. E compartilha alimentação e limitador global; sua cota é contabilizada na proteção de recursos.
+
+3. PILOTOS E REVISÃO PRESERVADOS
+Piloto saudável | Acertos /68 | Divergências /34 | Resíduo D | Resíduo Y | Falsos
+----------------+-------------+------------------+-----------+-----------+-------
+E_fixo_f0       | 42          | 10               | 16.069    | 48.247    | 0     
+E_livre_f0      | 47          | 11               | 13.305    | 49.364    | 0     
+D_prioridade_f0 | 48          | 14               | 13.362    | 49.433    | 0     
+
+A verificação estática encontrou até 109,9964 µA na soma das referências da primeira reserva livre, antes da guarda de comando. Não é uma medida de corrente física.
+A guarda continuava limitando a atuação, mas podia divergir da referência do detector. A revisão corrige essa inconsistência e passou em 100.000 entradas por modo.
+As versões piloto não foram sobrescritas. REVISAO_ALOCACAO.txt e verificacao_regras.json preservam o diagnóstico.
+Após observar redução do resíduo de D e aumento do resíduo de Y no controle de prioridade, foi testada uma cota menor para E: 5 µA.
+Ajuste exploratório, topo saudável | Acertos /68 | Divergências /34 | Resíduo D | Resíduo Y
+-----------------------------------+-------------+------------------+-----------+----------
+BUF_p3_f0                          | 51          | 11               | 21.225    | 40.748   
+E_v2_f0                            | 47          | 11               | 13.336    | 49.483   
+E_cota5_f0                         | 49          | 7                | 18.699    | 43.061   
+
+A cota de 5 µA foi escolhida como um único ajuste após o piloto, sem varredura para maximizar acertos. Não foi expandida às quatro condições do topo nem ao terceiro passo; não misturar seus resultados com os de 20 µA.
+
+4. ERRO FIXO, ATRASO E INTENSIDADE DAS PERTURBAÇÕES
+Condição saudável   | Acertos /68 | Divergências /34 | Resíduo D | Resíduo Y
+--------------------+-------------+------------------+-----------+----------
+BUF_p3_f0           | 51          | 11               | 21.225    | 40.748   
+S_sem_offset        | 57          | 7                | 21.314    | 40.587   
+S_rapido            | 51          | 9                | 19.174    | 37.614   
+S_rapido_sem_offset | 54          | 8                | 19.274    | 37.739   
+C_demanda75         | 66          | 2                | 11.926    | 23.866   
+C_demanda50         | 68          | 0                | 5.657     | 11.618   
+E_demanda75         | 63          | 3                | 8.155     | 29.469   
+
+Rápido: latência de 50 para 5 µs e RC de 100 para 10 µs, mantendo a capacidade de 90 µA. Sem offset: erros fixos de A–D zerados.
+Demanda 75/50: todas as amplitudes das quatro perturbações reduzidas juntas. Não confundir redução da perturbação com aumento de corrente disponível.
+Estas são ablações favoráveis para diagnóstico. Ainda não incluem o custo/ruído de sensores físicos mais rápidos.
+Condição saudável | Demanda exata >91 µA, % do tempo | Excesso médio sobre 90 µA
+------------------+----------------------------------+--------------------------
+BUF_p3_f0         | 31.12                            | 34.833                   
+E_v2_f0           | 30.88                            | 34.609                   
+S_rapido          | 31.12                            | 34.517                   
+C_demanda75       | 20.68                            | 14.564                   
+C_demanda50       | 6.11                             | 2.105                    
+
+A demanda exata é calculada após a simulação com as perturbações injetadas e o estado de cada trajetória. Não alimenta nenhum controlador nem constitui um novo ensaio de capacidade física.
+
+5. TERCEIRO PASSO: 0,3125 µs, TOPO SAUDÁVEL
+Candidato        | 1,25 /34 | 0,625 /34 | 0,3125 /34 | Mudanças 1→2 | Mudanças 2→3 | Comuns aos 3 /34
+-----------------+----------+-----------+------------+--------------+--------------+-----------------
+Referência       | 28       | 23        | 25         | 11           | 8            | 17              
+E revisado       | 25       | 22        | 26         | 11           | 12           | 15              
+Sensores rápidos | 24       | 27        | 26         | 9            | 11           | 19              
+
+Refinar o passo máximo não prova convergência ponto a ponto de uma trajetória caótica. As divergências lógicas restantes são falhas abertas de robustez.
+
+6. NOVE SENSORES E E A PROPOSTA DE 45 SUBPILARES
+E tem nove fontes comportamentais de leitura e mediana exata em LTspice. Erros individuais fixos vão de -0,000008 a +0,000008, além do erro comum de D.
+O grupo mantém erro comum e compartilha o parâmetro verdadeiro favorável; não são nove chips físicos ou fontes independentes de informação.
+Quatro falhas: as primeiras quatro leituras recebem +0,02. Erro comum: todas recebem +0,002. Condições mantidas durante todo o transiente.
+Condição E, passo 0,625 | Acertos /34 | Sensor E: erro RMS | Resíduo D | Resíduo Y
+------------------------+-------------+--------------------+-----------+----------
+E_v2_f0                 | 22          | 0.00002000         | 13.281    | 49.387   
+E_quatro_falhas         | 24          | 0.00002800         | 13.266    | 49.505   
+E_erro_comum            | 25          | 0.00202000         | 15.483    | 48.483   
+
+A/B/C/D continuam com uma réplica cada. 45 = 5 x 9 é a arquitetura candidata; o conjunto completo e o seletor adaptativo ainda não foram integrados.
+A mediana foi verificada em todos os 512 vetores binários e em 9.488 vetores adicionais. Isso comprova a regra de ordenação, não a independência física dos sensores.
+
+7. CORRENTE, DETECTOR E MÉTRICAS DINÂMICAS
+Pico pelas tensões dos shunts, nas 82 trajetórias novas: 90.025842 µA.
+Violações de 100,005 µA por tensões dos shunts: 0/82.
+Violações de 100,005 µA por correntes dos resistores: 0/82.
+Violações de 100,005 µA por sondas de 0 V: 0/82.
+Maior diferença instantânea shunts/resistores: 0.000347 µA; shunts/sondas: 3.031667 µA.
+As três leituras passam no teto, mas suas formas de onda não coincidem perfeitamente. Os resíduos e a conclusão física de corrente usam tensão/R, conferida com a corrente dos resistores. A divergência das sondas de 0 V permanece uma limitação de medição numérica; não foi atribuída a uma sobrecorrente física confirmada. auditoria_sondas.json localiza os dois maiores casos e suas amostras vizinhas.
+Auditoria de sonda  | Instante (s)      | Passo anterior (s) | Diferença RMS (µA)
+--------------------+-------------------+--------------------+-------------------
+R_E_v2 caso 1       | 3.12502481709e-12 | 2.499e-17          | 0.00006922        
+E_erro_comum caso 1 | 0.0714666009586   | 3.469e-16          | 0.00006746        
+
+Os maiores desvios aparecem em passos internos extremamente curtos; o maior ocorre na inicialização. A diferença RMS ao longo da trajetória é inferior a 0,0001 µA nos dois casos auditados. A causa interna do cálculo das sondas não foi demonstrada por este ensaio.
+Casos novos com falha do topo e reserva retida ao fim: 24/24. Alarme não significa recuperação lógica.
+Arquitetura  | Falha    | Detectadas | Latência de alarme (µs)
+-------------+----------+------------+------------------------
+E revisado   | Silêncio | 4/4        | 13.987–13.990          
+E revisado   | Atraso   | 4/4        | 2012.038–2012.038      
+E revisado   | Inversão | 4/4        | 13.987–13.990          
+Prioridade D | Silêncio | 4/4        | 13.998–14.001          
+Prioridade D | Atraso   | 4/4        | 2012.037–2012.038      
+Prioridade D | Inversão | 4/4        | 13.998–14.001          
+
+Falhas temporárias começam em 343,35 ms e terminam em 403,35 ms. O atraso de 500 µs é permanente desde o início; sua latência inclui a inibição inicial de 2 ms.
+Resíduo D = I_D + I_E - 0,01*pert_D*g(x); resíduo Y usa a correção exata das perturbações A–B–C. Correntes são obtidas por tensão/R dos shunts.
+RMS e frações são integrados no tempo entre 30 e 850 ms. A tabela principal apresenta a média dos RMS de cada trajetória, com igual peso.
+Variação de g/s = soma dos módulos dos incrementos de g(x), dividida pela duração. Também foram salvos pico de g e ocupação |x|>1 por trajetória.
+As unidades de g e sua variação são equivalentes às tensões do modelo normalizado, não tensões de um chip já selecionado.
+g(x) não foi redesenhada: E altera sua compensação no estado x. Estas medidas de dinâmica não representam estresse térmico, dissipação ou EMI.
+
+8. ALCANCE PARA A FUTURA PLACA VIRTUAL
+Amplificadores UniversalOpAmp2 genéricos, shunts, RCs e isoladores foram mantidos. Cálculo, mediana, sinais de medição e guardas de sinal/capacidade permanecem idealizados.
+O limitador não ideal agora soma três módulos no candidato E. Compartilhar limitador e alimentação impede tratar E como redundância física completa.
+O detector atual verifica Y e D; a saída E ainda não possui detecção própria de discrepância. Falhas comuns de medição não são cobertas por comparar um comando com sua atuação.
+Ainda faltam chips escolhidos, falhas do próprio atuador/limitador, parasitas, térmica, ruído estatístico, tolerâncias da nova integração e a pirâmide completa de sensores.
+Resultados valem para esta sequência finita e estados iniciais. Não selecionar hardware nem declarar o circuito totalmente validado apenas por essas contagens.
+
+9. REPRODUÇÃO E FONTES
+preparar_etapa16.py: pilotos. preparar_expansao.py: modelos v2 e matriz cruzada. preparar_refinamento.py: terceiro passo e sensores E. preparar_E_menor.py: ajuste exploratório de 5 µA.
+executar.ps1 -Manifest lotes_piloto.json / lotes_expansao.json / lotes_refinamento.json / lotes_E_menor.json: LTspice em batch, um manifesto por chamada. Slot/Slots divide decks entre processos.
+analisar_etapa16.py: logs completos, RAW completos, janelas e correntes. gerar_relatorio.py: este texto e comparacoes.json. verificar_entrega.py: integridade da entrega.
+Resultados: trajetorias.json, resumo.json, janelas.csv. RAWs e logs originais preservados. Cache de análise depende do código e das datas dos arquivos de entrada.
+auditar_sondas.py registra as discrepâncias entre medidores. gerar_figura.py produz comparacao_pilar_E.svg. consolidar_pesquisa.py atualiza os dois documentos existentes da pesquisa.
+Documentação ADI da sintaxe .tran/.meas/.step: https://github.com/analogdevicesinc/ltspice-reference/blob/main/ai_ref/SIMULATION-COMMANDS-REFERENCE.md
+As conclusões quantitativas deste relatório vêm dos arquivos locais, não da documentação externa.

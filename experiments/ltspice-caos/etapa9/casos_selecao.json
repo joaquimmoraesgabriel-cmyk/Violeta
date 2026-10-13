@@ -1,0 +1,387 @@
+[
+  {
+    "nome": "SEL_p0_nove_fixos_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p0_tres_fixos_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p0_rodizio_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p0_sorteio_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p0_sorteio_s73",
+    "perfil": "saudaveis",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p0_sorteio_s211",
+    "perfil": "saudaveis",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p0_adaptativo_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_nove_fixos_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_tres_fixos_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_rodizio_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_sorteio_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_sorteio_s73",
+    "perfil": "uma_falha",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_sorteio_s211",
+    "perfil": "uma_falha",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p1_adaptativo_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_nove_fixos_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_tres_fixos_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_rodizio_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_sorteio_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_sorteio_s73",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_sorteio_s211",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p2_adaptativo_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_nove_fixos_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_tres_fixos_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_rodizio_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_sorteio_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_sorteio_s73",
+    "perfil": "erro_comum",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_sorteio_s211",
+    "perfil": "erro_comum",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p3_adaptativo_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_nove_fixos_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_tres_fixos_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_rodizio_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_sorteio_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_sorteio_s73",
+    "perfil": "ruido_alto",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_sorteio_s211",
+    "perfil": "ruido_alto",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  },
+  {
+    "nome": "SEL_p4_adaptativo_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ]
+  }
+]

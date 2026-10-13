@@ -1,0 +1,434 @@
+[
+  {
+    "caso": 0,
+    "perfil": 0,
+    "modo": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 1,
+    "perfil": 0,
+    "modo": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 2,
+    "perfil": 0,
+    "modo": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 3,
+    "perfil": 0,
+    "modo": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 4,
+    "perfil": 0,
+    "modo": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 5,
+    "perfil": 0,
+    "modo": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 6,
+    "perfil": 0,
+    "modo": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 7,
+    "perfil": 0,
+    "modo": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 8,
+    "perfil": 0,
+    "modo": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 9,
+    "perfil": 0,
+    "modo": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 10,
+    "perfil": 0,
+    "modo": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 11,
+    "perfil": 0,
+    "modo": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 12,
+    "perfil": 0,
+    "modo": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 13,
+    "perfil": 0,
+    "modo": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 14,
+    "perfil": 0,
+    "modo": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 15,
+    "perfil": 0,
+    "modo": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 16,
+    "perfil": 1,
+    "modo": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 17,
+    "perfil": 1,
+    "modo": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 18,
+    "perfil": 1,
+    "modo": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 19,
+    "perfil": 1,
+    "modo": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 20,
+    "perfil": 1,
+    "modo": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 21,
+    "perfil": 1,
+    "modo": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 22,
+    "perfil": 1,
+    "modo": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 23,
+    "perfil": 1,
+    "modo": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 24,
+    "perfil": 1,
+    "modo": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 25,
+    "perfil": 1,
+    "modo": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 26,
+    "perfil": 1,
+    "modo": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 27,
+    "perfil": 1,
+    "modo": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 28,
+    "perfil": 1,
+    "modo": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 29,
+    "perfil": 1,
+    "modo": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 30,
+    "perfil": 1,
+    "modo": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 31,
+    "perfil": 1,
+    "modo": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 32,
+    "perfil": 2,
+    "modo": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 33,
+    "perfil": 2,
+    "modo": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 34,
+    "perfil": 2,
+    "modo": 0,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 35,
+    "perfil": 2,
+    "modo": 0,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 36,
+    "perfil": 2,
+    "modo": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 37,
+    "perfil": 2,
+    "modo": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 38,
+    "perfil": 2,
+    "modo": 1,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 39,
+    "perfil": 2,
+    "modo": 1,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 40,
+    "perfil": 2,
+    "modo": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 41,
+    "perfil": 2,
+    "modo": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 42,
+    "perfil": 2,
+    "modo": 2,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 43,
+    "perfil": 2,
+    "modo": 2,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 44,
+    "perfil": 2,
+    "modo": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 45,
+    "perfil": 2,
+    "modo": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 5e-06
+  },
+  {
+    "caso": 46,
+    "perfil": 2,
+    "modo": 3,
+    "x_inicial": -0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  },
+  {
+    "caso": 47,
+    "perfil": 2,
+    "modo": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "erro_sensor": 0.0002,
+    "passo": 2.5e-06
+  }
+]

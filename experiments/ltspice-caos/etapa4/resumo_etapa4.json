@@ -1,0 +1,901 @@
+[
+  {
+    "arquivo": "MLC_fatores_demo.log",
+    "grupo": 0,
+    "latencia_us": 50.0,
+    "tau_us": 100.0,
+    "limite_uA": 100.0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.228743240237,
+    "pico_corrente_uA": 71.873429988,
+    "fracao_saturada": 0.0,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_fatores_demo.log",
+    "grupo": 1,
+    "latencia_us": 500.0,
+    "tau_us": 100.0,
+    "limite_uA": 100.0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 9,
+    "menor_margem": -1.35018873215,
+    "pico_corrente_uA": 69.1247114446,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 2,
+        "janela": 2,
+        "margem": -0.0994068309665
+      },
+      {
+        "passo": 2,
+        "janela": 4,
+        "margem": -1.34774923325
+      },
+      {
+        "passo": 2,
+        "janela": 9,
+        "margem": -1.28362774849
+      },
+      {
+        "passo": 2,
+        "janela": 10,
+        "margem": -0.209477946162
+      },
+      {
+        "passo": 2,
+        "janela": 11,
+        "margem": -1.35018873215
+      },
+      {
+        "passo": 2,
+        "janela": 12,
+        "margem": -1.29093647003
+      },
+      {
+        "passo": 2,
+        "janela": 14,
+        "margem": -0.0720244795084
+      },
+      {
+        "passo": 2,
+        "janela": 15,
+        "margem": -1.33256936073
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_demo.log",
+    "grupo": 2,
+    "latencia_us": 50.0,
+    "tau_us": 1000.0,
+    "limite_uA": 100.0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 14,
+    "menor_margem": -0.0782712623477,
+    "pico_corrente_uA": 25.7791962213,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 3,
+        "janela": 9,
+        "margem": -0.0510704629123
+      },
+      {
+        "passo": 3,
+        "janela": 11,
+        "margem": -0.0782712623477
+      },
+      {
+        "passo": 3,
+        "janela": 12,
+        "margem": -0.0716769844294
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_demo.log",
+    "grupo": 4,
+    "latencia_us": 50.0,
+    "tau_us": 100.0,
+    "limite_uA": 20.0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.214702665806,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6253393962851765,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_fatores_demo.log",
+    "grupo": 7,
+    "latencia_us": 500.0,
+    "tau_us": 1000.0,
+    "limite_uA": 20.0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 8,
+    "menor_margem": -1.31079041958,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.03294103134679412,
+    "falhas": [
+      {
+        "passo": 5,
+        "janela": 2,
+        "margem": -0.0667907893658
+      },
+      {
+        "passo": 5,
+        "janela": 4,
+        "margem": -0.160695284605
+      },
+      {
+        "passo": 5,
+        "janela": 7,
+        "margem": -0.0427647680044
+      },
+      {
+        "passo": 5,
+        "janela": 8,
+        "margem": -0.0517462417483
+      },
+      {
+        "passo": 5,
+        "janela": 9,
+        "margem": -0.0661204010248
+      },
+      {
+        "passo": 5,
+        "janela": 11,
+        "margem": -0.446433663368
+      },
+      {
+        "passo": 5,
+        "janela": 12,
+        "margem": -1.31079041958
+      },
+      {
+        "passo": 5,
+        "janela": 14,
+        "margem": -0.0368224978447
+      },
+      {
+        "passo": 5,
+        "janela": 15,
+        "margem": -0.127253159881
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 0,
+    "latencia_us": 50.0,
+    "tau_us": 100.0,
+    "limite_uA": 100.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.223086372018,
+    "pico_corrente_uA": 71.87415030780001,
+    "fracao_saturada": 0.0,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 1,
+    "latencia_us": 500.0,
+    "tau_us": 100.0,
+    "limite_uA": 100.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 35,
+    "menor_margem": -1.37558317184,
+    "pico_corrente_uA": 69.653353421,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 5,
+        "janela": 2,
+        "margem": -0.0994220599532
+      },
+      {
+        "passo": 5,
+        "janela": 6,
+        "margem": -0.105067998171
+      },
+      {
+        "passo": 5,
+        "janela": 7,
+        "margem": -0.0710121542215
+      },
+      {
+        "passo": 5,
+        "janela": 8,
+        "margem": -1.33201372623
+      },
+      {
+        "passo": 5,
+        "janela": 11,
+        "margem": -1.345718503
+      },
+      {
+        "passo": 5,
+        "janela": 12,
+        "margem": -1.34930455685
+      },
+      {
+        "passo": 5,
+        "janela": 14,
+        "margem": -0.199053540826
+      },
+      {
+        "passo": 5,
+        "janela": 15,
+        "margem": -1.37558317184
+      },
+      {
+        "passo": 6,
+        "janela": 2,
+        "margem": -0.0994068309665
+      },
+      {
+        "passo": 6,
+        "janela": 4,
+        "margem": -1.34774923325
+      },
+      {
+        "passo": 6,
+        "janela": 9,
+        "margem": -1.28362774849
+      },
+      {
+        "passo": 6,
+        "janela": 10,
+        "margem": -0.209477946162
+      },
+      {
+        "passo": 6,
+        "janela": 11,
+        "margem": -1.35018873215
+      },
+      {
+        "passo": 6,
+        "janela": 12,
+        "margem": -1.29093647003
+      },
+      {
+        "passo": 6,
+        "janela": 14,
+        "margem": -0.0720244795084
+      },
+      {
+        "passo": 6,
+        "janela": 15,
+        "margem": -1.33256936073
+      },
+      {
+        "passo": 7,
+        "janela": 2,
+        "margem": -1.34386479855
+      },
+      {
+        "passo": 7,
+        "janela": 4,
+        "margem": -1.27099609375
+      },
+      {
+        "passo": 7,
+        "janela": 6,
+        "margem": -0.244094282389
+      },
+      {
+        "passo": 7,
+        "janela": 7,
+        "margem": -0.153116449714
+      },
+      {
+        "passo": 7,
+        "janela": 10,
+        "margem": -0.217691704631
+      },
+      {
+        "passo": 7,
+        "janela": 11,
+        "margem": -0.104809097946
+      },
+      {
+        "passo": 7,
+        "janela": 12,
+        "margem": -1.31616652012
+      },
+      {
+        "passo": 8,
+        "janela": 2,
+        "margem": -1.33809399605
+      },
+      {
+        "passo": 8,
+        "janela": 4,
+        "margem": -0.057324398309
+      },
+      {
+        "passo": 8,
+        "janela": 6,
+        "margem": -1.32986366749
+      },
+      {
+        "passo": 8,
+        "janela": 7,
+        "margem": -1.32734119892
+      },
+      {
+        "passo": 8,
+        "janela": 8,
+        "margem": -1.31230807304
+      },
+      {
+        "passo": 8,
+        "janela": 9,
+        "margem": -0.456211447716
+      },
+      {
+        "passo": 8,
+        "janela": 10,
+        "margem": -1.30183815956
+      },
+      {
+        "passo": 8,
+        "janela": 11,
+        "margem": -0.00404473813251
+      },
+      {
+        "passo": 8,
+        "janela": 13,
+        "margem": -0.214387595654
+      },
+      {
+        "passo": 8,
+        "janela": 14,
+        "margem": -0.154381737113
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 2,
+    "latencia_us": 50.0,
+    "tau_us": 1000.0,
+    "limite_uA": 100.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 2,
+    "janelas": 68,
+    "janelas_corretas": 63,
+    "menor_margem": -0.0782712623477,
+    "pico_corrente_uA": 27.5486490864,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 10,
+        "janela": 9,
+        "margem": -0.0510704629123
+      },
+      {
+        "passo": 10,
+        "janela": 11,
+        "margem": -0.0782712623477
+      },
+      {
+        "passo": 10,
+        "janela": 12,
+        "margem": -0.0716769844294
+      },
+      {
+        "passo": 11,
+        "janela": 12,
+        "margem": -0.00102431280538
+      },
+      {
+        "passo": 11,
+        "janela": 15,
+        "margem": -0.0108853792772
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 3,
+    "latencia_us": 500.0,
+    "tau_us": 1000.0,
+    "limite_uA": 100.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 47,
+    "menor_margem": -1.35924875736,
+    "pico_corrente_uA": 24.839739125999998,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 13,
+        "janela": 2,
+        "margem": -1.35904657841
+      },
+      {
+        "passo": 13,
+        "janela": 4,
+        "margem": -0.0375598818064
+      },
+      {
+        "passo": 13,
+        "janela": 7,
+        "margem": -1.31404042244
+      },
+      {
+        "passo": 13,
+        "janela": 8,
+        "margem": -0.14717143774
+      },
+      {
+        "passo": 13,
+        "janela": 9,
+        "margem": -0.138022363186
+      },
+      {
+        "passo": 13,
+        "janela": 11,
+        "margem": -0.156569078565
+      },
+      {
+        "passo": 13,
+        "janela": 15,
+        "margem": -0.301923394203
+      },
+      {
+        "passo": 14,
+        "janela": 4,
+        "margem": -0.0118424016982
+      },
+      {
+        "passo": 14,
+        "janela": 7,
+        "margem": -0.160778582096
+      },
+      {
+        "passo": 14,
+        "janela": 10,
+        "margem": -1.28125369549
+      },
+      {
+        "passo": 14,
+        "janela": 11,
+        "margem": -0.0819188430905
+      },
+      {
+        "passo": 14,
+        "janela": 13,
+        "margem": -1.33130383492
+      },
+      {
+        "passo": 15,
+        "janela": 2,
+        "margem": -0.122219234705
+      },
+      {
+        "passo": 15,
+        "janela": 7,
+        "margem": -0.0288319848478
+      },
+      {
+        "passo": 15,
+        "janela": 8,
+        "margem": -0.108451776206
+      },
+      {
+        "passo": 15,
+        "janela": 9,
+        "margem": -0.0572335906327
+      },
+      {
+        "passo": 15,
+        "janela": 12,
+        "margem": -1.35924875736
+      },
+      {
+        "passo": 16,
+        "janela": 4,
+        "margem": -0.184695750475
+      },
+      {
+        "passo": 16,
+        "janela": 9,
+        "margem": -0.0514920167625
+      },
+      {
+        "passo": 16,
+        "janela": 14,
+        "margem": -1.30338323116
+      },
+      {
+        "passo": 16,
+        "janela": 15,
+        "margem": -0.171070054173
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 4,
+    "latencia_us": 50.0,
+    "tau_us": 100.0,
+    "limite_uA": 20.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.214702665806,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6234656060661617,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 5,
+    "latencia_us": 500.0,
+    "tau_us": 100.0,
+    "limite_uA": 20.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 43,
+    "menor_margem": -0.183955788612,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6001979773931471,
+    "falhas": [
+      {
+        "passo": 21,
+        "janela": 6,
+        "margem": -0.0479721315205
+      },
+      {
+        "passo": 21,
+        "janela": 13,
+        "margem": -0.183955788612
+      },
+      {
+        "passo": 21,
+        "janela": 14,
+        "margem": -0.0914526879787
+      },
+      {
+        "passo": 21,
+        "janela": 15,
+        "margem": -0.124622508883
+      },
+      {
+        "passo": 22,
+        "janela": 2,
+        "margem": -0.13520398736
+      },
+      {
+        "passo": 22,
+        "janela": 4,
+        "margem": -0.0610936693847
+      },
+      {
+        "passo": 22,
+        "janela": 6,
+        "margem": -0.0409295372665
+      },
+      {
+        "passo": 22,
+        "janela": 7,
+        "margem": -0.0266958307475
+      },
+      {
+        "passo": 22,
+        "janela": 10,
+        "margem": -0.0632170289755
+      },
+      {
+        "passo": 22,
+        "janela": 12,
+        "margem": -0.149721413851
+      },
+      {
+        "passo": 22,
+        "janela": 14,
+        "margem": -0.143667206168
+      },
+      {
+        "passo": 22,
+        "janela": 15,
+        "margem": -0.0303620193154
+      },
+      {
+        "passo": 23,
+        "janela": 2,
+        "margem": -0.0905191972852
+      },
+      {
+        "passo": 23,
+        "janela": 7,
+        "margem": -0.146797806025
+      },
+      {
+        "passo": 23,
+        "janela": 10,
+        "margem": -0.0499910973012
+      },
+      {
+        "passo": 23,
+        "janela": 12,
+        "margem": -0.147672355175
+      },
+      {
+        "passo": 23,
+        "janela": 13,
+        "margem": -0.108313933015
+      },
+      {
+        "passo": 23,
+        "janela": 15,
+        "margem": -0.0765709877014
+      },
+      {
+        "passo": 24,
+        "janela": 2,
+        "margem": -0.119304664433
+      },
+      {
+        "passo": 24,
+        "janela": 7,
+        "margem": -0.0851498618722
+      },
+      {
+        "passo": 24,
+        "janela": 9,
+        "margem": -0.10324819386
+      },
+      {
+        "passo": 24,
+        "janela": 10,
+        "margem": -0.126124873757
+      },
+      {
+        "passo": 24,
+        "janela": 11,
+        "margem": -0.122545175254
+      },
+      {
+        "passo": 24,
+        "janela": 14,
+        "margem": -0.112080961466
+      },
+      {
+        "passo": 24,
+        "janela": 15,
+        "margem": -0.100228391588
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 6,
+    "latencia_us": 50.0,
+    "tau_us": 1000.0,
+    "limite_uA": 20.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 61,
+    "menor_margem": -0.0742598026991,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.03507402519379441,
+    "falhas": [
+      {
+        "passo": 25,
+        "janela": 2,
+        "margem": -0.0133652491495
+      },
+      {
+        "passo": 26,
+        "janela": 12,
+        "margem": -0.0550914667547
+      },
+      {
+        "passo": 26,
+        "janela": 15,
+        "margem": -0.0540997572243
+      },
+      {
+        "passo": 27,
+        "janela": 12,
+        "margem": -0.0742598026991
+      },
+      {
+        "passo": 28,
+        "janela": 7,
+        "margem": -0.0312081091106
+      },
+      {
+        "passo": 28,
+        "janela": 8,
+        "margem": -0.0182208549231
+      },
+      {
+        "passo": 28,
+        "janela": 11,
+        "margem": -0.0453033410013
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_fatores_validacao.log",
+    "grupo": 7,
+    "latencia_us": 500.0,
+    "tau_us": 1000.0,
+    "limite_uA": 20.0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 40,
+    "menor_margem": -1.32770168781,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.03269903734528235,
+    "falhas": [
+      {
+        "passo": 29,
+        "janela": 2,
+        "margem": -1.29324519634
+      },
+      {
+        "passo": 29,
+        "janela": 4,
+        "margem": -1.32770168781
+      },
+      {
+        "passo": 29,
+        "janela": 7,
+        "margem": -0.246683597565
+      },
+      {
+        "passo": 29,
+        "janela": 8,
+        "margem": -0.174799725413
+      },
+      {
+        "passo": 29,
+        "janela": 9,
+        "margem": -0.162430927157
+      },
+      {
+        "passo": 29,
+        "janela": 11,
+        "margem": -0.132082477212
+      },
+      {
+        "passo": 29,
+        "janela": 15,
+        "margem": -0.00644943024963
+      },
+      {
+        "passo": 30,
+        "janela": 2,
+        "margem": -0.0667907893658
+      },
+      {
+        "passo": 30,
+        "janela": 4,
+        "margem": -0.160695284605
+      },
+      {
+        "passo": 30,
+        "janela": 7,
+        "margem": -0.0427647680044
+      },
+      {
+        "passo": 30,
+        "janela": 8,
+        "margem": -0.0517462417483
+      },
+      {
+        "passo": 30,
+        "janela": 9,
+        "margem": -0.0661204010248
+      },
+      {
+        "passo": 30,
+        "janela": 11,
+        "margem": -0.446433663368
+      },
+      {
+        "passo": 30,
+        "janela": 12,
+        "margem": -1.31079041958
+      },
+      {
+        "passo": 30,
+        "janela": 14,
+        "margem": -0.0368224978447
+      },
+      {
+        "passo": 30,
+        "janela": 15,
+        "margem": -0.127253159881
+      },
+      {
+        "passo": 31,
+        "janela": 2,
+        "margem": -0.0798177421093
+      },
+      {
+        "passo": 31,
+        "janela": 6,
+        "margem": -0.15853472054
+      },
+      {
+        "passo": 31,
+        "janela": 7,
+        "margem": -0.0268213171512
+      },
+      {
+        "passo": 31,
+        "janela": 9,
+        "margem": -0.161726236343
+      },
+      {
+        "passo": 31,
+        "janela": 11,
+        "margem": -0.141513735056
+      },
+      {
+        "passo": 31,
+        "janela": 12,
+        "margem": -0.186632871628
+      },
+      {
+        "passo": 32,
+        "janela": 2,
+        "margem": -0.0103654721752
+      },
+      {
+        "passo": 32,
+        "janela": 6,
+        "margem": -1.29265519675
+      },
+      {
+        "passo": 32,
+        "janela": 8,
+        "margem": -0.0961327403784
+      },
+      {
+        "passo": 32,
+        "janela": 10,
+        "margem": -0.0181761737913
+      },
+      {
+        "passo": 32,
+        "janela": 12,
+        "margem": -0.179650738835
+      },
+      {
+        "passo": 32,
+        "janela": 15,
+        "margem": -0.122768014669
+      }
+    ]
+  }
+]

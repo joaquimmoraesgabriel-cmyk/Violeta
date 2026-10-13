@@ -1,0 +1,1844 @@
+[
+  {
+    "nome": "SEL_p0_nove_fixos_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.239994451404,
+    "pico_orcamento_uA": 100.00106704
+  },
+  {
+    "nome": "SEL_p0_tres_fixos_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "tres_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9992942006822725,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.246456518769,
+    "pico_orcamento_uA": 100.001052488
+  },
+  {
+    "nome": "SEL_p0_rodizio_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "rodizio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.879661216327491,
+    "tempo_sem_leitura_valida_ms": 34.1,
+    "trocas_individuais": 1023,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.243108153343,
+    "pico_orcamento_uA": 100.000892417
+  },
+  {
+    "nome": "SEL_p0_sorteio_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.917421479825903,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 701,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.243559494615,
+    "pico_orcamento_uA": 100.000936072
+  },
+  {
+    "nome": "SEL_p0_sorteio_s73",
+    "perfil": "saudaveis",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9168333137277966,
+    "tempo_sem_leitura_valida_ms": 9.1,
+    "trocas_individuais": 707,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.22381003201,
+    "pico_orcamento_uA": 100.00065231
+  },
+  {
+    "nome": "SEL_p0_sorteio_s211",
+    "perfil": "saudaveis",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.918009645924009,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 695,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.239708349109,
+    "pico_orcamento_uA": 100.00102338399999
+  },
+  {
+    "nome": "SEL_p0_adaptativo_s19",
+    "perfil": "saudaveis",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.7206211033996,
+    "max_ligados": 9,
+    "media_validos": 3.4792377367368545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.238155677915,
+    "pico_orcamento_uA": 100.000601378
+  },
+  {
+    "nome": "SEL_p1_nove_fixos_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.247708037496,
+    "pico_orcamento_uA": 100.00106704
+  },
+  {
+    "nome": "SEL_p1_tres_fixos_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "tres_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9992942006822725,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.242789149284,
+    "pico_orcamento_uA": 100.00098700400001
+  },
+  {
+    "nome": "SEL_p1_rodizio_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "rodizio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.879661216327491,
+    "tempo_sem_leitura_valida_ms": 34.1,
+    "trocas_individuais": 1023,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.1652,
+        "latencia_ms": 1.8500000000000183
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.23712259531,
+    "pico_orcamento_uA": 100.00073962100001
+  },
+  {
+    "nome": "SEL_p1_sorteio_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.917421479825903,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 701,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.1652,
+        "latencia_ms": 1.8500000000000183
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": 0.4652,
+        "latencia_ms": 1.8500000000000183
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.241765633225,
+    "pico_orcamento_uA": 100.000841485
+  },
+  {
+    "nome": "SEL_p1_sorteio_s73",
+    "perfil": "uma_falha",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9168333137277966,
+    "tempo_sem_leitura_valida_ms": 9.1,
+    "trocas_individuais": 707,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": 0.4852,
+        "latencia_ms": 21.850000000000037
+      }
+    ],
+    "janelas": 34,
+    "corretas": 33,
+    "trajetorias_corretas": 1,
+    "menor_margem": -1.30581355095,
+    "pico_orcamento_uA": 100.00094334799999
+  },
+  {
+    "nome": "SEL_p1_sorteio_s211",
+    "perfil": "uma_falha",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.918009645924009,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 695,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.1852,
+        "latencia_ms": 21.85000000000001
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": 0.4652,
+        "latencia_ms": 1.8500000000000183
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.240128532052,
+    "pico_orcamento_uA": 100.000885141
+  },
+  {
+    "nome": "SEL_p1_adaptativo_s19",
+    "perfil": "uma_falha",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.7206211033996,
+    "max_ligados": 9,
+    "media_validos": 3.4792377367368545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0
+        ],
+        "primeiro_alarme_s": 0.1652,
+        "latencia_ms": 1.8500000000000183
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          7
+        ],
+        "primeiro_alarme_s": 0.4652,
+        "latencia_ms": 1.8500000000000183
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.230405837297,
+    "pico_orcamento_uA": 100.000601378
+  },
+  {
+    "nome": "SEL_p2_nove_fixos_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.247800081968,
+    "pico_orcamento_uA": 100.00106704
+  },
+  {
+    "nome": "SEL_p2_tres_fixos_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "tres_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9992942006822725,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 32,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.45655357838,
+    "pico_orcamento_uA": 100.000965176
+  },
+  {
+    "nome": "SEL_p2_rodizio_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "rodizio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.879661216327491,
+    "tempo_sem_leitura_valida_ms": 34.1,
+    "trocas_individuais": 1023,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.17020000000000002,
+        "latencia_ms": 6.850000000000023
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 27,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.42562747002,
+    "pico_orcamento_uA": 100.001059764
+  },
+  {
+    "nome": "SEL_p2_sorteio_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.917421479825903,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 701,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.17020000000000002,
+        "latencia_ms": 6.850000000000023
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.47825729847,
+    "pico_orcamento_uA": 100.001758256
+  },
+  {
+    "nome": "SEL_p2_sorteio_s73",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9168333137277966,
+    "tempo_sem_leitura_valida_ms": 9.1,
+    "trocas_individuais": 707,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 26,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.4766510725,
+    "pico_orcamento_uA": 100.00094334799999
+  },
+  {
+    "nome": "SEL_p2_sorteio_s211",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.918009645924009,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 695,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.1652,
+        "latencia_ms": 1.8500000000000183
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 28,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.41469371319,
+    "pico_orcamento_uA": 100.001110695
+  },
+  {
+    "nome": "SEL_p2_adaptativo_s19",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.73120809316551,
+    "max_ligados": 9,
+    "media_validos": 3.489824726502764,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.4652,
+        "latencia_ms": 1.8500000000000183
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.246863588691,
+    "pico_orcamento_uA": 100.001016108
+  },
+  {
+    "nome": "SEL_p3_nove_fixos_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.48856317997,
+    "pico_orcamento_uA": 100.00106704
+  },
+  {
+    "nome": "SEL_p3_tres_fixos_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "tres_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9992942006822725,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.46623265743,
+    "pico_orcamento_uA": 100.001438113
+  },
+  {
+    "nome": "SEL_p3_rodizio_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "rodizio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.879661216327491,
+    "tempo_sem_leitura_valida_ms": 34.1,
+    "trocas_individuais": 1023,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.4787722826,
+    "pico_orcamento_uA": 100.00125621400001
+  },
+  {
+    "nome": "SEL_p3_sorteio_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.917421479825903,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 701,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.47460830212,
+    "pico_orcamento_uA": 100.00104521200001
+  },
+  {
+    "nome": "SEL_p3_sorteio_s73",
+    "perfil": "erro_comum",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9168333137277966,
+    "tempo_sem_leitura_valida_ms": 9.1,
+    "trocas_individuais": 707,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.48776638508,
+    "pico_orcamento_uA": 100.001016108
+  },
+  {
+    "nome": "SEL_p3_sorteio_s211",
+    "perfil": "erro_comum",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.918009645924009,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 695,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.47745943069,
+    "pico_orcamento_uA": 100.001831015
+  },
+  {
+    "nome": "SEL_p3_adaptativo_s19",
+    "perfil": "erro_comum",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.7206211033996,
+    "max_ligados": 9,
+    "media_validos": 3.4792377367368545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.46964156628,
+    "pico_orcamento_uA": 100.001088867
+  },
+  {
+    "nome": "SEL_p4_nove_fixos_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.8807199153040819,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.235600396991,
+    "pico_orcamento_uA": 100.000914244
+  },
+  {
+    "nome": "SEL_p4_tres_fixos_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "tres_fixos",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "tres_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9992942006822725,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3,
+    "fracao_alarme_sem_falha": 0.46712151511586875,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.24242143333,
+    "pico_orcamento_uA": 100.00104521200001
+  },
+  {
+    "nome": "SEL_p4_rodizio_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "rodizio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "rodizio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.879661216327491,
+    "tempo_sem_leitura_valida_ms": 34.1,
+    "trocas_individuais": 1023,
+    "fracao_alarme_sem_falha": 0.4457122691448065,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.231338053942,
+    "pico_orcamento_uA": 100.001088867
+  },
+  {
+    "nome": "SEL_p4_sorteio_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "sorteio",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.917421479825903,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 701,
+    "fracao_alarme_sem_falha": 0.41748029643571344,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.246401965618,
+    "pico_orcamento_uA": 100.000841485
+  },
+  {
+    "nome": "SEL_p4_sorteio_s73",
+    "perfil": "ruido_alto",
+    "politica_selecao": "sorteio",
+    "semente": 73,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.9168333137277966,
+    "tempo_sem_leitura_valida_ms": 9.1,
+    "trocas_individuais": 707,
+    "fracao_alarme_sem_falha": 0.4150099988236678,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.23527598381,
+    "pico_orcamento_uA": 100.00102338399999
+  },
+  {
+    "nome": "SEL_p4_sorteio_s211",
+    "perfil": "ruido_alto",
+    "politica_selecao": "sorteio",
+    "semente": 211,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "sorteio",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.0,
+    "max_ligados": 3,
+    "media_validos": 2.918009645924009,
+    "tempo_sem_leitura_valida_ms": 9.2,
+    "trocas_individuais": 695,
+    "fracao_alarme_sem_falha": 0.4283025526408658,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.237279877067,
+    "pico_orcamento_uA": 100.00099428
+  },
+  {
+    "nome": "SEL_p4_adaptativo_s19",
+    "perfil": "ruido_alto",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 7.150099988236678,
+    "max_ligados": 9,
+    "media_validos": 6.7181508057875545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3669,
+    "fracao_alarme_sem_falha": 0.697682625573462,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.239869967103,
+    "pico_orcamento_uA": 100.000936072
+  },
+  {
+    "nome": "SEL_p0_nove_fixos_s19_ref",
+    "perfil": "saudaveis",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p0_nove_fixos_s19",
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.243064954877,
+    "pico_orcamento_uA": 100.00097245200001
+  },
+  {
+    "nome": "SEL_p0_adaptativo_s19_ref",
+    "perfil": "saudaveis",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p0_adaptativo_s19",
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.7206211033996,
+    "max_ligados": 9,
+    "media_validos": 3.4792377367368545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.248845607042,
+    "pico_orcamento_uA": 100.00098700400001
+  },
+  {
+    "nome": "SEL_p2_nove_fixos_s19_ref",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p2_nove_fixos_s19",
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.46340000000000003,
+        "latencia_ms": 0.050000000000050004
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.246607780457,
+    "pico_orcamento_uA": 100.001037936
+  },
+  {
+    "nome": "SEL_p2_adaptativo_s19_ref",
+    "perfil": "quatro_falhas",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p2_adaptativo_s19",
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.73120809316551,
+    "max_ligados": 9,
+    "media_validos": 3.489824726502764,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "primeiro_alarme_s": 0.16340000000000002,
+        "latencia_ms": 0.05000000000002225
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          2,
+          5,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": 0.4652,
+        "latencia_ms": 1.8500000000000183
+      }
+    ],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.242001980543,
+    "pico_orcamento_uA": 100.001037936
+  },
+  {
+    "nome": "SEL_p3_nove_fixos_s19_ref",
+    "perfil": "erro_comum",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p3_nove_fixos_s19",
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.47818779945,
+    "pico_orcamento_uA": 100.001081591
+  },
+  {
+    "nome": "SEL_p3_adaptativo_s19_ref",
+    "perfil": "erro_comum",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p3_adaptativo_s19",
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 3.7206211033996,
+    "max_ligados": 9,
+    "media_validos": 3.4792377367368545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 2049,
+    "fracao_alarme_sem_falha": 0.0,
+    "deteccoes": [
+      {
+        "inicio": 0.16335,
+        "fim": 0.36335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      },
+      {
+        "inicio": 0.46335,
+        "fim": 0.68335,
+        "sensores": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "primeiro_alarme_s": null,
+        "latencia_ms": null
+      }
+    ],
+    "janelas": 34,
+    "corretas": 24,
+    "trajetorias_corretas": 0,
+    "menor_margem": -1.47078573704,
+    "pico_orcamento_uA": 100.00094334799999
+  },
+  {
+    "nome": "SEL_p4_nove_fixos_s19_ref",
+    "perfil": "ruido_alto",
+    "politica_selecao": "nove_fixos",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p4_nove_fixos_s19",
+    "politica": "nove_fixos",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 9.0,
+    "max_ligados": 9,
+    "media_validos": 8.997882602046818,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 9,
+    "fracao_alarme_sem_falha": 0.8807199153040819,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.244214907289,
+    "pico_orcamento_uA": 100.000979728
+  },
+  {
+    "nome": "SEL_p4_adaptativo_s19_ref",
+    "perfil": "ruido_alto",
+    "politica_selecao": "adaptativo",
+    "semente": 19,
+    "passo_us": 2.5,
+    "estados_iniciais": [
+      -0.37,
+      0.37
+    ],
+    "original": "SEL_p4_adaptativo_s19",
+    "politica": "adaptativo",
+    "dt_us": 100.0,
+    "despertar_us": 200.0,
+    "periodo_us": 5000.0,
+    "media_ligados": 7.150099988236678,
+    "max_ligados": 9,
+    "media_validos": 6.7181508057875545,
+    "tempo_sem_leitura_valida_ms": 0.2,
+    "trocas_individuais": 3669,
+    "fracao_alarme_sem_falha": 0.697682625573462,
+    "deteccoes": [],
+    "janelas": 34,
+    "corretas": 34,
+    "trajetorias_corretas": 2,
+    "menor_margem": 0.241704419255,
+    "pico_orcamento_uA": 100.000797829
+  }
+]

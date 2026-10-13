@@ -1,0 +1,50 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\BANCADA_limite_ref.cir
+Start Time: Mon Oct 12 14:01:18 2026
+Options:plotwinsize=0 reltol=1e-6 vntol=1e-9 abstol=1e-12 threads=1 method=gear
+
+.step caso=0
+solver = Normal
+Maximum thread count: 1
+tnom = 27
+temp = 27
+method = Gear
+reltol = 1e-06
+volttol = 1e-09
+Per .tran options, skipping operating point for transient analysis.
+
+.step caso=1
+
+.step caso=2
+
+.step caso=3
+
+.step caso=4
+
+.step caso=5
+Total elapsed time: 10.748 seconds.
+Total iterations: 171191
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\BANCADA_limite_ref.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\atuadores_candidatos.inc
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa14\UniversalOpAmp2.lib
+
+
+Measurement: pico
+  step	MAX(V(total))	FROM	TO
+     1	0.000955036724918	0	0.0004
+     2	0.000955057679676	0	0.0004
+     3	0.00095506204525	0	0.0004
+     4	0.000955031777266	0	0.0004
+     5	0.000955044233706	0	0.0004
+     6	0.000955062627327	0	0.0004
+
+Measurement: patamar
+  step	AVG(V(total))	FROM	TO
+     1	9.04530937038e-05	9.5e-05	0.000125
+     2	9.04516197939e-05	9.5e-05	0.000125
+     3	9.04514383553e-05	9.5e-05	0.000125
+     4	9.54237898952e-05	9.5e-05	0.000125
+     5	9.54224877489e-05	9.5e-05	0.000125
+     6	9.5422327298e-05	9.5e-05	0.000125

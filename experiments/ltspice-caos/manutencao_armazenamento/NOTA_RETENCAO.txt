@@ -1,0 +1,24 @@
+RETENCAO E LIMPEZA AUTORIZADA — 2026-10-13T01:35:24.993173+00:00
+
+Foram removidos 235 RAWs principais de simulacoes concluidas ate a Etapa18.
+Espaco dos arquivos removidos: 89.872 GiB.
+Espaco livre observado depois: 107.827 GiB.
+Foram preservados modelos, netlists, bibliotecas, parametros, logs, CSVs, JSONs, relatorios e scripts da pesquisa.
+Os 9 RAWs retidos estao enumerados no manifesto (SMOKE, preliminares incompletos ou ausencia de medidas leves).
+
+As 64 trajetorias da Etapa18 foram exportadas para NPZ comprimidos, com todas as colunas salvas no RAW,
+ate 6000 amostras nativas por curva e trechos de eventos/picos em resolucao original. Exportacao reaberta e
+validada quanto a finitude, igualdade com a selecao original, quantidade de casos e cobertura temporal.
+O indice_extratos.json descreve dimensoes, fontes e hashes dos extratos.
+Os NPZ sao arquivos de visualizacao/replay: a decimacao nao conserva todos os extremos ou a forma de onda inteira.
+As metricas de publicacao permanecem nos resultados originais, sem recalculo a partir de pontos reduzidos.
+
+Referencias anteriores a RAWs preservados descrevem o estado da entrega original. A partir desta manutencao,
+os RAWs enumerados em manifesto_retencao.json foram substituidos por metricas leves e extratos selecionados.
+Reanalises que dependam das amostras removidas exigem repetir a simulacao. O manifesto guarda tamanho/mtime
+dos RAWs e SHA256 de netlist/log/parametros quando presentes; nao afirma ter hash integral dos RAWs.
+
+Fontes e textos de pesquisas anteriores (ternarios e seguranca) foram arquivados no ZIP validado
+pesquisas_anteriores_fontes.zip antes da retirada das pastas ativas. Build e instalador eram regeneraveis.
+.git e LICENSE foram mantidos. Nenhum processo LTspice foi encerrado.
+

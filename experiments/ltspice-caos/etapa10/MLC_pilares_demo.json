@@ -1,0 +1,18 @@
+[
+  {
+    "caso": 0,
+    "perfil_c": 0,
+    "topologia": 3,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  },
+  {
+    "caso": 1,
+    "perfil_c": 0,
+    "topologia": 7,
+    "x_inicial": 0.37,
+    "y_inicial": -0.2,
+    "passo": 5e-06
+  }
+]

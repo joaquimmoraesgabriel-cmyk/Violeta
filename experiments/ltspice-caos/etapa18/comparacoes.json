@@ -1,0 +1,491 @@
+{
+  "cruzamentos": [
+    {
+      "base": "C_sadio_off",
+      "test": "C_sadio_on",
+      "janelas": 68,
+      "controle_corretas": 48,
+      "teste_corretas": 48,
+      "recuperadas": 0,
+      "novas_falhas": 0,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "C_vies_off",
+      "test": "C_vies_on",
+      "janelas": 68,
+      "controle_corretas": 47,
+      "teste_corretas": 43,
+      "recuperadas": 8,
+      "novas_falhas": 12,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "L2_20_50_off",
+      "test": "L2_5_10_off",
+      "janelas": 68,
+      "controle_corretas": 51,
+      "teste_corretas": 55,
+      "recuperadas": 10,
+      "novas_falhas": 6,
+      "discordancias_antes_injecao": 5,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "L2_5_10_off",
+      "test": "L2_5_10",
+      "janelas": 68,
+      "controle_corretas": 55,
+      "teste_corretas": 43,
+      "recuperadas": 8,
+      "novas_falhas": 20,
+      "discordancias_antes_injecao": 6,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "L2_5_10_off",
+      "test": "L2_5_10_v2",
+      "janelas": 68,
+      "controle_corretas": 55,
+      "teste_corretas": 56,
+      "recuperadas": 11,
+      "novas_falhas": 10,
+      "discordancias_antes_injecao": 3,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "L2_5_10_v2",
+      "test": "L2_replay_v2",
+      "janelas": 34,
+      "controle_corretas": 26,
+      "teste_corretas": 27,
+      "recuperadas": 6,
+      "novas_falhas": 5,
+      "discordancias_antes_injecao": 1,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "L2_5_10_v2",
+      "test": "L2_vies_v2",
+      "janelas": 34,
+      "controle_corretas": 26,
+      "teste_corretas": 29,
+      "recuperadas": 5,
+      "novas_falhas": 2,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_queda_on",
+      "janelas": 34,
+      "controle_corretas": 23,
+      "teste_corretas": 25,
+      "recuperadas": 5,
+      "novas_falhas": 3,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_duplo_on",
+      "janelas": 34,
+      "controle_corretas": 23,
+      "teste_corretas": 27,
+      "recuperadas": 7,
+      "novas_falhas": 3,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_replay_on",
+      "janelas": 68,
+      "controle_corretas": 48,
+      "teste_corretas": 53,
+      "recuperadas": 11,
+      "novas_falhas": 6,
+      "discordancias_antes_injecao": 2,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_tolerancia_mais",
+      "janelas": 34,
+      "controle_corretas": 23,
+      "teste_corretas": 26,
+      "recuperadas": 5,
+      "novas_falhas": 2,
+      "discordancias_antes_injecao": 2,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_vies12_on",
+      "janelas": 34,
+      "controle_corretas": 23,
+      "teste_corretas": 24,
+      "recuperadas": 5,
+      "novas_falhas": 4,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_dupla_falha",
+      "janelas": 34,
+      "controle_corretas": 23,
+      "teste_corretas": 25,
+      "recuperadas": 4,
+      "novas_falhas": 2,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_tolerancia_menos",
+      "janelas": 34,
+      "controle_corretas": 23,
+      "teste_corretas": 25,
+      "recuperadas": 7,
+      "novas_falhas": 5,
+      "discordancias_antes_injecao": 3,
+      "janelas_antes_injecao": 12
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_vies_on",
+      "janelas": 68,
+      "controle_corretas": 48,
+      "teste_corretas": 43,
+      "recuperadas": 7,
+      "novas_falhas": 12,
+      "discordancias_antes_injecao": 0,
+      "janelas_antes_injecao": 24
+    },
+    {
+      "base": "C_sadio_on",
+      "test": "C_atraso_on",
+      "janelas": 68,
+      "controle_corretas": 48,
+      "teste_corretas": 50,
+      "recuperadas": 14,
+      "novas_falhas": 12,
+      "discordancias_antes_injecao": 5,
+      "janelas_antes_injecao": 24
+    }
+  ],
+  "refinamento": {
+    "comum": {
+      "passos_us": [
+        1.25,
+        0.625,
+        0.3125
+      ],
+      "corretas": [
+        25,
+        23,
+        28
+      ],
+      "comuns_tres": 19,
+      "discordancias": [
+        8,
+        11
+      ]
+    },
+    "L2_monitor_ligado": {
+      "passos_us": [
+        1.25,
+        0.625,
+        0.3125
+      ],
+      "corretas": [
+        23,
+        20,
+        25
+      ],
+      "comuns_tres": 15,
+      "discordancias": [
+        5,
+        13
+      ]
+    }
+  },
+  "diagnosticos": {
+    "L2_5_10_v2": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 0,
+      "reservas_retidas": 0,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 5.0,
+      "idade_max_us": 5.0,
+      "pico_erro_uA": 14.661933898925781,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "L2_replay_v2": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 2,
+      "reservas_retidas": 2,
+      "latencia_min_us": 2060.1979359445227,
+      "latencia_max_us": 2060.197978300455,
+      "idade_min_us": 5.0,
+      "idade_max_us": 5.0,
+      "pico_erro_uA": 181.00552368164062,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "L2_vies_v2": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 2,
+      "reservas_retidas": 2,
+      "latencia_min_us": 60.37744063774886,
+      "latencia_max_us": 60.38300144001197,
+      "idade_min_us": 5.0,
+      "idade_max_us": 5.0,
+      "pico_erro_uA": 179.93496704101562,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "L2_20_50_off": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 0,
+      "reservas_retidas": 0,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 7.090508460998535,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "L2_5_10_off": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 4,
+      "deteccoes": 0,
+      "reservas_retidas": 0,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 5.0,
+      "idade_max_us": 5.0,
+      "pico_erro_uA": 14.844666481018066,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_queda_on": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 2,
+      "reservas_retidas": 2,
+      "latencia_min_us": 24.07937309528707,
+      "latencia_max_us": 24.079383638075935,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 90.9349594116211,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_duplo_on": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 2,
+      "reservas_retidas": 2,
+      "latencia_min_us": 24.078888521739117,
+      "latencia_max_us": 24.078975676355974,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 90.93495178222656,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_replay_on": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 4,
+      "reservas_retidas": 4,
+      "latencia_min_us": 2024.0751618445809,
+      "latencia_max_us": 2024.0784851628684,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 169.70071411132812,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_tolerancia_mais": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 2,
+      "deteccoes": 0,
+      "reservas_retidas": 2,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 30.050012588500977,
+      "idade_max_us": 51.25,
+      "pico_erro_uA": 16.75322151184082,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_vies12_on": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 2,
+      "reservas_retidas": 2,
+      "latencia_min_us": 25.027252259668398,
+      "latencia_max_us": 25.048075896261235,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 28.981781005859375,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_dupla_falha": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 2,
+      "reservas_retidas": 2,
+      "latencia_min_us": 24.300732460957875,
+      "latencia_max_us": 24.312776510382328,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 178.45260620117188,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "R_C": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 0,
+      "deteccoes": 0,
+      "reservas_retidas": 0,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 6.963072299957275,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "R_L2_5_10": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 2,
+      "deteccoes": 0,
+      "reservas_retidas": 2,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 5.0,
+      "idade_max_us": 5.0,
+      "pico_erro_uA": 16.68463706970215,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_tolerancia_menos": {
+      "trajetorias": 2,
+      "alarmes_indevidos": 2,
+      "deteccoes": 0,
+      "reservas_retidas": 2,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": -11.25,
+      "idade_max_us": 9.949996948242188,
+      "pico_erro_uA": 22.327354431152344,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_sadio_on": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 0,
+      "reservas_retidas": 0,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 6.977956771850586,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_sadio_off": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 0,
+      "reservas_retidas": 0,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 6.977956771850586,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_vies_on": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 4,
+      "reservas_retidas": 4,
+      "latencia_min_us": 24.30072765424729,
+      "latencia_max_us": 24.312772018197926,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 179.15911865234375,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_vies_off": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 4,
+      "reservas_retidas": 0,
+      "latencia_min_us": 24.30072765424729,
+      "latencia_max_us": 24.312772018197926,
+      "idade_min_us": 20.0,
+      "idade_max_us": 20.0,
+      "pico_erro_uA": 179.4741973876953,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "C_atraso_on": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 0,
+      "deteccoes": 4,
+      "reservas_retidas": 4,
+      "latencia_min_us": 2024.0751618445809,
+      "latencia_max_us": 2024.0784851628684,
+      "idade_min_us": 520.0,
+      "idade_max_us": 520.0,
+      "pico_erro_uA": 169.41000366210938,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 4
+    },
+    "L2_5_10": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 4,
+      "deteccoes": 0,
+      "reservas_retidas": 4,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 5.0,
+      "idade_max_us": 5.0,
+      "pico_erro_uA": 14.628263473510742,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    },
+    "L2_1_2": {
+      "trajetorias": 4,
+      "alarmes_indevidos": 4,
+      "deteccoes": 0,
+      "reservas_retidas": 4,
+      "latencia_min_us": null,
+      "latencia_max_us": null,
+      "idade_min_us": 1.0,
+      "idade_max_us": 1.0,
+      "pico_erro_uA": 29.916954040527344,
+      "top_alarme_sem_falha_topo": 0,
+      "idade_invalida_em_algum_momento": 0
+    }
+  }
+}

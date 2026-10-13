@@ -1,0 +1,171 @@
+{
+  "familias": {
+    "referencia": {
+      "trajetorias": 16,
+      "corretas": 198,
+      "janelas": 272,
+      "comuns": 78,
+      "discordantes": 42,
+      "pares": 136,
+      "por_falha": {
+        "0": 51,
+        "4": 49,
+        "2": 49,
+        "3": 49
+      },
+      "por_passo": {
+        "1.25e-06": 107,
+        "6.25e-07": 91
+      },
+      "rms_residuo_d_uA": 21.188239909215007,
+      "rms_residuo_y_uA": 40.71729063834272,
+      "variacao_g_por_s": 1001.3388438904616,
+      "rms_g": 0.9177070792283415
+    },
+    "comum_E": {
+      "trajetorias": 16,
+      "corretas": 199,
+      "janelas": 272,
+      "comuns": 80,
+      "discordantes": 39,
+      "pares": 136,
+      "por_falha": {
+        "0": 49,
+        "4": 49,
+        "2": 50,
+        "3": 51
+      },
+      "por_passo": {
+        "1.25e-06": 101,
+        "6.25e-07": 98
+      },
+      "rms_residuo_d_uA": 19.055969179688248,
+      "rms_residuo_y_uA": 44.6152334880347,
+      "variacao_g_por_s": 1001.3212380262596,
+      "rms_g": 0.9160047430397995,
+      "recuperadas": 39,
+      "novas_falhas": 38
+    },
+    "grupos_E": {
+      "trajetorias": 16,
+      "corretas": 174,
+      "janelas": 272,
+      "comuns": 70,
+      "discordantes": 34,
+      "pares": 136,
+      "por_falha": {
+        "0": 46,
+        "4": 42,
+        "2": 42,
+        "3": 44
+      },
+      "por_passo": {
+        "1.25e-06": 87,
+        "6.25e-07": 87
+      },
+      "rms_residuo_d_uA": 16.60580993842152,
+      "rms_residuo_y_uA": 48.821416937595494,
+      "variacao_g_por_s": 1003.9388280970793,
+      "rms_g": 0.9126932918851037,
+      "recuperadas": 28,
+      "novas_falhas": 52
+    }
+  },
+  "refinamento": {
+    "referencia": {
+      "passos_us": [
+        1.25,
+        0.625,
+        0.3125
+      ],
+      "corretas": [
+        28,
+        23,
+        25
+      ],
+      "comuns_tres": 17,
+      "discordancias": [
+        11,
+        8
+      ]
+    },
+    "comum_E": {
+      "passos_us": [
+        1.25,
+        0.625,
+        0.3125
+      ],
+      "corretas": [
+        24,
+        25,
+        26
+      ],
+      "comuns_tres": 16,
+      "discordancias": [
+        11,
+        11
+      ]
+    },
+    "grupos_E": {
+      "passos_us": [
+        1.25,
+        0.625,
+        0.3125
+      ],
+      "corretas": [
+        24,
+        22,
+        21
+      ],
+      "comuns_tres": 16,
+      "discordancias": [
+        8,
+        9
+      ]
+    }
+  },
+  "falhas_recursos": {
+    "G_super_queda": {
+      "corretas": 24,
+      "recuperadas": 3,
+      "novas_falhas": 1,
+      "validador": 2,
+      "detector_atuacao": 0
+    },
+    "G_super_duplo": {
+      "corretas": 23,
+      "recuperadas": 5,
+      "novas_falhas": 4,
+      "validador": 2,
+      "detector_atuacao": 0
+    },
+    "G_super_enviesado": {
+      "corretas": 19,
+      "recuperadas": 3,
+      "novas_falhas": 6,
+      "validador": 0,
+      "detector_atuacao": 0
+    },
+    "G_super_atraso": {
+      "corretas": 19,
+      "recuperadas": 3,
+      "novas_falhas": 6,
+      "validador": 0,
+      "detector_atuacao": 0
+    },
+    "G_grupo_ABC_queda": {
+      "corretas": 21,
+      "recuperadas": 2,
+      "novas_falhas": 3,
+      "validador": 0,
+      "detector_atuacao": 2
+    },
+    "G_grupo_D_queda": {
+      "corretas": 21,
+      "recuperadas": 3,
+      "novas_falhas": 4,
+      "validador": 0,
+      "detector_atuacao": 2
+    }
+  }
+}

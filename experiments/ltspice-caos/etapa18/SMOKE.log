@@ -1,0 +1,82 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa18\SMOKE.cir
+Start Time: Mon Oct 12 19:18:23 2026
+Options:plotwinsize=0 reltol=1e-6 vntol=1e-11 abstol=1e-12 threads=1
+
+.step caso=0
+solver = Normal
+Maximum thread count: 1
+tnom = 27
+temp = 27
+method = trap
+reltol = 1e-06
+volttol = 1e-11
+Per .tran options, skipping operating point for transient analysis.
+
+.step caso=1
+Total elapsed time: 6.396 seconds.
+Total iterations: 10821
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa18\SMOKE.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa18\MLC_cotas_v1.inc
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa18\atuadores_etapa14.inc
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa18\UniversalOpAmp2.lib
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa18\limitador_tres.inc
+
+Measurement "minimo_00" FAIL'ed
+Measurement "maximo_00" FAIL'ed
+Measurement "minimo_01" FAIL'ed
+Measurement "maximo_01" FAIL'ed
+Measurement "minimo_02" FAIL'ed
+Measurement "maximo_02" FAIL'ed
+Measurement "minimo_03" FAIL'ed
+Measurement "maximo_03" FAIL'ed
+Measurement "minimo_04" FAIL'ed
+Measurement "maximo_04" FAIL'ed
+Measurement "minimo_05" FAIL'ed
+Measurement "maximo_05" FAIL'ed
+Measurement "minimo_06" FAIL'ed
+Measurement "maximo_06" FAIL'ed
+Measurement "minimo_07" FAIL'ed
+Measurement "maximo_07" FAIL'ed
+Measurement "minimo_08" FAIL'ed
+Measurement "maximo_08" FAIL'ed
+Measurement "minimo_09" FAIL'ed
+Measurement "maximo_09" FAIL'ed
+Measurement "minimo_10" FAIL'ed
+Measurement "maximo_10" FAIL'ed
+Measurement "minimo_11" FAIL'ed
+Measurement "maximo_11" FAIL'ed
+Measurement "minimo_12" FAIL'ed
+Measurement "maximo_12" FAIL'ed
+Measurement "minimo_13" FAIL'ed
+Measurement "maximo_13" FAIL'ed
+Measurement "minimo_14" FAIL'ed
+Measurement "maximo_14" FAIL'ed
+Measurement "minimo_15" FAIL'ed
+Measurement "maximo_15" FAIL'ed
+Measurement "minimo_16" FAIL'ed
+Measurement "maximo_16" FAIL'ed
+
+Measurement: pico_orcamento
+  step	MAX(V(orcamento))	FROM	TO
+     1	9.00114391698e-05	0	0.85
+     2	9.00053200894e-05	0	0.85
+
+Measurement: pico_sem_protecao
+  step	MAX(V(sem_protecao))	FROM	TO
+     1	9.00000013644e-05	0	0.85
+     2	9.00000013644e-05	0	0.85
+
+Measurement: uso_protecao
+  step	AVG(V(guard_ativo))	FROM	TO
+     1	0	0	0.85
+     2	0	0	0.85
+
+Measurement: uso_reserva
+  step	AVG(V(reserva_ativa))	FROM	TO
+     1	0	0	0.85
+     2	0	0	0.85
+Measurement "sobra" FAIL'ed
+Measurement "falta" FAIL'ed

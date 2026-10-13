@@ -1,0 +1,24 @@
+Revisão durante o piloto, antes de iniciar a matriz de falhas
+
+Uma verificação algébrica com 100.000 combinações de pedidos revelou que a
+primeira reserva liberada podia gerar referências cuja soma chegava a
+109,9964 µA quando D quase ocupava sozinho os 90 µA. A guarda de comando
+integrada ainda limita a corrente solicitada aos atuadores, mas a referência
+do detector podia ficar incoerente com esse comando reduzido. Isto é um
+defeito de alocação/referência; não é uma medição de excesso físico.
+
+A versão v2 limita E por min(20 µA, déficit de D, 90 µA - |cota de D|).
+Só então calcula o que sobra para Y. D e E não disputam uma cota já ocupada.
+A regra de ativação continua exigindo saturação de D e sentido concordante.
+Verificar_regras.py passou depois da correção, preservando no JSON o
+contraexemplo da versão original. A mediana de nove foi verificada em
+10.000 vetores, incluindo todos os 512 vetores binários de nove entradas.
+
+MLC_pilar_E.inc e MLC_prioridade_D.inc permanecem como versões piloto.
+MLC_pilar_E_v2.inc e MLC_prioridade_D_v2.inc são a revisão. O E fixo de
+70+20 µA não apresentava esse defeito estático. Os seis pilotos continuam
+até o fim, inclusive as versões que falharam na checagem preventiva.
+
+Os primeiros rascunhos E_livre_f2/f3/f4, D_prioridade_f2/f3/f4 não foram
+executados: a fila de expansão foi atualizada antes de seu início. Somente
+nomes presentes nos manifestos lotes_*.json entram nos resultados.

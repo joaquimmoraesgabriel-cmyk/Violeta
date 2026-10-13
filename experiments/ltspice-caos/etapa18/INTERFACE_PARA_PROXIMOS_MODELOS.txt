@@ -1,0 +1,74 @@
+Contrato funcional a preservar na futura realizacao fisica
+
+1. Grandezas e autoridade
+O coordenador de recursos distribui um unico total de 90 uA. A/B/C
+produzem um pedido assinado combinado para Y; D produz outro para X.
+O comando de E e limitado a 5 uA locais para X e participa da mesma soma
+absoluta; o atuador dinamico pode ultrapassar esse comando transitoriamente.
+O fiscal de cotas nao deve ser uma segunda fonte de concessoes livres.
+A selecao supervisor/reserva precede a arbitragem final de E.
+
+2. Informacao observavel pelo fiscal
+Cota Y, cota D, heartbeat, marca de tempo e demandas medidas locais.
+O codigo/horario da injecao de falha e as perturbacoes verdadeiras
+pertencem ao testbench, nunca ao detector. A resposta AND esperada
+tambem pertence somente a avaliacao posterior.
+
+3. Escalas deste modelo
+Cotas e demandas usam tensoes comportamentais numericamente iguais
+a amperes. O comparador escala por 10000: 90 uA -> 0.9 V;
+6.5 uA de discrepancia -> 65 mV; offset 0.5 uA -> 5 mV.
+Nao confundir essas tensoes com tensao real no shunt: 90 uA em
+1000 ohms corresponde a 90 mV. O carimbo/clock em segundos e
+representado por tensao apenas para simular o protocolo.
+
+4. Independencia a concretizar
+Hoje as referencias usam outro caminho matematico, mas compartilham
+as demandas, tecnologia comportamental e alimentacoes ideais. Ainda
+nao existe prova de tolerancia a falha de causa comum ou de chip.
+O controle local imediato, abs/min/max/divisao, mediana e memoria
+precisam de realizacao definida e de atraso/erro medidos nessa realizacao.
+
+5. Fronteiras de tempo
+V1: comparacao RC 4 us, confirmacao 20/40 us; V2: confirmacao 50/20 us.
+Limiar timer 0.7, inibicao inicial 2 ms. Sao constantes funcionais;
+faltam tolerancias e saturacao de comparadores/memorias concretos.
+A idade da mensagem aceita -30 a 80 us, com erro de relogio modelado.
+Falha de sincronismo pode se parecer com falha da comunicacao.
+
+6. Reserva e retorno
+O ensaio retém a reserva apos confirmacao. Nao existe politica validada
+de reset, religamento ou retorno ao supervisor. Uma placa precisara
+tratar esses estados explicitamente e evitar alternancia repetida.
+
+7. Proxima fronteira de comunicacao
+Neste lote qD e complemento atomico de qY. Dois receptores fisicos
+poderiam usar geracoes distintas durante atraso/failover. Essa situacao
+exige identificacao de geracao e politica de compromisso/expiracao,
+ou outra guarda global demonstrada. Ainda nao foi testada aqui.
+
+8. Corrente e hardware
+90 uA e a cota de atuacao, nao consumo total da placa. O criterio
+legado de pico e 100.005 uA; resultados precisam mostrar tambem o
+excesso sobre 90. O limitador de corrente e o fiscal de cotas cumprem
+funcoes diferentes: corrente limitada pode estar aplicada no lugar errado.
+Antes de PCB: escolher componentes e validar suas limitacoes no LTspice,
+incluindo ruido, offset, banda, slew, saturacao, recuperacao e carga real.
+As sondas 0 V e os shunts divergiram em passos da ordem de 1e-16 s.
+Preservar ambos os registros; isolar a origem numerica e demonstrar uma
+medicao consistente antes de prometer um limite fisico estrito de 90 uA.
+Os 45 subpilares continuam uma arquitetura conceitual, nao 45 sensores
+fisicos ja implementados. Parasiticos/termica/EMC nao sao cobertos aqui.
+
+9. Hipoteses para o proximo lote, ainda nao simuladas
+Comparar concessao efetiva min(|pedido|,cota), mantendo em paralelo
+idade/heartbeat/faixa/soma: pode evitar alarme por redistribuicao de sobra.
+Testar reserva local com politica e filtro proximos aos nominais, em vez
+de saltar sempre para proporcional instantaneo. A deteccao correta da
+cota enviesada na V1 nao trouxe recuperacao logica sistematica.
+Repetir os cantos de tolerancia com o detector revisado: a V1 falhou nas
+quatro trajetorias saudaveis desses cantos, por discrepancia de cotas,
+sem violar a janela de idade. A V2 ainda nao foi simulada nesses cantos.
+Incluir sincronismo/ressincronismo: com os erros de relogio escolhidos,
+a equacao cruza a janela permitida apos 1.6–2 s sem sincronizacao;
+este lote de 0.85 s nao demonstra funcionamento continuo do relogio.

@@ -1,0 +1,1513 @@
+[
+  {
+    "arquivo": "MLC_coordenador_demo.log",
+    "perfil": 1,
+    "politica": 0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 10,
+    "menor_margem": -1.43165099621,
+    "pico_orcamento_uA": 0.0,
+    "falhas": [
+      {
+        "passo": 1,
+        "janela": 4,
+        "margem": -0.852671460425
+      },
+      {
+        "passo": 1,
+        "janela": 6,
+        "margem": -1.43165099621
+      },
+      {
+        "passo": 1,
+        "janela": 8,
+        "margem": -1.39227819443
+      },
+      {
+        "passo": 1,
+        "janela": 10,
+        "margem": -1.31901109219
+      },
+      {
+        "passo": 1,
+        "janela": 11,
+        "margem": -1.29040658474
+      },
+      {
+        "passo": 1,
+        "janela": 12,
+        "margem": -1.3928258419
+      },
+      {
+        "passo": 1,
+        "janela": 14,
+        "margem": -1.36637997627
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_demo.log",
+    "perfil": 1,
+    "politica": 1,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 16,
+    "menor_margem": -0.0331639274955,
+    "pico_orcamento_uA": 73.683600931,
+    "falhas": [
+      {
+        "passo": 2,
+        "janela": 7,
+        "margem": -0.0331639274955
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_demo.log",
+    "perfil": 1,
+    "politica": 2,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.25979283452,
+    "pico_orcamento_uA": 99.9999974738,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 0,
+    "politica": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 41,
+    "menor_margem": -1.42096364498,
+    "pico_orcamento_uA": 0.0,
+    "falhas": [
+      {
+        "passo": 1,
+        "janela": 4,
+        "margem": -0.00114527717233
+      },
+      {
+        "passo": 1,
+        "janela": 6,
+        "margem": -0.413049548864
+      },
+      {
+        "passo": 1,
+        "janela": 7,
+        "margem": -1.28795278072
+      },
+      {
+        "passo": 1,
+        "janela": 8,
+        "margem": -0.0228714160621
+      },
+      {
+        "passo": 1,
+        "janela": 10,
+        "margem": -1.31801593304
+      },
+      {
+        "passo": 2,
+        "janela": 2,
+        "margem": -1.34195649624
+      },
+      {
+        "passo": 2,
+        "janela": 7,
+        "margem": -1.38119590282
+      },
+      {
+        "passo": 2,
+        "janela": 8,
+        "margem": -1.28444850445
+      },
+      {
+        "passo": 2,
+        "janela": 9,
+        "margem": -1.35213875771
+      },
+      {
+        "passo": 2,
+        "janela": 10,
+        "margem": -1.30489075184
+      },
+      {
+        "passo": 2,
+        "janela": 11,
+        "margem": -0.165428087115
+      },
+      {
+        "passo": 2,
+        "janela": 12,
+        "margem": -0.161378309131
+      },
+      {
+        "passo": 2,
+        "janela": 13,
+        "margem": -1.3946788311
+      },
+      {
+        "passo": 3,
+        "janela": 2,
+        "margem": -0.117616474628
+      },
+      {
+        "passo": 3,
+        "janela": 4,
+        "margem": -1.3856524229
+      },
+      {
+        "passo": 3,
+        "janela": 6,
+        "margem": -0.0911897495389
+      },
+      {
+        "passo": 3,
+        "janela": 7,
+        "margem": -0.16192509234
+      },
+      {
+        "passo": 3,
+        "janela": 8,
+        "margem": -1.42096364498
+      },
+      {
+        "passo": 3,
+        "janela": 10,
+        "margem": -0.18340929282
+      },
+      {
+        "passo": 3,
+        "janela": 11,
+        "margem": -1.37105727196
+      },
+      {
+        "passo": 3,
+        "janela": 12,
+        "margem": -1.31467401981
+      },
+      {
+        "passo": 3,
+        "janela": 15,
+        "margem": -1.29658162594
+      },
+      {
+        "passo": 4,
+        "janela": 4,
+        "margem": -1.38551771641
+      },
+      {
+        "passo": 4,
+        "janela": 6,
+        "margem": -0.0128947412595
+      },
+      {
+        "passo": 4,
+        "janela": 7,
+        "margem": -1.34754753113
+      },
+      {
+        "passo": 4,
+        "janela": 10,
+        "margem": -1.29946208
+      },
+      {
+        "passo": 4,
+        "janela": 12,
+        "margem": -1.38278460503
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 0,
+    "politica": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.191140890121,
+    "pico_orcamento_uA": 99.9999974738,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 0,
+    "politica": 2,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.172827973962,
+    "pico_orcamento_uA": 100.001096143,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 1,
+    "politica": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 29,
+    "menor_margem": -1.43230724335,
+    "pico_orcamento_uA": 0.0,
+    "falhas": [
+      {
+        "passo": 13,
+        "janela": 2,
+        "margem": -1.35243920262
+      },
+      {
+        "passo": 13,
+        "janela": 4,
+        "margem": -1.31993806362
+      },
+      {
+        "passo": 13,
+        "janela": 6,
+        "margem": -1.28839361668
+      },
+      {
+        "passo": 13,
+        "janela": 8,
+        "margem": -1.36610639095
+      },
+      {
+        "passo": 13,
+        "janela": 9,
+        "margem": -1.37788236141
+      },
+      {
+        "passo": 13,
+        "janela": 10,
+        "margem": -1.27417898178
+      },
+      {
+        "passo": 13,
+        "janela": 11,
+        "margem": -1.3958543539
+      },
+      {
+        "passo": 13,
+        "janela": 12,
+        "margem": -1.34803044796
+      },
+      {
+        "passo": 13,
+        "janela": 14,
+        "margem": -1.39281463623
+      },
+      {
+        "passo": 13,
+        "janela": 15,
+        "margem": -1.2977451086
+      },
+      {
+        "passo": 14,
+        "janela": 4,
+        "margem": -0.852671460425
+      },
+      {
+        "passo": 14,
+        "janela": 6,
+        "margem": -1.43165099621
+      },
+      {
+        "passo": 14,
+        "janela": 8,
+        "margem": -1.39227819443
+      },
+      {
+        "passo": 14,
+        "janela": 10,
+        "margem": -1.31901109219
+      },
+      {
+        "passo": 14,
+        "janela": 11,
+        "margem": -1.29040658474
+      },
+      {
+        "passo": 14,
+        "janela": 12,
+        "margem": -1.3928258419
+      },
+      {
+        "passo": 14,
+        "janela": 14,
+        "margem": -1.36637997627
+      },
+      {
+        "passo": 15,
+        "janela": 2,
+        "margem": -1.40226697922
+      },
+      {
+        "passo": 15,
+        "janela": 4,
+        "margem": -1.29701924324
+      },
+      {
+        "passo": 15,
+        "janela": 6,
+        "margem": -1.43230724335
+      },
+      {
+        "passo": 15,
+        "janela": 7,
+        "margem": -1.29210007191
+      },
+      {
+        "passo": 15,
+        "janela": 8,
+        "margem": -1.39903855324
+      },
+      {
+        "passo": 15,
+        "janela": 9,
+        "margem": -1.3652163744
+      },
+      {
+        "passo": 15,
+        "janela": 11,
+        "margem": -1.37480783463
+      },
+      {
+        "passo": 15,
+        "janela": 12,
+        "margem": -1.39953100681
+      },
+      {
+        "passo": 15,
+        "janela": 13,
+        "margem": -1.35986590385
+      },
+      {
+        "passo": 15,
+        "janela": 14,
+        "margem": -1.3939255476
+      },
+      {
+        "passo": 15,
+        "janela": 15,
+        "margem": -1.40478146076
+      },
+      {
+        "passo": 16,
+        "janela": 2,
+        "margem": -1.39204359055
+      },
+      {
+        "passo": 16,
+        "janela": 4,
+        "margem": -1.29690730572
+      },
+      {
+        "passo": 16,
+        "janela": 6,
+        "margem": -1.28933942318
+      },
+      {
+        "passo": 16,
+        "janela": 7,
+        "margem": -1.36902105808
+      },
+      {
+        "passo": 16,
+        "janela": 8,
+        "margem": -1.34057569504
+      },
+      {
+        "passo": 16,
+        "janela": 9,
+        "margem": -1.37002587318
+      },
+      {
+        "passo": 16,
+        "janela": 11,
+        "margem": -1.37550127506
+      },
+      {
+        "passo": 16,
+        "janela": 12,
+        "margem": -1.40347659588
+      },
+      {
+        "passo": 16,
+        "janela": 13,
+        "margem": -1.29496061802
+      },
+      {
+        "passo": 16,
+        "janela": 14,
+        "margem": -1.28357684612
+      },
+      {
+        "passo": 16,
+        "janela": 15,
+        "margem": -1.31769692898
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 1,
+    "politica": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 63,
+    "menor_margem": -0.125374510884,
+    "pico_orcamento_uA": 73.683600931,
+    "falhas": [
+      {
+        "passo": 17,
+        "janela": 7,
+        "margem": -0.0198064763099
+      },
+      {
+        "passo": 17,
+        "janela": 10,
+        "margem": -0.125374510884
+      },
+      {
+        "passo": 18,
+        "janela": 7,
+        "margem": -0.0331639274955
+      },
+      {
+        "passo": 19,
+        "janela": 14,
+        "margem": -0.0266643948853
+      },
+      {
+        "passo": 20,
+        "janela": 2,
+        "margem": -0.00402375077829
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 1,
+    "politica": 2,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.246693849564,
+    "pico_orcamento_uA": 100.000965176,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 2,
+    "politica": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 31,
+    "menor_margem": -1.40781676769,
+    "pico_orcamento_uA": 0.0,
+    "falhas": [
+      {
+        "passo": 25,
+        "janela": 6,
+        "margem": -1.34823834896
+      },
+      {
+        "passo": 25,
+        "janela": 7,
+        "margem": -1.29638719559
+      },
+      {
+        "passo": 25,
+        "janela": 8,
+        "margem": -1.32681381702
+      },
+      {
+        "passo": 25,
+        "janela": 10,
+        "margem": -1.32870805264
+      },
+      {
+        "passo": 25,
+        "janela": 11,
+        "margem": -0.262598633766
+      },
+      {
+        "passo": 25,
+        "janela": 12,
+        "margem": -0.0765518322587
+      },
+      {
+        "passo": 25,
+        "janela": 13,
+        "margem": -1.35224211216
+      },
+      {
+        "passo": 25,
+        "janela": 14,
+        "margem": -1.35047781467
+      },
+      {
+        "passo": 26,
+        "janela": 4,
+        "margem": -1.33853006363
+      },
+      {
+        "passo": 26,
+        "janela": 6,
+        "margem": -0.146905228496
+      },
+      {
+        "passo": 26,
+        "janela": 7,
+        "margem": -1.34810197353
+      },
+      {
+        "passo": 26,
+        "janela": 8,
+        "margem": -1.40781676769
+      },
+      {
+        "passo": 26,
+        "janela": 10,
+        "margem": -1.38359248638
+      },
+      {
+        "passo": 26,
+        "janela": 11,
+        "margem": -0.575210690498
+      },
+      {
+        "passo": 26,
+        "janela": 12,
+        "margem": -0.191133096814
+      },
+      {
+        "passo": 26,
+        "janela": 13,
+        "margem": -1.32430911064
+      },
+      {
+        "passo": 26,
+        "janela": 14,
+        "margem": -1.33916783333
+      },
+      {
+        "passo": 27,
+        "janela": 2,
+        "margem": -1.34726274014
+      },
+      {
+        "passo": 27,
+        "janela": 6,
+        "margem": -0.143859311938
+      },
+      {
+        "passo": 27,
+        "janela": 7,
+        "margem": -1.34701943398
+      },
+      {
+        "passo": 27,
+        "janela": 8,
+        "margem": -1.31588697433
+      },
+      {
+        "passo": 27,
+        "janela": 9,
+        "margem": -0.0919233560562
+      },
+      {
+        "passo": 27,
+        "janela": 10,
+        "margem": -1.3266929388
+      },
+      {
+        "passo": 27,
+        "janela": 11,
+        "margem": -1.38878059387
+      },
+      {
+        "passo": 27,
+        "janela": 12,
+        "margem": -1.36395692825
+      },
+      {
+        "passo": 27,
+        "janela": 13,
+        "margem": -0.688530055894
+      },
+      {
+        "passo": 27,
+        "janela": 14,
+        "margem": -1.3922624588
+      },
+      {
+        "passo": 27,
+        "janela": 15,
+        "margem": -1.37109875679
+      },
+      {
+        "passo": 28,
+        "janela": 2,
+        "margem": -1.34726285934
+      },
+      {
+        "passo": 28,
+        "janela": 6,
+        "margem": -0.143777474761
+      },
+      {
+        "passo": 28,
+        "janela": 9,
+        "margem": -0.104119554162
+      },
+      {
+        "passo": 28,
+        "janela": 10,
+        "margem": -1.35981833935
+      },
+      {
+        "passo": 28,
+        "janela": 11,
+        "margem": -1.3739426136
+      },
+      {
+        "passo": 28,
+        "janela": 12,
+        "margem": -1.31987285614
+      },
+      {
+        "passo": 28,
+        "janela": 13,
+        "margem": -1.33662343025
+      },
+      {
+        "passo": 28,
+        "janela": 14,
+        "margem": -1.30836379528
+      },
+      {
+        "passo": 28,
+        "janela": 15,
+        "margem": -1.33191668987
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 2,
+    "politica": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 2,
+    "janelas": 68,
+    "janelas_corretas": 65,
+    "menor_margem": -0.0598016120493,
+    "pico_orcamento_uA": 61.963153712,
+    "falhas": [
+      {
+        "passo": 29,
+        "janela": 7,
+        "margem": -0.0598016120493
+      },
+      {
+        "passo": 30,
+        "janela": 2,
+        "margem": -0.00559205841273
+      },
+      {
+        "passo": 30,
+        "janela": 15,
+        "margem": -0.0139070600271
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 2,
+    "politica": 2,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 3,
+    "janelas": 68,
+    "janelas_corretas": 67,
+    "menor_margem": -0.0303990580142,
+    "pico_orcamento_uA": 100.00094334799999,
+    "falhas": [
+      {
+        "passo": 33,
+        "janela": 2,
+        "margem": -0.0303990580142
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 3,
+    "politica": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 0,
+    "menor_margem": -1.52786231041,
+    "pico_orcamento_uA": 0.0,
+    "falhas": [
+      {
+        "passo": 37,
+        "janela": 0,
+        "margem": -0.339732170105
+      },
+      {
+        "passo": 37,
+        "janela": 1,
+        "margem": -1.35882472992
+      },
+      {
+        "passo": 37,
+        "janela": 2,
+        "margem": -1.5167453289
+      },
+      {
+        "passo": 37,
+        "janela": 3,
+        "margem": -0.538898591627
+      },
+      {
+        "passo": 37,
+        "janela": 4,
+        "margem": -1.44393801689
+      },
+      {
+        "passo": 37,
+        "janela": 5,
+        "margem": -1.24002289772
+      },
+      {
+        "passo": 37,
+        "janela": 6,
+        "margem": -1.33901393414
+      },
+      {
+        "passo": 37,
+        "janela": 7,
+        "margem": -1.37306547165
+      },
+      {
+        "passo": 37,
+        "janela": 8,
+        "margem": -1.4284799099
+      },
+      {
+        "passo": 37,
+        "janela": 9,
+        "margem": -1.50011062622
+      },
+      {
+        "passo": 37,
+        "janela": 10,
+        "margem": -1.38491606712
+      },
+      {
+        "passo": 37,
+        "janela": 11,
+        "margem": -1.40212476254
+      },
+      {
+        "passo": 37,
+        "janela": 12,
+        "margem": -1.2577713728
+      },
+      {
+        "passo": 37,
+        "janela": 13,
+        "margem": -1.30619680882
+      },
+      {
+        "passo": 37,
+        "janela": 14,
+        "margem": -1.41238749027
+      },
+      {
+        "passo": 37,
+        "janela": 15,
+        "margem": -1.47299921513
+      },
+      {
+        "passo": 37,
+        "janela": 16,
+        "margem": -1.28646051884
+      },
+      {
+        "passo": 38,
+        "janela": 0,
+        "margem": -0.339743942022
+      },
+      {
+        "passo": 38,
+        "janela": 1,
+        "margem": -1.35894751549
+      },
+      {
+        "passo": 38,
+        "janela": 2,
+        "margem": -1.48021149635
+      },
+      {
+        "passo": 38,
+        "janela": 3,
+        "margem": -0.539303393918
+      },
+      {
+        "passo": 38,
+        "janela": 4,
+        "margem": -1.40890097618
+      },
+      {
+        "passo": 38,
+        "janela": 5,
+        "margem": -1.23961305618
+      },
+      {
+        "passo": 38,
+        "janela": 6,
+        "margem": -1.41600859165
+      },
+      {
+        "passo": 38,
+        "janela": 7,
+        "margem": -1.43647515774
+      },
+      {
+        "passo": 38,
+        "janela": 8,
+        "margem": -1.33024442196
+      },
+      {
+        "passo": 38,
+        "janela": 9,
+        "margem": -1.36013758183
+      },
+      {
+        "passo": 38,
+        "janela": 10,
+        "margem": -1.40928685665
+      },
+      {
+        "passo": 38,
+        "janela": 11,
+        "margem": -1.36439907551
+      },
+      {
+        "passo": 38,
+        "janela": 12,
+        "margem": -1.51882660389
+      },
+      {
+        "passo": 38,
+        "janela": 13,
+        "margem": -1.39778196812
+      },
+      {
+        "passo": 38,
+        "janela": 14,
+        "margem": -1.40172040462
+      },
+      {
+        "passo": 38,
+        "janela": 15,
+        "margem": -1.35384881496
+      },
+      {
+        "passo": 38,
+        "janela": 16,
+        "margem": -1.30088925362
+      },
+      {
+        "passo": 39,
+        "janela": 0,
+        "margem": -0.336666315794
+      },
+      {
+        "passo": 39,
+        "janela": 1,
+        "margem": -1.35912871361
+      },
+      {
+        "passo": 39,
+        "janela": 2,
+        "margem": -1.40519940853
+      },
+      {
+        "passo": 39,
+        "janela": 3,
+        "margem": -0.54082996519
+      },
+      {
+        "passo": 39,
+        "janela": 4,
+        "margem": -1.3753323555
+      },
+      {
+        "passo": 39,
+        "janela": 5,
+        "margem": -1.24067103863
+      },
+      {
+        "passo": 39,
+        "janela": 6,
+        "margem": -1.28189468384
+      },
+      {
+        "passo": 39,
+        "janela": 7,
+        "margem": -1.4037156105
+      },
+      {
+        "passo": 39,
+        "janela": 8,
+        "margem": -1.37942671776
+      },
+      {
+        "passo": 39,
+        "janela": 9,
+        "margem": -1.43793749809
+      },
+      {
+        "passo": 39,
+        "janela": 10,
+        "margem": -1.5224186182
+      },
+      {
+        "passo": 39,
+        "janela": 11,
+        "margem": -1.42101383209
+      },
+      {
+        "passo": 39,
+        "janela": 12,
+        "margem": -1.45764279366
+      },
+      {
+        "passo": 39,
+        "janela": 13,
+        "margem": -1.40723216534
+      },
+      {
+        "passo": 39,
+        "janela": 14,
+        "margem": -1.30327773094
+      },
+      {
+        "passo": 39,
+        "janela": 15,
+        "margem": -1.31723284721
+      },
+      {
+        "passo": 39,
+        "janela": 16,
+        "margem": -1.28725218773
+      },
+      {
+        "passo": 40,
+        "janela": 0,
+        "margem": -0.339370578527
+      },
+      {
+        "passo": 40,
+        "janela": 1,
+        "margem": -1.35913228989
+      },
+      {
+        "passo": 40,
+        "janela": 2,
+        "margem": -1.40171933174
+      },
+      {
+        "passo": 40,
+        "janela": 3,
+        "margem": -0.540656255762
+      },
+      {
+        "passo": 40,
+        "janela": 4,
+        "margem": -1.4635771513
+      },
+      {
+        "passo": 40,
+        "janela": 5,
+        "margem": -1.24082148075
+      },
+      {
+        "passo": 40,
+        "janela": 6,
+        "margem": -1.38512980938
+      },
+      {
+        "passo": 40,
+        "janela": 7,
+        "margem": -1.52786231041
+      },
+      {
+        "passo": 40,
+        "janela": 8,
+        "margem": -1.43160390854
+      },
+      {
+        "passo": 40,
+        "janela": 9,
+        "margem": -1.38109230995
+      },
+      {
+        "passo": 40,
+        "janela": 10,
+        "margem": -1.46938931942
+      },
+      {
+        "passo": 40,
+        "janela": 11,
+        "margem": -1.36220014095
+      },
+      {
+        "passo": 40,
+        "janela": 12,
+        "margem": -1.44028055668
+      },
+      {
+        "passo": 40,
+        "janela": 13,
+        "margem": -1.41677546501
+      },
+      {
+        "passo": 40,
+        "janela": 14,
+        "margem": -1.31263899803
+      },
+      {
+        "passo": 40,
+        "janela": 15,
+        "margem": -1.35873770714
+      },
+      {
+        "passo": 40,
+        "janela": 16,
+        "margem": -1.28722906113
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 3,
+    "politica": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 31,
+    "menor_margem": -1.42671656609,
+    "pico_orcamento_uA": 99.9999974738,
+    "falhas": [
+      {
+        "passo": 41,
+        "janela": 4,
+        "margem": -1.34418118
+      },
+      {
+        "passo": 41,
+        "janela": 6,
+        "margem": -1.37775576115
+      },
+      {
+        "passo": 41,
+        "janela": 7,
+        "margem": -1.32167220116
+      },
+      {
+        "passo": 41,
+        "janela": 9,
+        "margem": -1.30079078674
+      },
+      {
+        "passo": 41,
+        "janela": 10,
+        "margem": -1.35106921196
+      },
+      {
+        "passo": 41,
+        "janela": 11,
+        "margem": -1.37665605545
+      },
+      {
+        "passo": 41,
+        "janela": 12,
+        "margem": -1.3029229641
+      },
+      {
+        "passo": 41,
+        "janela": 13,
+        "margem": -1.36963427067
+      },
+      {
+        "passo": 41,
+        "janela": 14,
+        "margem": -1.30476236343
+      },
+      {
+        "passo": 42,
+        "janela": 2,
+        "margem": -1.26230197527
+      },
+      {
+        "passo": 42,
+        "janela": 6,
+        "margem": -1.39874494076
+      },
+      {
+        "passo": 42,
+        "janela": 7,
+        "margem": -1.36256182194
+      },
+      {
+        "passo": 42,
+        "janela": 9,
+        "margem": -1.35213756561
+      },
+      {
+        "passo": 42,
+        "janela": 10,
+        "margem": -1.39902460575
+      },
+      {
+        "passo": 42,
+        "janela": 11,
+        "margem": -1.35866224766
+      },
+      {
+        "passo": 42,
+        "janela": 14,
+        "margem": -1.42671656609
+      },
+      {
+        "passo": 43,
+        "janela": 2,
+        "margem": -1.35916541661
+      },
+      {
+        "passo": 43,
+        "janela": 4,
+        "margem": -1.22301745621
+      },
+      {
+        "passo": 43,
+        "janela": 6,
+        "margem": -1.40399491787
+      },
+      {
+        "passo": 43,
+        "janela": 7,
+        "margem": -1.36754989624
+      },
+      {
+        "passo": 43,
+        "janela": 9,
+        "margem": -1.29617857933
+      },
+      {
+        "passo": 43,
+        "janela": 10,
+        "margem": -1.30742490292
+      },
+      {
+        "passo": 43,
+        "janela": 11,
+        "margem": -0.110799603164
+      },
+      {
+        "passo": 43,
+        "janela": 12,
+        "margem": -1.39626002312
+      },
+      {
+        "passo": 43,
+        "janela": 13,
+        "margem": -1.30814659595
+      },
+      {
+        "passo": 43,
+        "janela": 15,
+        "margem": -0.0460602492094
+      },
+      {
+        "passo": 44,
+        "janela": 2,
+        "margem": -1.35920121786
+      },
+      {
+        "passo": 44,
+        "janela": 4,
+        "margem": -1.16242402283
+      },
+      {
+        "passo": 44,
+        "janela": 6,
+        "margem": -1.35983490944
+      },
+      {
+        "passo": 44,
+        "janela": 7,
+        "margem": -1.35012245178
+      },
+      {
+        "passo": 44,
+        "janela": 8,
+        "margem": -1.34691870213
+      },
+      {
+        "passo": 44,
+        "janela": 10,
+        "margem": -1.37312579155
+      },
+      {
+        "passo": 44,
+        "janela": 11,
+        "margem": -1.37974047661
+      },
+      {
+        "passo": 44,
+        "janela": 12,
+        "margem": -1.34707283974
+      },
+      {
+        "passo": 44,
+        "janela": 13,
+        "margem": -1.31417512894
+      },
+      {
+        "passo": 44,
+        "janela": 14,
+        "margem": -1.30918288231
+      },
+      {
+        "passo": 44,
+        "janela": 15,
+        "margem": -0.0552521198988
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_coordenador_validacao.log",
+    "perfil": 3,
+    "politica": 2,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 29,
+    "menor_margem": -1.39684379101,
+    "pico_orcamento_uA": 100.001729152,
+    "falhas": [
+      {
+        "passo": 45,
+        "janela": 4,
+        "margem": -1.25635945797
+      },
+      {
+        "passo": 45,
+        "janela": 6,
+        "margem": -0.235190793872
+      },
+      {
+        "passo": 45,
+        "janela": 7,
+        "margem": -1.32016742229
+      },
+      {
+        "passo": 45,
+        "janela": 8,
+        "margem": -1.35279273987
+      },
+      {
+        "passo": 45,
+        "janela": 10,
+        "margem": -1.31507384777
+      },
+      {
+        "passo": 45,
+        "janela": 11,
+        "margem": -1.39684379101
+      },
+      {
+        "passo": 45,
+        "janela": 12,
+        "margem": -1.34459257126
+      },
+      {
+        "passo": 45,
+        "janela": 13,
+        "margem": -1.27069675922
+      },
+      {
+        "passo": 45,
+        "janela": 14,
+        "margem": -1.31954288483
+      },
+      {
+        "passo": 46,
+        "janela": 4,
+        "margem": -1.25683057308
+      },
+      {
+        "passo": 46,
+        "janela": 6,
+        "margem": -0.0480298474431
+      },
+      {
+        "passo": 46,
+        "janela": 7,
+        "margem": -0.130494505167
+      },
+      {
+        "passo": 46,
+        "janela": 9,
+        "margem": -1.38720083237
+      },
+      {
+        "passo": 46,
+        "janela": 10,
+        "margem": -1.2672971487
+      },
+      {
+        "passo": 46,
+        "janela": 11,
+        "margem": -0.0625526085496
+      },
+      {
+        "passo": 46,
+        "janela": 12,
+        "margem": -1.30536615849
+      },
+      {
+        "passo": 46,
+        "janela": 13,
+        "margem": -0.0320561900735
+      },
+      {
+        "passo": 46,
+        "janela": 14,
+        "margem": -0.387000083923
+      },
+      {
+        "passo": 47,
+        "janela": 2,
+        "margem": -1.27094650269
+      },
+      {
+        "passo": 47,
+        "janela": 4,
+        "margem": -1.25682866573
+      },
+      {
+        "passo": 47,
+        "janela": 6,
+        "margem": -1.3775562048
+      },
+      {
+        "passo": 47,
+        "janela": 7,
+        "margem": -1.29526793957
+      },
+      {
+        "passo": 47,
+        "janela": 8,
+        "margem": -1.33512485027
+      },
+      {
+        "passo": 47,
+        "janela": 9,
+        "margem": -1.33704209328
+      },
+      {
+        "passo": 47,
+        "janela": 10,
+        "margem": -1.25690627098
+      },
+      {
+        "passo": 47,
+        "janela": 11,
+        "margem": -1.34597456455
+      },
+      {
+        "passo": 47,
+        "janela": 12,
+        "margem": -1.38526368141
+      },
+      {
+        "passo": 47,
+        "janela": 13,
+        "margem": -0.0696597695351
+      },
+      {
+        "passo": 47,
+        "janela": 14,
+        "margem": -0.13444660604
+      },
+      {
+        "passo": 47,
+        "janela": 15,
+        "margem": -1.35866641998
+      },
+      {
+        "passo": 48,
+        "janela": 2,
+        "margem": -1.27094614506
+      },
+      {
+        "passo": 48,
+        "janela": 4,
+        "margem": -1.25669682026
+      },
+      {
+        "passo": 48,
+        "janela": 6,
+        "margem": -1.31206595898
+      },
+      {
+        "passo": 48,
+        "janela": 7,
+        "margem": -1.37938725948
+      },
+      {
+        "passo": 48,
+        "janela": 9,
+        "margem": -1.30414092541
+      },
+      {
+        "passo": 48,
+        "janela": 10,
+        "margem": -1.31201350689
+      },
+      {
+        "passo": 48,
+        "janela": 11,
+        "margem": -1.31151545048
+      },
+      {
+        "passo": 48,
+        "janela": 12,
+        "margem": -1.38937425613
+      },
+      {
+        "passo": 48,
+        "janela": 13,
+        "margem": -1.29987633228
+      }
+    ]
+  }
+]

@@ -1,0 +1,1710 @@
+[
+  {
+    "path": "Calibracao_AND.raw",
+    "bytes": 6241594,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "Chua.raw",
+    "bytes": 2160876,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "Chua_entrada_bit.raw",
+    "bytes": 8401872,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "Hipotese_AND_precisao.raw",
+    "bytes": 495517944,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "Hipotese_pilar_AND.raw",
+    "bytes": 223813266,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "Hipotese_pilar_AND_sensor.raw",
+    "bytes": 447625568,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_pilar_demo.raw",
+    "bytes": 13628776,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_pilar_demo_v2.raw",
+    "bytes": 13628542,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_pilar_validacao.raw",
+    "bytes": 551460266,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_pilar_validacao_v2.raw",
+    "bytes": 551318072,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_sequencia.raw",
+    "bytes": 4774236,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_validacao.raw",
+    "bytes": 128868040,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_validacao_v2.raw",
+    "bytes": 128722586,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_AND_verificacao_nova_v2.raw",
+    "bytes": 217649554,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "MLC_calibracao.raw",
+    "bytes": 2256990,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa10\\MLC_pilares_convergencia.raw",
+    "bytes": 228539340,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa10\\MLC_pilares_demo.raw",
+    "bytes": 21870290,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa10\\MLC_pilares_refinamento.raw",
+    "bytes": 76281246,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa10\\MLC_pilares_validacao.raw",
+    "bytes": 153723446,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa11\\MLC_D_demo.raw",
+    "bytes": 38137772,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa11\\MLC_D_refinamento.raw",
+    "bytes": 217626644,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa11\\MLC_D_validacao.raw",
+    "bytes": 244993180,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_falha1.raw",
+    "bytes": 173531196,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_falha2.raw",
+    "bytes": 186797836,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_falha3.raw",
+    "bytes": 175875076,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_falha4.raw",
+    "bytes": 175361636,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_falha4_AB.raw",
+    "bytes": 175822242,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_medidor_direto.raw",
+    "bytes": 66617210,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_medidor_direto_preciso.raw",
+    "bytes": 66621482,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_medidor_sondas.raw",
+    "bytes": 84150138,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_medidor_sondas_preciso.raw",
+    "bytes": 84138058,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_perfil0.raw",
+    "bytes": 469701958,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_perfil1.raw",
+    "bytes": 470515958,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_perfil2.raw",
+    "bytes": 470157918,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_perfil3.raw",
+    "bytes": 471160478,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\COORD_precisao.raw",
+    "bytes": 52842760,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\COMB_combinado.raw",
+    "bytes": 163356680,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\COMB_comum.raw",
+    "bytes": 187858352,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\COMB_falhas.raw",
+    "bytes": 109347074,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_falha1.raw",
+    "bytes": 147022526,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_falha2.raw",
+    "bytes": 148064798,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_falha3.raw",
+    "bytes": 147020870,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_falha4.raw",
+    "bytes": 147022526,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_perfil0.raw",
+    "bytes": 146987032,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_perfil1.raw",
+    "bytes": 147007264,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_perfil2.raw",
+    "bytes": 146993440,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_combinados_perfil3.raw",
+    "bytes": 147053488,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_falha1.raw",
+    "bytes": 186398396,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_falha2.raw",
+    "bytes": 195325836,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_falha3.raw",
+    "bytes": 187858876,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_falha4.raw",
+    "bytes": 187823516,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_perfil0.raw",
+    "bytes": 187792878,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_perfil1.raw",
+    "bytes": 187811118,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_perfil2.raw",
+    "bytes": 187788558,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa13\\SOMA_separados_perfil3.raw",
+    "bytes": 187902158,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\AUDIT_atraso.raw",
+    "bytes": 544059336,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\AUDIT_circuito.raw",
+    "bytes": 206608260,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_antiwindup.raw",
+    "bytes": 956808,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_antiwindup_ref.raw",
+    "bytes": 17323928,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_filtrado.raw",
+    "bytes": 1256432,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_filtrado_ref.raw",
+    "bytes": 23084680,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_intertravado.raw",
+    "bytes": 1078708,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_intertravado_ref.raw",
+    "bytes": 17427396,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_limite.raw",
+    "bytes": 986166,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_limite_ref.raw",
+    "bytes": 15521438,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\BANCADA_tolerancias.raw",
+    "bytes": 23087990,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d0_falha0.raw",
+    "bytes": 346424706,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d0_falha1.raw",
+    "bytes": 374918778,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d0_falha2.raw",
+    "bytes": 493235478,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d0_falha3.raw",
+    "bytes": 375070302,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d0_falha4.raw",
+    "bytes": 374918778,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d1_falha0.raw",
+    "bytes": 346424706,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d1_falha1.raw",
+    "bytes": 346802274,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d1_falha2.raw",
+    "bytes": 346488642,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d1_falha3.raw",
+    "bytes": 346581738,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_d1_falha4.raw",
+    "bytes": 346802274,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_margem_falha0.raw",
+    "bytes": 179801126,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\DET_margem_falha4.raw",
+    "bytes": 179625302,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\PHY_d0_falha0.raw",
+    "bytes": 206701382,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\PHY_d0_falha4.raw",
+    "bytes": 224313350,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\PHY_d1_falha0.raw",
+    "bytes": 206701382,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa14\\PHY_d1_falha4.raw",
+    "bytes": 206677078,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\ABL_ideal_100.raw",
+    "bytes": 550498296,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\ABL_ideal_90.raw",
+    "bytes": 551465986,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\AUD_circuito.raw",
+    "bytes": 359308062,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\AUD_ideal90.raw",
+    "bytes": 376085764,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_ideal90.raw",
+    "bytes": 551377808,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_p1_f0.raw",
+    "bytes": 587453668,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_p1_f4.raw",
+    "bytes": 588274576,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_p3_f0.raw",
+    "bytes": 551197624,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_p3_f2.raw",
+    "bytes": 552018928,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_p3_f3.raw",
+    "bytes": 551425324,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\BUF_p3_f4.raw",
+    "bytes": 551689324,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p0_f0_d1.raw",
+    "bytes": 556694110,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p0_f4_d1.raw",
+    "bytes": 556477234,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f0_d1.raw",
+    "bytes": 588244750,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f1_d1.raw",
+    "bytes": 588067474,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f2_d0.raw",
+    "bytes": 333070930,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f2_d1.raw",
+    "bytes": 588752158,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f3_d0.raw",
+    "bytes": 238839034,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f3_d1.raw",
+    "bytes": 587936662,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f4_d0.raw",
+    "bytes": 238785178,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p1_f4_d1.raw",
+    "bytes": 588067474,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p2_f0_d1.raw",
+    "bytes": 552785062,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p2_f4_d1.raw",
+    "bytes": 553139086,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f0_d1.raw",
+    "bytes": 551474170,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f2_d0.raw",
+    "bytes": 399638662,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f2_d1.raw",
+    "bytes": 552286102,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f3_d0.raw",
+    "bytes": 210920374,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f3_d1.raw",
+    "bytes": 551709790,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f4_d0.raw",
+    "bytes": 210716434,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa15\\EXP_p3_f4_d1.raw",
+    "bytes": 551921518,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\C_demanda50.raw",
+    "bytes": 622001244,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\C_demanda75.raw",
+    "bytes": 617858872,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\D_prioridade_f0.raw",
+    "bytes": 723305642,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\D_v2_f0.raw",
+    "bytes": 723532594,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\D_v2_f2.raw",
+    "bytes": 724485322,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\D_v2_f3.raw",
+    "bytes": 723747130,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\D_v2_f4.raw",
+    "bytes": 724334458,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_cota5_f0.raw",
+    "bytes": 934711176,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_demanda75.raw",
+    "bytes": 893610506,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_erro_comum.raw",
+    "bytes": 601189708,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_fixo_f0.raw",
+    "bytes": 913162054,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_livre_f0.raw",
+    "bytes": 932824200,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_quatro_falhas.raw",
+    "bytes": 588204178,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_v2_f0.raw",
+    "bytes": 931412802,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_v2_f2.raw",
+    "bytes": 934293378,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_v2_f3.raw",
+    "bytes": 934553346,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\E_v2_f4.raw",
+    "bytes": 932219586,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\R_base.raw",
+    "bytes": 805553646,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\R_E_v2.raw",
+    "bytes": 1089897664,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\R_rapido.raw",
+    "bytes": 805602342,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\S_rapido.raw",
+    "bytes": 617726406,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\S_rapido_sem_offset.raw",
+    "bytes": 618080148,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa16\\S_sem_offset.raw",
+    "bytes": 617774514,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\C_comum_f0.raw",
+    "bytes": 1132093858,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\C_comum_f2.raw",
+    "bytes": 1134515938,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\C_comum_f3.raw",
+    "bytes": 1132602866,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\C_comum_f4.raw",
+    "bytes": 1133446650,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_emprestimo_f0.raw",
+    "bytes": 1138215188,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_emprestimo_f2.raw",
+    "bytes": 1140449116,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_emprestimo_f3.raw",
+    "bytes": 1138671300,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_emprestimo_f4.raw",
+    "bytes": 1140630772,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_fixo_f0.raw",
+    "bytes": 1053675768,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_grupo_ABC_queda.raw",
+    "bytes": 711234272,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_grupo_D_queda.raw",
+    "bytes": 711244244,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_sem_atuacao_E.raw",
+    "bytes": 985472884,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_super_atraso.raw",
+    "bytes": 693752138,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_super_duplo.raw",
+    "bytes": 707821776,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_super_enviesado.raw",
+    "bytes": 710306040,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\G_super_queda.raw",
+    "bytes": 707548016,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\L2_filtrado.raw",
+    "bytes": 1211671484,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\L2_instantaneo.raw",
+    "bytes": 1309580130,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\R_C_comum.raw",
+    "bytes": 1313498136,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\R_G_emprestimo.raw",
+    "bytes": 1315857586,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa17\\SMOKE.raw",
+    "bytes": 768816,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_atraso_on.raw",
+    "bytes": 1201870772,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_dupla_falha.raw",
+    "bytes": 749988632,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_duplo_on.raw",
+    "bytes": 745883814,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_queda_on.raw",
+    "bytes": 760353502,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_replay_on.raw",
+    "bytes": 1251768528,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_sadio_off.raw",
+    "bytes": 1194183064,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_sadio_on.raw",
+    "bytes": 1194183062,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_tolerancia_mais.raw",
+    "bytes": 785322036,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_tolerancia_menos.raw",
+    "bytes": 787961874,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_vies12_on.raw",
+    "bytes": 749044592,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_vies_off.raw",
+    "bytes": 1213588138,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\C_vies_on.raw",
+    "bytes": 1218176312,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_1_2.raw",
+    "bytes": 1433773242,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_20_50_off.raw",
+    "bytes": 1306800534,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_5_10.raw",
+    "bytes": 1339599736,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_5_10_off.raw",
+    "bytes": 1409515504,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_5_10_v2.raw",
+    "bytes": 1407617426,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_replay_v2.raw",
+    "bytes": 826408210,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\L2_vies_v2.raw",
+    "bytes": 812431154,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\R_C.raw",
+    "bytes": 1381645564,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\R_L2_5_10.raw",
+    "bytes": 1405215732,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa18\\SMOKE.raw",
+    "bytes": 1128704,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa3\\MLC_dinamico_demo.raw",
+    "bytes": 38362524,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa3\\MLC_dinamico_limite.raw",
+    "bytes": 38314088,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa3\\MLC_dinamico_validacao.raw",
+    "bytes": 344143824,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa4\\MLC_fatores_demo.raw",
+    "bytes": 41496270,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa4\\MLC_fatores_validacao.raw",
+    "bytes": 231112190,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa5\\MLC_mapa_demo.raw",
+    "bytes": 51351144,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa5\\MLC_mapa_validacao.raw",
+    "bytes": 529435524,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa6\\MLC_dois_pilares_demo.raw",
+    "bytes": 44155598,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa6\\MLC_dois_pilares_validacao.raw",
+    "bytes": 344794012,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa7\\MLC_coordenador_demo.raw",
+    "bytes": 32937086,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa7\\MLC_coordenador_validacao.raw",
+    "bytes": 344978404,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_limites_refinamento.raw",
+    "bytes": 57250260,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_limites_validacao.raw",
+    "bytes": 144108104,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_subpilares_demo.raw",
+    "bytes": 24621366,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_subpilares_intermediarios.raw",
+    "bytes": 114655816,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_subpilares_quatro_falhas.raw",
+    "bytes": 19069526,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_subpilares_refinamento.raw",
+    "bytes": 95395618,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa8\\MLC_subpilares_validacao.raw",
+    "bytes": 105332030,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_adaptativo_s19.raw",
+    "bytes": 32404956,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_adaptativo_s19_ref.raw",
+    "bytes": 43902484,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_nove_fixos_s19.raw",
+    "bytes": 32408956,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_nove_fixos_s19_ref.raw",
+    "bytes": 43903964,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_rodizio_s19.raw",
+    "bytes": 32244070,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_sorteio_s19.raw",
+    "bytes": 32371910,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_sorteio_s211.raw",
+    "bytes": 32369512,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_sorteio_s73.raw",
+    "bytes": 32370510,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p0_tres_fixos_s19.raw",
+    "bytes": 32410716,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_adaptativo_s19.raw",
+    "bytes": 32402156,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_nove_fixos_s19.raw",
+    "bytes": 32406316,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_rodizio_s19.raw",
+    "bytes": 32242910,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_sorteio_s19.raw",
+    "bytes": 32385710,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_sorteio_s211.raw",
+    "bytes": 32381152,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_sorteio_s73.raw",
+    "bytes": 32404790,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p1_tres_fixos_s19.raw",
+    "bytes": 32405796,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_adaptativo_s19.raw",
+    "bytes": 32401036,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_adaptativo_s19_ref.raw",
+    "bytes": 43896524,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_nove_fixos_s19.raw",
+    "bytes": 32424956,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_nove_fixos_s19_ref.raw",
+    "bytes": 43881244,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_rodizio_s19.raw",
+    "bytes": 31948190,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_sorteio_s19.raw",
+    "bytes": 32039710,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_sorteio_s211.raw",
+    "bytes": 32004032,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_sorteio_s73.raw",
+    "bytes": 31959510,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p2_tres_fixos_s19.raw",
+    "bytes": 31868556,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_adaptativo_s19.raw",
+    "bytes": 31263796,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_adaptativo_s19_ref.raw",
+    "bytes": 42699524,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_nove_fixos_s19.raw",
+    "bytes": 31285676,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_nove_fixos_s19_ref.raw",
+    "bytes": 42695844,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_rodizio_s19.raw",
+    "bytes": 31108070,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_sorteio_s19.raw",
+    "bytes": 31246550,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_sorteio_s211.raw",
+    "bytes": 31231872,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_sorteio_s73.raw",
+    "bytes": 31262430,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p3_tres_fixos_s19.raw",
+    "bytes": 31272556,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_adaptativo_s19.raw",
+    "bytes": 32398956,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_adaptativo_s19_ref.raw",
+    "bytes": 43893924,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_nove_fixos_s19.raw",
+    "bytes": 32427276,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_nove_fixos_s19_ref.raw",
+    "bytes": 43895844,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_rodizio_s19.raw",
+    "bytes": 32237230,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_sorteio_s19.raw",
+    "bytes": 32391550,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_sorteio_s211.raw",
+    "bytes": 32385672,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_sorteio_s73.raw",
+    "bytes": 32410550,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa9\\SEL_p4_tres_fixos_s19.raw",
+    "bytes": 32386076,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  },
+  {
+    "path": "etapa12\\preliminar_detector_rapido\\COORD_perfil0.raw",
+    "bytes": 146127976,
+    "complete_marker": false,
+    "log_exists": true,
+    "tail": "solver = Normal\nMaximum thread count: 12\ntnom = 27\ntemp = 27\nmethod = trap\nreltol = 1e-06\nvolttol = 1e-09\nPer .tran options, skipping operating point for transient analysis.\n\n.step caso=1\n\n.step caso=2\n\n.step caso=3\n\n.step caso=4\n\n.step caso=5\n\n.step caso=6\n\n.step caso=7\n\n.step caso=8\n\n.step caso=9\n"
+  },
+  {
+    "path": "etapa12\\preliminar_detector_rapido\\COORD_perfil1.raw",
+    "bytes": 117506676,
+    "complete_marker": false,
+    "log_exists": true,
+    "tail": " abstol=1e-12\n\n.step caso=0\nsolver = Normal\nMaximum thread count: 12\ntnom = 27\ntemp = 27\nmethod = trap\nreltol = 1e-06\nvolttol = 1e-09\nPer .tran options, skipping operating point for transient analysis.\n\n.step caso=1\n\n.step caso=2\n\n.step caso=3\n\n.step caso=4\n\n.step caso=5\n\n.step caso=6\n\n.step caso=7\n"
+  },
+  {
+    "path": "etapa12\\preliminar_sem_diagnosticos\\COORD_perfil0.raw",
+    "bytes": 118796012,
+    "complete_marker": false,
+    "log_exists": true,
+    "tail": "\nMaximum thread count: 12\ntnom = 27\ntemp = 27\nmethod = trap\nreltol = 1e-06\nvolttol = 1e-09\nPer .tran options, skipping operating point for transient analysis.\n\n.step caso=1\n\n.step caso=2\n\n.step caso=3\n\n.step caso=4\n\n.step caso=5\n\n.step caso=6\n\n.step caso=7\n\n.step caso=8\n\n.step caso=9\n\n.step caso=10\n"
+  },
+  {
+    "path": "etapa12\\preliminar_sem_diagnosticos\\COORD_perfil1.raw",
+    "bytes": 141379256,
+    "complete_marker": false,
+    "log_exists": true,
+    "tail": " = 27\ntemp = 27\nmethod = trap\nreltol = 1e-06\nvolttol = 1e-09\nPer .tran options, skipping operating point for transient analysis.\n\n.step caso=1\n\n.step caso=2\n\n.step caso=3\n\n.step caso=4\n\n.step caso=5\n\n.step caso=6\n\n.step caso=7\n\n.step caso=8\n\n.step caso=9\n\n.step caso=10\n\n.step caso=11\n\n.step caso=12\n"
+  },
+  {
+    "path": "etapa12\\preliminar_sem_diagnosticos\\COORD_verificacao_thread1.raw",
+    "bytes": 17524840,
+    "complete_marker": true,
+    "log_exists": true,
+    "tail": null
+  }
+]

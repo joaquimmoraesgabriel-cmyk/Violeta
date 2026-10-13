@@ -1,0 +1,24 @@
+* Primeiro experimento de processamento de informacao com Chua
+* Duas execucoes: bit=0 e bit=1, mesma condicao inicial.
+.param Rch=1770 bit=0
+.param Ga=-0.75757m Gb=-0.40909m E=1
+R1 v1 v2 {Rch}
+C1 v1 0 10n IC=0.1
+C2 v2 0 100n IC=0
+L1 v2 vl 18m IC=0
+Rcoil vl 0 12.5
+Bchua v1 0 I={Gb*V(v1)+(Ga-Gb)/2*(abs(V(v1)+E)-abs(V(v1)-E))}
+* bit=1 injeta 20 uA entre 10 e 11 ms; bit=0 nao injeta.
+Bentrada 0 v1 I={if(time>=10m,if(time<11m,bit*20u,0),0)}
+* Apenas para visualizar o bit aplicado: 0 ou 1 V.
+Bbit entrada 0 V={if(time>=10m,if(time<11m,bit,0),0)}
+.step param bit list 0 1
+.tran 0 30m 0 0.2u uic
+.options plotwinsize=0
+.save V(v1) V(v2) V(entrada) I(L1)
+* Medidas da resposta depois que o pulso termina.
+.meas tran media_v1 AVG V(v1) FROM 12m TO 15m
+.meas tran rms_v1 RMS V(v1) FROM 12m TO 15m
+.meas tran media_v2 AVG V(v2) FROM 12m TO 15m
+.meas tran amostra_v2 FIND V(v2) AT=12m
+.end

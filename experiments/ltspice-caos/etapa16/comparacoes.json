@@ -1,0 +1,106 @@
+{
+  "familias": {
+    "Refer\u00eancia etapa 15": {
+      "nomes": [
+        "BUF_p3_f0",
+        "BUF_p3_f4",
+        "BUF_p3_f2",
+        "BUF_p3_f3"
+      ],
+      "acertos": 198,
+      "janelas": 272,
+      "divergencias": 42,
+      "comuns": 78,
+      "rms_d": 21.188239909215003,
+      "rms_y": 40.717290638342725,
+      "rms_g": 0.9177070792283416,
+      "variacao_g": 1001.3388438904615,
+      "falsos": 0
+    },
+    "Pilar E revisado": {
+      "nomes": [
+        "E_v2_f0",
+        "E_v2_f4",
+        "E_v2_f2",
+        "E_v2_f3"
+      ],
+      "acertos": 184,
+      "janelas": 272,
+      "divergencias": 40,
+      "comuns": 72,
+      "rms_d": 13.365764901053502,
+      "rms_y": 49.579068880560705,
+      "rms_g": 0.9162968651597879,
+      "variacao_g": 1003.0990470007704,
+      "falsos": 0
+    },
+    "Prioridade D, 2 atuadores": {
+      "nomes": [
+        "D_v2_f0",
+        "D_v2_f4",
+        "D_v2_f2",
+        "D_v2_f3"
+      ],
+      "acertos": 189,
+      "janelas": 272,
+      "divergencias": 47,
+      "comuns": 71,
+      "rms_d": 13.311533266199147,
+      "rms_y": 49.346631044188115,
+      "rms_g": 0.9151405122945724,
+      "variacao_g": 1003.3671029859559,
+      "falsos": 0
+    }
+  },
+  "pareadas": {
+    "Pilar E revisado": {
+      "recuperadas": 32,
+      "novas_falhas": 46
+    },
+    "Prioridade D, 2 atuadores": {
+      "recuperadas": 41,
+      "novas_falhas": 50
+    }
+  },
+  "refinamento": [
+    {
+      "nome": "Refer\u00eancia",
+      "acertos": [
+        28,
+        23,
+        25
+      ],
+      "divergencias": [
+        11,
+        8
+      ],
+      "comuns_tres": 17
+    },
+    {
+      "nome": "E revisado",
+      "acertos": [
+        25,
+        22,
+        26
+      ],
+      "divergencias": [
+        11,
+        12
+      ],
+      "comuns_tres": 15
+    },
+    {
+      "nome": "Sensores r\u00e1pidos",
+      "acertos": [
+        24,
+        27,
+        26
+      ],
+      "divergencias": [
+        9,
+        11
+      ],
+      "comuns_tres": 19
+    }
+  ]
+}

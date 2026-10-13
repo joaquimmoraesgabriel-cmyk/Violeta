@@ -1,0 +1,15 @@
+{
+  "perfil": "saudaveis",
+  "politica": "sorteio",
+  "semente": 19,
+  "dt_us": 100.0,
+  "despertar_us": 200.0,
+  "periodo_us": 5000.0,
+  "media_ligados": 3.0,
+  "max_ligados": 3,
+  "media_validos": 2.917421479825903,
+  "tempo_sem_leitura_valida_ms": 9.2,
+  "trocas_individuais": 701,
+  "fracao_alarme_sem_falha": 0.0,
+  "deteccoes": []
+}

@@ -1,0 +1,222 @@
+ETAPA 18 — FISCALIZACAO DAS COTAS E RECUPERACAO LOCAL
+
+LTspice 26.1.1: 64 trajetorias completas novas, 1088 janelas logicas. SMOKE: dois casos de 1 ms apenas para inicializacao, fora de todas as notas.
+Ultima amostra RAW: maior distancia ate tstop de 0.85 s = 1.072591 us. Cada percurso precisa de log/medidas completos e ultima amostra a no maximo um passo configurado de tstop; nenhum ponto final foi inventado. A ultima janela logica termina em 0.849 s. Ver NOTA_COBERTURA_RAW.txt.
+Dados: netlists, parametros JSON, logs .meas e RAWs preservados nesta pasta. Planejamento em PLANO_PREVIO.txt; oito controles adicionais justificados em ADENDO_CONTROLES_L2.txt e oito ensaios de revisao em ADENDO_CONFIRMACAO_V2.txt.
+
+CONCLUSAO REVISADA
+
+Manter um coordenador comum como referencia de arquitetura, com E como
+reserva local e fiscal dentro do mesmo orcamento. O lote nao justifica
+substitui-lo por dois coordenadores de grupos, nem declara o circuito
+pronto. L2 com confirmacao V2 continua candidato de pesquisa.
+
+O fiscal detectou 24/24 trajetorias com falha de cotas e comutacao
+habilitada, sem contar memorias armadas antes da injecao. Isso inclui
+heartbeat perdido, concessao dupla, cota extrema 0/90, desvio de ate
+12 uA, atraso com carimbo antigo e cota antiga com carimbo recente.
+Nas duas falhas simultaneas, os detectores de comando e de cota
+atuaram; o detector de comando nao teve alarme indevido neste lote.
+Esses resultados sao deteccao no modelo, nao tolerancia fisica de chips.
+
+O limite mais importante encontrado foi a tolerancia do fiscal V1.
+No comum nominal houve 0/4 alarmes indevidos; nos dois cantos combinando
+RC, atraso, ruido e relogio houve 4/4 trajetorias saudaveis com alarme.
+As idades permaneceram validas: a discrepancia de valores provocou a
+comutacao, entre 2.238 e 2.332 ms. Nao e uma configuracao qualificada
+para hardware. Nos quatro instantes de primeiro disparo, as cotas ainda
+cobriam ambos os pedidos. Isso reforca a hipotese de fiscalizar a
+concessao efetiva, sem provar que essa alternativa eliminaria o problema.
+Os cantos nao sao uma distribuicao estatistica.
+
+No L2 5/10 us, a V1 disparou em 4/4 trajetorias saudaveis. A revisao
+V2, que altera somente a carga/descarga da confirmacao de 20/40 para
+50/20 us, teve 0/4 alarmes saudaveis. Detectou tambem 2/2 casos de
+cota antiga com carimbo recente e 2/2 de cota extrema. O viés extremo
+foi detectado em 60.38 us; o replay em 2.0602 ms desde a partida,
+incluindo a inibicao de 2 ms. A V2 ainda precisa dos cantos de
+tolerancia, terceiro passo e demais falhas antes de ser escolhida.
+
+Detectar e recuperar a logica sao problemas diferentes. Com cota
+extrema no comum, habilitar a reserva mudou 47/68 para 43/68 acertos:
+oito janelas recuperadas e doze novas falhas. No L2 5/10 saudavel,
+comutacao desabilitada deu 55/68, V1 deu 43/68 e V2 deu 56/68.
+Entre o controle desabilitado e V2 ocorreram onze recuperacoes e dez
+regressoes. Sem disparo, ambos usam a mesma politica efetiva; alterar
+o observador pode mudar os passos adaptativos. A diferenca de uma
+janela nao prova melhora fisica causada pela V2.
+
+Reduzir atraso/filtro de L2 de 20/50 para 5/10 us, com comutacao
+desabilitada, mudou 51/68 para 55/68: dez recuperacoes e seis regressoes.
+O residual RMS de Y caiu de 39.824 para 37.646 uA; D ficou em
+23.806/23.748 uA. Frente ao comum nominal, L2 V2 reduziu o residual
+de Y (44.544 -> 37.914 uA), mas aumentou o de D+E (19.061 ->
+23.832 uA). A variacao total de g(x) permaneceu proxima: 1000.49/s
+no comum e 1001.42/s em L2 V2. Nao ha reducao uniforme demonstrada
+do esforco dinamico; essas medidas nao equivalem a estresse termico.
+
+A convergencia numerica permanece aberta. O comum acertou 25, 23 e
+28 de 34 janelas com passos 1.25, 0.625 e 0.3125 us; as duas
+comparacoes sucessivas tiveram oito e onze discordancias. O L2 V1
+com reserva deu 23, 20 e 25, com cinco e treze discordancias. Os
+alarmes indevidos de L2 V1 persistiram no terceiro passo. L2 V2
+acertou 30/34 e 26/34 nos dois passos, com oito discordancias.
+
+As 64 trajetorias passaram no teto legado de 100.005 uA pelas tres
+leituras. Os picos foram 90.022504 uA por tensao/shunt, 90.022613 uA
+pelas correntes dos resistores e 90.804677 uA pelas sondas 0 V.
+O maior pico da sonda coincide com um passo de 6.38e-16 s e shunts
+quase constantes, sugerindo dificuldade numerica ainda nao isolada.
+Nenhuma amostra foi removida. Nao foi demonstrado teto fisico estrito
+de 90 uA. O comando de E respeitou 5 uA, mas seu pico fisico chegou
+a 5.353212 uA. Esses limites sao de atuacao, nao consumo total da placa.
+
+Prioridade do proximo lote: comparar concessao efetiva min(|pedido|,
+cota), para nao reagir apenas a capacidade ociosa; confrontar essa
+revisao e a V2 nos cantos de tolerancia e sob falhas; testar uma
+reserva local com politica/filtro proximos aos nominais. Manter idade,
+heartbeat e guarda global em paralelo. Isolar tambem a divergencia
+das sondas e repetir o refinamento antes de prometer limites fisicos.
+Sincronismo por mais de 0.85 s e retorno seguro apos reparo seguem
+pendentes. Nenhum desses ensaios futuros foi contabilizado aqui.
+
+
+1. O QUE FOI IMPLEMENTADO
+
+Mantida a coordenacao comum de A/B/C/D. A/B/C somam pedidos assinados para o atuador Y; D e E atuam em X. E conserva nove replicas e mediana, reserva local com comando de ate 5 uA contido no total de 90 uA. E pode retirar capacidade de Y, depois da cota inicial; nao cria corrente extra.
+O comum divide as cotas iniciais proporcionalmente aos modulos dos pedidos Y/D. L2 muda somente essa regra no mesmo coordenador: em sobrecarga, qY=limit((C+|pedidoY|-|pedidoD|)/2,0,C), qD=C-qY, C=90 uA; abaixo da capacidade conserva a fracao proporcional. E arbitra depois. Portanto L2 nao significa acrescentar outro coordenador ou outro orcamento.
+O novo fiscal recebe cotas Y/D, heartbeat e carimbo de tempo; recalcula a fracao esperada por outro caminho a partir das mesmas demandas medidas. Nao acessa codigo da falha, horario de injecao, perturbacoes verdadeiras ou a resposta logica desejada. Compartilhar demandas ainda permite falhas de causa comum.
+Referencia nominal: mesmo atraso/filtro do coordenador, acrescido de 2 us e 5% na constante RC. Comparacao bufferizada com RC 4 us nos dois lados. Offset +/-0.5 uA e ruido senoidal 0.5 uA por canal. Limiar da soma de discrepancias: 2 uA + 5% de 90 uA = 6.5 uA.
+Idade permitida: -30 a 80 us. Carimbo modelado como tempo de origem transportado; filtro da cota nao aumenta essa idade, sendo fiscalizado pelo teste de coerencia. Isso e um modelo de protocolo/clock, nao uma implementacao de sincronismo ou protecao contra falsificacao. Nos cantos +/-25 ppm e +/-10 us, a idade fica entre -11.25 e 51.25 us ate 0.85 s. Sem ressincronizacao, a propria equacao preve cruzar o limite inferior apos 1.6 s no canto negativo e o superior apos 2 s no positivo. Esses horizontes maiores nao foram simulados neste lote.
+A guarda antiga verifica heartbeat, faixa e soma imediatamente. Durante uma mensagem basica invalida ela usa 45/45 uA. A nova confirmacao RC sobe em 20 us, desce em 40 us, dispara a 0.7 e fica inibida nos primeiros 2 ms. Apos confirmacao, uma memoria retém a distribuicao proporcional local ate o fim. Essa e a V1. A V2 altera apenas carga/descarga para 50/20 us: disparo continuo nominal em 60.20 us a partir de zero, contra 24.08 us da V1. A memoria RC nao e persistencia digital estrita.
+Mesmo na familia L2, a reserva de cotas usa a regra proporcional comum. Portanto, um alarme em L2 muda efetivamente a politica. Monitor desabilitado preserva o calculo/registro do alarme, mas impede essa comutacao; nao remove os circuitos observadores nem a guarda basica.
+As cotas sao complementares e atomicas neste modelo. Cotas de geracoes distintas, comunicacao digital discreta, clock independente real e reset controlado ainda nao foram implementados.
+
+2. NOTA LOGICA E SENSIBILIDADE AO PASSO
+
+Alta demanda; cada trajetoria tem 17 blocos de 50 ms. A janela 30–49 ms exige X positivo em todo o intervalo para AND=1 e negativo em todo o intervalo para AND=0. Duas condicoes iniciais, sem reinicio entre blocos. O passo indicado e maximo permitido, com integracao adaptativa trap.
+Caso | trajetorias | corretas/janelas | corretas por passo maximo (s) | comuns/divergentes nos dois passos
+L2_5_10_v2 | 4 | 56/68 | {'1.25e-06': 30, '6.25e-07': 26} | 24/8 de 34 pares
+L2_replay_v2 | 2 | 27/34 | {'6.25e-07': 27} | um passo
+L2_vies_v2 | 2 | 29/34 | {'6.25e-07': 29} | um passo
+L2_20_50_off | 4 | 51/68 | {'1.25e-06': 26, '6.25e-07': 25} | 21/9 de 34 pares
+L2_5_10_off | 4 | 55/68 | {'1.25e-06': 26, '6.25e-07': 29} | 23/9 de 34 pares
+C_queda_on | 2 | 25/34 | {'6.25e-07': 25} | um passo
+C_duplo_on | 2 | 27/34 | {'6.25e-07': 27} | um passo
+C_replay_on | 4 | 53/68 | {'1.25e-06': 27, '6.25e-07': 26} | 23/7 de 34 pares
+C_tolerancia_mais | 2 | 26/34 | {'6.25e-07': 26} | um passo
+C_vies12_on | 2 | 24/34 | {'6.25e-07': 24} | um passo
+C_dupla_falha | 2 | 25/34 | {'6.25e-07': 25} | um passo
+R_C | 2 | 28/34 | {'3.125e-07': 28} | um passo
+R_L2_5_10 | 2 | 25/34 | {'3.125e-07': 25} | um passo
+C_tolerancia_menos | 2 | 25/34 | {'6.25e-07': 25} | um passo
+C_sadio_on | 4 | 48/68 | {'1.25e-06': 25, '6.25e-07': 23} | 20/8 de 34 pares
+C_sadio_off | 4 | 48/68 | {'1.25e-06': 25, '6.25e-07': 23} | 20/8 de 34 pares
+C_vies_on | 4 | 43/68 | {'1.25e-06': 21, '6.25e-07': 22} | 19/5 de 34 pares
+C_vies_off | 4 | 47/68 | {'1.25e-06': 24, '6.25e-07': 23} | 17/13 de 34 pares
+C_atraso_on | 4 | 50/68 | {'1.25e-06': 27, '6.25e-07': 23} | 19/12 de 34 pares
+L2_5_10 | 4 | 43/68 | {'1.25e-06': 23, '6.25e-07': 20} | 19/5 de 34 pares
+L2_1_2 | 4 | 53/68 | {'1.25e-06': 26, '6.25e-07': 27} | 20/13 de 34 pares
+
+Terceiro passo: denominador 34 por passo.
+comum: {'passos_us': [1.25, 0.625, 0.3125], 'corretas': [25, 23, 28], 'comuns_tres': 19, 'discordancias': [8, 11]}
+L2_monitor_ligado: {'passos_us': [1.25, 0.625, 0.3125], 'corretas': [23, 20, 25], 'comuns_tres': 15, 'discordancias': [5, 13]}
+O terceiro passo de L2 com monitor ligado avalia o conjunto L2 + eventual reserva, e nao L2 puro. Nao foram feitos tres passos nos controles L2 com comutacao desabilitada. A concordancia entre dois passos ou uma nota maior isolada nao estabelece convergencia.
+
+3. CRUZAMENTO DAS MESMAS JANELAS
+
+Controle -> teste | notas na intersecao | recuperadas | novas falhas | divergencias em janelas 0–5
+C_sadio_off -> C_sadio_on | 48/68 -> 48/68 | 0 | 0 | 0/24
+C_vies_off -> C_vies_on | 47/68 -> 43/68 | 8 | 12 | 0/24
+L2_20_50_off -> L2_5_10_off | 51/68 -> 55/68 | 10 | 6 | 5/24
+L2_5_10_off -> L2_5_10 | 55/68 -> 43/68 | 8 | 20 | 6/24
+L2_5_10_off -> L2_5_10_v2 | 55/68 -> 56/68 | 11 | 10 | 3/24
+L2_5_10_v2 -> L2_replay_v2 | 26/34 -> 27/34 | 6 | 5 | 1/12
+L2_5_10_v2 -> L2_vies_v2 | 26/34 -> 29/34 | 5 | 2 | 0/12
+C_sadio_on -> C_queda_on | 23/34 -> 25/34 | 5 | 3 | 0/12
+C_sadio_on -> C_duplo_on | 23/34 -> 27/34 | 7 | 3 | 0/12
+C_sadio_on -> C_replay_on | 48/68 -> 53/68 | 11 | 6 | 2/24
+C_sadio_on -> C_tolerancia_mais | 23/34 -> 26/34 | 5 | 2 | 2/12
+C_sadio_on -> C_vies12_on | 23/34 -> 24/34 | 5 | 4 | 0/12
+C_sadio_on -> C_dupla_falha | 23/34 -> 25/34 | 4 | 2 | 0/12
+C_sadio_on -> C_tolerancia_menos | 23/34 -> 25/34 | 7 | 5 | 3/12
+C_sadio_on -> C_vies_on | 48/68 -> 43/68 | 7 | 12 | 0/24
+C_sadio_on -> C_atraso_on | 48/68 -> 50/68 | 14 | 12 | 5/24
+Janelas 0–5 terminam antes da injecao temporaria de 343.35 ms. Para atraso/replay permanentes e mudancas de politica/tolerancia essa coluna NAO representa periodo sem intervencao. Diferencas precoces mesmo entre casos nominalmente equivalentes revelam sensibilidade numerica e impedem interpretar toda diferenca posterior como efeito causal exclusivo da falha.
+Nos percursos saudaveis V2 em que a reserva nunca aciona, a politica efetiva e a mesma de L2_5_10_off. Os observadores sao comportamentais e nao carregam eletricamente os pedidos. Mudar seu RC ainda pode alterar os passos adaptativos do solver e a trajetoria caotica. Portanto, eventual diferenca de nota entre esses percursos nao demonstra ganho logico causal do fiscal. Sua rejeicao de alarmes e sua latencia sao avaliacoes separadas.
+
+4. DETECCAO, RESERVA E ALARMES INDEVIDOS
+
+Falhas: 1 heartbeat perdido e cotas zeradas; 2 atraso extra 500 us em cota e carimbo; 3 mensagens 90+90 uA; 4 cotas Y=0/D=90 com heartbeat/carimbo recentes; 5 cota atrasada 500 us com carimbo recente; 6 deslocamento de ate 12 uA de D para Y.
+Falhas 1/3/4/6 duram 343.35–403.35 ms; 2/5 comecam em t=0. A latencia destes ultimos inclui a inibicao inicial de 2 ms. Queda simultanea tambem zera os comandos do topo com heartbeat mantido.
+Caso | deteccoes de falha | alarmes antes/sem falha | reserva retida | latencia min..max us | idade min..max us
+L2_5_10_v2 | 0/4 | 0/4 | 0/4 | -- | 5.000..5.000
+L2_replay_v2 | 2/2 | 0/2 | 2/2 | 2060.198..2060.198 | 5.000..5.000
+L2_vies_v2 | 2/2 | 0/2 | 2/2 | 60.377..60.383 | 5.000..5.000
+L2_20_50_off | 0/4 | 0/4 | 0/4 | -- | 20.000..20.000
+L2_5_10_off | 0/4 | 4/4 | 0/4 | -- | 5.000..5.000
+C_queda_on | 2/2 | 0/2 | 2/2 | 24.079..24.079 | 20.000..20.000
+C_duplo_on | 2/2 | 0/2 | 2/2 | 24.079..24.079 | 20.000..20.000
+C_replay_on | 4/4 | 0/4 | 4/4 | 2024.075..2024.078 | 20.000..20.000
+C_tolerancia_mais | 0/2 | 2/2 | 2/2 | -- | 30.050..51.250
+C_vies12_on | 2/2 | 0/2 | 2/2 | 25.027..25.048 | 20.000..20.000
+C_dupla_falha | 2/2 | 0/2 | 2/2 | 24.301..24.313 | 20.000..20.000
+R_C | 0/2 | 0/2 | 0/2 | -- | 20.000..20.000
+R_L2_5_10 | 0/2 | 2/2 | 2/2 | -- | 5.000..5.000
+C_tolerancia_menos | 0/2 | 2/2 | 2/2 | -- | -11.250..9.950
+C_sadio_on | 0/4 | 0/4 | 0/4 | -- | 20.000..20.000
+C_sadio_off | 0/4 | 0/4 | 0/4 | -- | 20.000..20.000
+C_vies_on | 4/4 | 0/4 | 4/4 | 24.301..24.313 | 20.000..20.000
+C_vies_off | 4/4 | 0/4 | 0/4 | 24.301..24.313 | 20.000..20.000
+C_atraso_on | 4/4 | 0/4 | 4/4 | 2024.075..2024.078 | 520.000..520.000
+L2_5_10 | 0/4 | 4/4 | 4/4 | -- | 5.000..5.000
+L2_1_2 | 0/4 | 4/4 | 4/4 | -- | 1.000..1.000
+Nos controles *_off, deteccao registrada nao significa recuperacao habilitada. Alarmes indevidos sao contados mesmo se a comutacao estiver desabilitada. Deteccao exige novo alarme dentro do intervalo de injecao, sem memoria ja armada antes; as latencias publicadas usam somente essas deteccoes. Nos dados JSON, cota_primeira_incoerencia_us e cota_primeira_idade_invalida_us sao relativas a injecao quando ha falha e a partida quando o caso e saudavel; em ambos, a busca respeita a inibicao inicial. A memoria requer reset futuro; o teste nao demonstra retorno seguro ao supervisor apos reparo.
+Com fiscal habilitado: 24/24 trajetorias com falha de cota produziram alarme.
+Detector anterior de atuacao: 0 alarmes em trajetorias sem falha de comando do topo; 2/2 falhas de topo detectadas.
+Essas categorias distinguem um fiscal de cotas de um detector que observa a corrente depois da alocacao.
+Diagnostico do primeiro percurso V1: no primeiro trip saudavel, L2 5/10 us pedia 26.334 uA (Y=22.503, D=3.831) e recebia cotas 65.490/24.510 uA; L2 1/2 us pedia 19.037 uA (Y=13.237, D=5.800) e recebia cotas 59.103/30.897 uA. Ambas as cotas cobriam os pedidos naqueles instantes. O fiscal reagiu a uma diferenca na distribuicao de capacidade ociosa. Essa observacao motiva testar futuramente discrepancia na concessao efetiva min(pedido,cota), sem desabilitar as verificacoes de idade/heartbeat/soma. Essa alternativa NAO foi simulada nesta etapa. Valores reproduziveis por diagnosticar_inicio.py, no RAW, caso 0.
+
+Nos quatro primeiros disparos dos cantos saudaveis, incoerente=1, idade_invalida=0 e quota_invalida=0. As cotas Y/D cobriam os respectivos pedidos naquele instante. A confirmacao tem memoria de instantes anteriores; essa observacao reforca a hipotese de comparar concessoes efetivas, mas nao testa tal alternativa. Ver diagnosticar_tolerancias.py e diagnostico_tolerancias.json.
+
+5. CORRENTES E COMPENSACAO
+
+Caso | pico corrente real uA | RMS residual Y uA | RMS residual D+E uA | RMS g(x) | variacao total g(x)/s
+L2_5_10_v2 | 90.022504 | 37.9136 | 23.8319 | 0.913781 | 1001.424
+L2_replay_v2 | 90.014696 | 43.1811 | 18.9084 | 0.921349 | 1001.813
+L2_vies_v2 | 90.020657 | 41.0522 | 20.9146 | 0.917457 | 1001.104
+L2_20_50_off | 90.015233 | 39.8241 | 23.8056 | 0.915502 | 1003.130
+L2_5_10_off | 90.022504 | 37.6460 | 23.7478 | 0.914078 | 1001.117
+C_queda_on | 90.013325 | 43.7297 | 18.8428 | 0.919824 | 1001.387
+C_duplo_on | 90.013504 | 43.8192 | 18.9331 | 0.920075 | 1000.545
+C_replay_on | 90.015620 | 42.8224 | 18.6698 | 0.916167 | 1001.130
+C_tolerancia_mais | 90.013444 | 42.8034 | 18.6696 | 0.916813 | 1000.249
+C_vies12_on | 90.013802 | 43.4324 | 18.6104 | 0.910541 | 1003.316
+C_dupla_falha | 90.016425 | 43.5501 | 18.8009 | 0.914644 | 1003.830
+R_C | 90.014756 | 44.8145 | 19.1400 | 0.919186 | 1000.794
+R_L2_5_10 | 90.021729 | 43.2512 | 18.8050 | 0.916529 | 1001.024
+C_tolerancia_menos | 90.015203 | 42.7459 | 18.5000 | 0.916188 | 1002.384
+C_sadio_on | 90.013862 | 44.5443 | 19.0614 | 0.918699 | 1000.487
+C_sadio_off | 90.013862 | 44.5443 | 19.0614 | 0.918699 | 1000.487
+C_vies_on | 90.018094 | 43.5925 | 18.7806 | 0.915933 | 1000.355
+C_vies_off | 90.013862 | 48.5223 | 18.6715 | 0.916150 | 1002.998
+C_atraso_on | 90.016752 | 43.2098 | 18.7867 | 0.922491 | 1002.480
+L2_5_10 | 90.022504 | 43.0095 | 18.8099 | 0.916525 | 999.112
+L2_1_2 | 90.021551 | 43.0981 | 18.7402 | 0.920531 | 1000.850
+Picos gerais: tensao/shunt 90.02250433 uA; corrente do resistor 90.02261322 uA; sondas 0 V 90.80467680 uA.
+Falhas frente ao teto legado 100.005 uA: tensoes 0, resistores 0, sondas 0.
+Maximo das cotas aceitas 90.00000364 uA; concessao final Y+D+E 90.00000455 uA; comando E 4.99999987 uA.
+Pico fisico de E, por tensao/shunt: 5.35321236 uA. O limite de 5 uA do comando nao equivale a um teto fisico instantaneo comprovado.
+Maior diferenca ponto a ponto: tensao/shunt versus resistor 0.000343 uA; versus sonda 0 V 7.915086 uA.
+90 uA e a cota operacional dos atuadores. Pequenos excessos fisicos acima de 90 nao sao escondidos pelo criterio legado de 100.005. Os numeros de corrente somam modulos dos tres ramos, sem cancelamento de D e E, e nao representam o consumo total dos sensores, amplificadores ou processadores.
+O maior pico nas sondas 0 V ocorre em C_tolerancia_mais, caso 1, em 84.439588369402 ms: 90.804677 uA, contra 90.000515 uA nos resistores naquele ponto. O passo anterior e 6.38e-16 s. Ha divergencias tambem nas amostras vizinhas, com shunts quase constantes. Isso sugere uma dificuldade numerica, mas nenhuma amostra foi descartada e a causa nao foi isolada por uma nova simulacao. A metrologia exige investigacao antes de atribuir precisao fisica aos picos. Ver auditar_pico_sondas.py e diagnostico_pico_sondas.json.
+RMS residuais usam perturbacoes verdadeiras apenas na analise posterior, nunca no fiscal. Valores agregados sao medias dos RMS por trajetoria. A variacao total de g(x) e uma medida dinamica matematica, nao dissipacao, estresse termico ou envelhecimento do hardware.
+
+6. CONTEXTO ANTERIOR E LIMITES
+
+Etapa17: matriz de quatro condicoes do topo: referencia 198/272, comum+E 199/272 e grupos+E 174/272. Os novos testes mudam o fiscal e a matriz de falhas; nenhum total de 68 ou 34 e comparado diretamente a 198/272. L2 anterior 49/68 com 20/50 us e 53/68 ideal serve apenas de contexto. A comparacao de latencia desta etapa usa L2_20_50_off e L2_5_10_off no MESMO modelo novo.
+Os atuadores mantem amplificadores genericos, shunts, RC e realimentacao; o nucleo MLC, sinais, calculos, comparadores e varias protecoes ainda sao comportamentais. Os 45 subpilares continuam conceito: somente E possui nove replicas explicitas, A–D usam um sensor favoravel cada.
+Este lote nao valida chips escolhidos, barramentos reais, falha fisica de atuador, alimentacoes independentes, parasitas de trilha, dissipacao termica, EMC ou uma placa PCB. A proxima realizacao fisica deve considerar a faixa dinamica e os atrasos encontrados aqui, sem confundir nota logica ou fiscal comportamental com validacao completa de hardware.
+
+Reproducao: executar.ps1 recebe um manifesto por chamada; os quatro lotes e a copia segura dos arquivos estao descritos em REPRODUCAO.txt. analisar_etapa18.py rejeita resultados incompletos ou avisos numericos; verificar_entrega.py audita a entrega. verificar_modelo.py verificou 600000 alocacoes e a separacao estrutural entre injecao e fiscal.
+Correcao metodologica: indicadores booleanos agora sao convertidos a float antes da integracao temporal. Foram recalculadas 162 trajetorias unicas dos arquivos antigos e corrigidos 184 registros das etapas16/17, com backups. A tabela de demanda >91 uA da referencia saudavel passou de 31.12% para 62.15% do tempo. Contagens, alarmes, picos, RMS e variacao de g(x) nao foram alterados. Ver ERRATA_INTEGRACAO_INDICADORES.txt e correcao_fracoes_anteriores.json.

@@ -1,0 +1,20 @@
+[
+  {
+    "nsub": 1,
+    "falhas": 1,
+    "maior_erro_RAW_vs_estimativa_prevista": 9.313211382644404e-10,
+    "maior_desvio_estima_vs_sensor_saudavel": 0.02000000093132114
+  },
+  {
+    "nsub": 3,
+    "falhas": 1,
+    "maior_erro_RAW_vs_estimativa_prevista": 4.6565959768707366e-10,
+    "maior_desvio_estima_vs_sensor_saudavel": 4.6565959768707366e-10
+  },
+  {
+    "nsub": 9,
+    "falhas": 1,
+    "maior_erro_RAW_vs_estimativa_prevista": 4.6565959768707366e-10,
+    "maior_desvio_estima_vs_sensor_saudavel": 4.6565959768707366e-10
+  }
+]

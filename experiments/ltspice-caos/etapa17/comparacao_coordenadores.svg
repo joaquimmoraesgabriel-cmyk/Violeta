@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="970" height="640" preserveAspectRatio="xMinYMin meet" viewBox="0 0 970 640" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="970" height="640"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-640)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="970" height="640" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="32" y="605" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,1210) scale(1,-1)">Etapa 17 | Quem distribui os 90 uA?</text>
+			<text x="32" y="581" style="font-family: Helvetica; font-size: 12px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,1162) scale(1,-1)">Alta demanda: mesmas 16 trajetorias por arquitetura, quatro condicoes do topo.</text>
+			<text x="32" y="530" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,1060) scale(1,-1)">Janelas corretas (de 272)</text>
+			<text x="32" y="484" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,968) scale(1,-1)">Referencia</text>
+			<rect x="127" y="478" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="127" y="478" width="196.54411764705878" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,49%); fill-rule: evenodd;"/>
+			<text x="405" y="483" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,966) scale(1,-1)">198</text>
+			<text x="32" y="436" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,872) scale(1,-1)">Comum + E</text>
+			<rect x="127" y="430" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="127" y="430" width="197.53676470588232" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,48%,50%); fill-rule: evenodd;"/>
+			<text x="405" y="435" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,870) scale(1,-1)">199</text>
+			<text x="32" y="388" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,776) scale(1,-1)">Grupos + E</text>
+			<rect x="127" y="382" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="127" y="382" width="172.72058823529414" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(78%,50%,12%); fill-rule: evenodd;"/>
+			<text x="405" y="387" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,774) scale(1,-1)">174</text>
+			<text x="127" y="350" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,38%,45%); stroke:none;" transform="translate(0,700) scale(1,-1)">0 a 272 janelas</text>
+			<text x="508" y="530" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,1060) scale(1,-1)">Corretas nos dois passos (de 136)</text>
+			<text x="508" y="484" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,968) scale(1,-1)">Referencia</text>
+			<rect x="603" y="478" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="603" y="478" width="154.8529411764706" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,49%); fill-rule: evenodd;"/>
+			<text x="881" y="483" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,966) scale(1,-1)">78</text>
+			<text x="508" y="436" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,872) scale(1,-1)">Comum + E</text>
+			<rect x="603" y="430" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="603" y="430" width="158.82352941176464" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,48%,50%); fill-rule: evenodd;"/>
+			<text x="881" y="435" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,870) scale(1,-1)">80</text>
+			<text x="508" y="388" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,776) scale(1,-1)">Grupos + E</text>
+			<rect x="603" y="382" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="603" y="382" width="138.97058823529414" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(78%,50%,12%); fill-rule: evenodd;"/>
+			<text x="881" y="387" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,774) scale(1,-1)">70</text>
+			<text x="603" y="350" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,38%,45%); stroke:none;" transform="translate(0,700) scale(1,-1)">0 a 136 pares</text>
+			<text x="32" y="292" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,584) scale(1,-1)">Residual de compensacao em Y</text>
+			<text x="32" y="246" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,492) scale(1,-1)">Referencia</text>
+			<rect x="127" y="240" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="127" y="240" width="183.22780787254226" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,49%); fill-rule: evenodd;"/>
+			<text x="405" y="245" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,490) scale(1,-1)">40.72</text>
+			<text x="32" y="198" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,396) scale(1,-1)">Comum + E</text>
+			<rect x="127" y="192" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="127" y="192" width="200.76855069615613" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,48%,50%); fill-rule: evenodd;"/>
+			<text x="405" y="197" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,394) scale(1,-1)">44.62</text>
+			<text x="32" y="150" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,300) scale(1,-1)">Grupos + E</text>
+			<rect x="127" y="144" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="127" y="144" width="219.69637621917974" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(78%,50%,12%); fill-rule: evenodd;"/>
+			<text x="405" y="149" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,298) scale(1,-1)">48.82</text>
+			<text x="127" y="112" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,38%,45%); stroke:none;" transform="translate(0,224) scale(1,-1)">0 a 60 uA; menor e melhor</text>
+			<text x="508" y="292" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,584) scale(1,-1)">Residual de compensacao em D + E</text>
+			<text x="508" y="246" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,492) scale(1,-1)">Referencia</text>
+			<rect x="603" y="240" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="603" y="240" width="190.6941591829351" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,40%,49%); fill-rule: evenodd;"/>
+			<text x="881" y="245" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,490) scale(1,-1)">21.19</text>
+			<text x="508" y="198" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,396) scale(1,-1)">Comum + E</text>
+			<rect x="603" y="192" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="603" y="192" width="171.50372261719417" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(8%,48%,50%); fill-rule: evenodd;"/>
+			<text x="881" y="197" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,394) scale(1,-1)">19.06</text>
+			<text x="508" y="150" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,300) scale(1,-1)">Grupos + E</text>
+			<rect x="603" y="144" width="270" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,91%,94%); fill-rule: evenodd;"/>
+			<rect x="603" y="144" width="149.45228944579367" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(78%,50%,12%); fill-rule: evenodd;"/>
+			<text x="881" y="149" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,298) scale(1,-1)">16.61</text>
+			<text x="603" y="112" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,38%,45%); stroke:none;" transform="translate(0,224) scale(1,-1)">0 a 30 uA; menor e melhor</text>
+			<text x="32" y="64" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,128) scale(1,-1)">Grupos: ABC / D+E. E atua ate 5 uA dentro do total; novas cotas com atraso de 20 us e RC de 50 us.</text>
+			<text x="32" y="44" style="font-family: Helvetica; font-size: 11px;fill: rgb(8%,14%,21%); stroke:none;" transform="translate(0,88) scale(1,-1)">Corrente aprovada nao significa logica validada. Consulte o relatorio para falhas e terceiro passo.</text>
+		</g>
+	</g>
+</svg>

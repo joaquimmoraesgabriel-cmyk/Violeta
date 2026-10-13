@@ -1,0 +1,665 @@
+[
+  {
+    "arquivo": "MLC_mapa_demo.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 50,
+    "controle": 1,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.214702665806,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6253393962851765,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_demo.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 100,
+    "controle": 1,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.202321499586,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6291291118376471,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_demo.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 200,
+    "controle": 1,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.180919989944,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6212418895641176,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_demo.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 350,
+    "controle": 1,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 1,
+    "janelas": 17,
+    "janelas_corretas": 17,
+    "menor_margem": 0.00973068363965,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6065063669317059,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_demo.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 500,
+    "controle": 1,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 9,
+    "menor_margem": -0.149721413851,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6112961190417059,
+    "falhas": [
+      {
+        "passo": 5,
+        "janela": 2,
+        "margem": -0.13520398736
+      },
+      {
+        "passo": 5,
+        "janela": 4,
+        "margem": -0.0610936693847
+      },
+      {
+        "passo": 5,
+        "janela": 6,
+        "margem": -0.0409295372665
+      },
+      {
+        "passo": 5,
+        "janela": 7,
+        "margem": -0.0266958307475
+      },
+      {
+        "passo": 5,
+        "janela": 10,
+        "margem": -0.0632170289755
+      },
+      {
+        "passo": 5,
+        "janela": 12,
+        "margem": -0.149721413851
+      },
+      {
+        "passo": 5,
+        "janela": 14,
+        "margem": -0.143667206168
+      },
+      {
+        "passo": 5,
+        "janela": 15,
+        "margem": -0.0303620193154
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_demo.log",
+    "frequencia_Hz": 500,
+    "latencia_us": null,
+    "controle": 0,
+    "execucoes": 1,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 17,
+    "janelas_corretas": 16,
+    "menor_margem": -0.000266061309958,
+    "pico_corrente_uA": 0.0,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 6,
+        "janela": 8,
+        "margem": -0.000266061309958
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 100,
+    "latencia_us": 50,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.223358541727,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6685902791216618,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 100,
+    "latencia_us": 100,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.226335570216,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6575975715946617,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 100,
+    "latencia_us": 200,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.25273296237,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6665800950566471,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 100,
+    "latencia_us": 350,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.230083122849,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6513449060943381,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 100,
+    "latencia_us": 500,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.230721816421,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.644462625150853,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 100,
+    "latencia_us": null,
+    "controle": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.0691101998091,
+    "pico_corrente_uA": 0.0,
+    "fracao_saturada": 0.0,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 50,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.214702665806,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6234656060661617,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 100,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.202321499586,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6264166680115146,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 200,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.122579023242,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6233554975387059,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 350,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 2,
+    "janelas": 68,
+    "janelas_corretas": 66,
+    "menor_margem": -0.365696191788,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6199986526804412,
+    "falhas": [
+      {
+        "passo": 37,
+        "janela": 7,
+        "margem": -0.365696191788
+      },
+      {
+        "passo": 40,
+        "janela": 10,
+        "margem": -0.0348825007677
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 500,
+    "latencia_us": 500,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 43,
+    "menor_margem": -0.183955788612,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.6001979773931471,
+    "falhas": [
+      {
+        "passo": 41,
+        "janela": 6,
+        "margem": -0.0479721315205
+      },
+      {
+        "passo": 41,
+        "janela": 13,
+        "margem": -0.183955788612
+      },
+      {
+        "passo": 41,
+        "janela": 14,
+        "margem": -0.0914526879787
+      },
+      {
+        "passo": 41,
+        "janela": 15,
+        "margem": -0.124622508883
+      },
+      {
+        "passo": 42,
+        "janela": 2,
+        "margem": -0.13520398736
+      },
+      {
+        "passo": 42,
+        "janela": 4,
+        "margem": -0.0610936693847
+      },
+      {
+        "passo": 42,
+        "janela": 6,
+        "margem": -0.0409295372665
+      },
+      {
+        "passo": 42,
+        "janela": 7,
+        "margem": -0.0266958307475
+      },
+      {
+        "passo": 42,
+        "janela": 10,
+        "margem": -0.0632170289755
+      },
+      {
+        "passo": 42,
+        "janela": 12,
+        "margem": -0.149721413851
+      },
+      {
+        "passo": 42,
+        "janela": 14,
+        "margem": -0.143667206168
+      },
+      {
+        "passo": 42,
+        "janela": 15,
+        "margem": -0.0303620193154
+      },
+      {
+        "passo": 43,
+        "janela": 2,
+        "margem": -0.0905191972852
+      },
+      {
+        "passo": 43,
+        "janela": 7,
+        "margem": -0.146797806025
+      },
+      {
+        "passo": 43,
+        "janela": 10,
+        "margem": -0.0499910973012
+      },
+      {
+        "passo": 43,
+        "janela": 12,
+        "margem": -0.147672355175
+      },
+      {
+        "passo": 43,
+        "janela": 13,
+        "margem": -0.108313933015
+      },
+      {
+        "passo": 43,
+        "janela": 15,
+        "margem": -0.0765709877014
+      },
+      {
+        "passo": 44,
+        "janela": 2,
+        "margem": -0.119304664433
+      },
+      {
+        "passo": 44,
+        "janela": 7,
+        "margem": -0.0851498618722
+      },
+      {
+        "passo": 44,
+        "janela": 9,
+        "margem": -0.10324819386
+      },
+      {
+        "passo": 44,
+        "janela": 10,
+        "margem": -0.126124873757
+      },
+      {
+        "passo": 44,
+        "janela": 11,
+        "margem": -0.122545175254
+      },
+      {
+        "passo": 44,
+        "janela": 14,
+        "margem": -0.112080961466
+      },
+      {
+        "passo": 44,
+        "janela": 15,
+        "margem": -0.100228391588
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 500,
+    "latencia_us": null,
+    "controle": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 2,
+    "janelas": 68,
+    "janelas_corretas": 66,
+    "menor_margem": -0.0242326389998,
+    "pico_corrente_uA": 0.0,
+    "fracao_saturada": 0.0,
+    "falhas": [
+      {
+        "passo": 45,
+        "janela": 7,
+        "margem": -0.0242326389998
+      },
+      {
+        "passo": 46,
+        "janela": 8,
+        "margem": -0.000266061309958
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 1000,
+    "latencia_us": 50,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.207167327404,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.5719881354234854,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 1000,
+    "latencia_us": 100,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.15404419601,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.5703741292565736,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 1000,
+    "latencia_us": 200,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.0503848530352,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.5671080872801176,
+    "falhas": []
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 1000,
+    "latencia_us": 350,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 60,
+    "menor_margem": -0.0733138695359,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.5599257583258824,
+    "falhas": [
+      {
+        "passo": 61,
+        "janela": 11,
+        "margem": -0.0667342990637
+      },
+      {
+        "passo": 61,
+        "janela": 15,
+        "margem": -0.0289547089487
+      },
+      {
+        "passo": 62,
+        "janela": 8,
+        "margem": -0.0138116776943
+      },
+      {
+        "passo": 63,
+        "janela": 7,
+        "margem": -0.0239321440458
+      },
+      {
+        "passo": 63,
+        "janela": 12,
+        "margem": -0.0299976170063
+      },
+      {
+        "passo": 64,
+        "janela": 7,
+        "margem": -0.0733138695359
+      },
+      {
+        "passo": 64,
+        "janela": 10,
+        "margem": -0.0143048092723
+      },
+      {
+        "passo": 64,
+        "janela": 14,
+        "margem": -0.0668403804302
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 1000,
+    "latencia_us": 500,
+    "controle": 1,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 0,
+    "janelas": 68,
+    "janelas_corretas": 50,
+    "menor_margem": -0.0795578509569,
+    "pico_corrente_uA": 19.9999994948,
+    "fracao_saturada": 0.5613010048054999,
+    "falhas": [
+      {
+        "passo": 65,
+        "janela": 4,
+        "margem": -0.0208361428231
+      },
+      {
+        "passo": 65,
+        "janela": 7,
+        "margem": -0.0608645863831
+      },
+      {
+        "passo": 65,
+        "janela": 8,
+        "margem": -0.0722542181611
+      },
+      {
+        "passo": 65,
+        "janela": 11,
+        "margem": -0.058453630656
+      },
+      {
+        "passo": 65,
+        "janela": 13,
+        "margem": -0.0497017726302
+      },
+      {
+        "passo": 66,
+        "janela": 4,
+        "margem": -0.0208361409605
+      },
+      {
+        "passo": 66,
+        "janela": 7,
+        "margem": -0.0608645863831
+      },
+      {
+        "passo": 66,
+        "janela": 8,
+        "margem": -0.0722542181611
+      },
+      {
+        "passo": 66,
+        "janela": 11,
+        "margem": -0.058453630656
+      },
+      {
+        "passo": 66,
+        "janela": 13,
+        "margem": -0.0497017726302
+      },
+      {
+        "passo": 67,
+        "janela": 7,
+        "margem": -0.0795578509569
+      },
+      {
+        "passo": 67,
+        "janela": 11,
+        "margem": -0.0147945918143
+      },
+      {
+        "passo": 67,
+        "janela": 12,
+        "margem": -0.0237401928753
+      },
+      {
+        "passo": 67,
+        "janela": 14,
+        "margem": -0.0187681317329
+      },
+      {
+        "passo": 68,
+        "janela": 7,
+        "margem": -0.0795578509569
+      },
+      {
+        "passo": 68,
+        "janela": 11,
+        "margem": -0.0147945918143
+      },
+      {
+        "passo": 68,
+        "janela": 12,
+        "margem": -0.0237401928753
+      },
+      {
+        "passo": 68,
+        "janela": 14,
+        "margem": -0.0187681317329
+      }
+    ]
+  },
+  {
+    "arquivo": "MLC_mapa_validacao.log",
+    "frequencia_Hz": 1000,
+    "latencia_us": null,
+    "controle": 0,
+    "execucoes": 4,
+    "execucoes_totalmente_corretas": 4,
+    "janelas": 68,
+    "janelas_corretas": 68,
+    "menor_margem": 0.116434343159,
+    "pico_corrente_uA": 0.0,
+    "fracao_saturada": 0.0,
+    "falhas": []
+  }
+]

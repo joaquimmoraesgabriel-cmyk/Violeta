@@ -1,0 +1,749 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa6\MLC_dois_pilares_demo.cir
+Start Time: Sun Oct 11 21:04:32 2026
+Options:plotwinsize=0 reltol=1e-5 vntol=1e-7 abstol=1e-10
+
+.step topologia=0
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+abstol = 1e-10
+reltol = 1e-05
+volttol = 1e-07
+Per .tran options, skipping operating point for transient analysis.
+
+.step topologia=1
+
+.step topologia=2
+
+.step topologia=3
+Total elapsed time: 13.295 seconds.
+Total iterations: 713196
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa6\MLC_dois_pilares_demo.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\etapa6\MLC_dois_pilares.inc
+
+
+Measurement: minimo_00
+  step	MIN(V(x))	FROM	TO
+     1	-1.38856947422	0.03	0.049
+     2	-1.37258708477	0.03	0.049
+     3	-1.37186658382	0.03	0.049
+     4	-1.36080777645	0.03	0.049
+
+Measurement: maximo_00
+  step	MAX(V(x))	FROM	TO
+     1	-0.53210657835	0.03	0.049
+     2	-0.435386240482	0.03	0.049
+     3	-0.531478762627	0.03	0.049
+     4	-0.511457741261	0.03	0.049
+
+Measurement: media_00
+  step	AVG(V(x))	FROM	TO
+     1	-1.02793128234	0.03	0.049
+     2	-1.01041018607	0.03	0.049
+     3	-1.02563230525	0.03	0.049
+     4	-1.01033389983	0.03	0.049
+
+Measurement: positivo_00
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.03	0.049
+     2	0	0.03	0.049
+     3	0	0.03	0.049
+     4	0	0.03	0.049
+
+Measurement: saturado_a_00
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.03	0.049
+     2	0	0.03	0.049
+     3	0	0.03	0.049
+     4	0.165327302631	0.03	0.049
+
+Measurement: saturado_b_00
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.03	0.049
+     2	0	0.03	0.049
+     3	0	0.03	0.049
+     4	0.392487664474	0.03	0.049
+
+Measurement: minimo_01
+  step	MIN(V(x))	FROM	TO
+     1	-1.38923346996	0.08	0.099
+     2	-1.36955881119	0.08	0.099
+     3	-1.36905705929	0.08	0.099
+     4	-1.35778748989	0.08	0.099
+
+Measurement: maximo_01
+  step	MAX(V(x))	FROM	TO
+     1	-0.613732814789	0.08	0.099
+     2	-0.456508040428	0.08	0.099
+     3	-0.516752779484	0.08	0.099
+     4	-0.502551138401	0.08	0.099
+
+Measurement: media_01
+  step	AVG(V(x))	FROM	TO
+     1	-1.02857592361	0.08	0.099
+     2	-1.00747757826	0.08	0.099
+     3	-1.02157406881	0.08	0.099
+     4	-1.00746703385	0.08	0.099
+
+Measurement: positivo_01
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.08	0.099
+     2	0	0.08	0.099
+     3	0	0.08	0.099
+     4	0	0.08	0.099
+
+Measurement: saturado_a_01
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.08	0.099
+     2	0	0.08	0.099
+     3	0	0.08	0.099
+     4	0.155188322369	0.08	0.099
+
+Measurement: saturado_b_01
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.08	0.099
+     2	0	0.08	0.099
+     3	0	0.08	0.099
+     4	0.347415657893	0.08	0.099
+
+Measurement: minimo_02
+  step	MIN(V(x))	FROM	TO
+     1	-1.35977911949	0.13	0.149
+     2	-1.356544137	0.13	0.149
+     3	-1.40541803837	0.13	0.149
+     4	-1.40549337864	0.13	0.149
+
+Measurement: maximo_02
+  step	MAX(V(x))	FROM	TO
+     1	-0.164073586464	0.13	0.149
+     2	0.0597485490143	0.13	0.149
+     3	-0.256793558598	0.13	0.149
+     4	-0.302486747503	0.13	0.149
+
+Measurement: media_02
+  step	AVG(V(x))	FROM	TO
+     1	-0.874267883345	0.13	0.149
+     2	-0.780723008387	0.13	0.149
+     3	-0.8900054027	0.13	0.149
+     4	-0.878317270393	0.13	0.149
+
+Measurement: positivo_02
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.13	0.149
+     2	0.0112936612398	0.13	0.149
+     3	0	0.13	0.149
+     4	0	0.13	0.149
+
+Measurement: saturado_a_02
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.13	0.149
+     2	0	0.13	0.149
+     3	0	0.13	0.149
+     4	0.0868001644738	0.13	0.149
+
+Measurement: saturado_b_02
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.13	0.149
+     2	0	0.13	0.149
+     3	0	0.13	0.149
+     4	0.345412828948	0.13	0.149
+
+Measurement: minimo_03
+  step	MIN(V(x))	FROM	TO
+     1	-1.38955533504	0.18	0.199
+     2	-1.37311458588	0.18	0.199
+     3	-1.37196886539	0.18	0.199
+     4	-1.36123669147	0.18	0.199
+
+Measurement: maximo_03
+  step	MAX(V(x))	FROM	TO
+     1	-0.574010848999	0.18	0.199
+     2	-0.487613081932	0.18	0.199
+     3	-0.515629529953	0.18	0.199
+     4	-0.51276832819	0.18	0.199
+
+Measurement: media_03
+  step	AVG(V(x))	FROM	TO
+     1	-1.03331461057	0.18	0.199
+     2	-1.01763906272	0.18	0.199
+     3	-1.02705557633	0.18	0.199
+     4	-1.01329336363	0.18	0.199
+
+Measurement: positivo_03
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.18	0.199
+     2	0	0.18	0.199
+     3	0	0.18	0.199
+     4	0	0.18	0.199
+
+Measurement: saturado_a_03
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.18	0.199
+     2	0	0.18	0.199
+     3	0	0.18	0.199
+     4	0.158731907895	0.18	0.199
+
+Measurement: saturado_b_03
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.18	0.199
+     2	0	0.18	0.199
+     3	0	0.18	0.199
+     4	0.384269375002	0.18	0.199
+
+Measurement: minimo_04
+  step	MIN(V(x))	FROM	TO
+     1	-1.40219473839	0.23	0.249
+     2	-1.42478168011	0.23	0.249
+     3	-1.40886425972	0.23	0.249
+     4	-1.38346302509	0.23	0.249
+
+Measurement: maximo_04
+  step	MAX(V(x))	FROM	TO
+     1	-0.194768890738	0.23	0.249
+     2	0.0780238434672	0.23	0.249
+     3	-0.128956213593	0.23	0.249
+     4	-0.29051104188	0.23	0.249
+
+Measurement: media_04
+  step	AVG(V(x))	FROM	TO
+     1	-0.866889658643	0.23	0.249
+     2	-0.782414027006	0.23	0.249
+     3	-0.822231862681	0.23	0.249
+     4	-0.897780362408	0.23	0.249
+
+Measurement: positivo_04
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.23	0.249
+     2	0.0249793756032	0.23	0.249
+     3	0	0.23	0.249
+     4	0	0.23	0.249
+
+Measurement: saturado_a_04
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.23	0.249
+     2	0	0.23	0.249
+     3	0	0.23	0.249
+     4	0.0954777960527	0.23	0.249
+
+Measurement: saturado_b_04
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.23	0.249
+     2	0	0.23	0.249
+     3	0	0.23	0.249
+     4	0.374087532893	0.23	0.249
+
+Measurement: minimo_05
+  step	MIN(V(x))	FROM	TO
+     1	-1.38081693649	0.28	0.299
+     2	-1.37246537209	0.28	0.299
+     3	-1.37057423592	0.28	0.299
+     4	-1.35739052296	0.28	0.299
+
+Measurement: maximo_05
+  step	MAX(V(x))	FROM	TO
+     1	-0.559615135193	0.28	0.299
+     2	-0.525991380215	0.28	0.299
+     3	-0.539911866188	0.28	0.299
+     4	-0.498595803976	0.28	0.299
+
+Measurement: media_05
+  step	AVG(V(x))	FROM	TO
+     1	-1.03268906536	0.28	0.299
+     2	-1.02066601714	0.28	0.299
+     3	-1.02889416225	0.28	0.299
+     4	-1.00476746297	0.28	0.299
+
+Measurement: positivo_05
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.28	0.299
+     2	0	0.28	0.299
+     3	0	0.28	0.299
+     4	0	0.28	0.299
+
+Measurement: saturado_a_05
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.28	0.299
+     2	0	0.28	0.299
+     3	0	0.28	0.299
+     4	0.146504111842	0.28	0.299
+
+Measurement: saturado_b_05
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.28	0.299
+     2	0	0.28	0.299
+     3	0	0.28	0.299
+     4	0.36040542763	0.28	0.299
+
+Measurement: minimo_06
+  step	MIN(V(x))	FROM	TO
+     1	0.311516106129	0.33	0.349
+     2	-0.813450400023	0.33	0.349
+     3	0.193428069353	0.33	0.349
+     4	0.265517652035	0.33	0.349
+
+Measurement: maximo_06
+  step	MAX(V(x))	FROM	TO
+     1	1.38385689259	0.33	0.349
+     2	1.38739681244	0.33	0.349
+     3	1.39022243023	0.33	0.349
+     4	1.38053917885	0.33	0.349
+
+Measurement: media_06
+  step	AVG(V(x))	FROM	TO
+     1	0.931382035877	0.33	0.349
+     2	0.774647076492	0.33	0.349
+     3	0.87367376864	0.33	0.349
+     4	0.911355387385	0.33	0.349
+
+Measurement: positivo_06
+  step	AVG(V(saida))	FROM	TO
+     1	1	0.33	0.349
+     2	0.946097569291	0.33	0.349
+     3	1	0.33	0.349
+     4	1	0.33	0.349
+
+Measurement: saturado_a_06
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.33	0.349
+     2	0	0.33	0.349
+     3	0	0.33	0.349
+     4	0.12269243421	0.33	0.349
+
+Measurement: saturado_b_06
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.33	0.349
+     2	0	0.33	0.349
+     3	0	0.33	0.349
+     4	0.372545225745	0.33	0.349
+
+Measurement: minimo_07
+  step	MIN(V(x))	FROM	TO
+     1	-1.37715998497	0.38	0.399
+     2	-1.37508749962	0.38	0.399
+     3	-1.38883543015	0.38	0.399
+     4	-1.39717292786	0.38	0.399
+
+Measurement: maximo_07
+  step	MAX(V(x))	FROM	TO
+     1	1.3074452877	0.38	0.399
+     2	0.00117544422392	0.38	0.399
+     3	-0.057912953198	0.38	0.399
+     4	-0.254629254341	0.38	0.399
+
+Measurement: media_07
+  step	AVG(V(x))	FROM	TO
+     1	-0.683353914465	0.38	0.399
+     2	-0.876527764379	0.38	0.399
+     3	-0.856032569572	0.38	0.399
+     4	-0.905445410838	0.38	0.399
+
+Measurement: positivo_07
+  step	AVG(V(saida))	FROM	TO
+     1	0.0913682182857	0.38	0.399
+     2	0.00153738615049	0.38	0.399
+     3	0	0.38	0.399
+     4	0	0.38	0.399
+
+Measurement: saturado_a_07
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.38	0.399
+     2	0	0.38	0.399
+     3	0	0.38	0.399
+     4	0.111044407894	0.38	0.399
+
+Measurement: saturado_b_07
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.38	0.399
+     2	0	0.38	0.399
+     3	0	0.38	0.399
+     4	0.385844506466	0.38	0.399
+
+Measurement: minimo_08
+  step	MIN(V(x))	FROM	TO
+     1	-1.39534449577	0.43	0.449
+     2	-1.44612753391	0.43	0.449
+     3	-1.38166511059	0.43	0.449
+     4	-1.39844083786	0.43	0.449
+
+Measurement: maximo_08
+  step	MAX(V(x))	FROM	TO
+     1	-0.200377598405	0.43	0.449
+     2	0.121393121779	0.43	0.449
+     3	-0.245327875018	0.43	0.449
+     4	-0.149250939488	0.43	0.449
+
+Measurement: media_08
+  step	AVG(V(x))	FROM	TO
+     1	-0.867513464764	0.43	0.449
+     2	-0.77003017312	0.43	0.449
+     3	-0.897792654713	0.43	0.449
+     4	-0.871416625654	0.43	0.449
+
+Measurement: positivo_08
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.43	0.449
+     2	0.0305015845319	0.43	0.449
+     3	0	0.43	0.449
+     4	0	0.43	0.449
+
+Measurement: saturado_a_08
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.43	0.449
+     2	0	0.43	0.449
+     3	0	0.43	0.449
+     4	0.0938166118417	0.43	0.449
+
+Measurement: saturado_b_08
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.43	0.449
+     2	0	0.43	0.449
+     3	0	0.43	0.449
+     4	0.345412006578	0.43	0.449
+
+Measurement: minimo_09
+  step	MIN(V(x))	FROM	TO
+     1	-1.42839610577	0.48	0.499
+     2	-1.38111257553	0.48	0.499
+     3	-1.40747392178	0.48	0.499
+     4	-1.40918326378	0.48	0.499
+
+Measurement: maximo_09
+  step	MAX(V(x))	FROM	TO
+     1	-0.275934129953	0.48	0.499
+     2	1.04326562234	0.48	0.499
+     3	-0.267744839191	0.48	0.499
+     4	-0.236684560776	0.48	0.499
+
+Measurement: media_09
+  step	AVG(V(x))	FROM	TO
+     1	-0.881521944732	0.48	0.499
+     2	-0.817307761183	0.48	0.499
+     3	-0.865665159102	0.48	0.499
+     4	-0.870906056855	0.48	0.499
+
+Measurement: positivo_09
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.48	0.499
+     2	0.0532349953096	0.48	0.499
+     3	0	0.48	0.499
+     4	0	0.48	0.499
+
+Measurement: saturado_a_09
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.48	0.499
+     2	0	0.48	0.499
+     3	0	0.48	0.499
+     4	0.124081414473	0.48	0.499
+
+Measurement: saturado_b_09
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.48	0.499
+     2	0	0.48	0.499
+     3	0	0.48	0.499
+     4	0.345775953939	0.48	0.499
+
+Measurement: minimo_10
+  step	MIN(V(x))	FROM	TO
+     1	-1.36251842976	0.53	0.549
+     2	-1.40711379051	0.53	0.549
+     3	-1.39651679993	0.53	0.549
+     4	-1.39584290981	0.53	0.549
+
+Measurement: maximo_10
+  step	MAX(V(x))	FROM	TO
+     1	0.0541094057262	0.53	0.549
+     2	-0.0216350033879	0.53	0.549
+     3	-0.251164108515	0.53	0.549
+     4	-0.246379479766	0.53	0.549
+
+Measurement: media_10
+  step	AVG(V(x))	FROM	TO
+     1	-0.861192182733	0.53	0.549
+     2	-0.781296938405	0.53	0.549
+     3	-0.904045378319	0.53	0.549
+     4	-0.85713192325	0.53	0.549
+
+Measurement: positivo_10
+  step	AVG(V(saida))	FROM	TO
+     1	0.0108396211339	0.53	0.549
+     2	0	0.53	0.549
+     3	0	0.53	0.549
+     4	0	0.53	0.549
+
+Measurement: saturado_a_10
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.53	0.549
+     2	0	0.53	0.549
+     3	0	0.53	0.549
+     4	0.122270559211	0.53	0.549
+
+Measurement: saturado_b_10
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.53	0.549
+     2	0	0.53	0.549
+     3	0	0.53	0.549
+     4	0.392472861838	0.53	0.549
+
+Measurement: minimo_11
+  step	MIN(V(x))	FROM	TO
+     1	-1.29059135914	0.58	0.599
+     2	-1.34283638	0.58	0.599
+     3	0.0921679660678	0.58	0.599
+     4	0.254764527082	0.58	0.599
+
+Measurement: maximo_11
+  step	MAX(V(x))	FROM	TO
+     1	1.41546833515	0.58	0.599
+     2	1.42154431343	0.58	0.599
+     3	1.40847814083	0.58	0.599
+     4	1.41017270088	0.58	0.599
+
+Measurement: media_11
+  step	AVG(V(x))	FROM	TO
+     1	0.648203201846	0.58	0.599
+     2	0.605593407507	0.58	0.599
+     3	0.841332158679	0.58	0.599
+     4	0.872131929432	0.58	0.599
+
+Measurement: positivo_11
+  step	AVG(V(saida))	FROM	TO
+     1	0.85244830155	0.58	0.599
+     2	0.858487761549	0.58	0.599
+     3	1	0.58	0.599
+     4	1	0.58	0.599
+
+Measurement: saturado_a_11
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.58	0.599
+     2	0	0.58	0.599
+     3	0	0.58	0.599
+     4	0.0966710526321	0.58	0.599
+
+Measurement: saturado_b_11
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.58	0.599
+     2	0	0.58	0.599
+     3	0	0.58	0.599
+     4	0.360423519739	0.58	0.599
+
+Measurement: minimo_12
+  step	MIN(V(x))	FROM	TO
+     1	-1.39120018482	0.63	0.649
+     2	-1.43467760086	0.63	0.649
+     3	-1.40650773048	0.63	0.649
+     4	-1.40373659134	0.63	0.649
+
+Measurement: maximo_12
+  step	MAX(V(x))	FROM	TO
+     1	-0.00609937822446	0.63	0.649
+     2	1.35418510437	0.63	0.649
+     3	-0.232374086976	0.63	0.649
+     4	-0.281207501888	0.63	0.649
+
+Measurement: media_12
+  step	AVG(V(x))	FROM	TO
+     1	-0.840574064577	0.63	0.649
+     2	-0.605571483127	0.63	0.649
+     3	-0.888453837963	0.63	0.649
+     4	-0.913700072345	0.63	0.649
+
+Measurement: positivo_12
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.63	0.649
+     2	0.142832353482	0.63	0.649
+     3	0	0.63	0.649
+     4	0	0.63	0.649
+
+Measurement: saturado_a_12
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.63	0.649
+     2	0	0.63	0.649
+     3	0	0.63	0.649
+     4	0.115251644737	0.63	0.649
+
+Measurement: saturado_b_12
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.63	0.649
+     2	0	0.63	0.649
+     3	0	0.63	0.649
+     4	0.360407894739	0.63	0.649
+
+Measurement: minimo_13
+  step	MIN(V(x))	FROM	TO
+     1	-1.35005104542	0.68	0.699
+     2	-1.40746486187	0.68	0.699
+     3	-1.41191875935	0.68	0.699
+     4	-1.39159870148	0.68	0.699
+
+Measurement: maximo_13
+  step	MAX(V(x))	FROM	TO
+     1	1.29300582409	0.68	0.699
+     2	-0.181628167629	0.68	0.699
+     3	-0.249306678772	0.68	0.699
+     4	-0.263630896807	0.68	0.699
+
+Measurement: media_13
+  step	AVG(V(x))	FROM	TO
+     1	-0.348213915219	0.68	0.699
+     2	-0.87615021851	0.68	0.699
+     3	-0.899201810457	0.68	0.699
+     4	-0.894336670648	0.68	0.699
+
+Measurement: positivo_13
+  step	AVG(V(saida))	FROM	TO
+     1	0.344869187651	0.68	0.699
+     2	0	0.68	0.699
+     3	0	0.68	0.699
+     4	0	0.68	0.699
+
+Measurement: saturado_a_13
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.68	0.699
+     2	0	0.68	0.699
+     3	0	0.68	0.699
+     4	0.115481907895	0.68	0.699
+
+Measurement: saturado_b_13
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.68	0.699
+     2	0	0.68	0.699
+     3	0	0.68	0.699
+     4	0.391744703959	0.68	0.699
+
+Measurement: minimo_14
+  step	MIN(V(x))	FROM	TO
+     1	-1.38527011871	0.73	0.749
+     2	0.316315382719	0.73	0.749
+     3	0.22710634768	0.73	0.749
+     4	0.255317807198	0.73	0.749
+
+Measurement: maximo_14
+  step	MAX(V(x))	FROM	TO
+     1	1.38000905514	0.73	0.749
+     2	1.4339928627	0.73	0.749
+     3	1.41585099697	0.73	0.749
+     4	1.38811671734	0.73	0.749
+
+Measurement: media_14
+  step	AVG(V(x))	FROM	TO
+     1	0.358407029197	0.73	0.749
+     2	0.898478499063	0.73	0.749
+     3	0.880718769457	0.73	0.749
+     4	0.903145214563	0.73	0.749
+
+Measurement: positivo_14
+  step	AVG(V(saida))	FROM	TO
+     1	0.70298733998	0.73	0.749
+     2	1	0.73	0.749
+     3	1	0.73	0.749
+     4	1	0.73	0.749
+
+Measurement: saturado_a_14
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.73	0.749
+     2	0	0.73	0.749
+     3	0	0.73	0.749
+     4	0.131967927632	0.73	0.749
+
+Measurement: saturado_b_14
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.73	0.749
+     2	0	0.73	0.749
+     3	0	0.73	0.749
+     4	0.366638076428	0.73	0.749
+
+Measurement: minimo_15
+  step	MIN(V(x))	FROM	TO
+     1	-0.219723895192	0.78	0.799
+     2	-1.32942199707	0.78	0.799
+     3	0.0149852707982	0.78	0.799
+     4	0.273990869522	0.78	0.799
+
+Measurement: maximo_15
+  step	MAX(V(x))	FROM	TO
+     1	1.46653270721	0.78	0.799
+     2	1.46285009384	0.78	0.799
+     3	1.40889561176	0.78	0.799
+     4	1.39039480686	0.78	0.799
+
+Measurement: media_15
+  step	AVG(V(x))	FROM	TO
+     1	0.80405897732	0.78	0.799
+     2	0.395751472052	0.78	0.799
+     3	0.801954678331	0.78	0.799
+     4	0.909252408092	0.78	0.799
+
+Measurement: positivo_15
+  step	AVG(V(saida))	FROM	TO
+     1	0.95491808043	0.78	0.799
+     2	0.727384184193	0.78	0.799
+     3	1	0.78	0.799
+     4	1	0.78	0.799
+
+Measurement: saturado_a_15
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.78	0.799
+     2	0	0.78	0.799
+     3	0	0.78	0.799
+     4	0.106076480264	0.78	0.799
+
+Measurement: saturado_b_15
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.78	0.799
+     2	0	0.78	0.799
+     3	0	0.78	0.799
+     4	0.345408717107	0.78	0.799
+
+Measurement: minimo_16
+  step	MIN(V(x))	FROM	TO
+     1	-1.37854731083	0.83	0.849
+     2	-1.37355589867	0.83	0.849
+     3	-1.36604857445	0.83	0.849
+     4	-1.36049211025	0.83	0.849
+
+Measurement: maximo_16
+  step	MAX(V(x))	FROM	TO
+     1	-0.557371973991	0.83	0.849
+     2	-0.432680219412	0.83	0.849
+     3	-0.496216863394	0.83	0.849
+     4	-0.503884792328	0.83	0.849
+
+Measurement: media_16
+  step	AVG(V(x))	FROM	TO
+     1	-1.02285178421	0.83	0.849
+     2	-1.00679580401	0.83	0.849
+     3	-1.02242937418	0.83	0.849
+     4	-1.01002906382	0.83	0.849
+
+Measurement: positivo_16
+  step	AVG(V(saida))	FROM	TO
+     1	0	0.83	0.849
+     2	0	0.83	0.849
+     3	0	0.83	0.849
+     4	0	0.83	0.849
+
+Measurement: saturado_a_16
+  step	AVG(V(saturado_a))	FROM	TO
+     1	0	0.83	0.849
+     2	0	0.83	0.849
+     3	0	0.83	0.849
+     4	0.156891447369	0.83	0.849
+
+Measurement: saturado_b_16
+  step	AVG(V(saturado_b))	FROM	TO
+     1	0	0.83	0.849
+     2	0	0.83	0.849
+     3	0	0.83	0.849
+     4	0.365014624882	0.83	0.849
+
+Measurement: pico_orcamento
+  step	MAX(V(orcamento))	FROM	TO
+     1	0	0	0.85
+     2	7.23555640434e-05	0	0.85
+     3	6.17789337412e-05	0	0.85
+     4	9.99999974738e-05	0	0.85

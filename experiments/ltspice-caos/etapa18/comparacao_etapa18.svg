@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="980" height="760" preserveAspectRatio="xMinYMin meet" viewBox="0 0 980 760" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="980" height="760"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-760)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="980" height="760" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="30" y="722" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1444) scale(1,-1)">Etapa 18 | Cotas de corrente e recuperacao</text>
+			<text x="30" y="696" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1392) scale(1,-1)">LTspice: 64 trajetorias novas. E participa do mesmo orcamento de 90 uA.</text>
+			<text x="30" y="609" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1218) scale(1,-1)">Cota Y=0 / D=90: janelas corretas</text>
+			<text x="30" y="571" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1142) scale(1,-1)">Reserva off</text>
+			<rect x="150" y="566" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="150" y="566" width="162.4264705882353" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,33%,31%); fill-rule: evenodd;"/>
+			<text x="395" y="570" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1140) scale(1,-1)">47/68</text>
+			<text x="30" y="529" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1058) scale(1,-1)">Reserva on</text>
+			<rect x="150" y="524" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="150" y="524" width="148.6029411764706" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,47%,52%); fill-rule: evenodd;"/>
+			<text x="395" y="528" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1056) scale(1,-1)">43/68</text>
+			<text x="30" y="487" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,974) scale(1,-1)">Saudavel on</text>
+			<rect x="150" y="482" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="150" y="482" width="165.88235294117646" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,47%,54%); fill-rule: evenodd;"/>
+			<text x="395" y="486" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,972) scale(1,-1)">48/68</text>
+			<text x="30" y="450" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,39%,47%); stroke:none;" transform="translate(0,900) scale(1,-1)">Duas condicoes iniciais; passos maximos 1.25 / 0.625 us.</text>
+			<text x="515" y="609" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1218) scale(1,-1)">L2 saudavel: janelas corretas</text>
+			<text x="515" y="571" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1142) scale(1,-1)">20/50 us, off</text>
+			<rect x="635" y="566" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="635" y="566" width="176.25" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,47%,54%); fill-rule: evenodd;"/>
+			<text x="880" y="570" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1140) scale(1,-1)">51/68</text>
+			<text x="515" y="529" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1058) scale(1,-1)">5/10 us, off</text>
+			<rect x="635" y="524" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="635" y="524" width="190.07352941176464" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,52%,17%); fill-rule: evenodd;"/>
+			<text x="880" y="528" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,1056) scale(1,-1)">55/68</text>
+			<text x="515" y="487" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,974) scale(1,-1)">5/10 us, V2</text>
+			<rect x="635" y="482" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="635" y="482" width="193.52941176470586" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,47%,52%); fill-rule: evenodd;"/>
+			<text x="880" y="486" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,972) scale(1,-1)">56/68</text>
+			<text x="515" y="450" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,39%,47%); stroke:none;" transform="translate(0,900) scale(1,-1)">Atraso / RC. Off desabilita apenas a comutacao do fiscal.</text>
+			<text x="30" y="379" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,758) scale(1,-1)">L2 5/10 saudavel: alarmes indevidos</text>
+			<text x="30" y="341" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,682) scale(1,-1)">Fiscal V1</text>
+			<rect x="150" y="336" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="150" y="336" width="235.0" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,33%,31%); fill-rule: evenodd;"/>
+			<text x="395" y="340" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,680) scale(1,-1)">4/4</text>
+			<text x="30" y="299" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,598) scale(1,-1)">Fiscal V2</text>
+			<rect x="150" y="294" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="150" y="294" width="0" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,47%,52%); fill-rule: evenodd;"/>
+			<text x="395" y="298" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,596) scale(1,-1)">0/4</text>
+			<text x="30" y="220" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,39%,47%); stroke:none;" transform="translate(0,440) scale(1,-1)">Contagem de trajetorias, nao janelas; menor e melhor.</text>
+			<text x="515" y="379" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,758) scale(1,-1)">L2 V2: falhas de cota detectadas</text>
+			<text x="515" y="341" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,682) scale(1,-1)">Replay</text>
+			<rect x="635" y="336" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="635" y="336" width="235.0" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,47%,52%); fill-rule: evenodd;"/>
+			<text x="880" y="340" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,680) scale(1,-1)">2/2</text>
+			<text x="515" y="299" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,598) scale(1,-1)">Vies extremo</text>
+			<rect x="635" y="294" width="235" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(88%,90%,92%); fill-rule: evenodd;"/>
+			<rect x="635" y="294" width="235.0" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,47%,52%); fill-rule: evenodd;"/>
+			<text x="880" y="298" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,596) scale(1,-1)">2/2</text>
+			<text x="515" y="220" style="font-family: Helvetica; font-size: 10px;fill: rgb(31%,39%,47%); stroke:none;" transform="translate(0,440) scale(1,-1)">Exploratorio: duas condicoes, apenas passo 0.625 us.</text>
+			<rect x="30" y="123" width="920" height="85" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,94%,89%); fill-rule: evenodd;"/>
+			<text x="45" y="184" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(54%,25%,20%); stroke:none;" transform="translate(0,368) scale(1,-1)">Pendencia: V1 alarmou em 4/4 trajetorias saudaveis nos cantos de tolerancia.</text>
+			<text x="45" y="162" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,324) scale(1,-1)">V2 ainda nao foi testada nesses cantos nem no terceiro passo.</text>
+			<text x="45" y="140" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,280) scale(1,-1)">Picos: shunts 90.023 uA; sondas 0 V 90.805 uA. Divergencia numerica pendente.</text>
+			<text x="30" y="80" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,160) scale(1,-1)">V2 muda a confirmacao RC de 20/40 us para 50/20 us; limiar de discrepancia permanece 6.5 uA.</text>
+			<text x="30" y="57" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,114) scale(1,-1)">Uma nota maior nao prova convergencia numerica. Consulte o relatorio para terceiro passo e tolerancias.</text>
+			<text x="30" y="34" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,68) scale(1,-1)">Os modelos ainda combinam atuadores genericos com controle comportamental; nao validam uma PCB.</text>
+		</g>
+	</g>
+</svg>

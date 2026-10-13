@@ -1,0 +1,20 @@
+* Calibracao: cada entrada injeta 10 uA de 10 a 11 ms.
+.param soma=0
+.param Ga=-0.75757m Gb=-0.40909m E=1
+R1 v1 v2 1770
+C1 v1 0 10n IC=0.1
+C2 v2 0 100n IC=0
+L1 v2 vl 18m IC=0
+Rcoil vl 0 12.5
+Bchua v1 0 I={Gb*V(v1)+(Ga-Gb)/2*(abs(V(v1)+E)-abs(V(v1)-E))}
+Bentrada 0 v1 I={if(time>=10m,if(time<11m,soma*10u,0),0)}
+.step param soma list 0 1 2
+.tran 0 13m 0 0.1u uic
+.options plotwinsize=0
+.save V(v1) V(v2)
+.meas tran y110 FIND V(v2) AT=11m
+.meas tran y112 FIND V(v2) AT=11.2m
+.meas tran y115 FIND V(v2) AT=11.5m
+.meas tran y120 FIND V(v2) AT=12m
+.meas tran y125 FIND V(v2) AT=12.5m
+.end

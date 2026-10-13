@@ -1,0 +1,88 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\joaqu\Violeta\experiments\ltspice-caos\MLC_AND_sequencia.cir
+Start Time: Sun Oct 11 19:46:22 2026
+Options:plotwinsize=0 reltol=1e-5 vntol=1e-7 abstol=1e-10
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+abstol = 1e-10
+reltol = 1e-05
+volttol = 1e-07
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 1.222 seconds.
+Total iterations: 511728
+
+Files loaded:
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\MLC_AND_sequencia.cir
+C:\Users\joaqu\Violeta\experiments\ltspice-caos\MLC_base.inc
+
+media_00: AVG(V(x))=-0.87489188869 FROM 0.03 TO 0.049
+minimo_00: MIN(V(x))=-1.40578496456 FROM 0.03 TO 0.049
+maximo_00: MAX(V(x))=-0.295149058104 FROM 0.03 TO 0.049
+positivo_00: AVG(V(saida))=0 FROM 0.03 TO 0.049
+media_01: AVG(V(x))=-0.875144038887 FROM 0.08 TO 0.099
+minimo_01: MIN(V(x))=-1.40579247475 FROM 0.08 TO 0.099
+maximo_01: MAX(V(x))=-0.297632694244 FROM 0.08 TO 0.099
+positivo_01: AVG(V(saida))=0 FROM 0.08 TO 0.099
+media_02: AVG(V(x))=-0.883054720702 FROM 0.13 TO 0.149
+minimo_02: MIN(V(x))=-1.37165093422 FROM 0.13 TO 0.149
+maximo_02: MAX(V(x))=-0.249861299992 FROM 0.13 TO 0.149
+positivo_02: AVG(V(saida))=0 FROM 0.13 TO 0.149
+media_03: AVG(V(x))=-0.871989011091 FROM 0.18 TO 0.199
+minimo_03: MIN(V(x))=-1.40561890602 FROM 0.18 TO 0.199
+maximo_03: MAX(V(x))=-0.303558886051 FROM 0.18 TO 0.199
+positivo_03: AVG(V(saida))=0 FROM 0.18 TO 0.199
+media_04: AVG(V(x))=-0.870225672873 FROM 0.23 TO 0.249
+minimo_04: MIN(V(x))=-1.3772906065 FROM 0.23 TO 0.249
+maximo_04: MAX(V(x))=-0.250860065222 FROM 0.23 TO 0.249
+positivo_04: AVG(V(saida))=0 FROM 0.23 TO 0.249
+media_05: AVG(V(x))=-0.880891671505 FROM 0.28 TO 0.299
+minimo_05: MIN(V(x))=-1.40561628342 FROM 0.28 TO 0.299
+maximo_05: MAX(V(x))=-0.309387624264 FROM 0.28 TO 0.299
+positivo_05: AVG(V(saida))=0 FROM 0.28 TO 0.299
+media_06: AVG(V(x))=0.862621208571 FROM 0.33 TO 0.349
+minimo_06: MIN(V(x))=0.247767910361 FROM 0.33 TO 0.349
+maximo_06: MAX(V(x))=1.38129639626 FROM 0.33 TO 0.349
+positivo_06: AVG(V(saida))=1 FROM 0.33 TO 0.349
+media_07: AVG(V(x))=-0.847168395821 FROM 0.38 TO 0.399
+minimo_07: MIN(V(x))=-1.38034999371 FROM 0.38 TO 0.399
+maximo_07: MAX(V(x))=-0.261858671904 FROM 0.38 TO 0.399
+positivo_07: AVG(V(saida))=0 FROM 0.38 TO 0.399
+media_08: AVG(V(x))=-0.876300575957 FROM 0.43 TO 0.449
+minimo_08: MIN(V(x))=-1.37212729454 FROM 0.43 TO 0.449
+maximo_08: MAX(V(x))=-0.250433236361 FROM 0.43 TO 0.449
+positivo_08: AVG(V(saida))=0 FROM 0.43 TO 0.449
+media_09: AVG(V(x))=-0.853273866642 FROM 0.48 TO 0.499
+minimo_09: MIN(V(x))=-1.37220752239 FROM 0.48 TO 0.499
+maximo_09: MAX(V(x))=-0.251163005829 FROM 0.48 TO 0.499
+positivo_09: AVG(V(saida))=0 FROM 0.48 TO 0.499
+media_10: AVG(V(x))=-0.869003120339 FROM 0.53 TO 0.549
+minimo_10: MIN(V(x))=-1.36619770527 FROM 0.53 TO 0.549
+maximo_10: MAX(V(x))=-0.278911560774 FROM 0.53 TO 0.549
+positivo_10: AVG(V(saida))=0 FROM 0.53 TO 0.549
+media_11: AVG(V(x))=0.839816024133 FROM 0.58 TO 0.599
+minimo_11: MIN(V(x))=0.26832139492 FROM 0.58 TO 0.599
+maximo_11: MAX(V(x))=1.38185679913 FROM 0.58 TO 0.599
+positivo_11: AVG(V(saida))=1 FROM 0.58 TO 0.599
+media_12: AVG(V(x))=-0.846217881343 FROM 0.63 TO 0.649
+minimo_12: MIN(V(x))=-1.37966012955 FROM 0.63 TO 0.649
+maximo_12: MAX(V(x))=-0.24908798933 FROM 0.63 TO 0.649
+positivo_12: AVG(V(saida))=0 FROM 0.63 TO 0.649
+media_13: AVG(V(x))=-0.880990131956 FROM 0.68 TO 0.699
+minimo_13: MIN(V(x))=-1.38175404072 FROM 0.68 TO 0.699
+maximo_13: MAX(V(x))=-0.252736836672 FROM 0.68 TO 0.699
+positivo_13: AVG(V(saida))=0 FROM 0.68 TO 0.699
+media_14: AVG(V(x))=0.861664712386 FROM 0.73 TO 0.749
+minimo_14: MIN(V(x))=0.257871836424 FROM 0.73 TO 0.749
+maximo_14: MAX(V(x))=1.38203752041 FROM 0.73 TO 0.749
+positivo_14: AVG(V(saida))=1 FROM 0.73 TO 0.749
+media_15: AVG(V(x))=0.861709008552 FROM 0.78 TO 0.799
+minimo_15: MIN(V(x))=0.265577048063 FROM 0.78 TO 0.799
+maximo_15: MAX(V(x))=1.36859095097 FROM 0.78 TO 0.799
+positivo_15: AVG(V(saida))=1 FROM 0.78 TO 0.799
+media_16: AVG(V(x))=-0.862737893281 FROM 0.83 TO 0.849
+minimo_16: MIN(V(x))=-1.40575015545 FROM 0.83 TO 0.849
+maximo_16: MAX(V(x))=-0.299092948437 FROM 0.83 TO 0.849
+positivo_16: AVG(V(saida))=0 FROM 0.83 TO 0.849

@@ -1,0 +1,49 @@
+* Tres canais de atuacao: 100 uA compartilhados.
+.include MLC_tres_pilares.inc
+Va entrada_a 0 PWL(0.000000 0 0.050000 0 0.050001 0 0.100000 0 0.100001 0 0.150000 0 0.150001 0 0.200000 0 0.200001 1 0.250000 1 0.250001 0 0.300000 0 0.300001 1 0.350000 1 0.350001 0 0.400000 0 0.400001 0 0.450000 0 0.450001 1 0.500000 1 0.500001 0 0.550000 0 0.550001 1 0.600000 1 0.600001 1 0.650000 1 0.650001 1 0.700000 1 0.700001 1 0.750000 1 0.750001 1 0.800000 1 0.800001 0 0.850000 0)
+Vb entrada_b 0 PWL(0.000000 0 0.050000 0 0.050001 0 0.100000 0 0.100001 1 0.150000 1 0.150001 0 0.200000 0 0.200001 0 0.250000 0 0.250001 0 0.300000 0 0.300001 1 0.350000 1 0.350001 1 0.400000 1 0.400001 1 0.450000 1 0.450001 0 0.500000 0 0.500001 1 0.550000 1 0.550001 1 0.600000 1 0.600001 0 0.650000 0 0.650001 0 0.700000 0 0.700001 1 0.750000 1 0.750001 1 0.800000 1 0.800001 0 0.850000 0)
+.param caso=0 perfil=0
+.param perfil_c=table(caso,0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1)
+.param topologia=table(caso,0,0,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,0,17,0,18,1,19,1,20,2,21,2,22,3,23,3,24,4,25,4,26,5,27,5,28,6,29,6,30,7,31,7)
+.param x_inicial=table(caso,0,-0.37,1,0.37,2,-0.37,3,0.37,4,-0.37,5,0.37,6,-0.37,7,0.37,8,-0.37,9,0.37,10,-0.37,11,0.37,12,-0.37,13,0.37,14,-0.37,15,0.37,16,-0.37,17,0.37,18,-0.37,19,0.37,20,-0.37,21,0.37,22,-0.37,23,0.37,24,-0.37,25,0.37,26,-0.37,27,0.37,28,-0.37,29,0.37,30,-0.37,31,0.37)
+.param y_inicial=table(caso,0,-0.2,1,-0.2,2,-0.2,3,-0.2,4,-0.2,5,-0.2,6,-0.2,7,-0.2,8,-0.2,9,-0.2,10,-0.2,11,-0.2,12,-0.2,13,-0.2,14,-0.2,15,-0.2,16,-0.2,17,-0.2,18,-0.2,19,-0.2,20,-0.2,21,-0.2,22,-0.2,23,-0.2,24,-0.2,25,-0.2,26,-0.2,27,-0.2,28,-0.2,29,-0.2,30,-0.2,31,-0.2)
+.param passo=table(caso,0,5e-06,1,5e-06,2,5e-06,3,5e-06,4,5e-06,5,5e-06,6,5e-06,7,5e-06,8,5e-06,9,5e-06,10,5e-06,11,5e-06,12,5e-06,13,5e-06,14,5e-06,15,5e-06,16,5e-06,17,5e-06,18,5e-06,19,5e-06,20,5e-06,21,5e-06,22,5e-06,23,5e-06,24,5e-06,25,5e-06,26,5e-06,27,5e-06,28,5e-06,29,5e-06,30,5e-06,31,5e-06)
+.step param caso 0 31 1
+.save V(x) V(saida) V(referencia) V(ler) V(orcamento)
+.tran 0 0.85 0 {passo} uic
+.meas tran minimo_00 MIN V(x) FROM 0.030000 TO 0.049000
+.meas tran maximo_00 MAX V(x) FROM 0.030000 TO 0.049000
+.meas tran minimo_01 MIN V(x) FROM 0.080000 TO 0.099000
+.meas tran maximo_01 MAX V(x) FROM 0.080000 TO 0.099000
+.meas tran minimo_02 MIN V(x) FROM 0.130000 TO 0.149000
+.meas tran maximo_02 MAX V(x) FROM 0.130000 TO 0.149000
+.meas tran minimo_03 MIN V(x) FROM 0.180000 TO 0.199000
+.meas tran maximo_03 MAX V(x) FROM 0.180000 TO 0.199000
+.meas tran minimo_04 MIN V(x) FROM 0.230000 TO 0.249000
+.meas tran maximo_04 MAX V(x) FROM 0.230000 TO 0.249000
+.meas tran minimo_05 MIN V(x) FROM 0.280000 TO 0.299000
+.meas tran maximo_05 MAX V(x) FROM 0.280000 TO 0.299000
+.meas tran minimo_06 MIN V(x) FROM 0.330000 TO 0.349000
+.meas tran maximo_06 MAX V(x) FROM 0.330000 TO 0.349000
+.meas tran minimo_07 MIN V(x) FROM 0.380000 TO 0.399000
+.meas tran maximo_07 MAX V(x) FROM 0.380000 TO 0.399000
+.meas tran minimo_08 MIN V(x) FROM 0.430000 TO 0.449000
+.meas tran maximo_08 MAX V(x) FROM 0.430000 TO 0.449000
+.meas tran minimo_09 MIN V(x) FROM 0.480000 TO 0.499000
+.meas tran maximo_09 MAX V(x) FROM 0.480000 TO 0.499000
+.meas tran minimo_10 MIN V(x) FROM 0.530000 TO 0.549000
+.meas tran maximo_10 MAX V(x) FROM 0.530000 TO 0.549000
+.meas tran minimo_11 MIN V(x) FROM 0.580000 TO 0.599000
+.meas tran maximo_11 MAX V(x) FROM 0.580000 TO 0.599000
+.meas tran minimo_12 MIN V(x) FROM 0.630000 TO 0.649000
+.meas tran maximo_12 MAX V(x) FROM 0.630000 TO 0.649000
+.meas tran minimo_13 MIN V(x) FROM 0.680000 TO 0.699000
+.meas tran maximo_13 MAX V(x) FROM 0.680000 TO 0.699000
+.meas tran minimo_14 MIN V(x) FROM 0.730000 TO 0.749000
+.meas tran maximo_14 MAX V(x) FROM 0.730000 TO 0.749000
+.meas tran minimo_15 MIN V(x) FROM 0.780000 TO 0.799000
+.meas tran maximo_15 MAX V(x) FROM 0.780000 TO 0.799000
+.meas tran minimo_16 MIN V(x) FROM 0.830000 TO 0.849000
+.meas tran maximo_16 MAX V(x) FROM 0.830000 TO 0.849000
+.meas tran pico_orcamento MAX V(orcamento) FROM 0 TO 0.85
+.end

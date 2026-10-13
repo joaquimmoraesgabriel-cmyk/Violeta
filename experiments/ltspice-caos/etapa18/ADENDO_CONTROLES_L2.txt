@@ -1,0 +1,9 @@
+Adendo durante o piloto, antes destes oito ensaios completos.
+
+Amostras parciais mostraram reserva de cotas acionada em L2 5/10 e 1/2 us
+saudaveis. Portanto seus resultados apos comutacao nao isolam a regra L2.
+Acrescentamos L2 20/50 e 5/10 us, ambos com atuacao do monitor desabilitada,
+mesmo novo modelo/circuitos de observacao, dois passos e duas condicoes.
+Total previsto passa de 48 para 56 trajetorias. Mantidos todos os ensaios
+originais, inclusive os alarmes indevidos. Nao se ajustam limiares usando
+a pontuacao logica. Os controles antigos da etapa17 serao so contexto.
