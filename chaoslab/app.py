@@ -112,7 +112,7 @@ def chart_style(figure: go.Figure, height: int = 370) -> go.Figure:
     return figure
 
 
-def render_trace(trace: dict, key: str, compact: bool = False) -> None:
+def render_trace(trace: dict, key: str, compact: bool = False, budget_uA: float = 90.) -> None:
     t = trace.get("t_s", [])
     if len(t) < 2:
         st.caption("O traçado aparece assim que o primeiro bloco de cálculo estiver pronto.")
@@ -149,7 +149,7 @@ def render_trace(trace: dict, key: str, compact: bool = False) -> None:
                 values = trace.get(field, [])
                 if len(values) == len(t):
                     allocation.add_trace(go.Scatter(x=time_ms, y=np.abs(values), name=label, line=dict(color=color, width=1.3)), row=row, col=1)
-            allocation.add_hline(y=90, line_dash="dot", line_color=MUTED, annotation_text="Orçamento · 90 µA", row=2, col=1)
+            allocation.add_hline(y=budget_uA, line_dash="dot", line_color=MUTED, annotation_text=f"Orçamento · {budget_uA:g} µA", row=2, col=1)
             allocation.add_hline(y=6.5, line_dash="dot", line_color=RED, annotation_text="Discrepância · 6,5 µA", row=2, col=1)
             allocation.update_yaxes(title="µA")
             allocation.update_xaxes(title="Tempo (ms)", row=2, col=1)
@@ -357,7 +357,8 @@ def sidebar() -> Config | None:
         st.markdown("### ◈ ChaosLab")
         st.caption("VIOLETA · LABORATÓRIO LOCAL")
         st.divider()
-        active = st.session_state.get("chaoslab_job", {}).get("state") == "running" or external_batch().get("status") == "running"
+        active = any(st.session_state.get(k, {}).get("state") == "running" for k in
+                     ("chaoslab_job", "tools_job", "tools_replay")) or external_batch().get("status") == "running"
         preset = st.selectbox("Tamanho do ensaio", ["Explorar · 136 janelas", "Pesquisa · 10.000 janelas", "Ponte com a Etapa 18", "Personalizado"], disabled=active)
         if preset == "Explorar · 136 janelas":
             trajectories, windows, sequence = 8, 17, "balanced"
@@ -508,7 +509,7 @@ def results_panel():
         st.error(f"Não foi possível abrir a execução: {exc}")
         return
     render_summary(result.get("summary", {}), "saved")
-    render_trace(result.get("trace", {}), "saved")
+    render_trace(result.get("trace", {}), "saved", budget_uA=result.get("config", {}).get("budget_uA", 90.))
     render_windows(result, "saved")
     with st.expander("Parâmetros e auditoria"):
         st.json({"config": result.get("config"), "timing": result.get("timing"), "validation": result.get("validation"), "arquivo": selected_path})
@@ -613,7 +614,7 @@ def main():
     if config:
         st.session_state["chaoslab_job"] = new_job(config)
         st.rerun()
-    laboratory, results, reference, storage = st.tabs(["Laboratório", "Resultados", "Referência · Etapa 18", "Armazenamento"])
+    laboratory, results, reference, storage, tools = st.tabs(["Laboratório", "Resultados", "Referência · Etapa 18", "Armazenamento", "Ferramentas"])
     with laboratory:
         st.subheader("Acompanhar o ensaio")
         batch_panel()
@@ -629,6 +630,9 @@ def main():
         reference_panel()
     with storage:
         storage_panel()
+    with tools:
+        from chaoslab.tools_ui import render_tools
+        render_tools()
     st.caption("CHAOSLAB · Experimentos locais e reproduzíveis · Resultados matemáticos ainda sujeitos à validação no LTspice")
 
 

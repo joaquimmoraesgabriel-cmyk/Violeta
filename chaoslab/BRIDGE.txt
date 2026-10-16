@@ -1,0 +1,34 @@
+PONTE CHAOSLAB / LTSPICE
+
+API: make_manifest(config_ou_resultado, trajectory=0), export_bundle(manifesto,
+diretorio), bundle_zip(manifesto), import_csv(bytes_ou_path),
+import_raw(bytes_ou_path), compare(trace_python, trace_ltspice).
+
+Exportação inicial: somente profile=nominal, sem falhas do coordenador.
+Inclui condições iniciais, entradas AND PWL de 1 µs, escala, capacitância,
+não linearidade MLC e excitação. O JSON é o contrato compartilhado e possui
+hash de integridade. Editar parâmetros exige gerar novamente o manifesto.
+Não exporta o fiscal, coordenador, atuador, sensor ou chip físico.
+
+Arquivos novos ficam em chaoslab/bridge_exports/<identificador>. Um diretório
+existente nunca é sobrescrito. O ZIP baixado contém manifest.json e nominal.cir.
+Abra nominal.cir no LTspice e execute. A interface não executa netlists enviados
+pelo usuário. A grade do LTspice continua adaptativa, com passo máximo indicado.
+
+CSV/TSV: cabeçalho time,V(x),V(y) ou time\tV(x)\tV(y); UTF-8/UTF-16.
+Tempo em segundos, estados em volts. Canais opcionais: V(a),V(b),
+current_y_uA,current_d_uA,current_e_uA (estes explicitamente em microampères).
+Valores devem ser finitos, tempo não negativo e estritamente crescente.
+Não há conversão implícita de mA, mV ou ms; exporte nas unidades especificadas.
+
+RAW: transiente binário real intercalado, UTF-16LE/UTF-8, uma execução.
+Não aceita AC/complexo, fastaccess ou .step concatenado. Para esses casos,
+exporte separadamente a curva de interesse como CSV/TSV.
+Importação limitada a 32 MiB, 500.000 pontos e 128 variáveis RAW.
+
+Comparação: interpolação somente no intervalo comum dos registros. São
+informados RMS e máximo das diferenças e curvas sobrepostas. Isso não é uma
+cota rigorosa do erro entre pontos nem uma prova de equivalência física.
+Para comparação associada ao manifesto, selecione a mesma trajetória e
+confira as condições iniciais e a sequência. Sem manifesto, a origem é uma
+comparação exploratória cujos parâmetros não foram verificados.

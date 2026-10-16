@@ -1,0 +1,43 @@
+VALIDAÇÃO DAS SEIS FERRAMENTAS — 16/10/2026
+
+Entrega: aba Ferramentas do ChaosLab, http://127.0.0.1:8501.
+Guia completo: chaoslab/TOOLS.txt; formatos da ponte: chaoslab/BRIDGE.txt.
+
+Verificações executadas:
+- 58 testes pytest aprovados, incluindo preservação exata do core.py histórico.
+- AppTest: formulário, trabalhador real com três passos, tabelas, gráficos e
+  abertura das seis ferramentas. Persistência simulada nesse teste de interface.
+- Integração com persistência real: convergência (3 casos), comparação do teto
+  (2 casos), robustez (4 casos), registros e referências verificados.
+- Replay de uma janela: mesmo estado final e mesmas classificações originais.
+- Navegador Edge: seis telas carregadas, sem exceções JavaScript/Streamlit.
+- LTspice 26.1.1 em lote: exportação nominal, simulação e importação RAW reais.
+  Em 1 ms, 801 pontos comparados: erro máximo X 8,651 microvolts e Y 8,524
+  microvolts; RMS X 5,953 microvolts e Y 5,584 microvolts.
+
+O ensaio LTspice identificou uma amostra inicial incorreta com UIC. A netlist
+foi corrigida usando .ic sem UIC; a amostra inicial permaneceu na comparação.
+Este ensaio curto não certifica convergência longa nem hardware físico.
+A ponte exporta somente a planta nominal; controladores físicos e PCB ainda
+precisam de modelos próprios. Arquivos importados não comprovam por si só que
+seus parâmetros correspondem ao contrato selecionado.
+
+Evidências compactas: manifest.json, nominal.cir, nominal.log, nominal.raw.gz,
+nominal-python.json.gz e validation.json. Descompacte o RAW antes de importar.
+O manifest guarda o hash do bridge.py no momento da geração. Depois desse
+ensaio foram acrescentados comparação lógica e limites de exportação, sem
+alterar as equações da netlist. validation.json registra os hashes da entrega.
+Referências de integração no caderno apontam para arquivos locais ignorados
+pelo Git; não acompanham um novo clone. O ensaio nominal acima é preservado.
+
+Lírio: projeto aopa, duas delegações econômicas. Uma terminou truncada; a
+outra foi cancelada pelo agente principal após leituras sem entrega. Nenhuma
+produziu código. O agente principal implementou os módulos e os testes.
+Custo registrado pelo Lírio: US$ 0,1927000148; não representa saldo nem custos
+externos ao registro do servidor. Não foram feitas novas delegações.
+
+Armazenamento: resultados comprimidos, importações limitadas a 32 MiB,
+caderno a 64 MiB, exportações a 128 MiB e reserva mínima de disco de 10 GB.
+Esses limites não controlam arquivos criados externamente pelo LTspice.
+Nenhum resultado histórico foi apagado nesta entrega. Testar as ferramentas
+não equivale a executar ou concluir a próxima etapa científica.

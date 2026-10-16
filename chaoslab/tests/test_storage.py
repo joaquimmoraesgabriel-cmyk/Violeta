@@ -60,3 +60,9 @@ def test_atomic_publish_retries_windows_reader_lock(isolated, monkeypatch):
     storage._atomic(target, b"new complete snapshot")
     assert target.read_bytes() == b"new complete snapshot"
     assert len(calls) == 3 and not list(isolated.glob("*.tmp"))
+
+
+def test_decompression_is_bounded(isolated, monkeypatch):
+    path=storage.save_result({'summary':{},'padding':'a'*200})
+    monkeypatch.setattr(storage,'MAX_UNPACKED_MB',0)
+    with pytest.raises(ValueError,match='descomprimido'):storage.load_result(path)

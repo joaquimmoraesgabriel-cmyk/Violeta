@@ -61,9 +61,9 @@ def readonly_checks(timeout: int) -> dict:
                    if (item := read_json(path, {})).get("name") and Path(item.get("path", "")).is_file()}
     app = AppTest.from_file(str(APP), default_timeout=timeout).run()
     no_exceptions(app)
-    assert [tab.label for tab in app.tabs] == ["Laboratório", "Resultados", "Referência · Etapa 18", "Armazenamento"]
+    assert [tab.label for tab in app.tabs] == ["Laboratório", "Resultados", "Referência · Etapa 18", "Armazenamento", "Ferramentas"]
     metrics = {item.label: item.value for item in app.metric}
-    checks = ["four tabs", "no render exceptions"]
+    checks = ["five tabs", "no render exceptions"]
 
     for label in ("Espaço livre no disco", "Pasta da pesquisa", "Resultados do ChaosLab"):
         assert label in metrics and "—" not in metrics[label], f"Storage metric missing: {label}"

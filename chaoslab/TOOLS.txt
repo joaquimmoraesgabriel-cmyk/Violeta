@@ -1,0 +1,78 @@
+CHAOSLAB — BANCADAS DE DESENVOLVIMENTO
+
+Abra Abrir-ChaosLab.cmd, entre na aba Ferramentas e selecione a ferramenta.
+O painel tradicional e o relatório da Etapa 19 continuam disponíveis.
+O ambiente Python já está instalado neste computador.
+
+ARQUITETURA
+core.py: motor histórico congelado. Não é alterado pelas novas opções.
+engine.py: motor ampliado, derivado explicitamente da referência histórica.
+workbenches.py: planos reprodutíveis, comparações pareadas e replay verificado.
+tools_ui.py: interface e trabalhadores em segundo plano, sem Streamlit no cálculo.
+bridge.py: contrato e intercâmbio com LTspice.
+diagnostics.py: seleção de janela, canais e eventos com suas limitações.
+notebook.py: hipóteses, versões, evidências e conclusões em registros compactos.
+
+1. CONVERGÊNCIA
+Executa h, h/2 e h/4 mantendo o período de amostragem dos pedidos fixo.
+Use horizonte curto para comparar o erro do estado e janelas completas para
+classificação lógica. O comparador lista margens, recuperações, regressões e
+discordâncias, mesmo quando o total de acertos não muda.
+O erro dos traçados usa somente o intervalo comum dos pontos registrados,
+com interpolação. Não é limite rigoroso do erro entre pontos e não certifica
+convergência automaticamente. O conjunto RK4 + controles/RCs não tem ordem 4
+global garantida. Os RCs continuam atualizados no passo do integrador; a
+amostragem fixa é a dos pedidos, não um modelo de firmware completo.
+
+2. CONDIÇÕES EQUIVALENTES
+L2/comum: os dois candidatos usam os mesmos atraso, filtro, amostragem,
+orçamento, entradas, estados iniciais, detector e demais parâmetros.
+Teto/ilimitado amostrado: ambos usam medição ideal e pedidos retidos pelo
+mesmo período. O ilimitado amostrado atua sobre a planta perturbada, sem
+cancelamento analítico a cada subpasso RK4. Assim, o controle temporal é
+compatível com o limitado; o limite/política de alocação é a diferença.
+O perfil unlimited histórico continua distinto e identifica o cancelamento
+algébrico contínuo. Ele não deve substituir unlimited_sampled nessa comparação.
+
+3. PONTE LTSPICE
+O contrato JSON registra entradas, condições e parâmetros com unidades.
+A primeira exportação representa a referência nominal da planta MLC. Não
+transforma automaticamente o controlador ampliado em chips físicos.
+Na importação, sobreposições usam o intervalo comum, sem extrapolação.
+Leia BRIDGE.txt para formatos, canais e escopo exato dos modelos exportáveis.
+Qualquer diferença Python/LTspice também pode incluir diferença de integrador,
+interpolação ou tolerâncias; sobrepor curvas não equivale a validar hardware.
+
+4. INVESTIGADOR
+Selecione execução, trajetória e janela. O traço armazenado representa apenas
+uma trajetória: o painel não o atribui às outras. Um replay captura a trajetória
+selecionada sem reiniciar a dinâmica na janela. O replay só é aceito quando
+reproduz o estado final e a tabela completa de classificações originais.
+Pedido/cota/concessão/corrente/estado/fiscal/reserva têm unidades identificadas.
+Alarmes e seleção da reserva são eventos distintos. Trechos amostrados ajudam
+o diagnóstico, mas não permitem inventar instante exato ou causalidade.
+
+5. ROBUSTEZ
+Cada cenário gera dois casos pareados: cotas e concessão efetiva. Tempos,
+tolerâncias, ruído determinístico com fase variável, relógio, condições iniciais
+e sequência são iguais dentro do par e variam entre cenários por semente.
+As faixas são uniformes exploratórias, não distribuições de fabricação medidas.
+Falhas combinadas compartilham o intervalo configurado. Ordem de composição:
+replay/stale, bias, starve, dropout, double; heartbeat de dropout permanece
+inválido mesmo quando uma concessão posterior altera valores das cotas.
+Não inclui ruído branco físico ou efeito térmico de chips.
+
+6. CADERNO E ARMAZENAMENTO
+Ao concluir uma bancada, o painel salva os casos completos no armazenamento
+comprimido existente e registra hipótese, plano, versão, referências e conclusão.
+Um cancelamento não cria evidência de conclusão dos casos parciais. A tabela
+de comparações e o plano também podem ser baixados pelo painel.
+Registros não substituem os arquivos de resultados referenciados; uma referência
+ausente ou modificada deve ser identificada na verificação de integridade.
+Nenhum conjunto antigo é apagado automaticamente.
+
+LIMITES
+O orçamento é de atuação matemática, não consumo total ou limite elétrico
+certificado. Os observadores não escolhem o passo. Isso não elimina os erros
+de discretização nem prova que toda falha seja da equação ou do hardware.
+Esta entrega implementa e testa ferramentas; não declara a Etapa 20 concluída.

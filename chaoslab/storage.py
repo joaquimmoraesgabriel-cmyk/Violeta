@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "chaoslab" / "results"
 MAX_RESULTS_MB = 512
 MAX_RUN_MB = 32
+MAX_UNPACKED_MB = 128
 MIN_FREE_GB = 10
 _LOCK = threading.Lock()
 
@@ -145,6 +146,9 @@ def load_result(path: str | Path) -> dict:
         raise ValueError("Resultado deve pertencer à pasta Violeta.")
     if p.stat().st_size > MAX_RUN_MB * 1e6:
         raise ValueError("Arquivo excede a cota de leitura.")
-    with gzip.open(p, "rt", encoding="utf-8") as f:
-        result = json.load(f)
+    with gzip.open(p, "rb") as f:
+        payload = f.read(MAX_UNPACKED_MB*1024**2+1)
+    if len(payload)>MAX_UNPACKED_MB*1024**2:
+        raise ValueError("Resultado descomprimido excede 128 MiB.")
+    result = json.loads(payload)
     return result

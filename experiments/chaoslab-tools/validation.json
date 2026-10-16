@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-16",
+  "scope": "Tool validation, not Stage 20 or hardware certification",
+  "unit_tests": 58,
+  "integration": {
+    "benches": [
+      {
+        "kind": "convergence",
+        "cases": 3,
+        "notebook": "20261016T190252600746Z-c02b45c43983",
+        "references_ok": true
+      },
+      {
+        "kind": "equivalent",
+        "cases": 2,
+        "notebook": "20261016T190253185355Z-95ce7ccc9e60",
+        "references_ok": true
+      },
+      {
+        "kind": "robustness",
+        "cases": 4,
+        "notebook": "20261016T190254108633Z-bf6136a59628",
+        "references_ok": true
+      }
+    ],
+    "replay_verified": true,
+    "replay_result": "C:\\Users\\joaqu\\Violeta\\chaoslab\\results\\20261016-160257-2ddb8949f4-7bcc19.json.gz"
+  },
+  "ltspice": {
+    "interval_s": [
+      0.0,
+      0.001
+    ],
+    "samples": 801,
+    "channels": {
+      "x": {
+        "rms": 5.952625841403943e-06,
+        "max_abs": 8.650765743301037e-06
+      },
+      "y": {
+        "rms": 5.583913066321481e-06,
+        "max_abs": 8.524487117522739e-06
+      }
+    },
+    "limitation": "Only overlapping recorded samples; interpolation and different integrators remain. This comparison does not establish physical circuit equivalence."
+  },
+  "raw_sha256": "3f00ebd9d7b4673c6449a871b3abfbafb99d3181dea6dc62f02080e95e215742",
+  "sources_sha256": {
+    "bridge.py": "40da7dbb6c4e0e441e4c45742f174a5c45fffe8c290d0af377ada5618e7eecfa",
+    "core.py": "aacd24fd53246cc1f3f0f258b2c469137064a774c69511b573f24f0ae73d097e",
+    "diagnostics.py": "fa1158aebdbe73711ba25375c247c5c5f4c2b6e53631b6036f3bd1ce80b5dc94",
+    "engine.py": "60ad92c48a651d7177bb34700fc4a74090286a5ebea98f9c8c9dc4d1eb3d25f0",
+    "notebook.py": "9a1625c0337ee62248e9a34bbc5d7899f1ce87f23e7ae7e867e24425846e6e79",
+    "tools_ui.py": "f42dcd1d52a0c67727128e5fb4760fa373e829e0befe70420697135e9834c30d",
+    "workbenches.py": "19c1eb010fd056bb1bcb4be812f51b421317650bd5ec71e24948de86d877a969"
+  },
+  "lirio": {
+    "project": "aopa",
+    "runs": 2,
+    "completed": 0,
+    "failed": 1,
+    "cancelled": 1,
+    "recorded_cost_usd": 0.1927000148,
+    "delivery": "Root implemented all delivered modules after delegated agents produced no code"
+  },
+  "free_disk_bytes": 110839762944
+}

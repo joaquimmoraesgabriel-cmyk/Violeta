@@ -19,6 +19,7 @@ Instalação em outro ambiente, metodologia e reprodução estão em
 - [Motor matemático](chaoslab/core.py) — RK4 da planta, controles amostrados e RC exato sob ZOH.
 - [Painel](chaoslab/app.py) — execução em memória, gráficos ao vivo e comparação de resultados.
 - [Lote da Etapa 19](chaoslab/stage19.py) — protocolo registrado, retomada e proveniência.
+- [Novas bancadas](chaoslab/TOOLS.txt) — convergência, condições equivalentes, ponte LTspice, investigação de falhas, robustez e caderno automático; disponíveis na aba **Ferramentas**.
 - [Pesquisa LTspice](experiments/ltspice-caos) — fontes, parâmetros, logs e métricas das etapas anteriores.
 - [Retenção de dados](experiments/ltspice-caos/manutencao_armazenamento/NOTA_RETENCAO.txt) — limpeza autorizada e limites dos extratos.
 

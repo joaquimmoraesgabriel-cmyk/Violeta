@@ -1,0 +1,15 @@
+* ChaosLab nominal MLC; shared manifest 83dfc64283cbc23996cace42cbf0e41efae0f3905d4da0f7607c8246758a6239
+* Mathematical reference only. LTspice adaptive integration, no controller chips.
+.param cap=9.9999999999999995e-07 scale=0.0001
+.func gx(z) {(-0.55)*z+(-1.02--0.55)/2*(abs(z+1)-abs(z-1))}
+Va a 0 PWL(0 0 0.001 0)
+Vb b 0 PWL(0 0 0.001 0)
+Cx x 0 {cap} IC=-0.37
+Cy y 0 {cap} IC=-0.20000000000000001
+.ic V(x)=-0.37 V(y)=-0.20000000000000001
+Bx 0 x I={cap/scale*(V(y)-gx(V(x)))}
+By 0 y I={cap/scale*(-1.015*V(y)-V(x)-0.005+0.005*(2*V(a)-1+2*V(b)-1)+0.11*sin(0.74*time/scale))}
+.options plotwinsize=0 reltol=1e-8 abstol=1e-12 vntol=1e-10
+.save V(x) V(y) V(a) V(b)
+.tran 0 0.001 0 1.2499999999999999e-06
+.end
